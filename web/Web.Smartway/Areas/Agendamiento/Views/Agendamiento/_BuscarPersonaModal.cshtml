@@ -1,0 +1,37 @@
+﻿@section Styles {
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/jqGrid/ui.jqgrid.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/jqgrid.extension.css")" />
+
+}
+@using (Ajax.BeginForm("BuscarPersonaModal", "Incidencia", null, new AjaxOptions { HttpMethod = "POST", InsertionMode = InsertionMode.Replace, UpdateTargetId = "modalcontent", OnComplete = "OnCompleteTransaction(xhr, status)", Confirm = "¿Esta seguro de guardar los cambios?" }, new { @class = "form-horizontal" }))
+{
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Buscar Cliente</h4>
+        <small class="font-bold">Digitar el número de documento para buscar el cliente en la base de datos.</small>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label class="control-label">Tipo Documento :</label>
+                        <input type="hidden" id="hdTipoDocumentoClientePOP" class="form-control">
+                         @Html.DropDownList("ddltipodocumento", (SelectList)ViewData["ListaTipoDocumento"], "--TODOS--", new { @class = "form-control", @required = "true" })
+                    </div>
+                        <div class="form-group">
+                            <label class="control-label">N° Documento / Nombres  :</label>
+                            <input type="text" id="txtNDocumentoClientePOP" placeholder="N° de documento , Raz. Social, Nombres" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <button type="button" onclick="BuscarClientePopUp_onClick()" data-url="@Url.Action("BuscarPersonaModal", "Agendamiento", new { area = "Agendamiento" })" class="btn btn-primary btn-sm"><i class="fa fa-search"></i> Buscar </button>
+                            <button type="button" class="btn  btn-inverse btn-sm" data-dismiss="modal"><i class="fa fa-times-circle-o"></i>  Cancelar</button>
+                        </div>
+                    </div>
+            <div class="jqGrid_wrapper col-md-9">
+                <table id="gridclientes" data-dataurl="@Url.Action("JsonGetListarClientes", "Agendamiento", new { area = "Agendamiento" })"></table>
+                <div id="gridclientespager"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer"></div>
+}

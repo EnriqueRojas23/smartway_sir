@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FF23EECF-E4DA-465A-A44B-442077195B08}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QueryContracts.Smartway</RootNamespace>
+    <AssemblyName>QueryContracts.Smartway</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\Parameters\ObtenerUsuarioParameter.cs" />
+    <Compile Include="Account\Parameters\ValidarUsuarioParameter.cs" />
+    <Compile Include="Account\Results\ObtenerUsuarioResult.cs" />
+    <Compile Include="Account\Results\ObtenerUsuarioResult1.cs" />
+    <Compile Include="Account\Results\ValidarUsuarioResult.cs" />
+    <Compile Include="Agendamiento\Parameters\ListarAccesoriosParameter.cs" />
+    <Compile Include="Agendamiento\Parameters\ListarIncidenciaCotizacionParameter.cs" />
+    <Compile Include="Agendamiento\Parameters\ListarIncidenciaEvaluacionParameter.cs" />
+    <Compile Include="Agendamiento\Parameters\ListarOrdenServicioParameters.cs" />
+    <Compile Include="Agendamiento\Parameters\ListarPropuestasSolucionParameter.cs" />
+    <Compile Include="Agendamiento\Parameters\ListarPropuestasIncidenciaParameter.cs" />
+    <Compile Include="Agendamiento\Parameters\ListarPropuestasParameter.cs" />
+    <Compile Include="Agendamiento\Parameters\ListarRepuestosParameter.cs" />
+    <Compile Include="Agendamiento\Parameters\ListarCondicionesParameter.cs" />
+    <Compile Include="Agendamiento\Parameters\ListarEvaluarGarantiaParameter.cs" />
+    <Compile Include="Agendamiento\Parameters\ListarIncidenciaParameter.cs" />
+    <Compile Include="Agendamiento\Parameters\CalcularTarifaParameter.cs" />
+    <Compile Include="Agendamiento\Parameters\ObtenerPropuestaParameter.cs" />
+    <Compile Include="Agendamiento\Parameters\ObtenerIncidenciaParameter.cs" />
+    <Compile Include="Agendamiento\Parameters\ObtenerNumeroIncidenciaParameter.cs" />
+    <Compile Include="Agendamiento\Results\ListarAccesoriosResult.cs" />
+    <Compile Include="Agendamiento\Results\ListarIncidenciaCotizacionResult.cs" />
+    <Compile Include="Agendamiento\Results\ListarIncidenciaEvaluacionResult.cs" />
+    <Compile Include="Agendamiento\Results\ListarOrdenServicioResult.cs" />
+    <Compile Include="Agendamiento\Results\ListarPropuestasSolucionResult.cs" />
+    <Compile Include="Agendamiento\Results\ListarPropuestasIncidenciaResult.cs" />
+    <Compile Include="Agendamiento\Results\ListarPropuestasResult.cs" />
+    <Compile Include="Agendamiento\Results\ListarRepuestosResult.cs" />
+    <Compile Include="Agendamiento\Results\ListarCondicionesResult.cs" />
+    <Compile Include="Agendamiento\Results\ListarEvaluarGarantiaResult.cs" />
+    <Compile Include="Agendamiento\Results\ListarIncidenciaResult.cs" />
+    <Compile Include="Agendamiento\Results\CalcularTarifaResult.cs" />
+    <Compile Include="Agendamiento\Results\ObtenerPropuestaResult.cs" />
+    <Compile Include="Agendamiento\Results\ObtenerIncidenciaResult.cs" />
+    <Compile Include="Agendamiento\Results\ObtenerNumeroIncidenciaResult.cs" />
+    <Compile Include="Despacho\Parameters\EntregarDespachoDeliveryParameter.cs" />
+    <Compile Include="Despacho\Parameters\ObtenerGuiaRemisionParameter.cs" />
+    <Compile Include="Despacho\Parameters\ListarGuiaRemisionParameter.cs" />
+    <Compile Include="Despacho\Parameters\ListarProgramacionParameter.cs" />
+    <Compile Include="Despacho\Parameters\ListarTransporteParameter.cs" />
+    <Compile Include="Despacho\Results\EntregarDespachoDeliveryResult.cs" />
+    <Compile Include="Despacho\Results\ObtenerGuiaRemisionResult.cs" />
+    <Compile Include="Despacho\Results\ListarGuiaRemisionResult.cs" />
+    <Compile Include="Despacho\Results\ListarTransporteResult.cs" />
+    <Compile Include="Despacho\Results\ListarProgramacionDto.cs" />
+    <Compile Include="Facturacion\Parameters\ListarDetalleComprobantesParameters.cs" />
+    <Compile Include="Facturacion\Parameters\ListarComprobantesParameters.cs" />
+    <Compile Include="Facturacion\Parameters\ListarDocumentosParameters.cs" />
+    <Compile Include="Facturacion\Parameters\ObtenerComprobanteParameters.cs" />
+    <Compile Include="Facturacion\Parameters\ObtenerNumeroComprobanteParameters.cs" />
+    <Compile Include="Facturacion\Results\ListarDetalleComprobantesResult.cs" />
+    <Compile Include="Facturacion\Results\ListarComprobantesResult.cs" />
+    <Compile Include="Facturacion\Results\ListarDocumentosResult.cs" />
+    <Compile Include="Facturacion\Results\ObtenerComprobanteResult.cs" />
+    <Compile Include="Facturacion\Results\ObtenerNumeroComprobanteResult.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Inventario\Parameters\ListarInventarioxAlmacenParameters.cs" />
+    <Compile Include="Inventario\Parameters\ObtenerOrdenServicioxInventarioParameters.cs" />
+    <Compile Include="Inventario\Parameters\ObtenerProductoInventarioParameters.cs" />
+    <Compile Include="Inventario\Parameters\ObtenerInventarioParameters.cs" />
+    <Compile Include="Inventario\Parameters\ObtenerAlmacenParameters.cs" />
+    <Compile Include="Inventario\Results\ListarInventarioxAlmacenResult.cs" />
+    <Compile Include="Inventario\Results\ObtenerOrdenServicioxInventarioResult.cs" />
+    <Compile Include="Inventario\Results\ObtenerProductoInventarioResult.cs" />
+    <Compile Include="Inventario\Results\ObtenerInventarioResult.cs" />
+    <Compile Include="Inventario\Results\ObtenerAlmacenResult.cs" />
+    <Compile Include="Mantenimiento\Parameters\ListarAntecedentesParameter.cs" />
+    <Compile Include="Mantenimiento\Parameters\ListarEstadosParameter.cs" />
+    <Compile Include="Mantenimiento\Parameters\ListarGarantiaParameters.cs" />
+    <Compile Include="Mantenimiento\Parameters\ListarCategoriaFallaParameters.cs" />
+    <Compile Include="Mantenimiento\Parameters\ListarCategoriaReparacion.cs" />
+    <Compile Include="Mantenimiento\Parameters\ListarDiagnosticoParameters.cs" />
+    <Compile Include="Mantenimiento\Parameters\ListarProductosxIdParameters.cs" />
+    <Compile Include="Mantenimiento\Parameters\ListarRepuestosxProductoParameters.cs" />
+    <Compile Include="Mantenimiento\Parameters\ListarReparacionRepuestoParameters.cs" />
+    <Compile Include="Mantenimiento\Parameters\ListarTarifaParameters.cs" />
+    <Compile Include="Mantenimiento\Parameters\ListarTipoDiagnosticoParameters.cs" />
+    <Compile Include="Mantenimiento\Parameters\ListarFallaParameters.cs" />
+    <Compile Include="Mantenimiento\Parameters\ListarTipoReparacionParameters.cs" />
+    <Compile Include="Mantenimiento\Parameters\ListarTipoFallaParameters.cs" />
+    <Compile Include="Mantenimiento\Parameters\ListarTipoGarantiaParameters.cs" />
+    <Compile Include="Mantenimiento\Parameters\ListarReparacionParameters.cs" />
+    <Compile Include="Mantenimiento\Parameters\ListarTipoProductoParameters.cs" />
+    <Compile Include="Mantenimiento\Parameters\ListarProductosParameters.cs" />
+    <Compile Include="Mantenimiento\Parameters\ListarDireccionClienteParameters.cs" />
+    <Compile Include="Mantenimiento\Parameters\ListarPartnerParameters.cs" />
+    <Compile Include="Mantenimiento\Parameters\ListarSucursalParameters.cs" />
+    <Compile Include="Mantenimiento\Parameters\ListarClientesParameters.cs" />
+    <Compile Include="Mantenimiento\Parameters\ListarDepartamentosParameters.cs" />
+    <Compile Include="Mantenimiento\Parameters\ListarDistritosParameters.cs" />
+    <Compile Include="Mantenimiento\Parameters\ListarDistritoZonaEditarParameters.cs" />
+    <Compile Include="Mantenimiento\Parameters\ListarDistritoZonaParameters.cs" />
+    <Compile Include="Mantenimiento\Parameters\ListarMaestroTablasParameters.cs" />
+    <Compile Include="Mantenimiento\Parameters\ListarProvinciasParameters.cs" />
+    <Compile Include="Mantenimiento\Parameters\ListarTransporteParameter.cs" />
+    <Compile Include="Mantenimiento\Parameters\ListarUbigeoParameters.cs" />
+    <Compile Include="Mantenimiento\Parameters\ListarValorxTablaParameters.cs" />
+    <Compile Include="Mantenimiento\Parameters\ListarZonasParameters.cs" />
+    <Compile Include="Mantenimiento\Parameters\ObtenerProductoParameter.cs" />
+    <Compile Include="Mantenimiento\Parameters\ObtenerClienteParameter.cs" />
+    <Compile Include="Mantenimiento\Parameters\ObtenerDireccionParameters.cs" />
+    <Compile Include="Mantenimiento\Parameters\ObtenerPartnerParameter.cs" />
+    <Compile Include="Mantenimiento\Parameters\ObtenerSucursalParameter.cs" />
+    <Compile Include="Mantenimiento\Parameters\ObtenerValorTablaParameter.cs" />
+    <Compile Include="Mantenimiento\Parameters\ObtenerZonaParameter.cs" />
+    <Compile Include="Mantenimiento\Parameters\ValidarDireccionParameter.cs" />
+    <Compile Include="Mantenimiento\Parameters\ValidarZonaParameter.cs" />
+    <Compile Include="Mantenimiento\Results\ListarAntecedentesResult.cs" />
+    <Compile Include="Mantenimiento\Results\ListarCategoriaFallaResult.cs" />
+    <Compile Include="Mantenimiento\Results\ListarEstadosResult.cs" />
+    <Compile Include="Mantenimiento\Results\ListarGarantiaResult.cs" />
+    <Compile Include="Mantenimiento\Results\ListarCategoriaReparacionResult.cs" />
+    <Compile Include="Mantenimiento\Results\ListarProductosxIdsResult.cs" />
+    <Compile Include="Mantenimiento\Results\ListarRepuestosxProductoResult.cs" />
+    <Compile Include="Mantenimiento\Results\ListarReparacionRepuestoResult.cs" />
+    <Compile Include="Mantenimiento\Results\ListarReparacionResult.cs" />
+    <Compile Include="Mantenimiento\Results\ListarTipoDiagnosticoResult.cs" />
+    <Compile Include="Mantenimiento\Results\ListarFallaResult.cs" />
+    <Compile Include="Mantenimiento\Results\ListarDiagnosticoResult.cs" />
+    <Compile Include="Mantenimiento\Results\ListarTipoFallaResult.cs" />
+    <Compile Include="Mantenimiento\Results\ListarTipoReparacionResult.cs" />
+    <Compile Include="Mantenimiento\Results\ListarTipoGarantiaResult.cs" />
+    <Compile Include="Mantenimiento\Results\ListarTarifaResult.cs" />
+    <Compile Include="Mantenimiento\Results\ListarTipoProductoResult.cs" />
+    <Compile Include="Mantenimiento\Results\ListarProductosResult.cs" />
+    <Compile Include="Mantenimiento\Results\ListarDireccionClienteResult.cs" />
+    <Compile Include="Mantenimiento\Results\ListarPartnerResult.cs" />
+    <Compile Include="Mantenimiento\Results\ListarSucursalResult.cs" />
+    <Compile Include="Mantenimiento\Results\ListarClientesResult.cs" />
+    <Compile Include="Mantenimiento\Results\ListarDepartamentosResult.cs" />
+    <Compile Include="Mantenimiento\Results\ListarDistritosResult.cs" />
+    <Compile Include="Mantenimiento\Results\ListarDistritoZonaEditarResult.cs" />
+    <Compile Include="Mantenimiento\Results\ListarDistritoZonaResult.cs" />
+    <Compile Include="Mantenimiento\Results\ListarMaestroTablasResult.cs" />
+    <Compile Include="Mantenimiento\Results\ListarProvinciasResult.cs" />
+    <Compile Include="Mantenimiento\Results\ListarTransporteResult.cs" />
+    <Compile Include="Mantenimiento\Results\ListarUbigeoResult.cs" />
+    <Compile Include="Mantenimiento\Results\ListarValorxTablaResult.cs" />
+    <Compile Include="Mantenimiento\Results\ListarZonasResult.cs" />
+    <Compile Include="Mantenimiento\Results\ObtenerProductoResult.cs" />
+    <Compile Include="Mantenimiento\Results\ObtenerClienteResult.cs" />
+    <Compile Include="Mantenimiento\Results\ObtenerDireccionResult.cs" />
+    <Compile Include="Mantenimiento\Results\ObtenerPartnerResult.cs" />
+    <Compile Include="Mantenimiento\Results\ObtenerValorTablaResult.cs" />
+    <Compile Include="Mantenimiento\Results\ObtenerSucursalResult.cs" />
+    <Compile Include="Mantenimiento\Results\ObtenerZonaResult.cs" />
+    <Compile Include="Mantenimiento\Results\ValidarDireccionResult.cs" />
+    <Compile Include="Mantenimiento\Results\ValidarZonaResult.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Inventario\Parameters\ListarAlmacenParameters.cs" />
+    <Compile Include="Inventario\Results\ListarAlmacenResult.cs" />
+    <Compile Include="Recepcion\Parameters\InsertarDocumentoRecepcionDetalleParameter.cs" />
+    <Compile Include="Recepcion\Parameters\ListarDocumentoRecepcionParameters.cs" />
+    <Compile Include="Recepcion\Parameters\ListarOrdenServicioRecepcionParameters.cs" />
+    <Compile Include="Recepcion\Results\InsertarDetalleEmbarqueResult.cs" />
+    <Compile Include="Recepcion\Results\ListarDocumentoRecepcionResult.cs" />
+    <Compile Include="Recepcion\Results\ListarOrdenServicioResult.cs" />
+    <Compile Include="Reparacion\Parameters\ListarAntecedentesDetalleParameter.cs" />
+    <Compile Include="Reparacion\Parameters\ListarAntecedentesParameter.cs" />
+    <Compile Include="Reparacion\Parameters\ListarVentaCotizacionDetalleParameters.cs" />
+    <Compile Include="Reparacion\Parameters\ListarOrdenTrabajoDetalleParameters.cs" />
+    <Compile Include="Reparacion\Parameters\ListarOrdenServicioParameters.cs" />
+    <Compile Include="Reparacion\Parameters\ObtenerOrdenTrabajoParameter.cs" />
+    <Compile Include="Reparacion\Parameters\ObtenerUltimaOrdenTrabajoParameter.cs" />
+    <Compile Include="Reparacion\Parameters\ObtenerOrdenServicioParameter.cs" />
+    <Compile Include="Reparacion\Results\ListarAntecedentesDetalleResult.cs" />
+    <Compile Include="Reparacion\Results\ListarAntecedentesResult.cs" />
+    <Compile Include="Reparacion\Results\ListarVentaCotizacionDetalleResult.cs" />
+    <Compile Include="Reparacion\Results\ListarOrdenTrabajoDetalleResult.cs" />
+    <Compile Include="Reparacion\Results\ListarOrdenServicioResult.cs" />
+    <Compile Include="Reparacion\Results\ObtenerOrdenTrabajoResult.cs" />
+    <Compile Include="Reparacion\Results\ObtenerUltimaOrdenTrabajoResult.cs" />
+    <Compile Include="Reparacion\Results\ObtenerOrdenServicioResult.cs" />
+    <Compile Include="Seguridad\Parameters\BuscarPaginasParameter.cs" />
+    <Compile Include="Seguridad\Parameters\BuscarSistemasParameter.cs" />
+    <Compile Include="Seguridad\Parameters\CambiarContrasenaParameter.cs" />
+    <Compile Include="Seguridad\Parameters\DesbloquearUsuarioParameter.cs" />
+    <Compile Include="Seguridad\Parameters\EliminarPaginaParameter.cs" />
+    <Compile Include="Seguridad\Parameters\ListarClientesParameter.cs" />
+    <Compile Include="Seguridad\Parameters\ObtenerPaginaPadreParameter.cs" />
+    <Compile Include="Seguridad\Parameters\ObtenerUsuarioParameter.cs" />
+    <Compile Include="Seguridad\Parameters\ValidarDNIUsuarioParameter.cs" />
+    <Compile Include="Seguridad\Parameters\ValidarUsoRolParameter.cs" />
+    <Compile Include="Seguridad\Parameters\EliminarRolParameter.cs" />
+    <Compile Include="Seguridad\Parameters\EliminarUsuarioParameter.cs" />
+    <Compile Include="Seguridad\Parameters\EncriptarPasswordParameter.cs" />
+    <Compile Include="Seguridad\Parameters\GenerarPasswordParameter.cs" />
+    <Compile Include="Seguridad\Parameters\ListarControlParameter.cs" />
+    <Compile Include="Seguridad\Parameters\ListarMenusxRolesParameter.cs" />
+    <Compile Include="Seguridad\Parameters\ListarPaginasPadreParameter.cs" />
+    <Compile Include="Seguridad\Parameters\ListarPaginasParameter.cs" />
+    <Compile Include="Seguridad\Parameters\ListarPantallaParameter.cs" />
+    <Compile Include="Seguridad\Parameters\ListarRolesAsignablesParameter.cs" />
+    <Compile Include="Seguridad\Parameters\ListarRolesParameter.cs" />
+    <Compile Include="Seguridad\Parameters\ListarRolParameter.cs" />
+    <Compile Include="Seguridad\Parameters\ListarSistemasParameter.cs" />
+    <Compile Include="Seguridad\Parameters\ListarUsuariosParameter.cs" />
+    <Compile Include="Seguridad\Parameters\ObtenerDatosBasicosUsuarioParameter.cs" />
+    <Compile Include="Seguridad\Parameters\ObtenerPaginaParameter.cs" />
+    <Compile Include="Seguridad\Parameters\ObtenerPasswordParameter.cs" />
+    <Compile Include="Seguridad\Parameters\ObtenerSistemaParameter.cs" />
+    <Compile Include="Seguridad\Parameters\TraerRolParameter.cs" />
+    <Compile Include="Seguridad\Parameters\ValidarExisteUsuarioParameter.cs" />
+    <Compile Include="Seguridad\Result\BuscarPaginasResult.cs" />
+    <Compile Include="Seguridad\Result\BuscarSistemasResult.cs" />
+    <Compile Include="Seguridad\Result\CambiarContrasenaResult.cs" />
+    <Compile Include="Seguridad\Result\DesbloquearUsuarioResult.cs" />
+    <Compile Include="Seguridad\Result\EliminarPaginaResult.cs" />
+    <Compile Include="Seguridad\Result\ListarClientesResult.cs" />
+    <Compile Include="Seguridad\Result\ObtenerPaginaPadreResult.cs" />
+    <Compile Include="Seguridad\Result\ValidarDNIEmpleadoResult.cs" />
+    <Compile Include="Seguridad\Result\ValidarDNIUsuarioResult.cs" />
+    <Compile Include="Seguridad\Result\ValidarUsoRolResult.cs" />
+    <Compile Include="Seguridad\Result\EliminarRolResult.cs" />
+    <Compile Include="Seguridad\Result\EliminarUsuarioResult.cs" />
+    <Compile Include="Seguridad\Result\EncriptarPasswordResult.cs" />
+    <Compile Include="Seguridad\Result\GenerarPasswordResult.cs" />
+    <Compile Include="Seguridad\Result\ListarMenusxRolesResult.cs" />
+    <Compile Include="Seguridad\Result\ListarPaginasPadreResult.cs" />
+    <Compile Include="Seguridad\Result\ListarPaginasResult.cs" />
+    <Compile Include="Seguridad\Result\ListarRolesAsignablesResult.cs" />
+    <Compile Include="Seguridad\Result\ListarRolesResult.cs" />
+    <Compile Include="Seguridad\Result\ListarSistemasResult.cs" />
+    <Compile Include="Seguridad\Result\ListarUsuariosResult.cs" />
+    <Compile Include="Seguridad\Result\ObtenerDatosBasicosUsuarioResult.cs" />
+    <Compile Include="Seguridad\Result\ObtenerPaginaResult.cs" />
+    <Compile Include="Seguridad\Result\ObtenerPasswordResult.cs" />
+    <Compile Include="Seguridad\Result\ObtenerSistemaResult.cs" />
+    <Compile Include="Seguridad\Result\ValidarExisteUsuarioResult.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\common\Componentes.Common\Componentes.Common.csproj">
+      <Project>{4241025f-7510-4f6b-85e0-93faf0def80c}</Project>
+      <Name>Componentes.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\common\QueryContracts.Common\QueryContracts.Common.csproj">
+      <Project>{bfb51524-32b0-4478-a18b-47614662bf40}</Project>
+      <Name>QueryContracts.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

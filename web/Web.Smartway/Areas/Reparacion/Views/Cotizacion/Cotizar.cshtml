@@ -1,0 +1,200 @@
+﻿@model  Web.Smartway.Areas.Reparacion.Models.VentaCotizacionModel
+@{
+    ViewBag.Title = "Cotización de Incidencias";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@section Styles
+    {   
+
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/jqGrid/ui.jqgrid.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/jqgrid.extension.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/jasny/jasny-bootstrap.min.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/sweetalert/sweetalert.css")" />
+    <link rel="stylesheet" type="text/css" media="screen" href="@Url.Content("~/Content/plugins/touchspin/jquery.bootstrap-touchspin.min.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/chosen/chosen.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Scripts/plugins/MetroJS/release/MetroJs.Full/MetroJs.css")" />
+<link rel="stylesheet" type="text/css" media="screen" href="@Url.Content("~/Content/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/application.css")" />
+
+
+}
+@section scripts
+    {
+    <script src="@Url.Content("~/Scripts/jquery.unobtrusive-ajax.min.js")" type="text/javascript"></script>
+
+    <script src="@Url.Content("~/Scripts/app/Agendamiento/agendamiento.cotizacion.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/jqGrid/jquery.jqGrid.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/jqGrid/i18n/grid.locale-es.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/datapicker/bootstrap-datepicker.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/jasny/jasny-bootstrap.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/sweetalert/sweetalert.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/touchspin/jquery.bootstrap-touchspin.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/chosen/chosen.jquery.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/MetroJS/release/MetroJs.Full/MetroJs.js")" type="text/javascript"></script>
+}
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Cotización Orden Servicio</h2>
+    </div>
+    <div class="col-lg-2">
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5><i class="fa fa-info-circle"></i> Datos Técnicos del Producto</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div class="form-horizontal">
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <div class="panel panel-primary">
+
+                                    <div class="panel-heading">
+                                        <i class="fa fa-info-circle"></i>  Datos de Avería
+                                    </div>
+                                    <div id="divCondicionesN" class="panel-body">
+                                        <div class="form-horizontal">
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">Diagnóstico:</label>
+                                                <div class="col-md-10">@Html.DropDownListFor(model => model.iddiagnostico, (SelectList)ViewData["listadiagnostico"], "--", new { @class = "chosen-select form-control " })</div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">Reparación:</label>
+                                                <div class="col-md-10">@Html.DropDownListFor(model => model.idreparacion, Enumerable.Empty<SelectListItem>(), "--", new { @class = "chosen-select  form-control " })</div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-md-2 control-label">Repuesto:</label>
+                                                <div class="col-md-10">@Html.DropDownListFor(model => model.idrepuesto, Enumerable.Empty<SelectListItem>(), "--", new { @class = "chosen-select  form-control " })</div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-md-12"><button type="button" id='btnCotizar' class="btn btn-line btn-primary"><i class="fa fa-plus-circle"></i> Cotizar </button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            @Html.Partial("_InformacionIncidencia", Model)
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5><i class="fa fa-info-circle"></i>  Detalles del Servicio </h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div class="form-horizontal">
+                        <div class="form-group">
+                            <div class="col-md-2">
+                                <button type="button" id='btnLimpiar' class="btn  btn-line btn-block btn-sm btn-danger-outline"><i class="fa fa-eraser"></i> Limpiar Cotización </button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12 jqGrid_wrapper">
+                                <table id="griddetalle"
+                                       data-dataurl="@Url.Action("JsonGetListarDetalleCotizacion", "Cotizacion")"></table>
+                                <div id="griddetallepager"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @*<div class="ibox-footer">
+                        <div class="row ">
+                            <div class="col-xs-3 pull-right">
+                                <h6 class="no-margin">Total.</h6>
+                                S/.<p id="p_total" class="value5">@Model.str_total</p>
+                            </div>
+                            <div class="col-xs-3 pull-right">
+                                <h6 class="no-margin">IGV.</h6>
+                                S/.<p id="p_igv" class="value5">@Model.str_igv</p>
+                            </div>
+                            <div class="col-xs-3 pull-right">
+                                <h6 class="no-margin">Subtotal.</h6>
+                                S/.<p id="p_subtotal" class="value5">@Model.str_subtotal</p>
+                            </div>
+                        </div>
+                    </div>*@
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+
+                <div class="ibox-content">
+                    <div class="form-horizontal">
+
+                        @*@if (!Model.engarantia)
+                            {
+                                <div class="form-group">
+                                    <div class="col-md-6 col-md-offset-6">
+                                        <label class="checkbox-inline i-checks"> @Html.CheckBoxFor(model => model.clienteaceptacotizacion) El cliente acepta la cotización.</label>
+                                    </div>
+                                </div>
+                            }*@
+                        @*else
+                            {
+                                <div class="form-group">
+                                    <div class="col-md-6 col-md-offset-6">
+                                        <div class=" alert alert-info">
+                                            <p> <i class="fa fa-info-circle"></i> Esta cotización no será cobrada a cliente. (Costo 0).</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            }*@
+                        <div class="form-group">
+                            <div class="col-md-3 col-md-offset-6">
+                                <button type="submit" onclick="Registrar()" class="btn  btn-block btn-primary">Registrar </button>
+                            </div>
+                            <div class="col-md-3">
+                                <button type="button" class="btn  btn-block btn-inverse">Cancelar</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    @Html.HiddenFor(x => x.idcotizacion)
+    @Html.HiddenFor(x => x.idfabricante)
+    @Html.HiddenFor(x => x.idtipoproducto)
+    @Html.HiddenFor(x => x.idproducto)
+    @Html.HiddenFor(x => x.idpartner)
+    @Html.HiddenFor(x => x.idordentrabajo)
+    @Html.HiddenFor(x => x.idsucursal)
+
+
+
+</div>

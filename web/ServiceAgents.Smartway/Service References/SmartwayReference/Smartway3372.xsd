@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/QueryContracts.Smartway.Inventario.Results" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/QueryContracts.Smartway.Inventario.Results" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:50020/Smartway3?xsd=xsd17" namespace="http://schemas.datacontract.org/2004/07/QueryContracts.Common" />
+  <xs:complexType name="ListarInventarioxAlmacenResult">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q1:QueryResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Hits" nillable="true" type="tns:ArrayOfListarInventarioxAlmacenDto" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListarInventarioxAlmacenResult" nillable="true" type="tns:ListarInventarioxAlmacenResult" />
+  <xs:complexType name="ArrayOfListarInventarioxAlmacenDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ListarInventarioxAlmacenDto" nillable="true" type="tns:ListarInventarioxAlmacenDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfListarInventarioxAlmacenDto" nillable="true" type="tns:ArrayOfListarInventarioxAlmacenDto" />
+  <xs:complexType name="ListarInventarioxAlmacenDto">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q2:QueryResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="cantidad" type="xs:int" />
+          <xs:element minOccurs="0" name="codigoproducto" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="descripcionlarga" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="estado" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="fechahoraregistro" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="idalmacen" type="xs:int" />
+          <xs:element minOccurs="0" name="idestado" type="xs:int" />
+          <xs:element minOccurs="0" name="idinventario" type="xs:long" />
+          <xs:element minOccurs="0" name="idproducto" type="xs:int" />
+          <xs:element minOccurs="0" name="imei" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="modelo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="nombrealmacen" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="repuesto" type="xs:boolean" />
+          <xs:element minOccurs="0" name="serie" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListarInventarioxAlmacenDto" nillable="true" type="tns:ListarInventarioxAlmacenDto" />
+  <xs:complexType name="ObtenerOrdenServicioxInventarioResult">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q3:QueryResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="idordenserviciotecnico" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ObtenerOrdenServicioxInventarioResult" nillable="true" type="tns:ObtenerOrdenServicioxInventarioResult" />
+  <xs:complexType name="ObtenerProductoInventarioResult">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q4:QueryResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="caja" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="idalmacen" type="xs:int" />
+          <xs:element minOccurs="0" name="idestado" type="xs:int" />
+          <xs:element minOccurs="0" name="idinventario" type="xs:long" />
+          <xs:element minOccurs="0" name="pallet" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ubicacion" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ObtenerProductoInventarioResult" nillable="true" type="tns:ObtenerProductoInventarioResult" />
+  <xs:complexType name="ObtenerInventarioResult">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q5:QueryResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="cantidad" type="xs:int" />
+          <xs:element minOccurs="0" name="codigoproducto" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="descripcionlarga" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="estado" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="fechahoraregistro" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="idalmacen" type="xs:int" />
+          <xs:element minOccurs="0" name="idestado" type="xs:int" />
+          <xs:element minOccurs="0" name="idinventario" type="xs:long" />
+          <xs:element minOccurs="0" name="idproducto" type="xs:int" />
+          <xs:element minOccurs="0" name="imei" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="nombrealmacen" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="serie" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ObtenerInventarioResult" nillable="true" type="tns:ObtenerInventarioResult" />
+  <xs:complexType name="ObtenerAlmacenResult">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q6:QueryResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="codigoalmacen" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="idalmacen" type="xs:int" />
+          <xs:element minOccurs="0" name="idsucursal" type="xs:int" />
+          <xs:element minOccurs="0" name="idtipoalmacen" type="xs:int" />
+          <xs:element minOccurs="0" name="nombrealmacen" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ObtenerAlmacenResult" nillable="true" type="tns:ObtenerAlmacenResult" />
+</xs:schema>

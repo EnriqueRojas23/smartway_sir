@@ -1,0 +1,62 @@
+﻿@model Web.Smartway.Areas.Despacho.Models.ProgramacionModel
+
+@section Styles {
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/jqGrid/ui.jqgrid.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/jqgrid.extension.css")" />
+
+}
+@using (Ajax.BeginForm("BuscarDocumentoModal", "Agendamiento", null, new AjaxOptions { HttpMethod = "POST", InsertionMode = InsertionMode.Replace, UpdateTargetId = "modalcontent", OnComplete = "OnCompleteTransaction(xhr, status)" }, new { @class = "form-horizontal" }))
+{
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Programar Recojo de Guías</h4>
+        <small class="font-bold">Digitar el número de documento para buscarlo en la base de datos de Ventas.</small>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label class="control-label col-md-1">Origen:</label>
+                    <div class="col-md-3">
+                        @Html.DropDownListFor(m => m.searchmodal_idsucursalorigen, (SelectList)ViewData["listasucursal"], "--Todos--", new { @class = "form-control input-sm", @required = "true" })
+                    </div>
+                    <label class="control-label col-md-1">Destino:</label>
+                    <div class="col-md-3">
+                        @Html.DropDownListFor(m => m.searchmodal_idsucursaldestino, (SelectList)ViewData["listasucursal"], "--Todos--", new { @class = "form-control input-sm", @required = "true" })
+                    </div>
+                    <div class="col-md-3">
+                        <button type="button" onclick="buscarGuias()" class="btn btn-block btn-facebook btn-sm"><i class="fa fa-search"></i> Buscar </button>
+                    </div>
+                </div>
+                <div class="hr-line-dashed"></div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label class="col-md-1 control-label">Fecha Recojo:</label>
+                    <div class="col-md-3" id="data_1">
+                        <div class="input-group date" id='dtpFechInicio'>
+                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                            @Html.TextBoxFor(model => model.fecharecojo, "{0:dd/MM/yyyy}", new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <label class="control-label col-md-1">Transportista:</label>
+                    <div class="col-md-3">
+                        @Html.DropDownList("ddltransportista", (SelectList)ViewData["listadotransportista"], "--Todos--", new { @class = "form-control input-sm", @required = "true" })
+                    </div>
+                    <div class="col-md-3">
+                        <button type="button" onclick="Programar()" class="btn btn-block btn-primary btn-sm"><i class="fa fa-bus"></i> Programar </button>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="jqGrid_wrapper col-md-12">
+                <table id="gridguias" 
+                       data-dataurl="@Url.Action("JsonGetListarGuias", "Despacho")"></table>
+                <div id="gridguiaspager"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+    </div>
+
+}

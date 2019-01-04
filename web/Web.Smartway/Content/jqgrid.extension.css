@@ -1,0 +1,51 @@
+﻿.ui-jqgrid .ui-jqgrid-titlebar {
+    height: 27px;
+
+}
+
+.ui-jqgrid .ui-jqgrid-title {
+    margin: 6px 1px 1px 9px!important;
+}
+
+.ui-jqgrid .ui-jqgrid-toppager .ui-pg-div {
+    margin-top: 2px;
+    padding-right: 5px;
+}
+.ui-jqgrid .ui-jqgrid-toppager .ui-pg-div span.ui-icon {
+    margin-top: -2px;
+}
+.ui-jqgrid .ui-jqgrid-pager .ui-pg-div {
+    margin-top: 2px;
+    padding-right: 5px;
+}
+.ui-jqgrid .ui-jqgrid-pager .ui-pg-div span.ui-icon {
+    margin-top: -2px;
+}
+
+/*.ui-jqgrid .ui-jqgrid-htable thead th {
+  color: gray;
+  background-color: white;
+}*/
+
+.ui-jqgrid .ui-jqgrid-bdiv {
+  position: relative; 
+  margin: 0em; 
+  padding:0; 
+
+  /*overflow: auto;*/
+  overflow-x:auto; 
+  overflow-y:auto; 
+  text-align:left;
+}
+
+th.ui-th-column div{
+    white-space:normal !important;
+    height:auto !important;
+    padding:2px;
+}
+
+.ui-jqgrid-pager-custom {
+    height: auto!important;
+    background-color: #ffffff!important;
+    border-top: 0 none!important;
+}

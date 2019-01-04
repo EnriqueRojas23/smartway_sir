@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7C245284-569D-4B41-80E9-57631AD40663}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CommandContracts.Smartway</RootNamespace>
+    <AssemblyName>CommandContracts.Smartway</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FluentValidation, Version=3.1.0.0, Culture=neutral, PublicKeyToken=a82054b837897c66, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\FluentValidation.3.1.0.0\lib\Net40\FluentValidation.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agendamiento\Command\EliminarIncidenciaEvaluacionCommand.cs" />
+    <Compile Include="Agendamiento\Command\InsertarActualizarOrdenServicioCommand.cs" />
+    <Compile Include="Agendamiento\Command\InsertarAccesorioIncidenciaCommand.cs" />
+    <Compile Include="Agendamiento\Command\InsertarIncidenciaSolucionCommand.cs" />
+    <Compile Include="Agendamiento\Command\InsertarIncidenciaEvaluacionCommand.cs" />
+    <Compile Include="Agendamiento\Command\InsertarActualizarIncidenciaCotizacionDetalleCommand.cs" />
+    <Compile Include="Agendamiento\Command\InsertarActualizarIncidenciaCotizacionCommand.cs" />
+    <Compile Include="Agendamiento\Command\InsertarActualizarLibroReclamacionesCommand.cs" />
+    <Compile Include="Agendamiento\Command\InsertarActualizarIncidenciaCommand.cs" />
+    <Compile Include="Agendamiento\Command\Output\InsertarActualizarIncidenciaCotizacionDetalleOutput.cs" />
+    <Compile Include="Agendamiento\Command\Output\InsertarActualizarIncidenciaCotizacionOutput.cs" />
+    <Compile Include="Agendamiento\Command\Output\InsertarIncidenciaEvaluacionOutput.cs" />
+    <Compile Include="Agendamiento\Command\Output\InsertarActualizarOrdenServicioOutput.cs" />
+    <Compile Include="Agendamiento\Command\Output\InsertarIncidenciaSolucionOutput.cs" />
+    <Compile Include="Agendamiento\Command\Output\InsertarActualizarLibroReclamacionesOutput.cs" />
+    <Compile Include="Agendamiento\Command\Output\InsertarActualizarIncidenciaOutput.cs" />
+    <Compile Include="Despacho\Command\InsertarOrdenSalidaDetalleCommand.cs" />
+    <Compile Include="Despacho\Command\InsertarOrdenSalidaCommand.cs" />
+    <Compile Include="Despacho\Command\InsertarActualizarGuiaRemisionCommand.cs" />
+    <Compile Include="Despacho\Command\InsertarActualizarProgramacionDetalleCommand.cs" />
+    <Compile Include="Despacho\Command\InsertarActualizarProgramacionCommand.cs" />
+    <Compile Include="Despacho\Command\Output\InsertarOrdenSalidaDetalleOutput.cs" />
+    <Compile Include="Despacho\Command\Output\InsertarOrdenSalidaOutput.cs" />
+    <Compile Include="Despacho\Command\Output\InsertarActualizarGuiaRemisionOutput.cs" />
+    <Compile Include="Despacho\Command\Output\InsertarActualizarProgramacionDetalleOutput.cs" />
+    <Compile Include="Despacho\Command\Output\InsertarActualizarProgramacionOutput.cs" />
+    <Compile Include="Facturacion\Command\InsertarActualizarDetalleComprobanteClienteCommand.cs" />
+    <Compile Include="Facturacion\Command\InsertarActualizarComprobanteClienteCommand.cs" />
+    <Compile Include="Facturacion\Command\Output\InsertarActualizarDetalleComprobanteClienteOutput.cs" />
+    <Compile Include="Facturacion\Command\Output\InsertarActualizarComprobanteClienteOutput.cs" />
+    <Compile Include="Inventario\Command\InsertarActualizarInventarioCommand.cs" />
+    <Compile Include="Inventario\Command\Output\InsertarActualizarInventarioOutput.cs" />
+    <Compile Include="Mantenimiento\Command\EliminarDiagnosticoxTipoProductoCommand.cs" />
+    <Compile Include="Mantenimiento\Command\EliminarRepuestoxProductoCommand.cs" />
+    <Compile Include="Mantenimiento\Command\InsertarActualizarDiagnosticoxTipoProductoCommand.cs" />
+    <Compile Include="Mantenimiento\Command\InsertarActualizarDiagnosticoCommand.cs" />
+    <Compile Include="Mantenimiento\Command\InsertarActualizarReparacionCommand.cs" />
+    <Compile Include="Mantenimiento\Command\EliminarRepuestoxReparacionCommand.cs" />
+    <Compile Include="Mantenimiento\Command\InsertarActualizarRepuestoxProductoCommand.cs" />
+    <Compile Include="Mantenimiento\Command\InsertarActualizarRepuestoxReparacionCommand.cs" />
+    <Compile Include="Mantenimiento\Command\InsertarActualizarProductoCommand.cs" />
+    <Compile Include="Mantenimiento\Command\InsertarActualizarClienteCommand.cs" />
+    <Compile Include="Mantenimiento\Command\InsertarActualizarPartnerCommand.cs" />
+    <Compile Include="Mantenimiento\Command\InsertarActualizarSucursalCommand.cs" />
+    <Compile Include="Mantenimiento\Command\InsertarActualizarDireccionCommand.cs" />
+    <Compile Include="Mantenimiento\Command\InsertarActualizarGarantiaCommand.cs" />
+    <Compile Include="Mantenimiento\Command\InsertarActualizarValorTablaCommand.cs" />
+    <Compile Include="Mantenimiento\Command\InsertarActualizarZonaCommand.cs" />
+    <Compile Include="Mantenimiento\Command\InsertarActualizarZonaDistritoCommand.cs" />
+    <Compile Include="Mantenimiento\Command\InsertarActualizarFallaCommand.cs" />
+    <Compile Include="Mantenimiento\Command\InsertarActualizaTarifaCommand.cs" />
+    <Compile Include="Mantenimiento\Command\Output\InsertarActualizarDiagnosticoxTipoProductoOutput.cs" />
+    <Compile Include="Mantenimiento\Command\Output\InsertarActualizarDiagnosticoOutput.cs" />
+    <Compile Include="Mantenimiento\Command\Output\InsertarActualizarRepuestoxProductoOutput.cs" />
+    <Compile Include="Mantenimiento\Command\Output\InsertarActualizarRepuestoxReparacionOutput.cs" />
+    <Compile Include="Mantenimiento\Command\Output\InsertarActualizarReparacionOutput.cs" />
+    <Compile Include="Mantenimiento\Command\Output\InsertarActualizarProductoOutput.cs" />
+    <Compile Include="Mantenimiento\Command\Output\InsertarActualizarClienteOutput.cs" />
+    <Compile Include="Mantenimiento\Command\Output\InsertarActualizarPartnerOutput.cs" />
+    <Compile Include="Mantenimiento\Command\Output\InsertarActualizarGarantiaOutput.cs" />
+    <Compile Include="Mantenimiento\Command\Output\InsertarActualizarSucursalOutput.cs" />
+    <Compile Include="Mantenimiento\Command\Output\InsertarActualizarDireccionOutput.cs" />
+    <Compile Include="Mantenimiento\Command\Output\InsertarActualizarFallaOutput.cs" />
+    <Compile Include="Mantenimiento\Command\Output\InsertarActualizarTarifaOutput.cs" />
+    <Compile Include="Mantenimiento\Command\Output\InsertarActualizarValorTablaOutput.cs" />
+    <Compile Include="Mantenimiento\Command\Output\InsertarActualizarZonaDistritoOutput.cs" />
+    <Compile Include="Mantenimiento\Command\Output\InsertarActualizarZonaOutput.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Inventario\Command\InsertarActualizarAlmacenCommand.cs" />
+    <Compile Include="Inventario\Command\Output\InsertarActualizarAlmacenOutput.cs" />
+    <Compile Include="Recepcion\Command\InsertarActualizarDocumentoRecepcionDetalleCommand.cs" />
+    <Compile Include="Recepcion\Command\InsertarActualizarDocumentoRecepcionCommand.cs" />
+    <Compile Include="Recepcion\Command\Output\InsertarActualizarDocumentoRecepcionDetalleOutput.cs" />
+    <Compile Include="Recepcion\Command\Output\InsertarActualizarDocumentoRecepcionOutput.cs" />
+    <Compile Include="Reparacion\Command\InsertarActualizarOrdenTrabajoDetalleCommand.cs" />
+    <Compile Include="Reparacion\Command\InsertarActualizarVentaCotizacionDetalleCommand.cs" />
+    <Compile Include="Reparacion\Command\InsertarActualizarVentaCotizacionCommand.cs" />
+    <Compile Include="Reparacion\Command\InsertarActualizarOrdenTrabajoTiempoCommand.cs" />
+    <Compile Include="Reparacion\Command\InsertarActualizarOrdenTrabajoCommand.cs" />
+    <Compile Include="Reparacion\Command\Output\InsertarActualizarOrdenTrabajoDetalleOutput.cs" />
+    <Compile Include="Reparacion\Command\Output\InsertarActualizarVentaCotizacionDetalleOutput.cs" />
+    <Compile Include="Reparacion\Command\Output\InsertarActualizarVentaCotizacionOutput.cs" />
+    <Compile Include="Reparacion\Command\Output\InsertarActualizarOrdenTrabajoTiempoOutput.cs" />
+    <Compile Include="Reparacion\Command\Output\InsertarActualizarOrdenTrabajoOutput.cs" />
+    <Compile Include="Seguridad\AsignarClientesUsuariosCommand.cs" />
+    <Compile Include="Seguridad\AsignarMenuOpcionRolCommand.cs" />
+    <Compile Include="Seguridad\AsignarRolesUsuariosCommand.cs" />
+    <Compile Include="Seguridad\InsertarModificarPaginaCommand.cs" />
+    <Compile Include="Seguridad\InsertarModificarRolCommand.cs" />
+    <Compile Include="Seguridad\InsertarModificarSistemaCommand.cs" />
+    <Compile Include="Seguridad\InsertarModificarUsuarioCommand.cs" />
+    <Compile Include="Seguridad\Output\AsignarClientesUsuariosOutput.cs" />
+    <Compile Include="Seguridad\Output\AsignarMenuOpcionRolOutput.cs" />
+    <Compile Include="Seguridad\Output\AsignarRolesUsuariosOutput.cs" />
+    <Compile Include="Seguridad\Output\InsertarModificarPaginaOutput.cs" />
+    <Compile Include="Seguridad\Output\InsertarModificarRolOutput.cs" />
+    <Compile Include="Seguridad\Output\InsertarModificarSistemaOutput.cs" />
+    <Compile Include="Seguridad\Output\InsertarModificarUsuarioOutput.cs" />
+    <Compile Include="Seguridad\Output\ResetarPasswordOutput.cs" />
+    <Compile Include="Seguridad\ResetarPasswordCommand.cs" />
+    <Compile Include="Seguridad\Validators\InsertarModificarUsuarioValidator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\common\CommandContracts.Common\CommandContracts.Common.csproj">
+      <Project>{36FC69E7-E42A-4067-8339-F2D24D1C3317}</Project>
+      <Name>CommandContracts.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\common\Componentes.Common\Componentes.Common.csproj">
+      <Project>{4241025f-7510-4f6b-85e0-93faf0def80c}</Project>
+      <Name>Componentes.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

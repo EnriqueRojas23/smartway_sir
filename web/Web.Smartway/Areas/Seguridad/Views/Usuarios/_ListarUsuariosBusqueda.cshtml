@@ -1,0 +1,55 @@
+﻿@model Web.Smartway.Areas.Seguridad.Models.Usuarios.ListarUsuariosModel
+
+
+<form id="frmSearchListado" data-typeform="search" method="post" action="#" class="pull-right custom-search">
+    <div class="input-group" id="adv-search">
+        @Html.TextBoxFor(model => model.SearchDefault, new { @Value = Model.SearchDefault, @class = "form-control input-sm", @placeholder = "Busqueda General" })
+        <div class="input-group-btn" role="group">
+            <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+            <ul class="dropdown-menu dropdown-search">
+
+                <li>
+                    <div class="dropdown-messages-box">
+                        <div class="media-heading">
+                            <span>Busqueda General</span>
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        </div>
+
+
+                        <div class="clearfix"></div>
+                        <div class="media-body">
+
+                            @*<div class="form-group">
+                                @Html.LabelFor(model => model.AliasUsuario)
+                                @Html.TextBoxFor(model => model.AliasUsuario, new { @Value = Model.AliasUsuario, @class = "form-control", @data_ctrlsearch = Web.Smartway.DataAccess.Constantes.Seguridad.Usuario.listadopedido_filtro_aliasusuario })
+                            </div>
+                            <div class="clearfix space-10"></div>*@
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.NombreCompleto)
+                                @Html.TextBoxFor(model => model.NombreCompleto, new { @Value = Model.NombreCompleto, @class = "form-control", @data_ctrlsearch = Web.Smartway.DataAccess.Constantes.Seguridad.Usuario.listadopedido_filtro_nombrecompleto })
+                            </div>
+                            <div class="clearfix space-10"></div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.IdRol)
+                                @Html.DropDownListFor(model => model.IdRol, Model.ListaRoles, "[Todos los Roles]", new { @class = "form-control", @data_ctrlsearch = Web.Smartway.DataAccess.Constantes.Seguridad.Usuario.listadopedido_filtro_rol })
+                            </div>
+                            <div class="clearfix space-10"></div>
+                            <div>
+                                <button id="btnlistarbusquedasecundario" onclick="btnlistarbusquedasecundario_onclick('#SearchDefault');" class="btn btn-sm btn-primary pull-right m-t-n-xs" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+
+
+            <button type="submit" class="btn btn-sm btn-primary">Buscar</button>
+        </div>
+    </div>
+
+    @Html.HiddenFor(model => model.page)
+    @Html.HiddenFor(model => model.rows)
+    @Html.HiddenFor(model => model.sidx)
+    @Html.HiddenFor(model => model.sord)
+</form>

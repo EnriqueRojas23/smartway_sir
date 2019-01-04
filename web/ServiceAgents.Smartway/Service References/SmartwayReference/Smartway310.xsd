@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CommandContracts.Smartway.Despacho" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CommandContracts.Smartway.Despacho" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:50020/Smartway3?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CommandContracts.Common" />
+  <xs:complexType name="InsertarOrdenSalidaDetalleCommand">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q1:Command">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="cantidad" type="xs:int" />
+          <xs:element minOccurs="0" name="fechahoraatencion" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="idordensalida" type="xs:long" />
+          <xs:element minOccurs="0" name="idordensalidadetalle" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="idproducto" type="xs:int" />
+          <xs:element minOccurs="0" name="idusuarioatencion" type="xs:int" />
+          <xs:element minOccurs="0" name="imei" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="mac" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="repuesto" type="xs:boolean" />
+          <xs:element minOccurs="0" name="serie" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarOrdenSalidaDetalleCommand" nillable="true" type="tns:InsertarOrdenSalidaDetalleCommand" />
+  <xs:complexType name="InsertarOrdenSalidaCommand">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q2:Command">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="activo" type="xs:boolean" />
+          <xs:element minOccurs="0" name="fechahoraregistro" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="fechasalida" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="idcliente" type="xs:int" />
+          <xs:element minOccurs="0" name="iddocumentosalida" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="idtiposalida" type="xs:int" />
+          <xs:element minOccurs="0" name="idusuarioregistro" type="xs:int" />
+          <xs:element minOccurs="0" name="numerodocumento" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarOrdenSalidaCommand" nillable="true" type="tns:InsertarOrdenSalidaCommand" />
+  <xs:complexType name="InsertarActualizarGuiaRemisionCommand">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q3:Command">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="__tipooperacion" type="xs:int" />
+          <xs:element minOccurs="0" name="descripcion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="documentoreferencia" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="fechahorarecojo" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="fechahoraregistro" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="idestado" type="xs:int" />
+          <xs:element minOccurs="0" name="idguiaremision" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="idsucursaldestino" type="xs:int" />
+          <xs:element minOccurs="0" name="idsucursalorigen" type="xs:int" />
+          <xs:element minOccurs="0" name="idtipoguiaremision" type="xs:int" />
+          <xs:element minOccurs="0" name="idusuariorecojo" type="xs:int" />
+          <xs:element minOccurs="0" name="idusuarioregistro" type="xs:int" />
+          <xs:element minOccurs="0" name="numeroguia" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarActualizarGuiaRemisionCommand" nillable="true" type="tns:InsertarActualizarGuiaRemisionCommand" />
+  <xs:complexType name="InsertarActualizarProgramacionDetalleCommand">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q4:Command">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="idguia" type="xs:int" />
+          <xs:element minOccurs="0" name="idprogramacion" type="xs:int" />
+          <xs:element minOccurs="0" name="idprogramaciondetalle" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarActualizarProgramacionDetalleCommand" nillable="true" type="tns:InsertarActualizarProgramacionDetalleCommand" />
+  <xs:complexType name="InsertarActualizarProgramacionCommand">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q5:Command">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="__tipooperacion" type="xs:int" />
+          <xs:element minOccurs="0" name="fechahoraregistro" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="fecharecojo" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="idestado" type="xs:int" />
+          <xs:element minOccurs="0" name="idprogramacion" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="idsucursaldestino" type="xs:int" />
+          <xs:element minOccurs="0" name="idsucursalorigen" type="xs:int" />
+          <xs:element minOccurs="0" name="idtransportista" type="xs:int" />
+          <xs:element minOccurs="0" name="idusuarioregistro" type="xs:int" />
+          <xs:element minOccurs="0" name="numero" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarActualizarProgramacionCommand" nillable="true" type="tns:InsertarActualizarProgramacionCommand" />
+</xs:schema>

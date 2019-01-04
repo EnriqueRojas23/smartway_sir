@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CommandContracts.Smartway.Seguridad.Output" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CommandContracts.Smartway.Seguridad.Output" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:50020/Smartway3?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CommandContracts.Common" />
+  <xs:complexType name="AsignarClientesUsuariosOutput">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q1:CommandResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ClientesAsignados" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AsignarClientesUsuariosOutput" nillable="true" type="tns:AsignarClientesUsuariosOutput" />
+  <xs:complexType name="AsignarMenuOpcionRolOutput">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q2:CommandResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="nro_opciones_procesados" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AsignarMenuOpcionRolOutput" nillable="true" type="tns:AsignarMenuOpcionRolOutput" />
+  <xs:complexType name="AsignarRolesUsuariosOutput">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q3:CommandResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="nro_roles_procesados" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AsignarRolesUsuariosOutput" nillable="true" type="tns:AsignarRolesUsuariosOutput" />
+  <xs:complexType name="InsertarModificarPaginaOutput">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q4:CommandResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="pag_int_id" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarModificarPaginaOutput" nillable="true" type="tns:InsertarModificarPaginaOutput" />
+  <xs:complexType name="InsertarModificarRolOutput">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q5:CommandResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="rol_int_id" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarModificarRolOutput" nillable="true" type="tns:InsertarModificarRolOutput" />
+  <xs:complexType name="InsertarModificarSistemaOutput">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q6:CommandResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="sis_int_id" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarModificarSistemaOutput" nillable="true" type="tns:InsertarModificarSistemaOutput" />
+  <xs:complexType name="InsertarModificarUsuarioOutput">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q7:CommandResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="usr_int_id" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarModificarUsuarioOutput" nillable="true" type="tns:InsertarModificarUsuarioOutput" />
+  <xs:complexType name="ResetarPasswordOutput">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q8:CommandResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Correo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Nombres" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PasswordClaro" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResetarPasswordOutput" nillable="true" type="tns:ResetarPasswordOutput" />
+</xs:schema>

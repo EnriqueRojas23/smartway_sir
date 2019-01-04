@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CommandContracts.Smartway.Agendamiento" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CommandContracts.Smartway.Agendamiento" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:50020/Smartway3?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CommandContracts.Common" />
+  <xs:complexType name="EliminarIncidenciaEvaluacionCommand">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q1:Command">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="idincidencia" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EliminarIncidenciaEvaluacionCommand" nillable="true" type="tns:EliminarIncidenciaEvaluacionCommand" />
+  <xs:complexType name="InsertarActualizarOrdenServicioCommand">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q2:Command">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="__tipooperacion" type="xs:int" />
+          <xs:element minOccurs="0" name="activo" type="xs:boolean" />
+          <xs:element minOccurs="0" name="cambioproducto" type="xs:boolean" />
+          <xs:element minOccurs="0" name="cotizado" type="xs:boolean" />
+          <xs:element minOccurs="0" name="delivery" type="xs:boolean" />
+          <xs:element minOccurs="0" name="engarantia" type="xs:boolean" />
+          <xs:element minOccurs="0" name="fechahorapruebacambio" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="fechahoraregistro" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="idcliente" type="xs:int" />
+          <xs:element minOccurs="0" name="iddirecciondelivery" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="iddocumentorecepcion" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="iddocumentosalida" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="idestado" type="xs:int" />
+          <xs:element minOccurs="0" name="idincidencia" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="idinventario" type="xs:long" />
+          <xs:element minOccurs="0" name="idordenserviciotecnico" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="idpartner" type="xs:int" />
+          <xs:element minOccurs="0" name="idproducto" type="xs:int" />
+          <xs:element minOccurs="0" name="idsucursaldestino" type="xs:int" />
+          <xs:element minOccurs="0" name="idsucursalorigen" type="xs:int" />
+          <xs:element minOccurs="0" name="idtipoordenservicio" type="xs:int" />
+          <xs:element minOccurs="0" name="idusuario" type="xs:int" />
+          <xs:element minOccurs="0" name="idusuarioapruebacambio" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="imei" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="mac" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="numeroordenservicio" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="serie" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarActualizarOrdenServicioCommand" nillable="true" type="tns:InsertarActualizarOrdenServicioCommand" />
+  <xs:complexType name="InsertarActualizarAccesorioIncidenciaCommand">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q3:Command">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="idincidencia" type="xs:long" />
+          <xs:element minOccurs="0" name="idsaccesorios" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarActualizarAccesorioIncidenciaCommand" nillable="true" type="tns:InsertarActualizarAccesorioIncidenciaCommand" />
+  <xs:complexType name="InsertarIncidenciaSolucionCommand">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q4:Command">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="clientesatisfecho" type="xs:boolean" />
+          <xs:element minOccurs="0" name="fechahoraregistro" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="idestado" type="xs:int" />
+          <xs:element minOccurs="0" name="idincidencia" type="xs:long" />
+          <xs:element minOccurs="0" name="idincidenciasolucion" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="idpropuesta" type="xs:int" />
+          <xs:element minOccurs="0" name="idusuarioregistro" type="xs:int" />
+          <xs:element minOccurs="0" name="observacion" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarIncidenciaSolucionCommand" nillable="true" type="tns:InsertarIncidenciaSolucionCommand" />
+  <xs:complexType name="InsertarIncidenciaEvaluacionCommand">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q5:Command">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="fechahoraregistro" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="idcondicion" type="xs:int" />
+          <xs:element minOccurs="0" name="idevaluaciongarantia" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="idincidencia" type="xs:long" />
+          <xs:element minOccurs="0" name="idusuarioregistro" type="xs:int" />
+          <xs:element minOccurs="0" name="observacion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="valor" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarIncidenciaEvaluacionCommand" nillable="true" type="tns:InsertarIncidenciaEvaluacionCommand" />
+  <xs:complexType name="InsertarActualizarIncidenciaCotizacionDetalleCommand">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q6:Command">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="costo" type="xs:decimal" />
+          <xs:element minOccurs="0" name="descripcion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="idcotizacion" type="xs:long" />
+          <xs:element minOccurs="0" name="idcotizaciondetalle" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="iddiagnostico" type="xs:int" />
+          <xs:element minOccurs="0" name="idreparacion" type="xs:int" />
+          <xs:element minOccurs="0" name="idrepuesto" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarActualizarIncidenciaCotizacionDetalleCommand" nillable="true" type="tns:InsertarActualizarIncidenciaCotizacionDetalleCommand" />
+  <xs:complexType name="InsertarActualizarIncidenciaCotizacionCommand">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q7:Command">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="delivery" type="xs:boolean" />
+          <xs:element minOccurs="0" name="fechahoraregistro" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="idcotizacion" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="iddirecciondelivery" type="xs:int" />
+          <xs:element minOccurs="0" name="idestado" type="xs:int" />
+          <xs:element minOccurs="0" name="idincidencia" type="xs:long" />
+          <xs:element minOccurs="0" name="idmoneda" type="xs:int" />
+          <xs:element minOccurs="0" name="idsucursalreparacion" type="xs:int" />
+          <xs:element minOccurs="0" name="idusuarioregistro" type="xs:int" />
+          <xs:element minOccurs="0" name="igv" type="xs:decimal" />
+          <xs:element minOccurs="0" name="repararotrolaboratorio" type="xs:boolean" />
+          <xs:element minOccurs="0" name="subtotal" type="xs:decimal" />
+          <xs:element minOccurs="0" name="total" type="xs:decimal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarActualizarIncidenciaCotizacionCommand" nillable="true" type="tns:InsertarActualizarIncidenciaCotizacionCommand" />
+  <xs:complexType name="InsertarActualizarLibroReclamacionesCommand">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q8:Command">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="aceptaregistrodatos" type="xs:boolean" />
+          <xs:element minOccurs="0" name="detalle" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="diasrespuesta" type="xs:int" />
+          <xs:element minOccurs="0" name="escaladoaindecopi" type="xs:boolean" />
+          <xs:element minOccurs="0" name="fechahorarecepcion" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="fechahorareclamo" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="fecharespuesta" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="idcondicionreclamo" type="xs:int" />
+          <xs:element minOccurs="0" name="idestado" type="xs:int" />
+          <xs:element minOccurs="0" name="idincidencia" type="xs:long" />
+          <xs:element minOccurs="0" name="idreclamo" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="idresponsable" type="xs:int" />
+          <xs:element minOccurs="0" name="idsedeindecopi" type="xs:int" />
+          <xs:element minOccurs="0" name="idsucursal" type="xs:int" />
+          <xs:element minOccurs="0" name="idtiporeclamo" type="xs:int" />
+          <xs:element minOccurs="0" name="idusuarioregistro" type="xs:int" />
+          <xs:element minOccurs="0" name="motivo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="numeroreclamacion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="respuesta" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="respuestaaindecopi" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="tipoenviorespuesta" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarActualizarLibroReclamacionesCommand" nillable="true" type="tns:InsertarActualizarLibroReclamacionesCommand" />
+  <xs:complexType name="InsertarActualizarIncidenciaCommand">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q9="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q9:Command">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="__tipooperacion" type="xs:int" />
+          <xs:element minOccurs="0" name="activo" type="xs:boolean" />
+          <xs:element minOccurs="0" name="atendidaxcallcenter" type="xs:boolean" />
+          <xs:element minOccurs="0" name="cantidad" type="xs:int" />
+          <xs:element minOccurs="0" name="descripcion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="descuento" type="xs:decimal" />
+          <xs:element minOccurs="0" name="engarantia" type="xs:boolean" />
+          <xs:element minOccurs="0" name="fechahoracompra" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="fechahoraregistro" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="idcita" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="idcliente" type="xs:int" />
+          <xs:element minOccurs="0" name="iddirecciondelivery" type="xs:int" />
+          <xs:element minOccurs="0" name="iddocumentocompra" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="idestado" type="xs:int" />
+          <xs:element minOccurs="0" name="idetapa" type="xs:int" />
+          <xs:element minOccurs="0" name="idfalla" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="idincidencia" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="idpartner" type="xs:int" />
+          <xs:element minOccurs="0" name="idproducto" type="xs:int" />
+          <xs:element minOccurs="0" name="idrequerimientocliente" type="xs:int" />
+          <xs:element minOccurs="0" name="idsucursal" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="idsucursaldestino" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="idsucursalreparacion" type="xs:int" />
+          <xs:element minOccurs="0" name="idsucursalventa" type="xs:int" />
+          <xs:element minOccurs="0" name="idtipodocumentocompra" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="idtipogarantia" type="xs:int" />
+          <xs:element minOccurs="0" name="idtipoincidencia" type="xs:int" />
+          <xs:element minOccurs="0" name="idtiposolucion" type="xs:int" />
+          <xs:element minOccurs="0" name="idusuarioregistro" type="xs:int" />
+          <xs:element minOccurs="0" name="imei" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="incidenciagarantia" type="xs:boolean" />
+          <xs:element minOccurs="0" name="numeroincidencia" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="partedelantera" nillable="true" type="xs:base64Binary" />
+          <xs:element minOccurs="0" name="partederecha" nillable="true" type="xs:base64Binary" />
+          <xs:element minOccurs="0" name="parteinferior" nillable="true" type="xs:base64Binary" />
+          <xs:element minOccurs="0" name="parteizquierda" nillable="true" type="xs:base64Binary" />
+          <xs:element minOccurs="0" name="parteposterior" nillable="true" type="xs:base64Binary" />
+          <xs:element minOccurs="0" name="partesuperior" nillable="true" type="xs:base64Binary" />
+          <xs:element minOccurs="0" name="periodogarantia" type="xs:int" />
+          <xs:element minOccurs="0" name="requiereevaluacion" type="xs:boolean" />
+          <xs:element minOccurs="0" name="serie" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="total" type="xs:decimal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarActualizarIncidenciaCommand" nillable="true" type="tns:InsertarActualizarIncidenciaCommand" />
+</xs:schema>

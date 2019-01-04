@@ -1,0 +1,191 @@
+﻿@model  Web.Smartway.Areas.Agendamiento.Models.EvaluacionModel
+@{
+    ViewBag.Title = "Seguimiento de Incidencias";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@section Styles
+    {
+
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/jqGrid/ui.jqgrid.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/jqgrid.extension.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/jasny/jasny-bootstrap.min.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/sweetalert/sweetalert.css")" />
+    <link rel="stylesheet" type="text/css" media="screen" href="@Url.Content("~/Content/plugins/touchspin/jquery.bootstrap-touchspin.min.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/chosen/chosen.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Scripts/plugins/MetroJS/release/MetroJs.Full/MetroJs.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/application.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/dataTables/datatables.min.css")" />
+
+}
+@section scripts
+    {
+    <script src="@Url.Content("~/Scripts/jquery.unobtrusive-ajax.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/app/Agendamiento/agendamiento.evaluacion.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/jqGrid/jquery.jqGrid.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/jqGrid/i18n/grid.locale-es.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/datapicker/bootstrap-datepicker.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/jasny/jasny-bootstrap.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/sweetalert/sweetalert.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/touchspin/jquery.bootstrap-touchspin.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/chosen/chosen.jquery.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/MetroJS/release/MetroJs.Full/MetroJs.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/dataTables/datatables.min.js")" type="text/javascript"></script>
+}
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Atención Evaluación</h2>
+        <p>@Model.BuildRoot(@Model.idincidencia) </p>
+    </div>
+    <div class="col-lg-2">
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <form id="frmAtencionEvaluacion" role="form" method="post" class="form-horizontal">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5><i class="fa fa-info-circle"></i>  Análisis de Evaluación de Garantía</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading">
+                                        <i class="fa fa-info-circle"></i>  Garantía Lógica: Análisis
+                                    </div>
+                                    <div id="divCondicionesN" class="panel-body">
+                                        <table class="table table-striped ">
+                                            <thead>
+                                                <tr>
+                                                    <th>Tipo</th>
+                                                    <th>Detalle</th>
+                                                    <th>Periodo</th>
+                                                    <th>  </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+
+                                                @for (int i = 0; i < Model.ListaGarantias.Count; i++)
+                                                {
+
+                                                    <tr>
+                                                        <td>
+                                                            @Model.ListaGarantias[i].tipogarantia
+                                                        </td>
+                                                        <td>
+                                                            @Html.HiddenFor(x => x.ListaGarantias[i].idgarantia)
+                                                            @Model.ListaGarantias[i].descripcion
+                                                        </td>
+                                                        <td>
+                                                            @Model.ListaGarantias[i].periodo
+                                                        </td>
+                                                        <td>
+                                                            @if (@Model.ListaGarantias[i].resultado == true)
+                                                            {
+                                                                <div class="col-md-6"> @Html.RadioButton("chkCondicionAutomatica" + @Model.ListaGarantias[i].tipogarantia, "true", true, new { @disabled = "true" }) Si</div>
+                                                                <div class="col-md-6"> @Html.RadioButton("chkCondicionAutomatica" + @Model.ListaGarantias[i].tipogarantia, "false", false, new { @disabled = "true" }) No</div>
+                                                            }
+                                                            else
+                                                            {
+                                                                <div class="col-md-6"> @Html.RadioButton("chkCondicionAutomatica" + @Model.ListaGarantias[i].tipogarantia, "true", false, new { @disabled = "true" }) Si</div>
+                                                                <div class="col-md-6"> @Html.RadioButton("chkCondicionAutomatica" + @Model.ListaGarantias[i].tipogarantia, "false", true, new { @disabled = "true" }) No</div>
+                                                            }
+
+                                                        </td>
+                                                    </tr>
+
+                                                }
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading">
+                                        <i class="fa fa-edit"></i> Datos del Producto: Control Manual
+                                    </div>
+                                    <div class=" alert alert-danger">
+                                        <p> <i class="fa fa-info-circle"></i> Las opciones están pre-seleccionadas, debe validar que la información sea correcta.</p>
+                                        @*<p> <i class="fa fa-info-circle"></i> Al generar una ODS, el sistema creará una guia de ingreso al almacén de devolución de la tienda.</p>*@
+                                    </div>
+                                    <div id="divCondicionesS" class="panel-body">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>Tipo</th>
+                                                    <th>Detalle</th>
+                                                    <th>  </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @for (int i = 0; i < Model.ListaCondiciones.Count; i++)
+                                                {
+
+                                                    <tr>
+                                                        <td>
+                                                            @Model.ListaCondiciones[i].tipocondicion
+                                                        </td>
+                                                        <td>
+                                                            @Html.HiddenFor(x => x.ListaCondiciones[i].idcondicion)
+                                                            @Model.ListaCondiciones[i].descripcion
+                                                        </td>
+                                                        <td>
+
+                                                            @if (Model.idetapa > 2)
+                                                            {
+                                                                var dic = new Dictionary<string, string>() { { "checked", "" } };
+                                                                <div class="col-md-6"> @Html.RadioButtonFor(_ => _.ListaCondiciones[i].activo, true, new { @disabled = true })  Si</div>
+                                                                <div class="col-md-6"> @Html.RadioButtonFor(_ => _.ListaCondiciones[i].activo, false, new { @disabled = true }) No</div>
+                                                            }
+                                                            else
+                                                            {
+                                                                var dic = new Dictionary<string, string>() { { "checked", "" } };
+                                                                <div class="col-md-6"> @Html.RadioButtonFor(_ => _.ListaCondiciones[i].activo, true)  Si</div>
+                                                                <div class="col-md-6"> @Html.RadioButtonFor(_ => _.ListaCondiciones[i].activo, false) No</div>
+                                                            }
+                                                        </td>
+                                                    </tr>
+
+                                                }
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <div class="form-group">
+                                            <label class="col-md-1 control-label">Observación:</label>
+                                            <div class="col-md-12">@Html.TextAreaFor(model => model.observacion, new { @class = "form-control" })</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                @if (Model.idetapa < 2)
+                                {
+                                    <div class="form-group">
+                                        <div class="col-md-12"><button type="button" id='btnRealizarEvaluacion' data-url="@Url.Action("realizarEvaluacion", "Incidencia")" class="btn btn-line btn-primary"><i class="fa fa-thumbs-o-up"></i> Realizar Evaluación </button></div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                @Html.Partial("_InformacionIncidencia", Model)
+            </div>
+        </div>
+        @Html.HiddenFor(x => x.idrequerimientocliente)
+        @Html.HiddenFor(x => x.idtipogarantia)
+        @Html.HiddenFor(x => x.Evaluacion)
+        @Html.HiddenFor(model => model.idincidencia)
+    </form>
+</div>
