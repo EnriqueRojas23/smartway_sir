@@ -1,0 +1,7 @@
+H:\RIA\Smartway3\src\app\Domain.Smartway\bin\Release\Domain.Smartway.dll
+H:\RIA\Smartway3\src\app\Domain.Smartway\bin\Release\Domain.Smartway.pdb
+H:\RIA\Smartway3\src\app\Domain.Smartway\bin\Release\Domain.Common.dll
+H:\RIA\Smartway3\src\app\Domain.Smartway\bin\Release\Domain.Common.pdb
+H:\RIA\Smartway3\src\app\Domain.Smartway\obj\Release\Domain.Smartway.csprojResolveAssemblyReference.cache
+H:\RIA\Smartway3\src\app\Domain.Smartway\obj\Release\Domain.Smartway.dll
+H:\RIA\Smartway3\src\app\Domain.Smartway\obj\Release\Domain.Smartway.pdb

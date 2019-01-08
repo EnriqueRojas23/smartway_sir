@@ -1,0 +1,602 @@
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\Web.Coolbox.dll.config
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\Web.Coolbox.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\Web.Coolbox.pdb
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\Antlr3.Runtime.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\AutoMapper.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\Bootstrapper.Web.Common.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\CommandContracts.Common.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\CommandContracts.Coolbox.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\Componentes.Common.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\EntityFramework.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\Infraestructure.Common.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\LinqToExcel.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\log4net.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\Microsoft.Web.Infrastructure.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\Newtonsoft.Json.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\QueryContracts.Common.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\QueryContracts.Coolbox.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\Remotion.Data.Linq.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\Remotion.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\Remotion.Interfaces.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\Seguridad.Common.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\ServiceAgents.Common.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\ServiceAgents.Coolbox.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\System.Web.Mvc.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\System.Web.Optimization.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\System.Web.Providers.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\System.Web.Razor.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\System.Web.WebPages.Deployment.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\System.Web.WebPages.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\System.Web.WebPages.Razor.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\Web.Common.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\WebGrease.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\FluentValidation.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\StructureMap.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\FluentValidation.Mvc.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\NPOI.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\ICSharpCode.SharpZipLib.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\CommandContracts.Coolbox.pdb
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\QueryContracts.Coolbox.pdb
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\Bootstrapper.Web.Common.pdb
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\CommandContracts.Common.pdb
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\Componentes.Common.pdb
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\Infraestructure.Common.pdb
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\QueryContracts.Common.pdb
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\Seguridad.Common.pdb
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\ServiceAgents.Common.pdb
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\Web.Common.pdb
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\ServiceAgents.Coolbox.pdb
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\LinqToExcel.xml
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\log4net.xml
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\EntityFramework.xml
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\Newtonsoft.Json.xml
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\System.Web.Mvc.xml
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\System.Web.Razor.xml
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\System.Web.WebPages.xml
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\System.Web.WebPages.Deployment.xml
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\System.Web.WebPages.Razor.xml
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\FluentValidation.pdb
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\FluentValidation.xml
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\StructureMap.pdb
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\StructureMap.xml
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\FluentValidation.Mvc.pdb
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\NPOI.xml
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\es\EntityFramework.resources.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\es\System.Web.Mvc.resources.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\es\System.Web.Optimization.resources.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\es\System.Web.Providers.resources.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\es\System.Web.Razor.resources.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\es\System.Web.WebPages.resources.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\bin\es\FluentValidation.resources.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\obj\Debug\Web.Coolbox.csprojResolveAssemblyReference.cache
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\obj\Debug\Web.Coolbox.dll
+D:\Proyectos\Ria\Coolbox\src\web\Web.Coolbox\obj\Debug\Web.Coolbox.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\Web.Coolbox.dll.config
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\Web.Coolbox.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\Web.Coolbox.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\Antlr3.Runtime.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\AutoMapper.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\Bootstrapper.Web.Common.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\CommandContracts.Common.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\CommandContracts.Coolbox.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\Componentes.Common.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\EntityFramework.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\Infraestructure.Common.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\LinqToExcel.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\log4net.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\Microsoft.Web.Infrastructure.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\Newtonsoft.Json.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\QueryContracts.Common.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\QueryContracts.Coolbox.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\Remotion.Data.Linq.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\Remotion.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\Remotion.Interfaces.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\Seguridad.Common.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\ServiceAgents.Common.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\ServiceAgents.Coolbox.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\System.Net.Http.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\System.Net.Http.Formatting.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\System.Net.Http.WebRequest.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\System.Web.Http.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\System.Web.Http.WebHost.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\System.Web.Mvc.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\System.Web.Optimization.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\System.Web.Providers.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\System.Web.Razor.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\System.Web.WebPages.Deployment.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\System.Web.WebPages.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\System.Web.WebPages.Razor.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\Web.Common.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\WebGrease.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\FluentValidation.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\StructureMap.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\FluentValidation.Mvc.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\NPOI.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\ICSharpCode.SharpZipLib.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\CommandContracts.Coolbox.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\QueryContracts.Coolbox.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\Bootstrapper.Web.Common.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\CommandContracts.Common.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\Componentes.Common.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\Infraestructure.Common.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\QueryContracts.Common.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\Seguridad.Common.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\ServiceAgents.Common.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\Web.Common.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\ServiceAgents.Coolbox.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\LinqToExcel.xml
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\log4net.xml
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\EntityFramework.xml
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\Newtonsoft.Json.xml
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\System.Net.Http.xml
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\System.Net.Http.Formatting.xml
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\System.Net.Http.WebRequest.xml
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\System.Web.Http.xml
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\System.Web.Http.WebHost.xml
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\System.Web.Mvc.xml
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\System.Web.Razor.xml
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\System.Web.WebPages.xml
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\System.Web.WebPages.Deployment.xml
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\System.Web.WebPages.Razor.xml
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\FluentValidation.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\FluentValidation.xml
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\StructureMap.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\StructureMap.xml
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\FluentValidation.Mvc.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\NPOI.xml
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\es\EntityFramework.resources.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\es\System.Net.Http.resources.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\es\System.Net.Http.Formatting.resources.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\es\System.Net.Http.WebRequest.resources.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\es\System.Web.Http.resources.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\es\System.Web.Http.WebHost.resources.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\es\System.Web.Mvc.resources.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\es\System.Web.Optimization.resources.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\es\System.Web.Providers.resources.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\es\System.Web.Razor.resources.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\es\System.Web.WebPages.resources.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\es\System.Web.WebPages.Deployment.resources.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\es\System.Web.WebPages.Razor.resources.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\bin\es\FluentValidation.resources.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\obj\Debug\Web.Coolbox.csprojResolveAssemblyReference.cache
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\obj\Debug\Web.Coolbox.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\web\Web.Coolbox\obj\Debug\Web.Coolbox.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\Web.Coolbox.dll.config
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\Web.Coolbox.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\Web.Coolbox.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\Antlr3.Runtime.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\AutoMapper.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\Bootstrapper.Web.Common.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\CommandContracts.Common.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\CommandContracts.Coolbox.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\Componentes.Common.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\EntityFramework.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\Infraestructure.Common.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\LinqToExcel.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\log4net.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\Microsoft.ReportViewer.Common.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\Microsoft.ReportViewer.WebForms.DLL
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\Microsoft.Web.Infrastructure.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\MvcReportViewer.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\Newtonsoft.Json.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\QueryContracts.Common.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\QueryContracts.Coolbox.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\Remotion.Data.Linq.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\Remotion.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\Remotion.Interfaces.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\Seguridad.Common.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\ServiceAgents.Common.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\ServiceAgents.Coolbox.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\System.Net.Http.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\System.Net.Http.Formatting.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\System.Net.Http.WebRequest.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\System.Web.Http.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\System.Web.Http.WebHost.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\System.Web.Mvc.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\System.Web.Optimization.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\System.Web.Providers.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\System.Web.Razor.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\System.Web.WebPages.Deployment.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\System.Web.WebPages.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\System.Web.WebPages.Razor.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\Web.Common.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\WebGrease.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\FluentValidation.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\StructureMap.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\NPOI.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\ICSharpCode.SharpZipLib.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\CommandContracts.Coolbox.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\QueryContracts.Coolbox.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\Bootstrapper.Web.Common.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\CommandContracts.Common.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\Componentes.Common.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\Infraestructure.Common.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\QueryContracts.Common.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\Seguridad.Common.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\ServiceAgents.Common.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\Web.Common.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\ServiceAgents.Coolbox.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\LinqToExcel.xml
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\log4net.xml
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\System.Web.Mvc.xml
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\EntityFramework.xml
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\Newtonsoft.Json.xml
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\System.Net.Http.xml
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\System.Net.Http.Formatting.xml
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\System.Net.Http.WebRequest.xml
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\System.Web.Http.xml
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\System.Web.Http.WebHost.xml
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\System.Web.Razor.xml
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\System.Web.WebPages.xml
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\System.Web.WebPages.Deployment.xml
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\System.Web.WebPages.Razor.xml
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\FluentValidation.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\FluentValidation.xml
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\StructureMap.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\StructureMap.xml
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\NPOI.xml
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\es\System.Web.Mvc.resources.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\es\EntityFramework.resources.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\es\System.Net.Http.resources.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\es\System.Net.Http.Formatting.resources.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\es\System.Net.Http.WebRequest.resources.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\es\System.Web.Http.resources.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\es\System.Web.Http.WebHost.resources.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\es\System.Web.Optimization.resources.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\es\System.Web.Providers.resources.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\es\System.Web.Razor.resources.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\es\System.Web.WebPages.resources.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\es\System.Web.WebPages.Deployment.resources.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\es\System.Web.WebPages.Razor.resources.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\bin\es\FluentValidation.resources.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\obj\Debug\Web.Coolbox.csprojResolveAssemblyReference.cache
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\obj\Debug\Web.Coolbox.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\web\Web.Coolbox\obj\Debug\Web.Coolbox.pdb
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\Web.Coolbox.dll.config
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\Web.Coolbox.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\Web.Coolbox.pdb
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\Antlr3.Runtime.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\AutoMapper.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\Bootstrapper.Web.Common.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\CommandContracts.Common.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\CommandContracts.Coolbox.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\Componentes.Common.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\EntityFramework.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\Infraestructure.Common.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\LinqToExcel.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\log4net.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\Microsoft.ReportViewer.Common.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\Microsoft.ReportViewer.WebForms.DLL
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\Microsoft.Web.Infrastructure.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\MvcReportViewer.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\Newtonsoft.Json.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\QueryContracts.Common.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\QueryContracts.Coolbox.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\Remotion.Data.Linq.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\Remotion.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\Remotion.Interfaces.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\Seguridad.Common.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\ServiceAgents.Common.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\ServiceAgents.Coolbox.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\System.Net.Http.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\System.Net.Http.Formatting.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\System.Net.Http.WebRequest.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\System.Web.Http.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\System.Web.Http.WebHost.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\System.Web.Mvc.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\System.Web.Optimization.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\System.Web.Providers.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\System.Web.Razor.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\System.Web.WebPages.Deployment.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\System.Web.WebPages.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\System.Web.WebPages.Razor.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\Web.Common.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\WebGrease.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\FluentValidation.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\StructureMap.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\NPOI.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\ICSharpCode.SharpZipLib.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\CommandContracts.Coolbox.pdb
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\QueryContracts.Coolbox.pdb
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\Bootstrapper.Web.Common.pdb
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\CommandContracts.Common.pdb
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\Componentes.Common.pdb
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\Infraestructure.Common.pdb
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\QueryContracts.Common.pdb
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\Seguridad.Common.pdb
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\ServiceAgents.Common.pdb
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\Web.Common.pdb
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\ServiceAgents.Coolbox.pdb
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\LinqToExcel.xml
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\log4net.xml
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\System.Web.Mvc.xml
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\EntityFramework.xml
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\Newtonsoft.Json.xml
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\System.Net.Http.xml
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\System.Net.Http.Formatting.xml
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\System.Net.Http.WebRequest.xml
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\System.Web.Http.xml
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\System.Web.Http.WebHost.xml
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\System.Web.Razor.xml
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\System.Web.WebPages.xml
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\System.Web.WebPages.Deployment.xml
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\System.Web.WebPages.Razor.xml
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\FluentValidation.pdb
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\FluentValidation.xml
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\StructureMap.pdb
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\StructureMap.xml
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\NPOI.xml
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\es\System.Web.Mvc.resources.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\es\EntityFramework.resources.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\es\System.Net.Http.resources.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\es\System.Net.Http.Formatting.resources.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\es\System.Net.Http.WebRequest.resources.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\es\System.Web.Http.resources.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\es\System.Web.Http.WebHost.resources.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\es\System.Web.Optimization.resources.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\es\System.Web.Providers.resources.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\es\System.Web.Razor.resources.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\es\System.Web.WebPages.resources.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\es\System.Web.WebPages.Deployment.resources.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\es\System.Web.WebPages.Razor.resources.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\bin\es\FluentValidation.resources.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\obj\Debug\Web.Coolbox.csprojResolveAssemblyReference.cache
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\obj\Debug\Web.Coolbox.dll
+H:\RIA\RASH\CIC\0609\src\web\Web.Coolbox\obj\Debug\Web.Coolbox.pdb
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\Web.Coolbox.dll.config
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\Web.Coolbox.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\Web.Coolbox.pdb
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\Antlr3.Runtime.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\AutoMapper.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\Bootstrapper.Web.Common.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\CommandContracts.Common.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\CommandContracts.Coolbox.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\Componentes.Common.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\EntityFramework.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\Infraestructure.Common.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\LinqToExcel.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\log4net.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\Microsoft.ReportViewer.Common.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\Microsoft.ReportViewer.WebForms.DLL
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\Microsoft.Web.Infrastructure.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\MvcReportViewer.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\QueryContracts.Common.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\QueryContracts.Coolbox.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\QueryContracts.Terminal.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\Remotion.Data.Linq.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\Remotion.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\Remotion.Interfaces.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\Seguridad.Common.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\ServiceAgents.Common.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\ServiceAgents.Coolbox.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\ServiceAgents.Terminal.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\System.Net.Http.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\System.Net.Http.Formatting.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\System.Net.Http.WebRequest.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\System.Web.Http.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\System.Web.Http.WebHost.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\System.Web.Mvc.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\System.Web.Optimization.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\System.Web.Providers.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\System.Web.Razor.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\System.Web.WebPages.Deployment.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\System.Web.WebPages.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\System.Web.WebPages.Razor.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\Web.Common.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\WebGrease.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\FluentValidation.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\StructureMap.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\NPOI.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\Newtonsoft.Json.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\ICSharpCode.SharpZipLib.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\CommandContracts.Coolbox.pdb
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\QueryContracts.Coolbox.pdb
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\QueryContracts.Terminal.pdb
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\Bootstrapper.Web.Common.pdb
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\CommandContracts.Common.pdb
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\Componentes.Common.pdb
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\Infraestructure.Common.pdb
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\QueryContracts.Common.pdb
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\Seguridad.Common.pdb
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\ServiceAgents.Common.pdb
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\Web.Common.pdb
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\ServiceAgents.Coolbox.pdb
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\ServiceAgents.Terminal.pdb
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\LinqToExcel.xml
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\log4net.xml
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\System.Web.Mvc.xml
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\EntityFramework.xml
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\System.Net.Http.xml
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\System.Net.Http.Formatting.xml
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\System.Net.Http.WebRequest.xml
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\System.Web.Http.xml
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\System.Web.Http.WebHost.xml
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\System.Web.Razor.xml
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\System.Web.WebPages.xml
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\System.Web.WebPages.Deployment.xml
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\System.Web.WebPages.Razor.xml
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\FluentValidation.pdb
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\FluentValidation.xml
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\StructureMap.pdb
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\StructureMap.xml
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\NPOI.xml
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\es\System.Web.Mvc.resources.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\es\EntityFramework.resources.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\es\System.Net.Http.resources.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\es\System.Net.Http.Formatting.resources.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\es\System.Net.Http.WebRequest.resources.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\es\System.Web.Http.resources.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\es\System.Web.Http.WebHost.resources.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\es\System.Web.Optimization.resources.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\es\System.Web.Providers.resources.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\es\System.Web.Razor.resources.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\es\System.Web.WebPages.resources.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\es\System.Web.WebPages.Deployment.resources.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\es\System.Web.WebPages.Razor.resources.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\bin\es\FluentValidation.resources.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\obj\Debug\Web.Coolbox.csprojResolveAssemblyReference.cache
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\obj\Debug\Web.Coolbox.dll
+H:\RIA\RASH\CIC2\CIC2\src\web\Web.Coolbox\obj\Debug\Web.Coolbox.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\Web.Coolbox.dll.config
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\Web.Coolbox.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\Web.Coolbox.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\Antlr3.Runtime.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\AutoMapper.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\Bootstrapper.Web.Common.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\CommandContracts.Common.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\CommandContracts.Coolbox.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\Componentes.Common.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\EntityFramework.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\Infraestructure.Common.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\LinqToExcel.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\log4net.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\Microsoft.ReportViewer.Common.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\Microsoft.ReportViewer.WebForms.DLL
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\MvcReportViewer.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\QueryContracts.Common.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\QueryContracts.Coolbox.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\QueryContracts.Terminal.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\Remotion.Data.Linq.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\Remotion.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\Remotion.Interfaces.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\Seguridad.Common.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\ServiceAgents.Common.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\ServiceAgents.Coolbox.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\ServiceAgents.Terminal.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\System.Web.Optimization.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\System.Web.Providers.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\System.Web.Razor.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\System.Web.WebPages.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\System.Web.WebPages.Razor.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\Web.Common.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\WebGrease.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\FluentValidation.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\StructureMap.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\NPOI.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\Newtonsoft.Json.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\ICSharpCode.SharpZipLib.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\CommandContracts.Coolbox.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\QueryContracts.Coolbox.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\QueryContracts.Terminal.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\Bootstrapper.Web.Common.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\CommandContracts.Common.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\Componentes.Common.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\Infraestructure.Common.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\QueryContracts.Common.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\Seguridad.Common.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\ServiceAgents.Common.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\Web.Common.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\ServiceAgents.Coolbox.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\ServiceAgents.Terminal.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\LinqToExcel.xml
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\log4net.xml
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\EntityFramework.xml
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\System.Web.Razor.xml
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\System.Web.WebPages.xml
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\System.Web.WebPages.Razor.xml
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\FluentValidation.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\FluentValidation.xml
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\StructureMap.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\StructureMap.xml
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\NPOI.xml
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\es\EntityFramework.resources.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\es\System.Web.Optimization.resources.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\es\System.Web.Providers.resources.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\es\System.Web.Razor.resources.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\es\System.Web.WebPages.resources.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\bin\es\FluentValidation.resources.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\obj\Debug\Web.Coolbox.csprojResolveAssemblyReference.cache
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\obj\Debug\Web.Coolbox.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\web\Web.Coolbox\obj\Debug\Web.Coolbox.pdb
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\Web.Coolbox.dll.config
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\Web.Coolbox.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\Web.Coolbox.pdb
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\Antlr3.Runtime.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\AutoMapper.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\Bootstrapper.Web.Common.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\CommandContracts.Common.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\CommandContracts.Coolbox.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\Componentes.Common.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\EntityFramework.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\Infraestructure.Common.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\log4net.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\Microsoft.ReportViewer.Common.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\Microsoft.ReportViewer.WebForms.DLL
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\Microsoft.Web.Infrastructure.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\MvcReportViewer.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\QueryContracts.Common.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\QueryContracts.Coolbox.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\Remotion.Data.Linq.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\Remotion.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\Remotion.Interfaces.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\Seguridad.Common.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\ServiceAgents.Common.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\ServiceAgents.Coolbox.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\System.Web.Optimization.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\System.Web.Providers.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\System.Web.Razor.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\System.Web.WebPages.Deployment.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\System.Web.WebPages.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\System.Web.WebPages.Razor.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\Web.Common.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\WebGrease.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\FluentValidation.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\StructureMap.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\NPOI.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\Newtonsoft.Json.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\ICSharpCode.SharpZipLib.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\CommandContracts.Coolbox.pdb
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\QueryContracts.Coolbox.pdb
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\Bootstrapper.Web.Common.pdb
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\CommandContracts.Common.pdb
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\Componentes.Common.pdb
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\Infraestructure.Common.pdb
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\QueryContracts.Common.pdb
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\Seguridad.Common.pdb
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\ServiceAgents.Common.pdb
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\Web.Common.pdb
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\ServiceAgents.Coolbox.pdb
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\log4net.xml
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\EntityFramework.xml
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\System.Web.Razor.xml
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\System.Web.WebPages.xml
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\System.Web.WebPages.Deployment.xml
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\System.Web.WebPages.Razor.xml
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\FluentValidation.pdb
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\FluentValidation.xml
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\StructureMap.pdb
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\StructureMap.xml
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\NPOI.xml
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\es\EntityFramework.resources.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\es\System.Web.Optimization.resources.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\es\System.Web.Providers.resources.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\es\System.Web.Razor.resources.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\es\System.Web.WebPages.resources.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\es\System.Web.WebPages.Deployment.resources.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\es\System.Web.WebPages.Razor.resources.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\bin\es\FluentValidation.resources.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\obj\Debug\Web.Coolbox.csprojResolveAssemblyReference.cache
+H:\RIA\Smartway\src\web\Web.Coolbox\obj\Debug\Web.Coolbox.dll
+H:\RIA\Smartway\src\web\Web.Coolbox\obj\Debug\Web.Coolbox.pdb
+H:\RIA\Smartway3\src\web\Web.Coolbox\obj\Debug\Web.Coolbox.csprojResolveAssemblyReference.cache
+H:\RIA\Smartway3\src\web\Web.Coolbox\obj\Debug\Web.Coolbox.dll
+H:\RIA\Smartway3\src\web\Web.Coolbox\obj\Debug\Web.Coolbox.pdb

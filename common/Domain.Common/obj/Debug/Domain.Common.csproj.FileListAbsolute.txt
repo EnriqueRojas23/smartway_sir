@@ -1,0 +1,44 @@
+D:\Proyectos\Ria\Coolbox\src\common\Domain.Common\bin\Debug\Domain.Common.dll
+D:\Proyectos\Ria\Coolbox\src\common\Domain.Common\bin\Debug\Domain.Common.pdb
+D:\Proyectos\Ria\Coolbox\src\common\Domain.Common\obj\Debug\Domain.Common.dll
+D:\Proyectos\Ria\Coolbox\src\common\Domain.Common\obj\Debug\Domain.Common.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\common\Domain.Common\bin\Debug\Domain.Common.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\common\Domain.Common\bin\Debug\Domain.Common.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\common\Domain.Common\obj\Debug\Domain.Common.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\common\Domain.Common\obj\Debug\Domain.Common.pdb
+H:\RIA\RASH\CIC\0609\src\common\Domain.Common\bin\Debug\Domain.Common.dll
+H:\RIA\RASH\CIC\0609\src\common\Domain.Common\bin\Debug\Domain.Common.pdb
+H:\RIA\RASH\CIC\0609\src\common\Domain.Common\obj\Debug\Domain.Common.csprojResolveAssemblyReference.cache
+H:\RIA\RASH\CIC\0609\src\common\Domain.Common\obj\Debug\Domain.Common.dll
+H:\RIA\RASH\CIC\0609\src\common\Domain.Common\obj\Debug\Domain.Common.pdb
+H:\RIA\RASH\CIC2\CIC2\src\common\Domain.Common\bin\Debug\Domain.Common.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\Domain.Common\bin\Debug\Domain.Common.pdb
+H:\RIA\RASH\CIC2\CIC2\src\common\Domain.Common\obj\Debug\Domain.Common.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\Domain.Common\obj\Debug\Domain.Common.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Domain.Common\bin\Debug\Domain.Common.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Domain.Common\bin\Debug\Domain.Common.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Domain.Common\obj\Debug\Domain.Common.csprojResolveAssemblyReference.cache
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Domain.Common\obj\Debug\Domain.Common.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Domain.Common\obj\Debug\Domain.Common.pdb
+H:\RIA\Smartway3\src\common\Domain.Common\bin\Debug\Domain.Common.dll
+H:\RIA\Smartway3\src\common\Domain.Common\bin\Debug\Domain.Common.pdb
+H:\RIA\Smartway3\src\common\Domain.Common\obj\Debug\Domain.Common.csprojResolveAssemblyReference.cache
+H:\RIA\Smartway3\src\common\Domain.Common\obj\Debug\Domain.Common.dll
+H:\RIA\Smartway3\src\common\Domain.Common\obj\Debug\Domain.Common.pdb
+D:\Ria\Smartway\Smartway3\src\common\Domain.Common\bin\Debug\Domain.Common.dll
+D:\Ria\Smartway\Smartway3\src\common\Domain.Common\bin\Debug\Domain.Common.pdb
+D:\Ria\Smartway\Smartway3\src\common\Domain.Common\obj\Debug\Domain.Common.csproj.CoreCompileInputs.cache
+D:\Ria\Smartway\Smartway3\src\common\Domain.Common\obj\Debug\Domain.Common.dll
+D:\Ria\Smartway\Smartway3\src\common\Domain.Common\obj\Debug\Domain.Common.pdb
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Domain.Common\bin\Debug\Domain.Common.dll
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Domain.Common\bin\Debug\Domain.Common.pdb
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Domain.Common\obj\Debug\Domain.Common.csprojAssemblyReference.cache
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Domain.Common\obj\Debug\Domain.Common.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Domain.Common\obj\Debug\Domain.Common.dll
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Domain.Common\obj\Debug\Domain.Common.pdb
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Domain.Common\bin\Debug\Domain.Common.dll
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Domain.Common\bin\Debug\Domain.Common.pdb
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Domain.Common\obj\Debug\Domain.Common.csprojAssemblyReference.cache
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Domain.Common\obj\Debug\Domain.Common.csproj.CoreCompileInputs.cache
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Domain.Common\obj\Debug\Domain.Common.dll
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Domain.Common\obj\Debug\Domain.Common.pdb

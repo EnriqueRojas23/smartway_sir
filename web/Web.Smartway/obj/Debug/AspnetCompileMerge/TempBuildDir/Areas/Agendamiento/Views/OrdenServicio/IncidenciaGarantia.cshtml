@@ -1,0 +1,352 @@
+﻿@model Web.Smartway.Areas.Agendamiento.Models.IncidenciaModel
+@{
+    ViewBag.Title = "Incidencia Garantia";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles
+{
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/jqGrid/ui.jqgrid.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/jqgrid.extension.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/datapicker/datepicker3.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/jasny/jasny-bootstrap.min.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/sweetalert/sweetalert.css")" />
+    <link rel="stylesheet" type="text/css" media="screen" href="@Url.Content("~/Content/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css")" />
+    <link rel="stylesheet" type="text/css" media="screen" href="@Url.Content("~/Content/plugins/touchspin/jquery.bootstrap-touchspin.min.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/dataTables/datatables.min.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/chosen/chosen.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/dualListBox/bootstrap-duallistbox.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/ladda/ladda-themeless.min.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/datatables-checkboxes/dataTables.checkboxes.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Scripts/plugins/MetroJS/release/MetroJs.Full/MetroJs.css")" />
+}
+@section scripts
+{
+    <script src="@Url.Content("~/Scripts/jquery.unobtrusive-ajax.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/app/Agendamiento/agendamiento.registro.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/jqGrid/jquery.jqGrid.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/jqGrid/i18n/grid.locale-es.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/datapicker/bootstrap-datepicker.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/jasny/jasny-bootstrap.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/sweetalert/sweetalert.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/touchspin/jquery.bootstrap-touchspin.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/dataTables/datatables.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/chosen/chosen.jquery.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.numeric.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/datatables-checkboxes/dataTables.checkboxes.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/messages_es_PE.js")" type="text/javascript"></script>
+
+}
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Registro de Incidencia con Reclamo de Garantía </h2>
+        <p>@Model.BuildRoot(@Model.idincidencia) </p> 
+    </div>
+    <div class="col-lg-2">
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+
+    @using (Ajax.BeginForm("RegistrarNuevaIncidencia", "Agendamiento", new { area = "Agendamiento" }, new AjaxOptions { HttpMethod = "POST", OnComplete = "OnCompleteTransaction_RegistrarIncidencia(xhr, status)" }, new { @role = "form", @id = "frmRegistrarIncidencia", @class = "form-horizontal" }))
+    {
+
+        if (Model.idincidencia.HasValue)
+        {
+         <div class="row ">
+            <div class="col-lg-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5><i class="fa fa-info-circle"></i> Datos Generales</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="form-horizontal">
+                            <div class="form-group">
+                                <div class="col-md-2">
+                                    @if (Model.idincidencia.HasValue)
+                                    {
+                                        <label class="control-label">Nro de Incidencia</label>
+                                        <p class="h4 no-margin text-warning fw-semi-bold">@Model.anioincidencia - @Model.numeroincidencia</p>
+                                    }
+                                </div>
+                            </div>
+                                <div class="form-group">
+
+                                    <div class="col-md-4">
+                                        <label class="control-label">Sucursal</label>
+                                        @Html.DropDownListFor(model => model.idsucursal, (SelectList)ViewData["listasucursal"], "--", new { @class = "form-control", @required = "true", @disabled = "true" })
+                                    </div>
+                                    @if (Model.idincidencia.HasValue)
+                                    {
+
+                                        <div class="col-md-2" id="data_1">
+                                            <label class="control-label">Fecha Reclamo</label>
+                                            <div class="input-group date" id='dtpFechReclamo'>
+                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                @Html.TextBoxFor(model => model.fechahoraregistro, "{0:dd/MM/yyyy}", new { @class = "form-control", @disabled = "true" })
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        }
+
+
+        <div class="row ">
+            <div class="col-md-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5><i class="fa fa-male"></i>  Datos del Cliente</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="col-md-12">
+                            <div class=" alert alert-info">
+                                <p> <i class="fa fa-info-circle"></i> Tener en cuenta que el cliente deberá facilitar su N° de documento para registrar la incidencia, evitar colocar documentos como: 12345678 / 99999999 ; o documentos que no existen.</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <div class="col-md-3">
+                                <label class="control-label"> Tipo documento</label>
+                                @Html.DropDownListFor(model => model.idtipodocumento, (SelectList)ViewData["ListaTipoDocumento"], "--", new { @class = "form-control", @required = "true", @disabled = "true" })
+                            </div>
+                            <div class="col-md-3">
+                                <label class="control-label"> N° documento</label>
+                                <div class="input-group">
+                                    @Html.TextBoxFor(model => model.numerodocumento, "", new { @class = "form-control", @required = "true" })
+                                    <span class="input-group-btn">
+                                        <button type="button" id='btnBuscarPersona' data-url="@Url.Action("BuscarPersonaModal", "Agendamiento")" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                    </span>
+                                    <span class="input-group-btn">
+                                        <button type="button" id='btnEditarCliente' class="btn  btn-line btn-block btn-sm btn-info-outline"><i class="fa fa-pencil"></i></button>
+                                    </span>
+                                    <span class="input-group-btn">
+                                        <button type="button" id='btnNuevoCliente' class="btn  btn-line btn-block btn-sm btn-primary-outline"><i class="fa fa-plus"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="control-label">Nombres/Razón social</label>
+                                @Html.TextBoxFor(model => model.nombrecliente, "", new { @class = "form-control ", @placeholder = "Nombre Completo", @required = "true", @disabled = "true" })
+                                
+                            </div>
+                            <div class="col-md-3">
+                                <label class="control-label">E-Mail</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                    @Html.TextBoxFor(model => model.email, "", new { type = "email", @class = "form-control", @disabled = "true" })
+                                </div>
+                            </div>
+                            </div>
+                        <div class="form-group">
+                            <div class="col-md-3">
+                                <label class="control-label">T. fijo</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                                    @Html.TextBoxFor(model => model.telefono, "", new { @class = "form-control ", @placeholder = "Fijo", @disabled = "true" })
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="control-label">T. mobile</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-mobile"></i></span>
+                                    @Html.TextBoxFor(model => model.celular, "", new { @class = "form-control ", @placeholder = "Móvil", @data_mask = "999999999", @disabled = "true" })
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="control-label">Dirección</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-home"></i></span>
+                                    @Html.TextBoxFor(model => model.direccion, "", new { @class = "form-control", @disabled = "true" })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        if (Model.libroactivo == true)
+        {
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5><i class="fa fa-info-circle"></i>  Datos del libro de reclamaciones</h5>
+                            <div class="ibox-tools">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+                            <div class="form-group">
+                                <label class="col-md-2 control-label">N° de libro:</label>
+                                <div class="col-md-3">@Html.TextBoxFor(model => model.numeroreclamacion, "", new { @class = "form-control ", onblur = "rellenar(this,this.value)" }) </div>
+                                <label class="col-md-2 control-label">Condición de Reclamo:</label>
+                                <div class="col-md-2">@Html.DropDownListFor(model => model.idtipodocumentocompra, (SelectList)ViewData["ListaCondicionReclamo"], "--", new { @class = "form-control " })</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+        <div class="row ">
+            <div class="col-lg-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5><i class="fa fa-info-circle"></i>  Datos de la compra</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="col-md-12">
+                            <div class=" alert alert-info">
+                                <p> <i class="fa fa-info-circle"></i> Tener en cuenta que solo debe seleccionar un item de la lista para registrar la incidencia.</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-3">
+                                <label class="control-label">Tipo de documento</label>
+                                @Html.DropDownListFor(model => model.idtipodocumentocompra, (SelectList)ViewData["ListaTipoComprobante"], "--Tipo--", new { @class = "form-control " })
+                            </div>
+                            <div class="col-md-3">
+                                <label class="control-label">N° documento</label>
+                                <div class=" input-group">
+                                    <span class="input-group-addon"><i class="fa fa-print"></i></span>
+                                    @Html.TextBoxFor(model => model.numerocomprobante, "", new { @class = "form-control ", @required = true, @onblur = "rellenar(this,this.value)" })
+                                    <span class="input-group-btn">
+                                        <button type="button" id='btnBuscarDocumento' data-url="@Url.Action("BuscarDocumentoModal", "Agendamiento")" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                        <button id="btnNuevoDocumento" type="button" class="btn btn-primary btn-primary-outline btn-sm "><i class="fa fa-plus-square"></i> </button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="control-label">Partner</label>
+                                @Html.DropDownListFor(x => x.idpartner, (SelectList)ViewData["listapartner"], " -- ", new { @class = "form-control", @required = "true" })
+                            </div>
+                            <div class="col-md-2" id="data_2">
+                                <label class="control-label">Fecha:</label>
+                                <div class="input-group date" id='dtpFechHecho'>
+                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                    @Html.TextBoxFor(model => model.fechaemision, "{0:dd/MM/yyyy}", new { @class = "form-control" })
+                                </div>
+                            </div>
+                        </div>
+                            <div class="form-group">
+                                <div class="col-md-3">
+                                    <label class="control-label">Lugar de Compra:</label>
+                                    @Html.DropDownListFor(model => model.idsucursalventa, (SelectList)ViewData["listasucursal"], "--Tienda Hecho--", new { @class = "form-control", @required = "true" })
+                                </div>
+                            </div>
+                            @*<div class="hr-line-dashed"></div>*@
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <div class="panel-body">
+                                        <div class="form-group">
+                                            <button id="btnAgregarDetalle" data-url="@Url.Action("AgregarDetalleIncidenciaModal", "Incidencia")" type="button" class="btn btn-primary btn-sm"><i class="fa fa-plus-square"></i> Agregar Detalle Manual</button>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="jqGrid_wrapper">
+                                                <table id="griddetalledocumento" data-url="@Url.Action("JsonGetDetalleComprobante", "Agendamiento")"
+                                                       data-urldetail="@Url.Action("JsonGetDetalleComprobante", "Agendamiento")"
+                                                       data-urladd="@Url.Action("JsonGetAgregarDetalle", "Incidencia")"
+                                                       data-urldel="@Url.Action("JsonGetEliminarDetalle", "Incidencia")"></table>
+                                                <div id="griddetalledocumentopager"></div>
+                                                @*<button id="btnAgregarDetalle" data-url="@Url.Action("AgregarDetalleIncidenciaModal", "Incidencia")" type="button" class="btn btn-primary btn-outline btn-sm"><i class="fa fa-plus-square"></i> Agregar Detalle Manual</button>*@
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-md-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5><i class="fa fa-info-circle"></i>  Detalle del Reclamo</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="form-group">
+                            <div class="col-md-4">
+                                <label class="control-label">Falla:</label>
+                                @Html.DropDownListFor(model => model.idfalla, (SelectList)ViewData["listafalla"], "--Falla--", new { @class = "chosen-select form-control ", @required = "true" })
+                            </div>
+                            <div class="col-md-4">
+                                <label class="control-label">Requerimiento Cliente:</label>
+                                @Html.DropDownListFor(model => model.idrequerimientocliente, (SelectList)ViewData["ListaTipoRequerimiento"], "--Requerimiento Cliente--", new { @class = "form-control ", @required = "true" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-10">
+                                <label class="control-label">Descripción:</label>
+                                @Html.TextAreaFor(model => model.descripcion, 3, 1, new { @class = "form-control ", @required = "true" })
+                            </div>
+                        </div>
+
+ 
+                    </div>
+                    @if (Model.editar != false)
+                    {
+                    <div class="ibox-footer">
+                        <div class="form-group">
+                                <div class="col-md-3 col-md-offset-6">
+                                    <button type="submit" onclick="SoloRegistrar()" class="btn  btn-block btn-primary">Registrar </button>
+                                </div>
+                                <div class="col-md-3">
+                                    <button type="button" class="btn  btn-block btn-inverse">Cancelar</button>
+                                </div>
+                        </div>
+                    </div>
+                    }
+
+                </div>
+            </div>
+        
+        </div>
+
+        @Html.HiddenFor(x=>x.iddocumentocompra)
+        @Html.HiddenFor(x => x.editarsucursal)
+        @Html.HiddenFor(m => m.itemRequerido)
+        @Html.HiddenFor(m => m.ItemIncidencia)
+        @Html.HiddenFor(m => m.incidenciagarantia)
+        @Html.HiddenFor(m => m.idtipoincidencia)
+        @Html.HiddenFor(m => m.idtiposolucion)
+        @Html.HiddenFor(m => m.idincidencia)
+        @Html.HiddenFor(model => model.idcliente)
+
+    }
+</div>

@@ -1,0 +1,64 @@
+﻿@model Web.Coolbox.Areas.Seguridad.Models.Usuarios.InsertarModificarUsuarioModel
+
+@{
+    ViewBag.Title = "Modificar Usuario";
+}
+
+@section Styles{
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/jqGrid/ui.jqgrid.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/sweetalert/sweetalert.css")" />
+}
+
+@section scripts {
+    <script src="@Url.Content("~/Scripts/jsview/seguridad/seguridad.usuarios.insertarmodificar.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/sweetalert/sweetalert.min.js")" type="text/javascript"></script>
+}
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-5">
+        <h2>@ViewBag.Title</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="@Url.Action("Index", "Account", new { area = ""})">Home</a>
+            </li>
+            <li>
+                <a href="@Url.Action("ListarUsuarios", "Usuarios", new { area = "seguridad" })">Listado de Usuarios</a>
+            </li>
+            <li class="active">
+                <strong>@ViewBag.Title</strong>
+            </li>
+        </ol>
+    </div>
+
+</div>
+
+@using (Html.BeginForm("Insertar", "Usuarios", FormMethod.Post, new { id = "formsubmit" }))
+{
+    @Html.HiddenFor(model => model.Usr_int_id)
+
+    <div class="wrapper wrapper-content">
+        <div class="row">
+
+
+            <div class="col-lg-12">
+                <div class="ibox">
+                    <div class="ibox-title"></div>
+                    @Html.Partial("_InsertarModificarUsuario", Model)
+                    <div class="ibox-footer">
+
+                        <button type="submit" class="btn btn-primary">Aceptar</button>
+                        <button type="button" class="btn btn-default" data-url="@Url.Action("ListarUsuarios", "Usuarios", new { area = "seguridad"})" onclick="regresarListado(this);">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+}
+
+@if (TempData["mensaje"] != null)
+{
+    @Html.Hidden("hdfMensaje", @TempData["mensaje"], new { @data_url = @Url.Action("ListarUsuarios", "Usuarios", new { area = "seguridad" } )})
+}
+

@@ -1,0 +1,24 @@
+﻿@model QueryContracts.Coolbox.Seguridad.Results.TraerRolDto
+
+@{
+    ViewBag.Title = "EditarRol";
+}
+
+<h2>Editar Rol</h2>
+<br />
+<br />
+<table>
+    <tr>
+        <td>Descripción: </td>
+        <td>@Html.TextBoxFor(model => model.rol_str_descrip)</td>
+    </tr>
+    <tr>
+        <td>Alias: </td>
+        <td>@Html.TextBoxFor(model => model.rol_str_alias)</td>
+    </tr>
+</table>
+<br />
+<fieldset>
+    <button id='newProduct1' onclick="location.href='@Url.Action("Actualizar", "Seguridad")'" class="btn btn-primary">Actualizar</button>
+    <button id='newProduct2' onclick="location.href='@Url.Action("Rol", "Seguridad")'" class="btn btn-primary">Cancelar</button>
+</fieldset>

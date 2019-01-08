@@ -1,0 +1,20 @@
+﻿@using Web.Common.HtmlHelpers
+@using Seguridad.Common;
+
+@{
+    var listamenuopcion = (List<MenuOpcion>)ViewBag.ListaMenuOpcion;
+}
+
+<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav" id="side-menu">
+            <li class="nav-header">
+                @Html.Partial("_NavigationLogUser")
+                <div class="logo-element">
+                    CB+
+                </div>
+            </li>
+            @Html.ListarMenu(listamenuopcion)
+        </ul>
+    </div>
+</nav>

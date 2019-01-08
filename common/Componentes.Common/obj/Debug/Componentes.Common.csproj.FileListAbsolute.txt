@@ -1,0 +1,122 @@
+D:\Proyectos\Ria\Coolbox\src\common\Componentes.Common\bin\Debug\Componentes.Common.dll
+D:\Proyectos\Ria\Coolbox\src\common\Componentes.Common\bin\Debug\Componentes.Common.pdb
+D:\Proyectos\Ria\Coolbox\src\common\Componentes.Common\bin\Debug\log4net.dll
+D:\Proyectos\Ria\Coolbox\src\common\Componentes.Common\bin\Debug\NPOI.dll
+D:\Proyectos\Ria\Coolbox\src\common\Componentes.Common\bin\Debug\NPOI.OOXML.dll
+D:\Proyectos\Ria\Coolbox\src\common\Componentes.Common\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\Proyectos\Ria\Coolbox\src\common\Componentes.Common\bin\Debug\NPOI.OpenXmlFormats.dll
+D:\Proyectos\Ria\Coolbox\src\common\Componentes.Common\bin\Debug\NPOI.OpenXml4Net.dll
+D:\Proyectos\Ria\Coolbox\src\common\Componentes.Common\bin\Debug\log4net.xml
+D:\Proyectos\Ria\Coolbox\src\common\Componentes.Common\bin\Debug\NPOI.xml
+D:\Proyectos\Ria\Coolbox\src\common\Componentes.Common\obj\Debug\Componentes.Common.csprojResolveAssemblyReference.cache
+D:\Proyectos\Ria\Coolbox\src\common\Componentes.Common\obj\Debug\Componentes.Common.dll
+D:\Proyectos\Ria\Coolbox\src\common\Componentes.Common\obj\Debug\Componentes.Common.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\common\Componentes.Common\bin\Debug\Componentes.Common.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\common\Componentes.Common\bin\Debug\Componentes.Common.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\common\Componentes.Common\bin\Debug\log4net.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\common\Componentes.Common\bin\Debug\NPOI.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\common\Componentes.Common\bin\Debug\NPOI.OOXML.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\common\Componentes.Common\bin\Debug\ICSharpCode.SharpZipLib.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\common\Componentes.Common\bin\Debug\NPOI.OpenXmlFormats.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\common\Componentes.Common\bin\Debug\NPOI.OpenXml4Net.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\common\Componentes.Common\bin\Debug\log4net.xml
+H:\RIA\RASH\RASHAPP_MERGE\src\common\Componentes.Common\bin\Debug\NPOI.xml
+H:\RIA\RASH\RASHAPP_MERGE\src\common\Componentes.Common\obj\Debug\Componentes.Common.csprojResolveAssemblyReference.cache
+H:\RIA\RASH\RASHAPP_MERGE\src\common\Componentes.Common\obj\Debug\Componentes.Common.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\common\Componentes.Common\obj\Debug\Componentes.Common.pdb
+H:\RIA\RASH\CIC\0609\src\common\Componentes.Common\bin\Debug\Componentes.Common.dll
+H:\RIA\RASH\CIC\0609\src\common\Componentes.Common\bin\Debug\Componentes.Common.pdb
+H:\RIA\RASH\CIC\0609\src\common\Componentes.Common\bin\Debug\log4net.dll
+H:\RIA\RASH\CIC\0609\src\common\Componentes.Common\bin\Debug\NPOI.dll
+H:\RIA\RASH\CIC\0609\src\common\Componentes.Common\bin\Debug\NPOI.OOXML.dll
+H:\RIA\RASH\CIC\0609\src\common\Componentes.Common\bin\Debug\ICSharpCode.SharpZipLib.dll
+H:\RIA\RASH\CIC\0609\src\common\Componentes.Common\bin\Debug\NPOI.OpenXmlFormats.dll
+H:\RIA\RASH\CIC\0609\src\common\Componentes.Common\bin\Debug\NPOI.OpenXml4Net.dll
+H:\RIA\RASH\CIC\0609\src\common\Componentes.Common\bin\Debug\log4net.xml
+H:\RIA\RASH\CIC\0609\src\common\Componentes.Common\bin\Debug\NPOI.xml
+H:\RIA\RASH\CIC\0609\src\common\Componentes.Common\obj\Debug\Componentes.Common.csprojResolveAssemblyReference.cache
+H:\RIA\RASH\CIC\0609\src\common\Componentes.Common\obj\Debug\Componentes.Common.dll
+H:\RIA\RASH\CIC\0609\src\common\Componentes.Common\obj\Debug\Componentes.Common.pdb
+H:\RIA\RASH\CIC2\CIC2\src\common\Componentes.Common\bin\Debug\Componentes.Common.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\Componentes.Common\bin\Debug\Componentes.Common.pdb
+H:\RIA\RASH\CIC2\CIC2\src\common\Componentes.Common\bin\Debug\log4net.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\Componentes.Common\bin\Debug\NPOI.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\Componentes.Common\bin\Debug\NPOI.OOXML.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\Componentes.Common\bin\Debug\ICSharpCode.SharpZipLib.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\Componentes.Common\bin\Debug\NPOI.OpenXmlFormats.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\Componentes.Common\bin\Debug\NPOI.OpenXml4Net.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\Componentes.Common\bin\Debug\log4net.xml
+H:\RIA\RASH\CIC2\CIC2\src\common\Componentes.Common\bin\Debug\NPOI.xml
+H:\RIA\RASH\CIC2\CIC2\src\common\Componentes.Common\obj\Debug\Componentes.Common.csprojResolveAssemblyReference.cache
+H:\RIA\RASH\CIC2\CIC2\src\common\Componentes.Common\obj\Debug\Componentes.Common.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\Componentes.Common\obj\Debug\Componentes.Common.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Componentes.Common\bin\Debug\Componentes.Common.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Componentes.Common\bin\Debug\Componentes.Common.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Componentes.Common\bin\Debug\log4net.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Componentes.Common\bin\Debug\NPOI.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Componentes.Common\bin\Debug\NPOI.OOXML.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Componentes.Common\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Componentes.Common\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Componentes.Common\bin\Debug\NPOI.OpenXml4Net.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Componentes.Common\bin\Debug\log4net.xml
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Componentes.Common\bin\Debug\NPOI.xml
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Componentes.Common\obj\Debug\Componentes.Common.csprojResolveAssemblyReference.cache
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Componentes.Common\obj\Debug\Componentes.Common.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Componentes.Common\obj\Debug\Componentes.Common.pdb
+H:\RIA\Smartway3\src\common\Componentes.Common\bin\Debug\Componentes.Common.dll
+H:\RIA\Smartway3\src\common\Componentes.Common\bin\Debug\Componentes.Common.pdb
+H:\RIA\Smartway3\src\common\Componentes.Common\bin\Debug\log4net.dll
+H:\RIA\Smartway3\src\common\Componentes.Common\bin\Debug\NPOI.dll
+H:\RIA\Smartway3\src\common\Componentes.Common\bin\Debug\NPOI.OOXML.dll
+H:\RIA\Smartway3\src\common\Componentes.Common\bin\Debug\ICSharpCode.SharpZipLib.dll
+H:\RIA\Smartway3\src\common\Componentes.Common\bin\Debug\NPOI.OpenXmlFormats.dll
+H:\RIA\Smartway3\src\common\Componentes.Common\bin\Debug\NPOI.OpenXml4Net.dll
+H:\RIA\Smartway3\src\common\Componentes.Common\bin\Debug\log4net.xml
+H:\RIA\Smartway3\src\common\Componentes.Common\bin\Debug\NPOI.xml
+H:\RIA\Smartway3\src\common\Componentes.Common\obj\Debug\Componentes.Common.csprojResolveAssemblyReference.cache
+H:\RIA\Smartway3\src\common\Componentes.Common\obj\Debug\Componentes.Common.dll
+H:\RIA\Smartway3\src\common\Componentes.Common\obj\Debug\Componentes.Common.pdb
+D:\Ria\Smartway\Smartway3\src\common\Componentes.Common\bin\Debug\Componentes.Common.dll
+D:\Ria\Smartway\Smartway3\src\common\Componentes.Common\bin\Debug\Componentes.Common.pdb
+D:\Ria\Smartway\Smartway3\src\common\Componentes.Common\bin\Debug\log4net.dll
+D:\Ria\Smartway\Smartway3\src\common\Componentes.Common\bin\Debug\NPOI.dll
+D:\Ria\Smartway\Smartway3\src\common\Componentes.Common\bin\Debug\NPOI.OOXML.dll
+D:\Ria\Smartway\Smartway3\src\common\Componentes.Common\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\Ria\Smartway\Smartway3\src\common\Componentes.Common\bin\Debug\NPOI.OpenXmlFormats.dll
+D:\Ria\Smartway\Smartway3\src\common\Componentes.Common\bin\Debug\NPOI.OpenXml4Net.dll
+D:\Ria\Smartway\Smartway3\src\common\Componentes.Common\bin\Debug\log4net.xml
+D:\Ria\Smartway\Smartway3\src\common\Componentes.Common\bin\Debug\NPOI.xml
+D:\Ria\Smartway\Smartway3\src\common\Componentes.Common\obj\Debug\Componentes.Common.csproj.CoreCompileInputs.cache
+D:\Ria\Smartway\Smartway3\src\common\Componentes.Common\obj\Debug\Componentes.Common.csproj.CopyComplete
+D:\Ria\Smartway\Smartway3\src\common\Componentes.Common\obj\Debug\Componentes.Common.dll
+D:\Ria\Smartway\Smartway3\src\common\Componentes.Common\obj\Debug\Componentes.Common.pdb
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Componentes.Common\bin\Debug\Componentes.Common.dll
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Componentes.Common\bin\Debug\Componentes.Common.pdb
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Componentes.Common\bin\Debug\log4net.dll
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Componentes.Common\bin\Debug\NPOI.dll
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Componentes.Common\bin\Debug\NPOI.OOXML.dll
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Componentes.Common\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Componentes.Common\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Componentes.Common\bin\Debug\NPOI.OpenXml4Net.dll
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Componentes.Common\bin\Debug\log4net.xml
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Componentes.Common\bin\Debug\NPOI.xml
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Componentes.Common\obj\Debug\Componentes.Common.csprojAssemblyReference.cache
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Componentes.Common\obj\Debug\Componentes.Common.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Componentes.Common\obj\Debug\Componentes.Common.csproj.CopyComplete
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Componentes.Common\obj\Debug\Componentes.Common.dll
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Componentes.Common\obj\Debug\Componentes.Common.pdb
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Componentes.Common\bin\Debug\Componentes.Common.dll
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Componentes.Common\bin\Debug\Componentes.Common.pdb
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Componentes.Common\bin\Debug\log4net.dll
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Componentes.Common\bin\Debug\NPOI.dll
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Componentes.Common\bin\Debug\NPOI.OOXML.dll
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Componentes.Common\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Componentes.Common\bin\Debug\NPOI.OpenXmlFormats.dll
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Componentes.Common\bin\Debug\NPOI.OpenXml4Net.dll
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Componentes.Common\bin\Debug\log4net.xml
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Componentes.Common\bin\Debug\NPOI.xml
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Componentes.Common\obj\Debug\Componentes.Common.csprojAssemblyReference.cache
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Componentes.Common\obj\Debug\Componentes.Common.csproj.CoreCompileInputs.cache
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Componentes.Common\obj\Debug\Componentes.Common.csproj.CopyComplete
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Componentes.Common\obj\Debug\Componentes.Common.dll
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Componentes.Common\obj\Debug\Componentes.Common.pdb

@@ -1,0 +1,65 @@
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Componentes.Common\bin\Release\Componentes.Common.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Componentes.Common\bin\Release\Componentes.Common.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Componentes.Common\bin\Release\log4net.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Componentes.Common\bin\Release\NPOI.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Componentes.Common\bin\Release\NPOI.OOXML.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Componentes.Common\bin\Release\ICSharpCode.SharpZipLib.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Componentes.Common\bin\Release\NPOI.OpenXmlFormats.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Componentes.Common\bin\Release\NPOI.OpenXml4Net.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Componentes.Common\bin\Release\log4net.xml
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Componentes.Common\bin\Release\NPOI.xml
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Componentes.Common\obj\Release\Componentes.Common.csprojResolveAssemblyReference.cache
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Componentes.Common\obj\Release\Componentes.Common.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Componentes.Common\obj\Release\Componentes.Common.pdb
+H:\RIA\RASH\CIC\0609\src\common\Componentes.Common\bin\Release\Componentes.Common.dll
+H:\RIA\RASH\CIC\0609\src\common\Componentes.Common\bin\Release\Componentes.Common.pdb
+H:\RIA\RASH\CIC\0609\src\common\Componentes.Common\bin\Release\log4net.dll
+H:\RIA\RASH\CIC\0609\src\common\Componentes.Common\bin\Release\NPOI.dll
+H:\RIA\RASH\CIC\0609\src\common\Componentes.Common\bin\Release\NPOI.OOXML.dll
+H:\RIA\RASH\CIC\0609\src\common\Componentes.Common\bin\Release\ICSharpCode.SharpZipLib.dll
+H:\RIA\RASH\CIC\0609\src\common\Componentes.Common\bin\Release\NPOI.OpenXmlFormats.dll
+H:\RIA\RASH\CIC\0609\src\common\Componentes.Common\bin\Release\NPOI.OpenXml4Net.dll
+H:\RIA\RASH\CIC\0609\src\common\Componentes.Common\bin\Release\log4net.xml
+H:\RIA\RASH\CIC\0609\src\common\Componentes.Common\bin\Release\NPOI.xml
+H:\RIA\RASH\CIC\0609\src\common\Componentes.Common\obj\Release\Componentes.Common.csprojResolveAssemblyReference.cache
+H:\RIA\RASH\CIC\0609\src\common\Componentes.Common\obj\Release\Componentes.Common.dll
+H:\RIA\RASH\CIC\0609\src\common\Componentes.Common\obj\Release\Componentes.Common.pdb
+H:\RIA\RASH\CIC2\CIC2\src\common\Componentes.Common\bin\Release\Componentes.Common.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\Componentes.Common\bin\Release\Componentes.Common.pdb
+H:\RIA\RASH\CIC2\CIC2\src\common\Componentes.Common\bin\Release\log4net.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\Componentes.Common\bin\Release\NPOI.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\Componentes.Common\bin\Release\NPOI.OOXML.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\Componentes.Common\bin\Release\ICSharpCode.SharpZipLib.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\Componentes.Common\bin\Release\NPOI.OpenXmlFormats.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\Componentes.Common\bin\Release\NPOI.OpenXml4Net.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\Componentes.Common\bin\Release\log4net.xml
+H:\RIA\RASH\CIC2\CIC2\src\common\Componentes.Common\bin\Release\NPOI.xml
+H:\RIA\RASH\CIC2\CIC2\src\common\Componentes.Common\obj\Release\Componentes.Common.csprojResolveAssemblyReference.cache
+H:\RIA\RASH\CIC2\CIC2\src\common\Componentes.Common\obj\Release\Componentes.Common.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\Componentes.Common\obj\Release\Componentes.Common.pdb
+H:\RIA\Smartway\src\common\Componentes.Common\bin\Release\Componentes.Common.dll
+H:\RIA\Smartway\src\common\Componentes.Common\bin\Release\Componentes.Common.pdb
+H:\RIA\Smartway\src\common\Componentes.Common\bin\Release\log4net.dll
+H:\RIA\Smartway\src\common\Componentes.Common\bin\Release\NPOI.dll
+H:\RIA\Smartway\src\common\Componentes.Common\bin\Release\NPOI.OOXML.dll
+H:\RIA\Smartway\src\common\Componentes.Common\bin\Release\ICSharpCode.SharpZipLib.dll
+H:\RIA\Smartway\src\common\Componentes.Common\bin\Release\NPOI.OpenXmlFormats.dll
+H:\RIA\Smartway\src\common\Componentes.Common\bin\Release\NPOI.OpenXml4Net.dll
+H:\RIA\Smartway\src\common\Componentes.Common\bin\Release\log4net.xml
+H:\RIA\Smartway\src\common\Componentes.Common\bin\Release\NPOI.xml
+H:\RIA\Smartway\src\common\Componentes.Common\obj\Release\Componentes.Common.csprojResolveAssemblyReference.cache
+H:\RIA\Smartway\src\common\Componentes.Common\obj\Release\Componentes.Common.dll
+H:\RIA\Smartway\src\common\Componentes.Common\obj\Release\Componentes.Common.pdb
+H:\RIA\Smartway3\src\common\Componentes.Common\bin\Release\Componentes.Common.dll
+H:\RIA\Smartway3\src\common\Componentes.Common\bin\Release\Componentes.Common.pdb
+H:\RIA\Smartway3\src\common\Componentes.Common\bin\Release\log4net.dll
+H:\RIA\Smartway3\src\common\Componentes.Common\bin\Release\NPOI.dll
+H:\RIA\Smartway3\src\common\Componentes.Common\bin\Release\NPOI.OOXML.dll
+H:\RIA\Smartway3\src\common\Componentes.Common\bin\Release\ICSharpCode.SharpZipLib.dll
+H:\RIA\Smartway3\src\common\Componentes.Common\bin\Release\NPOI.OpenXmlFormats.dll
+H:\RIA\Smartway3\src\common\Componentes.Common\bin\Release\NPOI.OpenXml4Net.dll
+H:\RIA\Smartway3\src\common\Componentes.Common\bin\Release\log4net.xml
+H:\RIA\Smartway3\src\common\Componentes.Common\bin\Release\NPOI.xml
+H:\RIA\Smartway3\src\common\Componentes.Common\obj\Release\Componentes.Common.csprojResolveAssemblyReference.cache
+H:\RIA\Smartway3\src\common\Componentes.Common\obj\Release\Componentes.Common.dll
+H:\RIA\Smartway3\src\common\Componentes.Common\obj\Release\Componentes.Common.pdb

@@ -1,0 +1,119 @@
+﻿@model Web.Smartway.Areas.Agendamiento.Models.OrdenServicioModel
+@section Styles {
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/jqGrid/ui.jqgrid.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/jqgrid.extension.css")" />
+
+}
+
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+    <h4 class="modal-title">Aprobar QC Telecom</h4>
+    <small class="font-bold">Realice la verificación de la operación realizada por los técnicos.</small>
+</div>
+@using (Ajax.BeginForm("RevisarAprobacion", "Reparacion", new { area = "Reparacion" }, new AjaxOptions { HttpMethod = "POST", OnComplete = "OnCompleteTransaction(xhr, status)" }, new { @role = "form", @id = "formRevisarQC", @class = "form-horizontal" }))
+{
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <div class="col-md-4">
+                        <h6 class="no-margin">N° OST</h6>
+                        <p class="h4 no-margin fw-normal">@Model.numeroordenservicio </p>
+                    </div>
+                    <div class="col-md-8">
+                        <h6 class="no-margin">Producto</h6>
+                        <p class="h4 no-margin fw-normal">@Model.producto </p>
+                    </div>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <div class="col-md-6">
+                        <h6 class="no-margin">¿Display correcto?</h6>
+                        <div class="col-md-6"> @Html.RadioButton("chkCondicion10", "true", true) Si</div>
+                        <div class="col-md-6"> @Html.RadioButton("chkCondicion10", "false", false) No</div>
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="no-margin">Receiver / Melody </h6>
+                        <div class="col-md-6"> @Html.RadioButton("chkCondicion1", "true", true) Correcto</div>
+                        <div class="col-md-6"> @Html.RadioButton("chkCondicion1", "false", false) Incorrecto</div>
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="no-margin">Vibration</h6>
+                        <div class="col-md-6"> @Html.RadioButton("chkCondicion2", "true", true) Correcto</div>
+                        <div class="col-md-6"> @Html.RadioButton("chkCondicion2", "false", false) Incorrecto</div>
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="no-margin">Mega Camera </h6>
+                        <div class="col-md-6"> @Html.RadioButton("chkCondicion3", "true", true) Correcto</div>
+                        <div class="col-md-6"> @Html.RadioButton("chkCondicion3", "false", false) Incorrecto</div>
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="no-margin">Accelerometer Sensor </h6>
+                        <div class="col-md-6"> @Html.RadioButton("chkCondicion4", "true", true) Correcto</div>
+                        <div class="col-md-6"> @Html.RadioButton("chkCondicion4", "false", false) Incorrecto</div>
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="no-margin">Proximity Sensor </h6>
+                        <div class="col-md-6"> @Html.RadioButton("chkCondicion5", "true", true) Correcto</div>
+                        <div class="col-md-6"> @Html.RadioButton("chkCondicion5", "false", false) Incorrecto</div>
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="no-margin">Barometer Sensor </h6>
+                        <div class="col-md-6"> @Html.RadioButton("chkCondicion6", "true", true) Correcto</div>
+                        <div class="col-md-6"> @Html.RadioButton("chkCondicion6", "false", false) Incorrecto</div>
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="no-margin">Light Sensor</h6>
+                        <div class="col-md-6"> @Html.RadioButton("chkCondicion7", "true", true) Correcto</div>
+                        <div class="col-md-6"> @Html.RadioButton("chkCondicion7", "false", false) Incorrecto</div>
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="no-margin">
+                            Touch
+                        </h6>
+                        <div class="col-md-6"> @Html.RadioButton("chkCondicion8", "true", true) Correcto</div>
+                        <div class="col-md-6"> @Html.RadioButton("chkCondicion8", "false", false) Incorrecto</div>
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="no-margin">Sleep</h6>
+                        <div class="col-md-6"> @Html.RadioButton("chkCondicion9", "true", true) Correcto</div>
+                        <div class="col-md-6"> @Html.RadioButton("chkCondicion9", "false", false) Incorrecto</div>
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="no-margin">Speaker </h6>
+                        <div class="col-md-6"> @Html.RadioButton("chkCondicion11", "true", true) Correcto</div>
+                        <div class="col-md-6"> @Html.RadioButton("chkCondicion11", "false", false) Incorrecto</div>
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="no-margin">Sub Key </h6>
+                        <div class="col-md-6"> @Html.RadioButton("chkCondicion12", "true", true) Correcto</div>
+                        <div class="col-md-6"> @Html.RadioButton("chkCondicion12", "false", false) Incorrecto</div>
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="no-margin">Front Camera </h6>
+                        <div class="col-md-6"> @Html.RadioButton("chkCondicion13", "true", true) Correcto</div>
+                        <div class="col-md-6"> @Html.RadioButton("chkCondicion13", "false", false) Incorrecto</div>
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="no-margin">LED</h6>
+                        <div class="col-md-6"> @Html.RadioButton("chkCondicion14", "true", true) Correcto</div>
+                        <div class="col-md-6"> @Html.RadioButton("chkCondicion14", "false", false) Incorrecto</div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="modal-footer">
+        <div class="col-md-offset-6 col-md-3">
+            <button type="submit" id="btnGuardar" class="btn btn-block btn-primary">  Guardar</button>
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-block btn-inverse" data-dismiss="modal">  Cerrar</button>
+        </div>
+    </div>
+    @Html.HiddenFor(x => x.idordenserviciotecnico)
+}
+

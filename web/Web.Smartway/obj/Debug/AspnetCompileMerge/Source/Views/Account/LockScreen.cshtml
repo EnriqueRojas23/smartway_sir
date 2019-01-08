@@ -1,0 +1,72 @@
+﻿@model Web.Smartway.Models.Account.SignInModel
+@{
+    ViewBag.Title = "LockScreen";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartway | @ViewBag.Title</title>
+
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/normalize.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/bootstrap.min.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/bootstrap.extension.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Fonts/font-awesome/css/font-awesome.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/animate.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/Site.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/ladda/ladda-themeless.min.css")" />
+
+    <script src="@Url.Content("~/Scripts/jquery-2.1.1.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/ladda/spin.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/ladda/ladda.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/ladda/ladda.jquery.min.js")" type="text/javascript"></script>
+
+</head>
+
+<body class="gray-bg">
+
+    <div class="lock-word animated fadeInDown">
+        <span class="first-word">LOCKED</span><span>SCREEN</span>
+    </div>
+    <div class="middle-box text-center lockscreen animated fadeInDown" style="font-size:13px">
+        <div>
+            <div class="m-b-md">
+                <img alt="image" width="128" class="img-circle circle-border img-responsive center-block" src="@Url.Content("~/Images/person.jpg")">
+            </div>
+            <h3>@Html.DisplayFor(m=> m.NombreUsuario)</h3>
+            <p>Usted esta en la pantalla de bloqueo. La sesiòn de usuario terminò y usted necesita ingresar su password para regresar a la aplicaciòn.</p>
+            
+            @using (Html.BeginForm("SignInLock", "Account", FormMethod.Post, new { ReturnUrl = Model.ReturnUrl, id = "form-signin", @class = "form-signin m-t", @role = "form" }))
+            {   
+                @Html.AntiForgeryToken()
+                @*@Html.ValidationSummary("", new { @class = "alert alert-danger"});*@
+                @Html.HiddenFor(model => model.ReturnUrl);
+                 <div class="form-group">
+                     @Html.HiddenFor(model => model.ModoAutenticacion)
+                     @Html.DropDownListFor(model => model.ModoAutenticacion, Model.ListaModoAutenticacion, new { @class = "form-control", @placeholder = "Usuario", @autofocus = "" ,@disabled="" })
+                </div>
+                <div class="form-group">
+                    @Html.HiddenFor(model => model.CodigoUsuario)
+                    @Html.TextBoxFor(model => model.CodigoUsuario, new { @class = "form-control", @required = "", @autofocus = "", @disabled = "" })
+                </div>
+                <div class="form-group">
+                    @Html.PasswordFor(model => model.Password, new { @class = "form-control", @placeholder = "**********", @required = "" })
+                </div>
+                <button type="submit" class="btn btn-primary ladda-button block full-width" data-style="expand-right"><i class="fa fa-unlock"></i> Desbloquear</button>
+            }
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.ladda-button').ladda('bind', { timeout: 5000000 });
+    });
+</script>  

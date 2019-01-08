@@ -1,0 +1,33 @@
+﻿@using Seguridad.Common;
+@using System.Collections;
+@using Web.Common.HtmlHelpers
+
+@{
+    var usuario_cache = ViewBag.Usuario;
+    var rolactual_cache = ViewBag.Perfil;
+    var nombreperfilactual = rolactual_cache == null ? String.Empty : rolactual_cache.NombrePerfil;
+    var nombreusuario = usuario_cache == null ? String.Empty : usuario_cache.NombreUsuario;
+    var listperfiles =  usuario_cache == null ? new List<Perfil>() :  usuario_cache.Perfiles;
+}
+
+<div class="dropdown profile-element">
+
+    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+        <span class="clear">
+            <span class="block m-t-xs">
+                <strong class="font-bold">@nombreusuario</strong>
+            </span> <span class="text-muted text-xs block">@nombreperfilactual <b class="caret"></b></span>
+        </span>
+    </a>
+    <ul class="dropdown-menu animated fadeInRight m-t-xs">
+        @foreach (var perfil in listperfiles)
+        {
+            if (perfil.NombrePerfil != nombreperfilactual)
+             {
+                   <li> <a href="@Url.Action("CambiarRol", "Account", new { idr = perfil.IdPerfil, area = "" })">@perfil.NombrePerfil</a></li>
+             }
+        }
+        <li class="divider"></li>
+        <li><a href="@Url.Action("SignIn", "Account", new  { area = ""})">Cerrar Sesión</a></li>
+    </ul>
+</div>

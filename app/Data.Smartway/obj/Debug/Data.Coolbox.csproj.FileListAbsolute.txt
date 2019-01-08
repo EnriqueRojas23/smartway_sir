@@ -1,0 +1,79 @@
+D:\Proyectos\Ria\Coolbox\src\app\Data.Coolbox\bin\Debug\Data.Coolbox.dll.config
+D:\Proyectos\Ria\Coolbox\src\app\Data.Coolbox\bin\Debug\Data.Coolbox.dll
+D:\Proyectos\Ria\Coolbox\src\app\Data.Coolbox\bin\Debug\Data.Coolbox.pdb
+D:\Proyectos\Ria\Coolbox\src\app\Data.Coolbox\bin\Debug\Domain.Common.dll
+D:\Proyectos\Ria\Coolbox\src\app\Data.Coolbox\bin\Debug\Domain.Coolbox.dll
+D:\Proyectos\Ria\Coolbox\src\app\Data.Coolbox\bin\Debug\EntityFramework.dll
+D:\Proyectos\Ria\Coolbox\src\app\Data.Coolbox\bin\Debug\Domain.Common.pdb
+D:\Proyectos\Ria\Coolbox\src\app\Data.Coolbox\bin\Debug\Domain.Coolbox.pdb
+D:\Proyectos\Ria\Coolbox\src\app\Data.Coolbox\bin\Debug\EntityFramework.xml
+D:\Proyectos\Ria\Coolbox\src\app\Data.Coolbox\bin\Debug\es\EntityFramework.resources.dll
+D:\Proyectos\Ria\Coolbox\src\app\Data.Coolbox\obj\Debug\Data.Coolbox.csprojResolveAssemblyReference.cache
+D:\Proyectos\Ria\Coolbox\src\app\Data.Coolbox\obj\Debug\Data.Coolbox.dll
+D:\Proyectos\Ria\Coolbox\src\app\Data.Coolbox\obj\Debug\Data.Coolbox.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\app\Data.Coolbox\bin\Debug\Data.Coolbox.dll.config
+H:\RIA\RASH\RASHAPP_MERGE\src\app\Data.Coolbox\bin\Debug\Data.Coolbox.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\app\Data.Coolbox\bin\Debug\Data.Coolbox.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\app\Data.Coolbox\bin\Debug\Domain.Common.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\app\Data.Coolbox\bin\Debug\Domain.Coolbox.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\app\Data.Coolbox\bin\Debug\EntityFramework.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\app\Data.Coolbox\bin\Debug\Domain.Common.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\app\Data.Coolbox\bin\Debug\Domain.Coolbox.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\app\Data.Coolbox\bin\Debug\EntityFramework.xml
+H:\RIA\RASH\RASHAPP_MERGE\src\app\Data.Coolbox\bin\Debug\es\EntityFramework.resources.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\app\Data.Coolbox\obj\Debug\Data.Coolbox.csprojResolveAssemblyReference.cache
+H:\RIA\RASH\RASHAPP_MERGE\src\app\Data.Coolbox\obj\Debug\Data.Coolbox.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\app\Data.Coolbox\obj\Debug\Data.Coolbox.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\app\Data.Coolbox\bin\Debug\Data.Coolbox.dll.config
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\app\Data.Coolbox\bin\Debug\Data.Coolbox.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\app\Data.Coolbox\bin\Debug\Data.Coolbox.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\app\Data.Coolbox\bin\Debug\Domain.Common.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\app\Data.Coolbox\bin\Debug\Domain.Coolbox.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\app\Data.Coolbox\bin\Debug\EntityFramework.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\app\Data.Coolbox\bin\Debug\Domain.Common.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\app\Data.Coolbox\bin\Debug\Domain.Coolbox.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\app\Data.Coolbox\bin\Debug\EntityFramework.xml
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\app\Data.Coolbox\bin\Debug\es\EntityFramework.resources.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\app\Data.Coolbox\obj\Debug\Data.Coolbox.csprojResolveAssemblyReference.cache
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\app\Data.Coolbox\obj\Debug\Data.Coolbox.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\app\Data.Coolbox\obj\Debug\Data.Coolbox.pdb
+H:\RIA\RASH\CIC\0609\src\app\Data.Coolbox\bin\Debug\Data.Coolbox.dll.config
+H:\RIA\RASH\CIC\0609\src\app\Data.Coolbox\bin\Debug\Data.Coolbox.dll
+H:\RIA\RASH\CIC\0609\src\app\Data.Coolbox\bin\Debug\Data.Coolbox.pdb
+H:\RIA\RASH\CIC\0609\src\app\Data.Coolbox\bin\Debug\Domain.Common.dll
+H:\RIA\RASH\CIC\0609\src\app\Data.Coolbox\bin\Debug\Domain.Coolbox.dll
+H:\RIA\RASH\CIC\0609\src\app\Data.Coolbox\bin\Debug\EntityFramework.dll
+H:\RIA\RASH\CIC\0609\src\app\Data.Coolbox\bin\Debug\Domain.Common.pdb
+H:\RIA\RASH\CIC\0609\src\app\Data.Coolbox\bin\Debug\Domain.Coolbox.pdb
+H:\RIA\RASH\CIC\0609\src\app\Data.Coolbox\bin\Debug\EntityFramework.xml
+H:\RIA\RASH\CIC\0609\src\app\Data.Coolbox\bin\Debug\es\EntityFramework.resources.dll
+H:\RIA\RASH\CIC\0609\src\app\Data.Coolbox\obj\Debug\Data.Coolbox.csprojResolveAssemblyReference.cache
+H:\RIA\RASH\CIC\0609\src\app\Data.Coolbox\obj\Debug\Data.Coolbox.dll
+H:\RIA\RASH\CIC\0609\src\app\Data.Coolbox\obj\Debug\Data.Coolbox.pdb
+H:\RIA\RASH\CIC2\CIC2\src\app\Data.Coolbox\bin\Debug\Data.Coolbox.dll.config
+H:\RIA\RASH\CIC2\CIC2\src\app\Data.Coolbox\bin\Debug\Data.Coolbox.dll
+H:\RIA\RASH\CIC2\CIC2\src\app\Data.Coolbox\bin\Debug\Data.Coolbox.pdb
+H:\RIA\RASH\CIC2\CIC2\src\app\Data.Coolbox\bin\Debug\Domain.Common.dll
+H:\RIA\RASH\CIC2\CIC2\src\app\Data.Coolbox\bin\Debug\Domain.Coolbox.dll
+H:\RIA\RASH\CIC2\CIC2\src\app\Data.Coolbox\bin\Debug\EntityFramework.dll
+H:\RIA\RASH\CIC2\CIC2\src\app\Data.Coolbox\bin\Debug\Domain.Common.pdb
+H:\RIA\RASH\CIC2\CIC2\src\app\Data.Coolbox\bin\Debug\Domain.Coolbox.pdb
+H:\RIA\RASH\CIC2\CIC2\src\app\Data.Coolbox\bin\Debug\EntityFramework.xml
+H:\RIA\RASH\CIC2\CIC2\src\app\Data.Coolbox\bin\Debug\es\EntityFramework.resources.dll
+H:\RIA\RASH\CIC2\CIC2\src\app\Data.Coolbox\obj\Debug\Data.Coolbox.csprojResolveAssemblyReference.cache
+H:\RIA\RASH\CIC2\CIC2\src\app\Data.Coolbox\obj\Debug\Data.Coolbox.dll
+H:\RIA\RASH\CIC2\CIC2\src\app\Data.Coolbox\obj\Debug\Data.Coolbox.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\app\Data.Coolbox\bin\Debug\Data.Coolbox.dll.config
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\app\Data.Coolbox\bin\Debug\Data.Coolbox.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\app\Data.Coolbox\bin\Debug\Data.Coolbox.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\app\Data.Coolbox\bin\Debug\Domain.Common.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\app\Data.Coolbox\bin\Debug\Domain.Coolbox.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\app\Data.Coolbox\bin\Debug\EntityFramework.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\app\Data.Coolbox\bin\Debug\Domain.Common.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\app\Data.Coolbox\bin\Debug\Domain.Coolbox.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\app\Data.Coolbox\bin\Debug\EntityFramework.xml
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\app\Data.Coolbox\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\app\Data.Coolbox\obj\Debug\Data.Coolbox.csprojResolveAssemblyReference.cache
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\app\Data.Coolbox\obj\Debug\Data.Coolbox.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\app\Data.Coolbox\obj\Debug\Data.Coolbox.pdb
+H:\RIA\Smartway3\src\app\Data.Coolbox\obj\Debug\Data.Coolbox.csprojResolveAssemblyReference.cache

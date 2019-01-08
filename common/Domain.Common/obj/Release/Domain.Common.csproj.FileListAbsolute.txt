@@ -1,0 +1,5 @@
+H:\RIA\Smartway3\src\common\Domain.Common\bin\Release\Domain.Common.dll
+H:\RIA\Smartway3\src\common\Domain.Common\bin\Release\Domain.Common.pdb
+H:\RIA\Smartway3\src\common\Domain.Common\obj\Release\Domain.Common.csprojResolveAssemblyReference.cache
+H:\RIA\Smartway3\src\common\Domain.Common\obj\Release\Domain.Common.dll
+H:\RIA\Smartway3\src\common\Domain.Common\obj\Release\Domain.Common.pdb

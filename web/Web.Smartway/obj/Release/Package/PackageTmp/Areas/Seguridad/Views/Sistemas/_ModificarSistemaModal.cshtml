@@ -1,0 +1,78 @@
+﻿@model Web.Coolbox.Areas.Seguridad.Models.Paginas.InsertarModificarPaginaModel
+@section Styles
+{
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/sweetalert/sweetalert.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/dataTables/datatables.min.css")" />
+}
+@section scripts
+{
+    <script src="@Url.Content("~/Scripts/plugins/sweetalert/sweetalert.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jsview/seguridad/seguridad.usuarios.listarsistemas.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/dataTables/datatables.min.js")" type="text/javascript"></script>
+}
+<form id="frmSistemaNuevo" role="form" method="post"   class=" form-horizontal" >
+    <div class="panel-primary">
+        <div class="panel-heading">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class=" panel-title">
+                Modificar Sistema
+            </h4>
+        </div>
+    </div>
+    @*@using (Ajax.BeginForm("InsertarModificarSistemaModal", "Sistemas", null, new AjaxOptions { HttpMethod = "POST", InsertionMode = InsertionMode.Replace, UpdateTargetId = "modalcontent", OnComplete = "OnCompleteTransaction(xhr, status)", Confirm = "¿Esta seguro de guardar los cambios?" }, new { @class = "form-group" }))
+        {*@
+
+
+    <div class="modal-body">
+
+        <div class="form-group">
+            <p>
+                (*)
+                @Html.Label("Nombre:")
+                @Html.TextBoxFor(model => model.pag_str_nombre, new { @class = "form-control", @maxlength = "50", @required = "true" })
+            </p>
+            <p>
+                (*)
+                @Html.Label("Descripción:")
+                @Html.TextBoxFor(model => model.pag_str_descrip, new { @class = "form-control", @maxlength = "50", @required = "true" })
+
+            </p>
+            @*<p>
+                (*)
+                @Html.Label("Url:")
+                @Html.TextBoxFor(model => model.pag_str_url, new { @class = "form-control", @maxlength = "50", @required = "true" })
+            </p>*@
+            @*<p>
+                @Html.Label("Activo:")
+                @Html.CheckBoxFor(model => model.sis_bit_activo, new { @class = "form-control" })
+            </p>*@
+            <p>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">
+                        Accesos: <br />
+                    </label>
+
+                    <div class="col-sm-7">
+
+                        @Html.CheckBoxFor(model => model.pag_bit_activo)<label> El sistema está activo. </label>
+
+                        @*<div class="clearfix"></div>
+
+                        @Html.CheckBoxFor(model => model.pag_bit_externo)<label> El sistema es externo. </label>
+
+                    </div>*@
+                      </div>
+                </div>
+
+            </p>
+        </div>
+
+
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-white" data-dismiss="modal">Cancelar</button>
+        <button type="button" onclick="actualizar(this)" data-url="@Url.Action("InsertarModificarSistemaModal1", "Sistemas")" class="btn btn-primary">Actualizar</button>
+    </div>
+    @Html.HiddenFor(model => model.pag_int_id)
+</form>

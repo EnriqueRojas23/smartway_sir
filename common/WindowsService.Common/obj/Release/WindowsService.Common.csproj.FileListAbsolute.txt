@@ -1,0 +1,5 @@
+H:\RIA\Smartway3\src\common\WindowsService.Common\bin\Release\WindowsService.Common.dll
+H:\RIA\Smartway3\src\common\WindowsService.Common\bin\Release\WindowsService.Common.pdb
+H:\RIA\Smartway3\src\common\WindowsService.Common\obj\Release\WindowsService.Common.csprojResolveAssemblyReference.cache
+H:\RIA\Smartway3\src\common\WindowsService.Common\obj\Release\WindowsService.Common.dll
+H:\RIA\Smartway3\src\common\WindowsService.Common\obj\Release\WindowsService.Common.pdb

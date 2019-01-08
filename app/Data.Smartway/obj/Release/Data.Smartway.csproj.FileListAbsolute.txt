@@ -1,0 +1,13 @@
+H:\RIA\Smartway3\src\app\Data.Smartway\bin\Release\Data.Smartway.dll.config
+H:\RIA\Smartway3\src\app\Data.Smartway\bin\Release\Data.Smartway.dll
+H:\RIA\Smartway3\src\app\Data.Smartway\bin\Release\Data.Smartway.pdb
+H:\RIA\Smartway3\src\app\Data.Smartway\bin\Release\Domain.Common.dll
+H:\RIA\Smartway3\src\app\Data.Smartway\bin\Release\Domain.Smartway.dll
+H:\RIA\Smartway3\src\app\Data.Smartway\bin\Release\EntityFramework.dll
+H:\RIA\Smartway3\src\app\Data.Smartway\bin\Release\Domain.Common.pdb
+H:\RIA\Smartway3\src\app\Data.Smartway\bin\Release\Domain.Smartway.pdb
+H:\RIA\Smartway3\src\app\Data.Smartway\bin\Release\EntityFramework.xml
+H:\RIA\Smartway3\src\app\Data.Smartway\bin\Release\es\EntityFramework.resources.dll
+H:\RIA\Smartway3\src\app\Data.Smartway\obj\Release\Data.Smartway.csprojResolveAssemblyReference.cache
+H:\RIA\Smartway3\src\app\Data.Smartway\obj\Release\Data.Smartway.dll
+H:\RIA\Smartway3\src\app\Data.Smartway\obj\Release\Data.Smartway.pdb

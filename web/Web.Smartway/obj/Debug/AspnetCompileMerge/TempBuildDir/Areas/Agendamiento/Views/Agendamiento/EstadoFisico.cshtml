@@ -1,0 +1,293 @@
+﻿@model Web.Smartway.Areas.Agendamiento.Models.IncidenciaModel
+@{
+    ViewBag.Title = "EstadoFisico";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@section Styles
+    {
+
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/jqGrid/ui.jqgrid.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/jqgrid.extension.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/jasny/jasny-bootstrap.min.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/sweetalert/sweetalert.css")" />
+    <link rel="stylesheet" type="text/css" media="screen" href="@Url.Content("~/Content/plugins/touchspin/jquery.bootstrap-touchspin.min.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/chosen/chosen.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Scripts/plugins/MetroJS/release/MetroJs.Full/MetroJs.css")" />
+    <link rel="stylesheet" type="text/css" media="screen" href="@Url.Content("~/Content/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/application.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/dualListBox/bootstrap-duallistbox.css")" />
+}
+@section scripts    
+    {
+    <script src="@Url.Content("~/Scripts/jquery.unobtrusive-ajax.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/app/Agendamiento/agendamiento.estadofisico.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/jqGrid/jquery.jqGrid.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/jqGrid/i18n/grid.locale-es.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/datapicker/bootstrap-datepicker.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/jasny/jasny-bootstrap.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/sweetalert/sweetalert.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/touchspin/jquery.bootstrap-touchspin.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/chosen/chosen.jquery.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/MetroJS/release/MetroJs.Full/MetroJs.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/dualListBox/jquery.bootstrap-duallistbox.js")" type="text/javascript"></script>}
+
+
+<form id="frmEstadoFisico"  role="form" method="post" class="form-horizontal">
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-lg-10">
+            <h2>Estado físico del producto</h2>
+            <p>@Model.BuildRoot(@Model.idincidencia) </p> 
+        </div>
+        
+    </div>
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div id="botonera" class="col-md-2">
+                <div class="col-md-12">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5><i class="fa fa-paint-brush"></i> Paint</h5>
+                            <div class="ibox-tools">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+                            <div class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-md-11">
+                                        <button id="btnBorrar" class="btn  btn-block btn-default" onclick="borrar()" type="button"><i class="fa fa-eraser"></i>  </button>
+                                        <br />
+                                        <button id="btnRoto" class="btn  btn-block btn-default" onclick="definirtipo('Roto')" type="button">Roto</button>
+                                        <br />
+                                        <button id="btnRayadyo" class="btn  btn-block btn-default" onclick="definirtipo('Rayado')" type="button">Rayado</button>
+                                        <br />
+                                        <button id="btnQuinado" class="btn  btn-block btn-default" onclick="definirtipo('Quiñado')" type="button">Quiñado</button>
+                                        <br />
+                                        <button id="btnOxidado" class="btn  btn-block btn-default" onclick="definirtipo('Oxidado')" type="button">Oxidado</button>
+                                        <br />
+                                        <button id="btnManchado" class="btn  btn-block btn-default" onclick="definirtipo('Manchado')" type="button">Manchado</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="ibox float-e-margins">
+                    <div class="col-md-12">
+                        <div class="ibox-title">
+                            <h5><i class="fa fa-info-circle"></i> Datos Técnicos del Producto</h5>
+                            <div class="ibox-tools">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+                            <div class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-md-3">
+                                        <div class="panel panel-danger">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <i class="fa fa-tablet"></i> Parte Delantera
+                                                </h4>
+                                            </div>
+                                            <canvas id="iddelantera" width="250" height="390"></canvas>
+                                            <div class="panel-footer">
+                                                <div class="form-group">
+                                                    <div class="col-md-12">
+                                                        <button id="btnBorrar" class="btn  btn-block btn-default" onclick="borrardelantera()" type="button"><i class="fa fa-eraser"></i>  </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="panel panel-danger">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <i class="fa fa-tablet"></i> Parte Posterior
+                                                </h4>
+                                            </div>
+                                            <canvas id="idposterior" width="250" height="390"></canvas>
+                                            <div class="panel-footer">
+                                                <div class="form-group">
+                                                    <div class="col-md-12">
+                                                        <button id="btnBorrar" class="btn  btn-block btn-default" onclick="borrarposterior()" type="button"><i class="fa fa-eraser"></i>  </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="panel panel-danger">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <i class="fa fa-tablet"></i> Inferior
+                                                </h4>
+                                            </div>
+                                            <canvas id="idinferior" width="250" height="390"></canvas>
+                                            <div class="panel-footer">
+                                                <div class="form-group">
+                                                    <div class="col-md-12">
+                                                        <button id="btnBorrar" class="btn  btn-block btn-default" onclick="borrarinferior()" type="button"><i class="fa fa-eraser"></i>  </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="panel panel-danger">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <i class="fa fa-tablet"></i> Superior
+                                                </h4>
+                                            </div>
+                                            <canvas id="idsuperior" width="250" height="390"></canvas>
+                                            <div class="panel-footer">
+                                                <div class="form-group">
+                                                    <div class="col-md-12">
+                                                        <button id="btnBorrar" class="btn  btn-block btn-default" onclick="borrarsuperior()" type="button"><i class="fa fa-eraser"></i>  </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-3">
+                                        <div class="panel panel-danger">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <i class="fa fa-tablet"></i>  Derecho
+                                                </h4>
+                                            </div>
+                                            <canvas id="idderecha" width="250" height="390"></canvas>
+                                            <div class="panel-footer">
+                                                <div class="form-group">
+                                                    <div class="col-md-12">
+                                                        <button id="btnBorrar" class="btn  btn-block btn-default" onclick="borrarderecho()" type="button"><i class="fa fa-eraser"></i>  </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="panel panel-danger">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <i class="fa fa-tablet"></i>  Izquierdo
+                                                </h4>
+                                            </div>
+                                            <canvas id="idizquierda" width="250" height="390"></canvas>
+                                            <div class="panel-footer">
+                                                <div class="form-group">
+                                                    <div class="col-md-12">
+                                                        <button id="btnBorrar" class="btn  btn-block btn-default" onclick="borrarizquierda()" type="button"><i class="fa fa-eraser"></i>  </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="col-md-12">
+                                            <div class="ibox float-e-margins">
+                                                <div class="col-md-12">
+                                                    <div class="ibox-title">
+                                                        <h5><i class="fa fa-info-circle"></i> Accesorios</h5>
+                                                        <div class="ibox-tools">
+                                                            <a class="collapse-link">
+                                                                <i class="fa fa-chevron-up"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ibox-content">
+                                                        <div class="form-horizontal">
+                                                            <div class="form-group">
+                                                                <div class="panel panel-danger">
+                                                                    <div class="panel-body">
+                                                                        @Html.ListBoxFor(m => m.AccesoriosSeleccionados, Model.ListaAccesorios, new { multiple = "multiple" })
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="ibox float-e-margins">
+                                            <div class="ibox-title">
+                                                <h5><i class="fa fa-info-circle"></i> Delivery & Reparación</h5>
+                                                <div class="ibox-tools">
+                                                    <a class="collapse-link">
+                                                        <i class="fa fa-chevron-up"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="ibox-content">
+                                                <div class="form-group">
+                                                    <div class="col-md-12">
+                                                        <label class="control-label">Reparado en</label>
+                                                        @if (@Model.reparadoensucursal)
+                                                        {
+                                                           @Html.DropDownListFor(model => model.idsucursalreparacion, (SelectList)ViewData["listasucursal"], "[Reparado en sucursal]", new { @class = "form-control", @readonly = "readonly", @required = "true" })
+                                                        }
+                                                        else
+                                                        {
+                                                            @Html.DropDownListFor(model => model.idsucursalreparacion, (SelectList)ViewData["listasucursal"], "[Seleccione una sucursal]", new { @class = "form-control", @readonly = "readonly", @required = "true" })
+                                                        }
+                                                    </div>
+                                                </div>
+                                                @if (@Model.sucursaldelivery)
+                                                { 
+                                                    <div class="form-group">
+                                                        <div class="col-md-12">
+                                                            <label class="control-label">Dirección de Delivery</label>
+                                                            @Html.DropDownListFor(model => model.iddirecciondelivery, (SelectList)ViewData["listadireccion"], "[Sin Delivery]", new { @class = "form-control", @readonly = "readonly", @required = "true" })
+                                                        </div>
+                                                    </div>
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="ibox-footer">
+                            <div class="form-group">
+                                <div class="col-md-3">
+                                    <button id="btnguardar" type="button" onclick="Registrar()" class="btn  btn-block btn-primary">Registrar / Generar OST </button>
+                                </div>
+                                @Html.HiddenFor(x => x.idincidencia)
+                                @Html.HiddenFor(x=>x.idordenserviciotecnico)
+                                @Html.HiddenFor(x=>x.reparadoensucursal)
+                                @Html.HiddenFor(x=>x.sucursaldelivery)
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+     
+        </div>
+
+    </div>
+
+</form>

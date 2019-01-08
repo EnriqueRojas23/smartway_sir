@@ -1,0 +1,89 @@
+﻿@model Web.Smartway.Models.Account.SignInModel
+@{
+    ViewBag.Title = "Login";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartWay | @ViewBag.Title</title>
+
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/normalize.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/bootstrap.min.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/bootstrap.extension.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Fonts/font-awesome/css/font-awesome.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/animate.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/Site.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/ladda/ladda-themeless.min.css")" />
+
+
+    <script src="@Url.Content("~/Scripts/jquery-2.1.1.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/ladda/spin.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/ladda/ladda.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/ladda/ladda.jquery.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/tinycon/tinycon.min.js")" type="text/javascript"></script>
+
+    <link rel="icon" href="@Url.Content("~/content/favicon.ico")" />
+
+</head>
+
+<body class="white-bg">
+    <header>
+        <div style="position: absolute;" class="navbar navbar-inverse navbar-fixed-top" >
+            @*<div class="navbar-header">
+                <img style="max-width:300px;  margin-top: 1px;" src="@Url.Content("~/Images/logo.png")">
+            </div>*@
+        </div>
+    </header>
+    <div class="middle-box text-center loginscreen  animated fadeInDown ">
+        <div>
+            <div class="panel-heading logo-name">
+                <div class="row-fluid user-row">
+                    <img src="@Url.Content("~/Images/logo.jpg")" class="img-responsive" width="280" alt="Conxole Admin" />
+                </div>
+            </div>
+            @using (Html.BeginForm("SignIn", "Account", FormMethod.Post, new { ReturnUrl = Model.ReturnUrl, id = "form-signin", @class = "form-signin", @role = "form" }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary("", new { @class = "alert alert-danger"});
+                @Html.HiddenFor(model => model.ReturnUrl);
+                 @*<div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-database"></i></span>
+                        @Html.DropDownListFor(model => model.ModoAutenticacion, Model.ListaModoAutenticacion, new { @class = "form-control", @placeholder = "Usuario", @required = "", @autofocus = "" })
+                    </div>
+                </div>*@
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                        @Html.TextBoxFor(model => model.CodigoUsuario, new { @class = "form-control", @placeholder = "Usuario", @required = "", @autofocus = "" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-key"></i></span>
+                        @Html.PasswordFor(model => model.Password, new { @class = "form-control", @placeholder = "Password", @required = "" })
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary ladda-button block full-width m-b" data-style="expand-right">Login</button>
+
+                <a href="@Url.Action("ForgotPassword", "Account")"><small>¿Olvidaste tu contraseña?</small></a>
+                @*<p class="text-muted text-center"><small>¿No tienes una cuenta?</small></p>*@
+                @*<a class="btn btn-sm btn-white btn-block" href="@Url.Action("Register", "Account")">Crear una cuenta</a>*@
+            }
+            <p class="m-t"> <small>Smartway  &copy; 2017</small> </p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<script type="text/javascript">
+    $(document).ready(function ()
+    {
+        $('.ladda-button').ladda('bind', { timeout: 5000000 });
+    });
+</script>  

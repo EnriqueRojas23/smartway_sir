@@ -1,0 +1,155 @@
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\Seguridad.Common.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\Seguridad.Common.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\CommandContracts.Common.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\log4net.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\QueryContracts.Common.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\ServiceAgents.Common.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\Infraestructure.Common.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\StructureMap.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\FluentValidation.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\CommandContracts.Common.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\QueryContracts.Common.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\ServiceAgents.Common.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\log4net.xml
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\Infraestructure.Common.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\StructureMap.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\StructureMap.xml
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\FluentValidation.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\FluentValidation.xml
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\es\FluentValidation.resources.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Seguridad.Common\obj\Release\Seguridad.Common.csprojResolveAssemblyReference.cache
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Seguridad.Common\obj\Release\Seguridad.Common.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Seguridad.Common\obj\Release\Seguridad.Common.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\Seguridad.Common.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\Seguridad.Common.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\CommandContracts.Common.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\log4net.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\QueryContracts.Common.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\ServiceAgents.Common.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\Infraestructure.Common.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\StructureMap.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\FluentValidation.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\CommandContracts.Common.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\QueryContracts.Common.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\ServiceAgents.Common.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\log4net.xml
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\Infraestructure.Common.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\StructureMap.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\StructureMap.xml
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\FluentValidation.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\FluentValidation.xml
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\es\FluentValidation.resources.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\Seguridad.Common\obj\Release\Seguridad.Common.csprojResolveAssemblyReference.cache
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\Seguridad.Common\obj\Release\Seguridad.Common.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\Seguridad.Common\obj\Release\Seguridad.Common.pdb
+H:\RIA\RASH\CIC\0609\src\common\Seguridad.Common\bin\Release\Seguridad.Common.dll
+H:\RIA\RASH\CIC\0609\src\common\Seguridad.Common\bin\Release\Seguridad.Common.pdb
+H:\RIA\RASH\CIC\0609\src\common\Seguridad.Common\bin\Release\CommandContracts.Common.dll
+H:\RIA\RASH\CIC\0609\src\common\Seguridad.Common\bin\Release\log4net.dll
+H:\RIA\RASH\CIC\0609\src\common\Seguridad.Common\bin\Release\QueryContracts.Common.dll
+H:\RIA\RASH\CIC\0609\src\common\Seguridad.Common\bin\Release\ServiceAgents.Common.dll
+H:\RIA\RASH\CIC\0609\src\common\Seguridad.Common\bin\Release\Infraestructure.Common.dll
+H:\RIA\RASH\CIC\0609\src\common\Seguridad.Common\bin\Release\StructureMap.dll
+H:\RIA\RASH\CIC\0609\src\common\Seguridad.Common\bin\Release\FluentValidation.dll
+H:\RIA\RASH\CIC\0609\src\common\Seguridad.Common\bin\Release\CommandContracts.Common.pdb
+H:\RIA\RASH\CIC\0609\src\common\Seguridad.Common\bin\Release\QueryContracts.Common.pdb
+H:\RIA\RASH\CIC\0609\src\common\Seguridad.Common\bin\Release\ServiceAgents.Common.pdb
+H:\RIA\RASH\CIC\0609\src\common\Seguridad.Common\bin\Release\log4net.xml
+H:\RIA\RASH\CIC\0609\src\common\Seguridad.Common\bin\Release\Infraestructure.Common.pdb
+H:\RIA\RASH\CIC\0609\src\common\Seguridad.Common\bin\Release\StructureMap.pdb
+H:\RIA\RASH\CIC\0609\src\common\Seguridad.Common\bin\Release\StructureMap.xml
+H:\RIA\RASH\CIC\0609\src\common\Seguridad.Common\bin\Release\FluentValidation.pdb
+H:\RIA\RASH\CIC\0609\src\common\Seguridad.Common\bin\Release\FluentValidation.xml
+H:\RIA\RASH\CIC\0609\src\common\Seguridad.Common\bin\Release\es\FluentValidation.resources.dll
+H:\RIA\RASH\CIC\0609\src\common\Seguridad.Common\obj\Release\Seguridad.Common.csprojResolveAssemblyReference.cache
+H:\RIA\RASH\CIC\0609\src\common\Seguridad.Common\obj\Release\Seguridad.Common.dll
+H:\RIA\RASH\CIC\0609\src\common\Seguridad.Common\obj\Release\Seguridad.Common.pdb
+H:\RIA\RASH\CIC2\CIC2\src\common\Seguridad.Common\bin\Release\Seguridad.Common.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\Seguridad.Common\bin\Release\Seguridad.Common.pdb
+H:\RIA\RASH\CIC2\CIC2\src\common\Seguridad.Common\bin\Release\CommandContracts.Common.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\Seguridad.Common\bin\Release\log4net.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\Seguridad.Common\bin\Release\QueryContracts.Common.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\Seguridad.Common\bin\Release\ServiceAgents.Common.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\Seguridad.Common\bin\Release\Infraestructure.Common.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\Seguridad.Common\bin\Release\StructureMap.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\Seguridad.Common\bin\Release\FluentValidation.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\Seguridad.Common\bin\Release\CommandContracts.Common.pdb
+H:\RIA\RASH\CIC2\CIC2\src\common\Seguridad.Common\bin\Release\QueryContracts.Common.pdb
+H:\RIA\RASH\CIC2\CIC2\src\common\Seguridad.Common\bin\Release\ServiceAgents.Common.pdb
+H:\RIA\RASH\CIC2\CIC2\src\common\Seguridad.Common\bin\Release\log4net.xml
+H:\RIA\RASH\CIC2\CIC2\src\common\Seguridad.Common\bin\Release\Infraestructure.Common.pdb
+H:\RIA\RASH\CIC2\CIC2\src\common\Seguridad.Common\bin\Release\StructureMap.pdb
+H:\RIA\RASH\CIC2\CIC2\src\common\Seguridad.Common\bin\Release\StructureMap.xml
+H:\RIA\RASH\CIC2\CIC2\src\common\Seguridad.Common\bin\Release\FluentValidation.pdb
+H:\RIA\RASH\CIC2\CIC2\src\common\Seguridad.Common\bin\Release\FluentValidation.xml
+H:\RIA\RASH\CIC2\CIC2\src\common\Seguridad.Common\bin\Release\es\FluentValidation.resources.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\Seguridad.Common\obj\Release\Seguridad.Common.csprojResolveAssemblyReference.cache
+H:\RIA\RASH\CIC2\CIC2\src\common\Seguridad.Common\obj\Release\Seguridad.Common.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\Seguridad.Common\obj\Release\Seguridad.Common.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\System.Web.Mvc.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\System.Web.Mvc.xml
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\Seguridad.Common\bin\Release\es\System.Web.Mvc.resources.dll
+H:\RIA\Smartway\src\common\Seguridad.Common\bin\Release\Seguridad.Common.dll
+H:\RIA\Smartway\src\common\Seguridad.Common\bin\Release\Seguridad.Common.pdb
+H:\RIA\Smartway\src\common\Seguridad.Common\bin\Release\CommandContracts.Common.dll
+H:\RIA\Smartway\src\common\Seguridad.Common\bin\Release\log4net.dll
+H:\RIA\Smartway\src\common\Seguridad.Common\bin\Release\QueryContracts.Common.dll
+H:\RIA\Smartway\src\common\Seguridad.Common\bin\Release\ServiceAgents.Common.dll
+H:\RIA\Smartway\src\common\Seguridad.Common\bin\Release\Infraestructure.Common.dll
+H:\RIA\Smartway\src\common\Seguridad.Common\bin\Release\System.Web.Mvc.dll
+H:\RIA\Smartway\src\common\Seguridad.Common\bin\Release\StructureMap.dll
+H:\RIA\Smartway\src\common\Seguridad.Common\bin\Release\FluentValidation.dll
+H:\RIA\Smartway\src\common\Seguridad.Common\bin\Release\CommandContracts.Common.pdb
+H:\RIA\Smartway\src\common\Seguridad.Common\bin\Release\QueryContracts.Common.pdb
+H:\RIA\Smartway\src\common\Seguridad.Common\bin\Release\ServiceAgents.Common.pdb
+H:\RIA\Smartway\src\common\Seguridad.Common\bin\Release\log4net.xml
+H:\RIA\Smartway\src\common\Seguridad.Common\bin\Release\Infraestructure.Common.pdb
+H:\RIA\Smartway\src\common\Seguridad.Common\bin\Release\System.Web.Mvc.xml
+H:\RIA\Smartway\src\common\Seguridad.Common\bin\Release\StructureMap.pdb
+H:\RIA\Smartway\src\common\Seguridad.Common\bin\Release\StructureMap.xml
+H:\RIA\Smartway\src\common\Seguridad.Common\bin\Release\FluentValidation.pdb
+H:\RIA\Smartway\src\common\Seguridad.Common\bin\Release\FluentValidation.xml
+H:\RIA\Smartway\src\common\Seguridad.Common\bin\Release\es\System.Web.Mvc.resources.dll
+H:\RIA\Smartway\src\common\Seguridad.Common\bin\Release\es\FluentValidation.resources.dll
+H:\RIA\Smartway\src\common\Seguridad.Common\obj\Release\Seguridad.Common.csprojResolveAssemblyReference.cache
+H:\RIA\Smartway\src\common\Seguridad.Common\obj\Release\Seguridad.Common.dll
+H:\RIA\Smartway\src\common\Seguridad.Common\obj\Release\Seguridad.Common.pdb
+H:\RIA\Smartway3\src\common\Seguridad.Common\bin\Release\Seguridad.Common.dll
+H:\RIA\Smartway3\src\common\Seguridad.Common\bin\Release\Seguridad.Common.pdb
+H:\RIA\Smartway3\src\common\Seguridad.Common\bin\Release\CommandContracts.Common.dll
+H:\RIA\Smartway3\src\common\Seguridad.Common\bin\Release\log4net.dll
+H:\RIA\Smartway3\src\common\Seguridad.Common\bin\Release\QueryContracts.Common.dll
+H:\RIA\Smartway3\src\common\Seguridad.Common\bin\Release\ServiceAgents.Common.dll
+H:\RIA\Smartway3\src\common\Seguridad.Common\bin\Release\Infraestructure.Common.dll
+H:\RIA\Smartway3\src\common\Seguridad.Common\bin\Release\System.Web.Mvc.dll
+H:\RIA\Smartway3\src\common\Seguridad.Common\bin\Release\StructureMap.dll
+H:\RIA\Smartway3\src\common\Seguridad.Common\bin\Release\FluentValidation.dll
+H:\RIA\Smartway3\src\common\Seguridad.Common\bin\Release\System.Web.Razor.dll
+H:\RIA\Smartway3\src\common\Seguridad.Common\bin\Release\System.Web.WebPages.Razor.dll
+H:\RIA\Smartway3\src\common\Seguridad.Common\bin\Release\System.Web.WebPages.dll
+H:\RIA\Smartway3\src\common\Seguridad.Common\bin\Release\Microsoft.Web.Infrastructure.dll
+H:\RIA\Smartway3\src\common\Seguridad.Common\bin\Release\System.Web.WebPages.Deployment.dll
+H:\RIA\Smartway3\src\common\Seguridad.Common\bin\Release\CommandContracts.Common.pdb
+H:\RIA\Smartway3\src\common\Seguridad.Common\bin\Release\QueryContracts.Common.pdb
+H:\RIA\Smartway3\src\common\Seguridad.Common\bin\Release\ServiceAgents.Common.pdb
+H:\RIA\Smartway3\src\common\Seguridad.Common\bin\Release\log4net.xml
+H:\RIA\Smartway3\src\common\Seguridad.Common\bin\Release\Infraestructure.Common.pdb
+H:\RIA\Smartway3\src\common\Seguridad.Common\bin\Release\System.Web.Mvc.xml
+H:\RIA\Smartway3\src\common\Seguridad.Common\bin\Release\StructureMap.pdb
+H:\RIA\Smartway3\src\common\Seguridad.Common\bin\Release\StructureMap.xml
+H:\RIA\Smartway3\src\common\Seguridad.Common\bin\Release\FluentValidation.pdb
+H:\RIA\Smartway3\src\common\Seguridad.Common\bin\Release\FluentValidation.xml
+H:\RIA\Smartway3\src\common\Seguridad.Common\bin\Release\System.Web.Razor.xml
+H:\RIA\Smartway3\src\common\Seguridad.Common\bin\Release\System.Web.WebPages.Razor.xml
+H:\RIA\Smartway3\src\common\Seguridad.Common\bin\Release\System.Web.WebPages.xml
+H:\RIA\Smartway3\src\common\Seguridad.Common\bin\Release\Microsoft.Web.Infrastructure.xml
+H:\RIA\Smartway3\src\common\Seguridad.Common\bin\Release\System.Web.WebPages.Deployment.xml
+H:\RIA\Smartway3\src\common\Seguridad.Common\bin\Release\es\System.Web.Mvc.resources.dll
+H:\RIA\Smartway3\src\common\Seguridad.Common\bin\Release\es\FluentValidation.resources.dll
+H:\RIA\Smartway3\src\common\Seguridad.Common\bin\Release\es\System.Web.Razor.resources.dll
+H:\RIA\Smartway3\src\common\Seguridad.Common\bin\Release\es\System.Web.WebPages.Razor.resources.dll
+H:\RIA\Smartway3\src\common\Seguridad.Common\bin\Release\es\System.Web.WebPages.resources.dll
+H:\RIA\Smartway3\src\common\Seguridad.Common\bin\Release\es\System.Web.WebPages.Deployment.resources.dll
+H:\RIA\Smartway3\src\common\Seguridad.Common\obj\Release\Seguridad.Common.csprojResolveAssemblyReference.cache
+H:\RIA\Smartway3\src\common\Seguridad.Common\obj\Release\Seguridad.Common.dll
+H:\RIA\Smartway3\src\common\Seguridad.Common\obj\Release\Seguridad.Common.pdb

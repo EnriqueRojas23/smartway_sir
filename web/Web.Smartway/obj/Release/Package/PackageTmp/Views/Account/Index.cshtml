@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+@section Styles
+{
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/toastr/toastr.min.css")" />
+}
+@section Scripts {
+  
+    <script src="@Url.Content("~/Scripts/plugins/toastr/toastr.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/idle-timer/idle-timer.min.js")" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function ()
+        {
+            //askForWebNotificationPermissions();
+            //showNotification();
+
+            toastr.options.closeButton = true;
+            toastr.options.debug = false;
+            toastr.options.progressBar = true;
+            toastr.options.preventDuplicates = true;
+            toastr.options.positionClass = "toast-top-right";
+            toastr.options.onclick = null;
+            toastr.options.showDuration = "400";
+            toastr.options.hideDuration = "1000";
+            toastr.options.timeOut = "6000";
+            toastr.options.extendedTimeOut = "1000";
+            toastr.options.showEasing = "swing";
+            toastr.options.hideEasing = "linear";
+            toastr.options.showMethod = "slideDown";
+            toastr.options.hideMethod = "fadeOut";
+
+            toastr.success("Smartway", 'Bienvenido al Sistema Smartway.');
+            var n = 1;
+
+            function showNotification()
+            {
+                var notif = showWebNotification('Sistema Coolbox', 'Esto es una Prueba', '/Images/Icono%20Procesos.png', null, 6000);
+                notif.addEventListener("show", Notification_OnEvent);
+                notif.addEventListener("click", Notification_OnEvent);
+                notif.addEventListener("close", Notification_OnEvent);
+                n++;
+            }
+
+            function Notification_OnEvent(event) {
+                var notif = event.currentTarget;
+            }
+
+        })
+    </script>
+}
+<div class="col-md-12">
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-8 text-center">
+        <br /><br /><br /><br /><br />
+        <img class="logo img-responsive center-block" src="~/Images/logo.jpg" alt="Coolbox" width="550">
+    </div>
+    <div class="col-md-2">
+    </div>
+</div>
+

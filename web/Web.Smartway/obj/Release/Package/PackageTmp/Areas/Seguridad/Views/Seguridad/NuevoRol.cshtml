@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Nuevo Rol";
+}
+
+<h2>NuevoRol</h2>
+<br />
+<br />
+
+<table>
+    <tr>
+        <td>Descripción: </td>
+        <td>@Html.TextBox("txtDescNuevRol", "")</td>
+    </tr>
+    <tr>
+        <td>Alias: </td>
+        <td>@Html.TextBox("txtComentNuevRol", "")</td>
+    </tr>
+</table>
+<br />
+<fieldset>
+    <button id='newProduct1' onclick="location.href='@Url.Action("Agregar", "Seguridad")'" class="btn btn-primary">Agregar</button>
+    <button id='newProduct2' onclick="location.href='@Url.Action("Control", "Seguridad")'" class="btn btn-primary">Regresar</button>
+</fieldset>

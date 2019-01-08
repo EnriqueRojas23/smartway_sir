@@ -1,0 +1,165 @@
+D:\Proyectos\Ria\Coolbox\src\common\QueryContracts.Common\bin\Debug\QueryContracts.Common.dll
+D:\Proyectos\Ria\Coolbox\src\common\QueryContracts.Common\bin\Debug\QueryContracts.Common.pdb
+D:\Proyectos\Ria\Coolbox\src\common\QueryContracts.Common\bin\Debug\Infraestructure.Common.dll
+D:\Proyectos\Ria\Coolbox\src\common\QueryContracts.Common\bin\Debug\FluentValidation.dll
+D:\Proyectos\Ria\Coolbox\src\common\QueryContracts.Common\bin\Debug\log4net.dll
+D:\Proyectos\Ria\Coolbox\src\common\QueryContracts.Common\bin\Debug\StructureMap.dll
+D:\Proyectos\Ria\Coolbox\src\common\QueryContracts.Common\bin\Debug\Infraestructure.Common.pdb
+D:\Proyectos\Ria\Coolbox\src\common\QueryContracts.Common\bin\Debug\FluentValidation.pdb
+D:\Proyectos\Ria\Coolbox\src\common\QueryContracts.Common\bin\Debug\FluentValidation.xml
+D:\Proyectos\Ria\Coolbox\src\common\QueryContracts.Common\bin\Debug\log4net.xml
+D:\Proyectos\Ria\Coolbox\src\common\QueryContracts.Common\bin\Debug\StructureMap.pdb
+D:\Proyectos\Ria\Coolbox\src\common\QueryContracts.Common\bin\Debug\StructureMap.xml
+D:\Proyectos\Ria\Coolbox\src\common\QueryContracts.Common\bin\Debug\es\FluentValidation.resources.dll
+D:\Proyectos\Ria\Coolbox\src\common\QueryContracts.Common\obj\Debug\QueryContracts.Common.csprojResolveAssemblyReference.cache
+D:\Proyectos\Ria\Coolbox\src\common\QueryContracts.Common\obj\Debug\QueryContracts.Common.dll
+D:\Proyectos\Ria\Coolbox\src\common\QueryContracts.Common\obj\Debug\QueryContracts.Common.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\common\QueryContracts.Common\bin\Debug\QueryContracts.Common.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\common\QueryContracts.Common\bin\Debug\QueryContracts.Common.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\common\QueryContracts.Common\bin\Debug\Infraestructure.Common.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\common\QueryContracts.Common\bin\Debug\FluentValidation.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\common\QueryContracts.Common\bin\Debug\log4net.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\common\QueryContracts.Common\bin\Debug\StructureMap.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\common\QueryContracts.Common\bin\Debug\Infraestructure.Common.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\common\QueryContracts.Common\bin\Debug\FluentValidation.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\common\QueryContracts.Common\bin\Debug\FluentValidation.xml
+H:\RIA\RASH\RASHAPP_MERGE\src\common\QueryContracts.Common\bin\Debug\log4net.xml
+H:\RIA\RASH\RASHAPP_MERGE\src\common\QueryContracts.Common\bin\Debug\StructureMap.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\common\QueryContracts.Common\bin\Debug\StructureMap.xml
+H:\RIA\RASH\RASHAPP_MERGE\src\common\QueryContracts.Common\bin\Debug\es\FluentValidation.resources.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\common\QueryContracts.Common\obj\Debug\QueryContracts.Common.csprojResolveAssemblyReference.cache
+H:\RIA\RASH\RASHAPP_MERGE\src\common\QueryContracts.Common\obj\Debug\QueryContracts.Common.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\common\QueryContracts.Common\obj\Debug\QueryContracts.Common.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\QueryContracts.Common\bin\Debug\QueryContracts.Common.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\QueryContracts.Common\bin\Debug\QueryContracts.Common.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\QueryContracts.Common\bin\Debug\Infraestructure.Common.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\QueryContracts.Common\bin\Debug\FluentValidation.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\QueryContracts.Common\bin\Debug\log4net.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\QueryContracts.Common\bin\Debug\StructureMap.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\QueryContracts.Common\bin\Debug\Infraestructure.Common.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\QueryContracts.Common\bin\Debug\FluentValidation.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\QueryContracts.Common\bin\Debug\FluentValidation.xml
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\QueryContracts.Common\bin\Debug\log4net.xml
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\QueryContracts.Common\bin\Debug\StructureMap.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\QueryContracts.Common\bin\Debug\StructureMap.xml
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\QueryContracts.Common\bin\Debug\es\FluentValidation.resources.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\QueryContracts.Common\obj\Debug\QueryContracts.Common.csprojResolveAssemblyReference.cache
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\QueryContracts.Common\obj\Debug\QueryContracts.Common.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\QueryContracts.Common\obj\Debug\QueryContracts.Common.pdb
+H:\RIA\RASH\CIC\0609\src\common\QueryContracts.Common\bin\Debug\QueryContracts.Common.dll
+H:\RIA\RASH\CIC\0609\src\common\QueryContracts.Common\bin\Debug\QueryContracts.Common.pdb
+H:\RIA\RASH\CIC\0609\src\common\QueryContracts.Common\bin\Debug\Infraestructure.Common.dll
+H:\RIA\RASH\CIC\0609\src\common\QueryContracts.Common\bin\Debug\FluentValidation.dll
+H:\RIA\RASH\CIC\0609\src\common\QueryContracts.Common\bin\Debug\log4net.dll
+H:\RIA\RASH\CIC\0609\src\common\QueryContracts.Common\bin\Debug\StructureMap.dll
+H:\RIA\RASH\CIC\0609\src\common\QueryContracts.Common\bin\Debug\Infraestructure.Common.pdb
+H:\RIA\RASH\CIC\0609\src\common\QueryContracts.Common\bin\Debug\FluentValidation.pdb
+H:\RIA\RASH\CIC\0609\src\common\QueryContracts.Common\bin\Debug\FluentValidation.xml
+H:\RIA\RASH\CIC\0609\src\common\QueryContracts.Common\bin\Debug\log4net.xml
+H:\RIA\RASH\CIC\0609\src\common\QueryContracts.Common\bin\Debug\StructureMap.pdb
+H:\RIA\RASH\CIC\0609\src\common\QueryContracts.Common\bin\Debug\StructureMap.xml
+H:\RIA\RASH\CIC\0609\src\common\QueryContracts.Common\bin\Debug\es\FluentValidation.resources.dll
+H:\RIA\RASH\CIC\0609\src\common\QueryContracts.Common\obj\Debug\QueryContracts.Common.csprojResolveAssemblyReference.cache
+H:\RIA\RASH\CIC\0609\src\common\QueryContracts.Common\obj\Debug\QueryContracts.Common.dll
+H:\RIA\RASH\CIC\0609\src\common\QueryContracts.Common\obj\Debug\QueryContracts.Common.pdb
+H:\RIA\RASH\CIC2\CIC2\src\common\QueryContracts.Common\bin\Debug\QueryContracts.Common.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\QueryContracts.Common\bin\Debug\QueryContracts.Common.pdb
+H:\RIA\RASH\CIC2\CIC2\src\common\QueryContracts.Common\bin\Debug\Infraestructure.Common.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\QueryContracts.Common\bin\Debug\FluentValidation.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\QueryContracts.Common\bin\Debug\log4net.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\QueryContracts.Common\bin\Debug\StructureMap.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\QueryContracts.Common\bin\Debug\Infraestructure.Common.pdb
+H:\RIA\RASH\CIC2\CIC2\src\common\QueryContracts.Common\bin\Debug\FluentValidation.pdb
+H:\RIA\RASH\CIC2\CIC2\src\common\QueryContracts.Common\bin\Debug\FluentValidation.xml
+H:\RIA\RASH\CIC2\CIC2\src\common\QueryContracts.Common\bin\Debug\log4net.xml
+H:\RIA\RASH\CIC2\CIC2\src\common\QueryContracts.Common\bin\Debug\StructureMap.pdb
+H:\RIA\RASH\CIC2\CIC2\src\common\QueryContracts.Common\bin\Debug\StructureMap.xml
+H:\RIA\RASH\CIC2\CIC2\src\common\QueryContracts.Common\bin\Debug\es\FluentValidation.resources.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\QueryContracts.Common\obj\Debug\QueryContracts.Common.csprojResolveAssemblyReference.cache
+H:\RIA\RASH\CIC2\CIC2\src\common\QueryContracts.Common\obj\Debug\QueryContracts.Common.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\QueryContracts.Common\obj\Debug\QueryContracts.Common.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\QueryContracts.Common\bin\Debug\QueryContracts.Common.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\QueryContracts.Common\bin\Debug\QueryContracts.Common.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\QueryContracts.Common\bin\Debug\Infraestructure.Common.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\QueryContracts.Common\bin\Debug\FluentValidation.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\QueryContracts.Common\bin\Debug\log4net.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\QueryContracts.Common\bin\Debug\StructureMap.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\QueryContracts.Common\bin\Debug\Infraestructure.Common.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\QueryContracts.Common\bin\Debug\FluentValidation.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\QueryContracts.Common\bin\Debug\FluentValidation.xml
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\QueryContracts.Common\bin\Debug\log4net.xml
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\QueryContracts.Common\bin\Debug\StructureMap.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\QueryContracts.Common\bin\Debug\StructureMap.xml
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\QueryContracts.Common\bin\Debug\es\FluentValidation.resources.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\QueryContracts.Common\obj\Debug\QueryContracts.Common.csprojResolveAssemblyReference.cache
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\QueryContracts.Common\obj\Debug\QueryContracts.Common.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\QueryContracts.Common\obj\Debug\QueryContracts.Common.pdb
+H:\RIA\Smartway3\src\common\QueryContracts.Common\bin\Debug\QueryContracts.Common.dll
+H:\RIA\Smartway3\src\common\QueryContracts.Common\bin\Debug\QueryContracts.Common.pdb
+H:\RIA\Smartway3\src\common\QueryContracts.Common\bin\Debug\Infraestructure.Common.dll
+H:\RIA\Smartway3\src\common\QueryContracts.Common\bin\Debug\FluentValidation.dll
+H:\RIA\Smartway3\src\common\QueryContracts.Common\bin\Debug\StructureMap.dll
+H:\RIA\Smartway3\src\common\QueryContracts.Common\bin\Debug\log4net.dll
+H:\RIA\Smartway3\src\common\QueryContracts.Common\bin\Debug\Infraestructure.Common.pdb
+H:\RIA\Smartway3\src\common\QueryContracts.Common\bin\Debug\FluentValidation.pdb
+H:\RIA\Smartway3\src\common\QueryContracts.Common\bin\Debug\FluentValidation.xml
+H:\RIA\Smartway3\src\common\QueryContracts.Common\bin\Debug\StructureMap.pdb
+H:\RIA\Smartway3\src\common\QueryContracts.Common\bin\Debug\StructureMap.xml
+H:\RIA\Smartway3\src\common\QueryContracts.Common\bin\Debug\log4net.xml
+H:\RIA\Smartway3\src\common\QueryContracts.Common\bin\Debug\es\FluentValidation.resources.dll
+H:\RIA\Smartway3\src\common\QueryContracts.Common\obj\Debug\QueryContracts.Common.dll
+H:\RIA\Smartway3\src\common\QueryContracts.Common\obj\Debug\QueryContracts.Common.pdb
+D:\Ria\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\QueryContracts.Common.dll
+D:\Ria\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\QueryContracts.Common.pdb
+D:\Ria\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\Infraestructure.Common.dll
+D:\Ria\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\FluentValidation.dll
+D:\Ria\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\StructureMap.dll
+D:\Ria\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\log4net.dll
+D:\Ria\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\Infraestructure.Common.pdb
+D:\Ria\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\FluentValidation.pdb
+D:\Ria\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\FluentValidation.xml
+D:\Ria\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\StructureMap.pdb
+D:\Ria\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\StructureMap.xml
+D:\Ria\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\log4net.xml
+D:\Ria\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\es\FluentValidation.resources.dll
+D:\Ria\Smartway\Smartway3\src\common\QueryContracts.Common\obj\Debug\QueryContracts.Common.csprojResolveAssemblyReference.cache
+D:\Ria\Smartway\Smartway3\src\common\QueryContracts.Common\obj\Debug\QueryContracts.Common.csproj.CoreCompileInputs.cache
+D:\Ria\Smartway\Smartway3\src\common\QueryContracts.Common\obj\Debug\QueryContracts.Common.csproj.CopyComplete
+D:\Ria\Smartway\Smartway3\src\common\QueryContracts.Common\obj\Debug\QueryContracts.Common.dll
+D:\Ria\Smartway\Smartway3\src\common\QueryContracts.Common\obj\Debug\QueryContracts.Common.pdb
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\QueryContracts.Common.dll
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\QueryContracts.Common.pdb
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\Infraestructure.Common.dll
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\FluentValidation.dll
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\StructureMap.dll
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\log4net.dll
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\Infraestructure.Common.pdb
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\FluentValidation.pdb
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\FluentValidation.xml
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\StructureMap.pdb
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\StructureMap.xml
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\log4net.xml
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\es\FluentValidation.resources.dll
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\QueryContracts.Common\obj\Debug\QueryContracts.Common.csprojAssemblyReference.cache
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\QueryContracts.Common\obj\Debug\QueryContracts.Common.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\QueryContracts.Common\obj\Debug\QueryContracts.Common.csproj.CopyComplete
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\QueryContracts.Common\obj\Debug\QueryContracts.Common.dll
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\QueryContracts.Common\obj\Debug\QueryContracts.Common.pdb
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\QueryContracts.Common.dll
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\QueryContracts.Common.pdb
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\Infraestructure.Common.dll
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\FluentValidation.dll
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\StructureMap.dll
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\log4net.dll
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\Infraestructure.Common.pdb
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\FluentValidation.pdb
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\FluentValidation.xml
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\StructureMap.pdb
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\StructureMap.xml
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\log4net.xml
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\QueryContracts.Common\bin\Debug\es\FluentValidation.resources.dll
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\QueryContracts.Common\obj\Debug\QueryContracts.Common.csprojAssemblyReference.cache
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\QueryContracts.Common\obj\Debug\QueryContracts.Common.csproj.CoreCompileInputs.cache
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\QueryContracts.Common\obj\Debug\QueryContracts.Common.csproj.CopyComplete
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\QueryContracts.Common\obj\Debug\QueryContracts.Common.dll
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\QueryContracts.Common\obj\Debug\QueryContracts.Common.pdb

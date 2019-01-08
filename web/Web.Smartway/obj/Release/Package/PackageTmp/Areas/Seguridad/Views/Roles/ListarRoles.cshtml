@@ -1,0 +1,104 @@
+﻿@model Web.Coolbox.Areas.Seguridad.Models.Roles.ListarRolesModel
+
+@{
+    ViewBag.Title = "Mantenimiento de Roles";
+}
+
+@section Styles{
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/sweetalert/sweetalert.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/jqGrid/ui.jqgrid.css")" />
+    <link rel="stylesheet" type="text/css" media="screen" href="@Url.Content("~/Content/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css")" />
+    <link href="~/Content/plugins/iCheck/custom.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/jsTree/style.css")" />
+}
+
+@section scripts {
+    <script src="@Url.Content("~/Scripts/plugins/jqGrid/jquery.jqGrid.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/jqGrid/i18n/grid.locale-es.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/app/seguridad/seguridad.roles.listarroles.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/sweetalert/sweetalert.min.js")" type="text/javascript"></script>
+    <script src="~/Scripts/plugins/iCheck/icheck.min.js"></script>
+    <script src="@Url.Content("~/Scripts/plugins/jsTree/jstree.min.js")"></script>
+}
+
+<button id="templatemod" style="display:none" title="Modificar" data-url="@Url.Action("Modificar", "Roles", new { area = "seguridad" })" class="btn btn-warning btn-xs btn-outline"><i class="fa fa-edit"></i> </button>
+<button id="templatetrash" style="display:none" title="Eliminar" data-url="@Url.Action("Eliminar", "Roles", new { area = "seguridad" })" class="btn btn-danger btn-xs  btn-outline"><i class="fa fa-trash"></i></button>
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-5">
+        <h2>@ViewBag.Title</h2>
+        <ol class="breadcrumb">
+            <li>
+                Seguridad
+            </li>
+            <li class="active">
+                <strong>@ViewBag.Title</strong>
+            </li>
+        </ol>
+    </div>
+
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-md-10">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5><i class="fa fa-search"></i> Acciones y búsqueda</h5>
+                <div class="ibox-tools">
+                
+                </div>
+            </div>
+            <div class="ibox-content">
+                <div class="row">
+                    <div class="form-group form-horizontal">
+                        <div class="col-md-12">
+                            <label class="col-md-1 control-label">Nombre:</label>
+                            <div class="col-md-3">
+                                @Html.TextBoxFor(model => model.NombreRol, new { @class = "form-control" })
+                            </div>
+                            <div class="col-md-2">
+                                <button id='btnBuscar' type="button" onclick="buscarrol()" class="btn btn-primary"> <i class="fa fa-search"></i>  Buscar Rol</button>
+                            </div>
+                            <div class="col-md-6 text-right">
+                                <button id='btnNuevo' data-url="@Url.Action("InsertarRol", "Roles", new { area = "seguridad" })" class="btn btn-primary "> <i class="fa fa-plus-circle"></i>  Nuevo Rol </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="col-md-2">
+            <div class="widget  navy-bg p-lg  text-center">
+                <i class="fa fa-briefcase fa-5x"></i>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5><i class="fa fa-briefcase"></i> Lista de Roles</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="table-responsive">
+                                <div class="jqGrid_wrapper">
+                                    <table id="gridlistarol" data-dataurl="@Url.Action("JsonListarRoles", "Roles", new { area = "seguridad"})" data-urlasig="@Url.Action("AsignarMenuOpcion", "Roles", new { area = "seguridad"})" data-edit="@Url.Action("EditarRol", "Roles", new { area = "seguridad" })"></table>
+                                    <div id="gridlistarolpager"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

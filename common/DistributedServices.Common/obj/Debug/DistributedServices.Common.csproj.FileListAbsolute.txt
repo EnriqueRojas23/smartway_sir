@@ -1,0 +1,336 @@
+D:\Proyectos\Ria\Coolbox\src\common\DistributedServices.Common\bin\Debug\DistributedServices.Common.dll
+D:\Proyectos\Ria\Coolbox\src\common\DistributedServices.Common\bin\Debug\DistributedServices.Common.pdb
+D:\Proyectos\Ria\Coolbox\src\common\DistributedServices.Common\bin\Debug\Bootstrapper.Wcf.Common.dll
+D:\Proyectos\Ria\Coolbox\src\common\DistributedServices.Common\bin\Debug\CommandContracts.Common.dll
+D:\Proyectos\Ria\Coolbox\src\common\DistributedServices.Common\bin\Debug\Infraestructure.Common.dll
+D:\Proyectos\Ria\Coolbox\src\common\DistributedServices.Common\bin\Debug\log4net.dll
+D:\Proyectos\Ria\Coolbox\src\common\DistributedServices.Common\bin\Debug\QueryContracts.Common.dll
+D:\Proyectos\Ria\Coolbox\src\common\DistributedServices.Common\bin\Debug\StructureMap.dll
+D:\Proyectos\Ria\Coolbox\src\common\DistributedServices.Common\bin\Debug\CommandHandlers.Common.dll
+D:\Proyectos\Ria\Coolbox\src\common\DistributedServices.Common\bin\Debug\FluentValidation.dll
+D:\Proyectos\Ria\Coolbox\src\common\DistributedServices.Common\bin\Debug\Domain.Common.dll
+D:\Proyectos\Ria\Coolbox\src\common\DistributedServices.Common\bin\Debug\Data.Common.dll
+D:\Proyectos\Ria\Coolbox\src\common\DistributedServices.Common\bin\Debug\QueryHandlers.Common.dll
+D:\Proyectos\Ria\Coolbox\src\common\DistributedServices.Common\bin\Debug\EntityFramework.dll
+D:\Proyectos\Ria\Coolbox\src\common\DistributedServices.Common\bin\Debug\Bootstrapper.Wcf.Common.pdb
+D:\Proyectos\Ria\Coolbox\src\common\DistributedServices.Common\bin\Debug\CommandContracts.Common.pdb
+D:\Proyectos\Ria\Coolbox\src\common\DistributedServices.Common\bin\Debug\Infraestructure.Common.pdb
+D:\Proyectos\Ria\Coolbox\src\common\DistributedServices.Common\bin\Debug\QueryContracts.Common.pdb
+D:\Proyectos\Ria\Coolbox\src\common\DistributedServices.Common\bin\Debug\log4net.xml
+D:\Proyectos\Ria\Coolbox\src\common\DistributedServices.Common\bin\Debug\StructureMap.pdb
+D:\Proyectos\Ria\Coolbox\src\common\DistributedServices.Common\bin\Debug\StructureMap.xml
+D:\Proyectos\Ria\Coolbox\src\common\DistributedServices.Common\bin\Debug\CommandHandlers.Common.pdb
+D:\Proyectos\Ria\Coolbox\src\common\DistributedServices.Common\bin\Debug\FluentValidation.pdb
+D:\Proyectos\Ria\Coolbox\src\common\DistributedServices.Common\bin\Debug\FluentValidation.xml
+D:\Proyectos\Ria\Coolbox\src\common\DistributedServices.Common\bin\Debug\Domain.Common.pdb
+D:\Proyectos\Ria\Coolbox\src\common\DistributedServices.Common\bin\Debug\Data.Common.pdb
+D:\Proyectos\Ria\Coolbox\src\common\DistributedServices.Common\bin\Debug\QueryHandlers.Common.pdb
+D:\Proyectos\Ria\Coolbox\src\common\DistributedServices.Common\bin\Debug\EntityFramework.xml
+D:\Proyectos\Ria\Coolbox\src\common\DistributedServices.Common\bin\Debug\es\FluentValidation.resources.dll
+D:\Proyectos\Ria\Coolbox\src\common\DistributedServices.Common\bin\Debug\es\EntityFramework.resources.dll
+D:\Proyectos\Ria\Coolbox\src\common\DistributedServices.Common\obj\Debug\DistributedServices.Common.csprojResolveAssemblyReference.cache
+D:\Proyectos\Ria\Coolbox\src\common\DistributedServices.Common\obj\Debug\DistributedServices.Common.dll
+D:\Proyectos\Ria\Coolbox\src\common\DistributedServices.Common\obj\Debug\DistributedServices.Common.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\common\DistributedServices.Common\bin\Debug\DistributedServices.Common.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\common\DistributedServices.Common\bin\Debug\DistributedServices.Common.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\common\DistributedServices.Common\bin\Debug\Bootstrapper.Wcf.Common.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\common\DistributedServices.Common\bin\Debug\CommandContracts.Common.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\common\DistributedServices.Common\bin\Debug\Infraestructure.Common.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\common\DistributedServices.Common\bin\Debug\log4net.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\common\DistributedServices.Common\bin\Debug\QueryContracts.Common.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\common\DistributedServices.Common\bin\Debug\StructureMap.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\common\DistributedServices.Common\bin\Debug\CommandHandlers.Common.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\common\DistributedServices.Common\bin\Debug\FluentValidation.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\common\DistributedServices.Common\bin\Debug\Domain.Common.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\common\DistributedServices.Common\bin\Debug\Data.Common.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\common\DistributedServices.Common\bin\Debug\QueryHandlers.Common.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\common\DistributedServices.Common\bin\Debug\EntityFramework.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\common\DistributedServices.Common\bin\Debug\Bootstrapper.Wcf.Common.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\common\DistributedServices.Common\bin\Debug\CommandContracts.Common.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\common\DistributedServices.Common\bin\Debug\Infraestructure.Common.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\common\DistributedServices.Common\bin\Debug\QueryContracts.Common.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\common\DistributedServices.Common\bin\Debug\log4net.xml
+H:\RIA\RASH\RASHAPP_MERGE\src\common\DistributedServices.Common\bin\Debug\StructureMap.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\common\DistributedServices.Common\bin\Debug\StructureMap.xml
+H:\RIA\RASH\RASHAPP_MERGE\src\common\DistributedServices.Common\bin\Debug\CommandHandlers.Common.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\common\DistributedServices.Common\bin\Debug\FluentValidation.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\common\DistributedServices.Common\bin\Debug\FluentValidation.xml
+H:\RIA\RASH\RASHAPP_MERGE\src\common\DistributedServices.Common\bin\Debug\Domain.Common.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\common\DistributedServices.Common\bin\Debug\Data.Common.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\common\DistributedServices.Common\bin\Debug\QueryHandlers.Common.pdb
+H:\RIA\RASH\RASHAPP_MERGE\src\common\DistributedServices.Common\bin\Debug\EntityFramework.xml
+H:\RIA\RASH\RASHAPP_MERGE\src\common\DistributedServices.Common\bin\Debug\es\FluentValidation.resources.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\common\DistributedServices.Common\bin\Debug\es\EntityFramework.resources.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\common\DistributedServices.Common\obj\Debug\DistributedServices.Common.csprojResolveAssemblyReference.cache
+H:\RIA\RASH\RASHAPP_MERGE\src\common\DistributedServices.Common\obj\Debug\DistributedServices.Common.dll
+H:\RIA\RASH\RASHAPP_MERGE\src\common\DistributedServices.Common\obj\Debug\DistributedServices.Common.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\DistributedServices.Common.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\DistributedServices.Common.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\Bootstrapper.Wcf.Common.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\CommandContracts.Common.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\Infraestructure.Common.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\log4net.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\QueryContracts.Common.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\StructureMap.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\CommandHandlers.Common.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\FluentValidation.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\Domain.Common.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\Data.Common.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\QueryHandlers.Common.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\EntityFramework.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\Bootstrapper.Wcf.Common.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\CommandContracts.Common.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\Infraestructure.Common.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\QueryContracts.Common.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\log4net.xml
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\StructureMap.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\StructureMap.xml
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\CommandHandlers.Common.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\FluentValidation.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\FluentValidation.xml
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\Domain.Common.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\Data.Common.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\QueryHandlers.Common.pdb
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\EntityFramework.xml
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\es\FluentValidation.resources.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\es\EntityFramework.resources.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\DistributedServices.Common\obj\Debug\DistributedServices.Common.csprojResolveAssemblyReference.cache
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\DistributedServices.Common\obj\Debug\DistributedServices.Common.dll
+H:\RIA\RASH\CIC\0209\WebCoolbox2.0\src\common\DistributedServices.Common\obj\Debug\DistributedServices.Common.pdb
+H:\RIA\RASH\CIC\0609\src\common\DistributedServices.Common\bin\Debug\DistributedServices.Common.dll
+H:\RIA\RASH\CIC\0609\src\common\DistributedServices.Common\bin\Debug\DistributedServices.Common.pdb
+H:\RIA\RASH\CIC\0609\src\common\DistributedServices.Common\bin\Debug\Bootstrapper.Wcf.Common.dll
+H:\RIA\RASH\CIC\0609\src\common\DistributedServices.Common\bin\Debug\CommandContracts.Common.dll
+H:\RIA\RASH\CIC\0609\src\common\DistributedServices.Common\bin\Debug\Infraestructure.Common.dll
+H:\RIA\RASH\CIC\0609\src\common\DistributedServices.Common\bin\Debug\log4net.dll
+H:\RIA\RASH\CIC\0609\src\common\DistributedServices.Common\bin\Debug\QueryContracts.Common.dll
+H:\RIA\RASH\CIC\0609\src\common\DistributedServices.Common\bin\Debug\StructureMap.dll
+H:\RIA\RASH\CIC\0609\src\common\DistributedServices.Common\bin\Debug\CommandHandlers.Common.dll
+H:\RIA\RASH\CIC\0609\src\common\DistributedServices.Common\bin\Debug\FluentValidation.dll
+H:\RIA\RASH\CIC\0609\src\common\DistributedServices.Common\bin\Debug\Domain.Common.dll
+H:\RIA\RASH\CIC\0609\src\common\DistributedServices.Common\bin\Debug\Data.Common.dll
+H:\RIA\RASH\CIC\0609\src\common\DistributedServices.Common\bin\Debug\QueryHandlers.Common.dll
+H:\RIA\RASH\CIC\0609\src\common\DistributedServices.Common\bin\Debug\EntityFramework.dll
+H:\RIA\RASH\CIC\0609\src\common\DistributedServices.Common\bin\Debug\Bootstrapper.Wcf.Common.pdb
+H:\RIA\RASH\CIC\0609\src\common\DistributedServices.Common\bin\Debug\CommandContracts.Common.pdb
+H:\RIA\RASH\CIC\0609\src\common\DistributedServices.Common\bin\Debug\Infraestructure.Common.pdb
+H:\RIA\RASH\CIC\0609\src\common\DistributedServices.Common\bin\Debug\QueryContracts.Common.pdb
+H:\RIA\RASH\CIC\0609\src\common\DistributedServices.Common\bin\Debug\log4net.xml
+H:\RIA\RASH\CIC\0609\src\common\DistributedServices.Common\bin\Debug\StructureMap.pdb
+H:\RIA\RASH\CIC\0609\src\common\DistributedServices.Common\bin\Debug\StructureMap.xml
+H:\RIA\RASH\CIC\0609\src\common\DistributedServices.Common\bin\Debug\CommandHandlers.Common.pdb
+H:\RIA\RASH\CIC\0609\src\common\DistributedServices.Common\bin\Debug\FluentValidation.pdb
+H:\RIA\RASH\CIC\0609\src\common\DistributedServices.Common\bin\Debug\FluentValidation.xml
+H:\RIA\RASH\CIC\0609\src\common\DistributedServices.Common\bin\Debug\Domain.Common.pdb
+H:\RIA\RASH\CIC\0609\src\common\DistributedServices.Common\bin\Debug\Data.Common.pdb
+H:\RIA\RASH\CIC\0609\src\common\DistributedServices.Common\bin\Debug\QueryHandlers.Common.pdb
+H:\RIA\RASH\CIC\0609\src\common\DistributedServices.Common\bin\Debug\EntityFramework.xml
+H:\RIA\RASH\CIC\0609\src\common\DistributedServices.Common\bin\Debug\es\FluentValidation.resources.dll
+H:\RIA\RASH\CIC\0609\src\common\DistributedServices.Common\bin\Debug\es\EntityFramework.resources.dll
+H:\RIA\RASH\CIC\0609\src\common\DistributedServices.Common\obj\Debug\DistributedServices.Common.csprojResolveAssemblyReference.cache
+H:\RIA\RASH\CIC\0609\src\common\DistributedServices.Common\obj\Debug\DistributedServices.Common.dll
+H:\RIA\RASH\CIC\0609\src\common\DistributedServices.Common\obj\Debug\DistributedServices.Common.pdb
+H:\RIA\RASH\CIC2\CIC2\src\common\DistributedServices.Common\bin\Debug\DistributedServices.Common.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\DistributedServices.Common\bin\Debug\DistributedServices.Common.pdb
+H:\RIA\RASH\CIC2\CIC2\src\common\DistributedServices.Common\bin\Debug\Bootstrapper.Wcf.Common.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\DistributedServices.Common\bin\Debug\CommandContracts.Common.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\DistributedServices.Common\bin\Debug\Infraestructure.Common.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\DistributedServices.Common\bin\Debug\log4net.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\DistributedServices.Common\bin\Debug\QueryContracts.Common.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\DistributedServices.Common\bin\Debug\StructureMap.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\DistributedServices.Common\bin\Debug\CommandHandlers.Common.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\DistributedServices.Common\bin\Debug\FluentValidation.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\DistributedServices.Common\bin\Debug\Domain.Common.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\DistributedServices.Common\bin\Debug\Data.Common.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\DistributedServices.Common\bin\Debug\QueryHandlers.Common.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\DistributedServices.Common\bin\Debug\EntityFramework.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\DistributedServices.Common\bin\Debug\Bootstrapper.Wcf.Common.pdb
+H:\RIA\RASH\CIC2\CIC2\src\common\DistributedServices.Common\bin\Debug\CommandContracts.Common.pdb
+H:\RIA\RASH\CIC2\CIC2\src\common\DistributedServices.Common\bin\Debug\Infraestructure.Common.pdb
+H:\RIA\RASH\CIC2\CIC2\src\common\DistributedServices.Common\bin\Debug\QueryContracts.Common.pdb
+H:\RIA\RASH\CIC2\CIC2\src\common\DistributedServices.Common\bin\Debug\log4net.xml
+H:\RIA\RASH\CIC2\CIC2\src\common\DistributedServices.Common\bin\Debug\StructureMap.pdb
+H:\RIA\RASH\CIC2\CIC2\src\common\DistributedServices.Common\bin\Debug\StructureMap.xml
+H:\RIA\RASH\CIC2\CIC2\src\common\DistributedServices.Common\bin\Debug\CommandHandlers.Common.pdb
+H:\RIA\RASH\CIC2\CIC2\src\common\DistributedServices.Common\bin\Debug\FluentValidation.pdb
+H:\RIA\RASH\CIC2\CIC2\src\common\DistributedServices.Common\bin\Debug\FluentValidation.xml
+H:\RIA\RASH\CIC2\CIC2\src\common\DistributedServices.Common\bin\Debug\Domain.Common.pdb
+H:\RIA\RASH\CIC2\CIC2\src\common\DistributedServices.Common\bin\Debug\Data.Common.pdb
+H:\RIA\RASH\CIC2\CIC2\src\common\DistributedServices.Common\bin\Debug\QueryHandlers.Common.pdb
+H:\RIA\RASH\CIC2\CIC2\src\common\DistributedServices.Common\bin\Debug\EntityFramework.xml
+H:\RIA\RASH\CIC2\CIC2\src\common\DistributedServices.Common\bin\Debug\es\FluentValidation.resources.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\DistributedServices.Common\bin\Debug\es\EntityFramework.resources.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\DistributedServices.Common\obj\Debug\DistributedServices.Common.csprojResolveAssemblyReference.cache
+H:\RIA\RASH\CIC2\CIC2\src\common\DistributedServices.Common\obj\Debug\DistributedServices.Common.dll
+H:\RIA\RASH\CIC2\CIC2\src\common\DistributedServices.Common\obj\Debug\DistributedServices.Common.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\DistributedServices.Common.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\DistributedServices.Common.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\Bootstrapper.Wcf.Common.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\CommandContracts.Common.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\Infraestructure.Common.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\log4net.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\QueryContracts.Common.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\StructureMap.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\CommandHandlers.Common.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\FluentValidation.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\Domain.Common.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\Data.Common.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\QueryHandlers.Common.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\EntityFramework.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\Bootstrapper.Wcf.Common.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\CommandContracts.Common.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\Infraestructure.Common.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\QueryContracts.Common.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\log4net.xml
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\StructureMap.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\StructureMap.xml
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\CommandHandlers.Common.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\FluentValidation.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\FluentValidation.xml
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\Domain.Common.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\Data.Common.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\QueryHandlers.Common.pdb
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\EntityFramework.xml
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\es\FluentValidation.resources.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\DistributedServices.Common\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\DistributedServices.Common\obj\Debug\DistributedServices.Common.csprojResolveAssemblyReference.cache
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\DistributedServices.Common\obj\Debug\DistributedServices.Common.dll
+C:\Users\ADMIN\Desktop\Proyecto CIC\Sistema CoolBox\Merge\WebCoolbox2.0\src\common\DistributedServices.Common\obj\Debug\DistributedServices.Common.pdb
+H:\RIA\Smartway3\src\common\DistributedServices.Common\bin\Debug\DistributedServices.Common.dll
+H:\RIA\Smartway3\src\common\DistributedServices.Common\bin\Debug\DistributedServices.Common.pdb
+H:\RIA\Smartway3\src\common\DistributedServices.Common\bin\Debug\Bootstrapper.Wcf.Common.dll
+H:\RIA\Smartway3\src\common\DistributedServices.Common\bin\Debug\CommandContracts.Common.dll
+H:\RIA\Smartway3\src\common\DistributedServices.Common\bin\Debug\Infraestructure.Common.dll
+H:\RIA\Smartway3\src\common\DistributedServices.Common\bin\Debug\log4net.dll
+H:\RIA\Smartway3\src\common\DistributedServices.Common\bin\Debug\QueryContracts.Common.dll
+H:\RIA\Smartway3\src\common\DistributedServices.Common\bin\Debug\StructureMap.dll
+H:\RIA\Smartway3\src\common\DistributedServices.Common\bin\Debug\FluentValidation.dll
+H:\RIA\Smartway3\src\common\DistributedServices.Common\bin\Debug\Data.Common.dll
+H:\RIA\Smartway3\src\common\DistributedServices.Common\bin\Debug\EntityFramework.dll
+H:\RIA\Smartway3\src\common\DistributedServices.Common\bin\Debug\Domain.Common.dll
+H:\RIA\Smartway3\src\common\DistributedServices.Common\bin\Debug\CommandHandlers.Common.dll
+H:\RIA\Smartway3\src\common\DistributedServices.Common\bin\Debug\QueryHandlers.Common.dll
+H:\RIA\Smartway3\src\common\DistributedServices.Common\bin\Debug\Bootstrapper.Wcf.Common.pdb
+H:\RIA\Smartway3\src\common\DistributedServices.Common\bin\Debug\CommandContracts.Common.pdb
+H:\RIA\Smartway3\src\common\DistributedServices.Common\bin\Debug\Infraestructure.Common.pdb
+H:\RIA\Smartway3\src\common\DistributedServices.Common\bin\Debug\QueryContracts.Common.pdb
+H:\RIA\Smartway3\src\common\DistributedServices.Common\bin\Debug\log4net.xml
+H:\RIA\Smartway3\src\common\DistributedServices.Common\bin\Debug\StructureMap.pdb
+H:\RIA\Smartway3\src\common\DistributedServices.Common\bin\Debug\StructureMap.xml
+H:\RIA\Smartway3\src\common\DistributedServices.Common\bin\Debug\FluentValidation.pdb
+H:\RIA\Smartway3\src\common\DistributedServices.Common\bin\Debug\FluentValidation.xml
+H:\RIA\Smartway3\src\common\DistributedServices.Common\bin\Debug\Data.Common.pdb
+H:\RIA\Smartway3\src\common\DistributedServices.Common\bin\Debug\EntityFramework.xml
+H:\RIA\Smartway3\src\common\DistributedServices.Common\bin\Debug\Domain.Common.pdb
+H:\RIA\Smartway3\src\common\DistributedServices.Common\bin\Debug\CommandHandlers.Common.pdb
+H:\RIA\Smartway3\src\common\DistributedServices.Common\bin\Debug\QueryHandlers.Common.pdb
+H:\RIA\Smartway3\src\common\DistributedServices.Common\bin\Debug\es\FluentValidation.resources.dll
+H:\RIA\Smartway3\src\common\DistributedServices.Common\bin\Debug\es\EntityFramework.resources.dll
+H:\RIA\Smartway3\src\common\DistributedServices.Common\obj\Debug\DistributedServices.Common.csprojResolveAssemblyReference.cache
+H:\RIA\Smartway3\src\common\DistributedServices.Common\obj\Debug\DistributedServices.Common.dll
+H:\RIA\Smartway3\src\common\DistributedServices.Common\obj\Debug\DistributedServices.Common.pdb
+D:\Ria\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\DistributedServices.Common.dll
+D:\Ria\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\DistributedServices.Common.pdb
+D:\Ria\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\Bootstrapper.Wcf.Common.dll
+D:\Ria\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\CommandContracts.Common.dll
+D:\Ria\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\Infraestructure.Common.dll
+D:\Ria\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\log4net.dll
+D:\Ria\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\QueryContracts.Common.dll
+D:\Ria\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\StructureMap.dll
+D:\Ria\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\FluentValidation.dll
+D:\Ria\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\Data.Common.dll
+D:\Ria\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\EntityFramework.dll
+D:\Ria\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\Domain.Common.dll
+D:\Ria\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\CommandHandlers.Common.dll
+D:\Ria\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\QueryHandlers.Common.dll
+D:\Ria\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\Bootstrapper.Wcf.Common.pdb
+D:\Ria\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\CommandContracts.Common.pdb
+D:\Ria\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\Infraestructure.Common.pdb
+D:\Ria\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\QueryContracts.Common.pdb
+D:\Ria\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\log4net.xml
+D:\Ria\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\StructureMap.pdb
+D:\Ria\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\StructureMap.xml
+D:\Ria\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\FluentValidation.pdb
+D:\Ria\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\FluentValidation.xml
+D:\Ria\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\Data.Common.pdb
+D:\Ria\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\EntityFramework.xml
+D:\Ria\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\Domain.Common.pdb
+D:\Ria\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\CommandHandlers.Common.pdb
+D:\Ria\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\QueryHandlers.Common.pdb
+D:\Ria\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\es\FluentValidation.resources.dll
+D:\Ria\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\es\EntityFramework.resources.dll
+D:\Ria\Smartway\Smartway3\src\common\DistributedServices.Common\obj\Debug\DistributedServices.Common.csprojResolveAssemblyReference.cache
+D:\Ria\Smartway\Smartway3\src\common\DistributedServices.Common\obj\Debug\DistributedServices.Common.csproj.CoreCompileInputs.cache
+D:\Ria\Smartway\Smartway3\src\common\DistributedServices.Common\obj\Debug\DistributedServices.Common.csproj.CopyComplete
+D:\Ria\Smartway\Smartway3\src\common\DistributedServices.Common\obj\Debug\DistributedServices.Common.dll
+D:\Ria\Smartway\Smartway3\src\common\DistributedServices.Common\obj\Debug\DistributedServices.Common.pdb
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\DistributedServices.Common.dll
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\DistributedServices.Common.pdb
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\Bootstrapper.Wcf.Common.dll
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\CommandContracts.Common.dll
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\Infraestructure.Common.dll
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\log4net.dll
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\QueryContracts.Common.dll
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\StructureMap.dll
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\FluentValidation.dll
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\Data.Common.dll
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\EntityFramework.dll
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\Domain.Common.dll
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\CommandHandlers.Common.dll
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\QueryHandlers.Common.dll
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\Bootstrapper.Wcf.Common.pdb
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\CommandContracts.Common.pdb
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\Infraestructure.Common.pdb
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\QueryContracts.Common.pdb
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\log4net.xml
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\StructureMap.pdb
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\StructureMap.xml
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\FluentValidation.pdb
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\FluentValidation.xml
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\Data.Common.pdb
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\EntityFramework.xml
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\Domain.Common.pdb
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\CommandHandlers.Common.pdb
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\QueryHandlers.Common.pdb
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\es\FluentValidation.resources.dll
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\obj\Debug\DistributedServices.Common.csprojAssemblyReference.cache
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\obj\Debug\DistributedServices.Common.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\obj\Debug\DistributedServices.Common.csproj.CopyComplete
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\obj\Debug\DistributedServices.Common.dll
+C:\Users\HP\OneDrive\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\obj\Debug\DistributedServices.Common.pdb
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\DistributedServices.Common.dll
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\DistributedServices.Common.pdb
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\Bootstrapper.Wcf.Common.dll
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\CommandContracts.Common.dll
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\Infraestructure.Common.dll
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\log4net.dll
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\QueryContracts.Common.dll
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\StructureMap.dll
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\FluentValidation.dll
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\Data.Common.dll
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\EntityFramework.dll
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\Domain.Common.dll
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\CommandHandlers.Common.dll
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\QueryHandlers.Common.dll
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\Bootstrapper.Wcf.Common.pdb
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\CommandContracts.Common.pdb
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\Infraestructure.Common.pdb
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\QueryContracts.Common.pdb
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\log4net.xml
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\StructureMap.pdb
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\StructureMap.xml
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\FluentValidation.pdb
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\FluentValidation.xml
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\Data.Common.pdb
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\EntityFramework.xml
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\Domain.Common.pdb
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\CommandHandlers.Common.pdb
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\QueryHandlers.Common.pdb
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\es\FluentValidation.resources.dll
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\bin\Debug\es\EntityFramework.resources.dll
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\obj\Debug\DistributedServices.Common.csprojAssemblyReference.cache
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\obj\Debug\DistributedServices.Common.csproj.CoreCompileInputs.cache
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\obj\Debug\DistributedServices.Common.csproj.CopyComplete
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\obj\Debug\DistributedServices.Common.dll
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\DistributedServices.Common\obj\Debug\DistributedServices.Common.pdb
