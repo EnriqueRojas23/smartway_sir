@@ -12,6 +12,7 @@ namespace CommandContracts.Smartway.Reparacion
         public int idusuario { get; set; }
         public DateTime? fechahorainicio { get; set; }
         public DateTime? fechahorafin { get; set; }
+        public int iteracion { get; set; }
         public int __tipoperacion { get; set; }
     }
 }

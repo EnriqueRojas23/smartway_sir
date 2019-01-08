@@ -10,7 +10,7 @@
         public string numeroordentrabajo { get; set; }
         public DateTime fechahoraasignacion { get; set; }
         public long idordentrabajotiempo { get; set; }
-
+        public int bounce { get; set; }
         public string serie { get; set; }
         public string imei { get; set; }
         public string mac { get; set; }

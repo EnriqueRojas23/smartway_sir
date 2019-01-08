@@ -564,8 +564,7 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
             new ReparacionesData().insertarIniciarReparacion(model);
 
 
-            var modOrdenTrabajo = new OrdenTrabajoModel();
-            modOrdenTrabajo.idordentrabajo = id;
+            var modOrdenTrabajo = new ReparacionesData().obtenerOrdenTrabajo(id);
             modOrdenTrabajo.idestado = (Int32)Constantes.EstadoOrdenTrabajo.Detenida;
             modOrdenTrabajo.__tipooperacion = 2;
             modOrdenTrabajo.descripcion = descripcion;
@@ -579,6 +578,7 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
         {
             var modOrdenTrabajo = new ReparacionesData().obtenerOrdenTrabajo(id);
             var modOrdenServicio = new OrdenServicioData().obtenerOrdenServicio(modOrdenTrabajo.idordenserviciotecnico.Value);
+
             if(!modOrdenServicio.engarantia)
             {
                 if (modOrdenServicio.cotizado.HasValue)
@@ -600,6 +600,8 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
                 modOrdenTrabajo.idestado = (Int32)Constantes.EstadoOrdenTrabajo.EnAtencion;
                 modOrdenServicio.idestado = (Int32)Constantes.EstadoOrdenServicio.EnProcesoReparacion;
             }
+
+
             modOrdenServicio.__tipooperacion = 2;
             new OrdenServicioData().InsertarActualizarOrdenServicio(modOrdenServicio);
             modOrdenTrabajo.idordentrabajo = id;
@@ -610,6 +612,7 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
             model.idordentrabajo = id;
             model.idusuario = Usuario.Idusuario;
             model.fechahorainicio = DateTime.Now;
+            model.iteracion = modOrdenTrabajo.bounce;
             model.__tipoperacion = 1;
             long idottiempo =new ReparacionesData().insertarIniciarReparacion(model);
 
@@ -682,7 +685,7 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
             var modOrdenServicio = new OrdenServicioData().obtenerOrdenServicio(model.idordenserviciotecnico.Value);
             var modOrdenTrabajo = new ReparacionesData().obtenerOrdenTrabajo(modOrdenServicio.idordentrabajo.Value);
 
-            string condicion10 = string.Empty, condicion11 = string.Empty, condicion12 = string.Empty, condicion13 = string.Empty;
+            string condicion11 = string.Empty, condicion12 = string.Empty, condicion13 = string.Empty, condicion14 = string.Empty; 
 
             var condicion1 = collection["chkCondicion1"].ToString();
             var condicion2 = collection["chkCondicion2"].ToString();
@@ -693,13 +696,14 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
             var condicion7 = collection["chkCondicion7"].ToString();
             var condicion8 = collection["chkCondicion8"].ToString();
             var condicion9 = collection["chkCondicion9"].ToString();
+            var condicion10 = collection["chkCondicion10"].ToString();
 
             if (modOrdenServicio.idtipoproducto == (Int32)Constantes.TipoProducto.CELULAR)
             {
-                 condicion10 = collection["chkCondicion11"].ToString();
-                 condicion11 = collection["chkCondicion12"].ToString();
-                 condicion12 = collection["chkCondicion13"].ToString();
-                 condicion13 = collection["chkCondicion14"].ToString();
+                 condicion11 = collection["chkCondicion11"].ToString();
+                 condicion12 = collection["chkCondicion12"].ToString();
+                 condicion13 = collection["chkCondicion13"].ToString();
+                 condicion14 = collection["chkCondicion14"].ToString();
                 if (condicion1 == "true" && condicion2 == "true"
                  && condicion3 == "true"
                  && condicion4 == "true"
@@ -738,6 +742,7 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
                  && condicion7 == "true"
                  && condicion8 == "true"
                  && condicion9 == "true"
+                 && condicion10 == "true"
                  )
                 {
                     if (modOrdenServicio.delivery)

@@ -39,6 +39,7 @@ namespace CommandHandlers.Smartway.Reparacion
                     dominio.fechahorainicio = command.fechahorainicio;
                     dominio.idordentrabajo = command.idordentrabajo;
                     dominio.idusuario = command.idusuario;
+                    dominio.iteracion = command.iteracion;
                     break;
                 case 2: // Fin
                     dominio.fechahorafin = command.fechahorafin;
