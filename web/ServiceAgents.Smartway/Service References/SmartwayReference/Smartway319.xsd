@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CommandContracts.Smartway.Mantenimiento.Output" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CommandContracts.Smartway.Mantenimiento.Output" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:50020/Smartway3?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CommandContracts.Common" />
+  <xs:complexType name="InsertarActualizarDiagnosticoxTipoProductoOutput">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q1:CommandResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="iddiagnosticotipoproducto" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarActualizarDiagnosticoxTipoProductoOutput" nillable="true" type="tns:InsertarActualizarDiagnosticoxTipoProductoOutput" />
+  <xs:complexType name="InsertarActualizarDiagnosticoOutput">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q2:CommandResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="iddiagnostico" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarActualizarDiagnosticoOutput" nillable="true" type="tns:InsertarActualizarDiagnosticoOutput" />
+  <xs:complexType name="InsertarActualizarRepuestoxProductoOutput">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q3:CommandResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="idrepuestoxproducto" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarActualizarRepuestoxProductoOutput" nillable="true" type="tns:InsertarActualizarRepuestoxProductoOutput" />
+  <xs:complexType name="InsertarActualizarRepuestoxReparacionOutput">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q4:CommandResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="idrepuestoreparacion" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarActualizarRepuestoxReparacionOutput" nillable="true" type="tns:InsertarActualizarRepuestoxReparacionOutput" />
+  <xs:complexType name="InsertarActualizarReparacionOutput">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q5:CommandResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="idreparacion" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarActualizarReparacionOutput" nillable="true" type="tns:InsertarActualizarReparacionOutput" />
+  <xs:complexType name="InsertarActualizarProductoOutput">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q6:CommandResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="idproducto" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarActualizarProductoOutput" nillable="true" type="tns:InsertarActualizarProductoOutput" />
+  <xs:complexType name="InsertarActualizarClienteOutput">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q7:CommandResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="idcliente" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarActualizarClienteOutput" nillable="true" type="tns:InsertarActualizarClienteOutput" />
+  <xs:complexType name="InsertarActualizarPartnerOutput">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q8:CommandResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="idpartner" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarActualizarPartnerOutput" nillable="true" type="tns:InsertarActualizarPartnerOutput" />
+  <xs:complexType name="InsertarActualizarGarantiaOutput">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q9="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q9:CommandResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="idgarantia" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarActualizarGarantiaOutput" nillable="true" type="tns:InsertarActualizarGarantiaOutput" />
+  <xs:complexType name="InsertarActualizarSucursalOutput">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q10="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q10:CommandResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="idsucursal" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarActualizarSucursalOutput" nillable="true" type="tns:InsertarActualizarSucursalOutput" />
+  <xs:complexType name="InsertarActualizarDireccionOutput">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q11="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q11:CommandResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="iddireccion" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarActualizarDireccionOutput" nillable="true" type="tns:InsertarActualizarDireccionOutput" />
+  <xs:complexType name="InsertarActualizarFallaOutput">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q12="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q12:CommandResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="idfalla" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarActualizarFallaOutput" nillable="true" type="tns:InsertarActualizarFallaOutput" />
+  <xs:complexType name="InsertarActualizarTarifaOutput">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q13="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q13:CommandResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="idtarifa" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarActualizarTarifaOutput" nillable="true" type="tns:InsertarActualizarTarifaOutput" />
+  <xs:complexType name="InsertarActualizarValorTablaOutput">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q14="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q14:CommandResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="idvalortabla" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarActualizarValorTablaOutput" nillable="true" type="tns:InsertarActualizarValorTablaOutput" />
+  <xs:complexType name="InsertarActualizarZonaDistritoOutput">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q15="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q15:CommandResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="idzona" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarActualizarZonaDistritoOutput" nillable="true" type="tns:InsertarActualizarZonaDistritoOutput" />
+  <xs:complexType name="InsertarActualizarZonaOutput">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q16="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q16:CommandResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="idzona" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarActualizarZonaOutput" nillable="true" type="tns:InsertarActualizarZonaOutput" />
+  <xs:complexType name="InsertarActualizarDocumentoRecepcionDetalleOutput">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q17="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q17:CommandResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="iddocumentorecepciondetalle" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarActualizarDocumentoRecepcionDetalleOutput" nillable="true" type="tns:InsertarActualizarDocumentoRecepcionDetalleOutput" />
+  <xs:complexType name="InsertarActualizarDocumentoRecepcionOutput">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q18="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q18:CommandResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="iddocumentorecepcion" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarActualizarDocumentoRecepcionOutput" nillable="true" type="tns:InsertarActualizarDocumentoRecepcionOutput" />
+  <xs:complexType name="InsertarActualizarOrdenTrabajoDetalleOutput">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q19="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q19:CommandResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="idordentrabajodetalle" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarActualizarOrdenTrabajoDetalleOutput" nillable="true" type="tns:InsertarActualizarOrdenTrabajoDetalleOutput" />
+  <xs:complexType name="InsertarActualizarVentaCotizacionDetalleOutput">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q20="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q20:CommandResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="idcotizaciondetalle" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarActualizarVentaCotizacionDetalleOutput" nillable="true" type="tns:InsertarActualizarVentaCotizacionDetalleOutput" />
+  <xs:complexType name="InsertarActualizarVentaCotizacionOutput">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q21="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q21:CommandResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="idcotizacion" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarActualizarVentaCotizacionOutput" nillable="true" type="tns:InsertarActualizarVentaCotizacionOutput" />
+  <xs:complexType name="InsertarActualizarOrdenTrabajoTiempoOutput">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q22="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q22:CommandResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="idordentrabajotiempo" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarActualizarOrdenTrabajoTiempoOutput" nillable="true" type="tns:InsertarActualizarOrdenTrabajoTiempoOutput" />
+  <xs:complexType name="InsertarActualizarOrdenTrabajoOutput">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q23="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q23:CommandResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="idordentrabajo" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarActualizarOrdenTrabajoOutput" nillable="true" type="tns:InsertarActualizarOrdenTrabajoOutput" />
+</xs:schema>

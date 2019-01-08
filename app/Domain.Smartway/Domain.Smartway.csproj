@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0C8FE053-4E91-43A3-BB9D-2B05616A4727}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Domain.Smartway</RootNamespace>
+    <AssemblyName>Domain.Smartway</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agendamiento\Exceptions\IncidenciaException.cs" />
+    <Compile Include="Agendamiento\AccesorioIncidencia.cs" />
+    <Compile Include="Agendamiento\OrdenServicio.cs" />
+    <Compile Include="Agendamiento\IncidenciaSolucion.cs" />
+    <Compile Include="Agendamiento\IncidenciaEvaluacion.cs" />
+    <Compile Include="Agendamiento\IncidenciaCotizacionDetalle.cs" />
+    <Compile Include="Agendamiento\IncidenciaCotizacion.cs" />
+    <Compile Include="Agendamiento\Incidencia.cs" />
+    <Compile Include="Agendamiento\LibroReclamaciones.cs" />
+    <Compile Include="Delivery\Exceptions\HojaRutaException.cs" />
+    <Compile Include="Delivery\Exceptions\PedidoExceptions.cs" />
+    <Compile Include="Delivery\Exceptions\TransferenciaExceptions.cs" />
+    <Compile Include="Delivery\HojaRuta.cs" />
+    <Compile Include="Delivery\Pedido.cs" />
+    <Compile Include="Delivery\SeguimientoPedido.cs" />
+    <Compile Include="Delivery\Transferencia.cs" />
+    <Compile Include="Despacho\OrdenSalida.cs" />
+    <Compile Include="Despacho\GuiaRemision.cs" />
+    <Compile Include="Despacho\OrdenSalidaDetalle.cs" />
+    <Compile Include="Despacho\ProgramacionDetalle.cs" />
+    <Compile Include="Despacho\Programacion.cs" />
+    <Compile Include="Facturacion\DetalleComprobanteCliente.cs" />
+    <Compile Include="Facturacion\ComprobanteCliente.cs" />
+    <Compile Include="Recepcion\DocumentoRecepcion.cs" />
+    <Compile Include="Recepcion\DocumentoRecepcionDetalle.cs" />
+    <Compile Include="Inventario\Inventario.cs" />
+    <Compile Include="Logistica\AjusteVenta.cs" />
+    <Compile Include="Logistica\Exceptions\LogisticaException.cs" />
+    <Compile Include="Mantenimiento\DiagnosticoxTipoProducto.cs" />
+    <Compile Include="Mantenimiento\Exceptions\ClienteException.cs" />
+    <Compile Include="Mantenimiento\RepuestoxProducto.cs" />
+    <Compile Include="Mantenimiento\RepuestoxReparacion.cs" />
+    <Compile Include="Mantenimiento\Producto.cs" />
+    <Compile Include="Mantenimiento\Partner.cs" />
+    <Compile Include="Mantenimiento\Garantia.cs" />
+    <Compile Include="Mantenimiento\Sucursal.cs" />
+    <Compile Include="Mantenimiento\Cliente.cs" />
+    <Compile Include="Mantenimiento\Direccion.cs" />
+    <Compile Include="Mantenimiento\Falla.cs" />
+    <Compile Include="Mantenimiento\Diagnostico.cs" />
+    <Compile Include="Mantenimiento\Reparacion.cs" />
+    <Compile Include="Mantenimiento\Tarifa.cs" />
+    <Compile Include="Mantenimiento\Valortabla.cs" />
+    <Compile Include="Mantenimiento\Zona.cs" />
+    <Compile Include="Mantenimiento\ZonaDistrito.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Inventario\Almacen.cs" />
+    <Compile Include="Reparacion\OrdenTrabajoDetalle.cs" />
+    <Compile Include="Reparacion\VentaCotizacionDetalle.cs" />
+    <Compile Include="Reparacion\VentaCotizacion.cs" />
+    <Compile Include="Reparacion\OrdenTrabajoTiempo.cs" />
+    <Compile Include="Reparacion\OrdenTrabajo.cs" />
+    <Compile Include="Seguridad\Exceptions\SistemaException.cs" />
+    <Compile Include="Seguridad\Exceptions\SistemaRolUsuarioException.cs" />
+    <Compile Include="Seguridad\Exceptions\UsuarioException.cs" />
+    <Compile Include="Seguridad\Pagina.cs" />
+    <Compile Include="Seguridad\PasswordHistorico.cs" />
+    <Compile Include="Seguridad\Rol.cs" />
+    <Compile Include="Seguridad\Sistema.cs" />
+    <Compile Include="Seguridad\SistemaRol.cs" />
+    <Compile Include="Seguridad\SistemaRolPagina.cs" />
+    <Compile Include="Seguridad\SistemaRolUsuario.cs" />
+    <Compile Include="Seguridad\Usuario.cs" />
+    <Compile Include="Seguridad\UsuarioCliente.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\common\Domain.Common\Domain.Common.csproj">
+      <Project>{4457E134-43E4-4C32-992E-600DC005AC26}</Project>
+      <Name>Domain.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

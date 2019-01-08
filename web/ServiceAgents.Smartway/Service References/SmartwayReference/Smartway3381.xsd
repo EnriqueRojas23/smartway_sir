@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/QueryContracts.Smartway.Agendamiento.Results" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/QueryContracts.Smartway.Agendamiento.Results" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:50020/Smartway3?xsd=xsd17" namespace="http://schemas.datacontract.org/2004/07/QueryContracts.Common" />
+  <xs:complexType name="ListarOrdenServicioResult">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q1:QueryResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Hits" nillable="true" type="tns:ArrayOfListarOrdenServicioDto" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListarOrdenServicioResult" nillable="true" type="tns:ListarOrdenServicioResult" />
+  <xs:complexType name="ArrayOfListarOrdenServicioDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ListarOrdenServicioDto" nillable="true" type="tns:ListarOrdenServicioDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfListarOrdenServicioDto" nillable="true" type="tns:ArrayOfListarOrdenServicioDto" />
+  <xs:complexType name="ListarOrdenServicioDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="codigoproducto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="estado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idordenserviciotecnico" type="xs:long" />
+      <xs:element minOccurs="0" name="nombrecliente" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numerodocumento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numeroincidencia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numeroost" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="producto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sucursaldestino" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sucursalorigen" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tipoordenservicio" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListarOrdenServicioDto" nillable="true" type="tns:ListarOrdenServicioDto" />
+</xs:schema>

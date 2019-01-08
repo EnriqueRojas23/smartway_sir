@@ -1,0 +1,81 @@
+﻿@model Web.Smartway.Areas.Seguridad.Models.Paginas.InsertarModificarPaginaModel
+@section Styles
+{
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/sweetalert/sweetalert.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/dataTables/datatables.min.css")" />
+}
+@section scripts
+{
+    <script src="@Url.Content("~/Scripts/plugins/sweetalert/sweetalert.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jsview/seguridad/seguridad.usuarios.listarpaginas.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/dataTables/datatables.min.js")" type="text/javascript"></script>
+}
+<form id="frmPaginaNuevo" role="form" method="post" class=" form-horizontal">
+    <div class="panel-primary">
+        <div class="panel-heading">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h3 class=" panel-title">
+                <i class="fa fa-plus-circle"></i>
+                    Nueva Pantalla
+            </h3>
+        </div>
+    </div>
+    <div class="modal-body">
+
+        <div class="form-group">
+            <label class="col-md-2 control-label">Sistema :</label>
+            <div class="col-md-9">
+                @Html.DropDownListFor(model => model.pag_str_codmenu_padre, (SelectList)ViewData["listasistemas"], "[Elija uno]", new { @class = "form-control", @required = "true" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-2 control-label">Nombre :</label>
+            <div class="col-md-9">
+                @Html.TextBoxFor(model => model.pag_str_nombre, new { @class = "form-control", @maxlength = "50", @required = "true", @placeholder = "Nombre" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label">Controller :</label>
+            <div class="col-md-9">
+                @Html.TextBoxFor(model => model.pag_str_controller, new { @class = "form-control", @maxlength = "50", @required = "true", @placeholder = "Controller" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label">Action :</label>
+            <div class="col-md-9">
+                @Html.TextBoxFor(model => model.pag_str_action, new { @class = "form-control", @maxlength = "50", @required = "true", @placeholder = "Action" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label">Area :</label>
+            <div class="col-md-9">
+                @Html.TextBoxFor(model => model.pag_str_attributes, new { @class = "form-control", @maxlength = "50", @required = "true", @placeholder = "área" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label">Nivel :</label>
+            <div class="col-md-2">
+                @Html.TextBoxFor(model => model.pag_int_nivel, new { @class = "form-control", @max = 5, @min = 2, @type = "number", @required = "true" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label">Secuencia :</label>
+            <div class="col-md-2">
+                @Html.TextBoxFor(model => model.pag_int_secuencia, new { @class = "form-control", @max = 10, @min = 1, @type = "number", @required = "true" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label">Accesos :</label>
+            <div class="col-md-9">
+                <label class="checkbox-inline i-checks"> @Html.CheckBoxFor(model => model.pag_bit_activo) La pantalla está activa.</label> 
+                <div class="clearfix"></div>
+                <label class="checkbox-inline i-checks"> @Html.CheckBoxFor(model => model.pag_bit_externo) La pantalla es externa.</label> 
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times-circle-o"></i> Cancelar</button>
+        <button id="btnAgregar" type="button" data-url="@Url.Action("InsertarModificarPaginaModal1", "Paginas")" class="btn btn-primary"><i class="fa fa-save"></i> Registrar</button>
+    </div>
+  </form>

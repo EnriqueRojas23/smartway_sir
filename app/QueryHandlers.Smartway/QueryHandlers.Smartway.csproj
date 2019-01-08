@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C2BF2EF0-C3CB-4ACD-BA95-6599174A4696}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QueryHandlers.Smartway</RootNamespace>
+    <AssemblyName>QueryHandlers.Smartway</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\ObtenerUsuarioQuery.cs" />
+    <Compile Include="Account\ValidarUsuarioQuery.cs" />
+    <Compile Include="Agendamiento\ListarAccesoriosQuery.cs" />
+    <Compile Include="Agendamiento\ListarIncidenciaCotizacionQuery.cs" />
+    <Compile Include="Agendamiento\ListarIncidenciaEvaluacionQuery.cs" />
+    <Compile Include="Agendamiento\ListarOrdenServicioQuery.cs" />
+    <Compile Include="Agendamiento\ListarPropuestasSolucionQuery.cs" />
+    <Compile Include="Agendamiento\ListarPropuestasIncidenciaQuery.cs" />
+    <Compile Include="Agendamiento\ListarPropuestasQuery.cs" />
+    <Compile Include="Agendamiento\ListarRepuestosQuery.cs" />
+    <Compile Include="Agendamiento\ListarCondicionesQuery.cs" />
+    <Compile Include="Agendamiento\ListarEvaluarGarantiaQuery.cs" />
+    <Compile Include="Agendamiento\ListarIncidenciaQuery.cs" />
+    <Compile Include="Agendamiento\CalcularTarifaQuery.cs" />
+    <Compile Include="Agendamiento\ObtenerPropuestaQuery.cs" />
+    <Compile Include="Agendamiento\ObtenerIncidenciaQuery.cs" />
+    <Compile Include="Agendamiento\ObtenerNumeroIncidenciaQuery.cs" />
+    <Compile Include="Despacho\EntregarDespachoDeliveryQuery.cs" />
+    <Compile Include="Despacho\ObtenerGuiaRemisionQuery.cs" />
+    <Compile Include="Despacho\ListarGuiaRemisionQuery.cs" />
+    <Compile Include="Despacho\ListarProgramacionQuery.cs" />
+    <Compile Include="Despacho\ListarTransporteQuery.cs" />
+    <Compile Include="Facturacion\ListarDetalleComprobantesQuery.cs" />
+    <Compile Include="Facturacion\ListarComprobantesQuery.cs" />
+    <Compile Include="Facturacion\ListarDocumentosQuery.cs" />
+    <Compile Include="Facturacion\ObtenerComprobanteQuery.cs" />
+    <Compile Include="Facturacion\ObtenerNumeroComprobanteQuery.cs" />
+    <Compile Include="Inventario\ListarInventarioxAlmacenQuery.cs" />
+    <Compile Include="Inventario\ObtenerOrdenServicioxInventarioQuery.cs" />
+    <Compile Include="Inventario\ObtenerProductoInventarioQuery.cs" />
+    <Compile Include="Inventario\ObtenerInventarioQuery.cs" />
+    <Compile Include="Inventario\ObtenerAlmacenQuery.cs" />
+    <Compile Include="Mantenimiento\ListarAntecedentesQuery.cs" />
+    <Compile Include="Mantenimiento\ListarCategoriaReparacionQuery.cs" />
+    <Compile Include="Mantenimiento\ListarDiagnosticoQuery.cs" />
+    <Compile Include="Mantenimiento\ListarEstadosQuery.cs" />
+    <Compile Include="Mantenimiento\ListarProductosxIdsQuery.cs" />
+    <Compile Include="Mantenimiento\ListarRepuestosxProductoQuery.cs" />
+    <Compile Include="Mantenimiento\ListarReparacionRepuestoQuery.cs" />
+    <Compile Include="Mantenimiento\ListarReparacionQuery.cs" />
+    <Compile Include="Mantenimiento\ListarTipoDiagnosticoQuery.cs" />
+    <Compile Include="Mantenimiento\ListarFallaQuery.cs" />
+    <Compile Include="Mantenimiento\ListarTipoReparacionQuery.cs" />
+    <Compile Include="Mantenimiento\ListarTipoFallaQuery.cs" />
+    <Compile Include="Mantenimiento\ListarDistritoZonaEditarQuery.cs" />
+    <Compile Include="Mantenimiento\ListarTarifaQuery.cs" />
+    <Compile Include="Mantenimiento\ListarGarantiaQuery.cs" />
+    <Compile Include="Mantenimiento\ListarCategoriaFallaQuery.cs" />
+    <Compile Include="Mantenimiento\ListarTipoGarantiaQuery.cs" />
+    <Compile Include="Mantenimiento\ListarTipoProductoQuery.cs" />
+    <Compile Include="Mantenimiento\ListarProductosQuery.cs" />
+    <Compile Include="Mantenimiento\ListarDireccionClienteQuery.cs" />
+    <Compile Include="Mantenimiento\ListarDistritoZonaQuery.cs" />
+    <Compile Include="Mantenimiento\ListarPartnerQuery.cs" />
+    <Compile Include="Mantenimiento\ListarSucursalQuery.cs" />
+    <Compile Include="Mantenimiento\ListarClientesQuery.cs" />
+    <Compile Include="Mantenimiento\ListarDepartamentosQuery.cs" />
+    <Compile Include="Mantenimiento\ListarDistritosQuery.cs" />
+    <Compile Include="Mantenimiento\ListarMaestroTablasQuery.cs" />
+    <Compile Include="Mantenimiento\ListarProvinciasQuery.cs" />
+    <Compile Include="Mantenimiento\ListarTransporteQuery.cs" />
+    <Compile Include="Mantenimiento\ListarUbigeoQuery.cs" />
+    <Compile Include="Mantenimiento\ListarValorxTablaQuery.cs" />
+    <Compile Include="Mantenimiento\ListarZonasQuery.cs" />
+    <Compile Include="Mantenimiento\ObtenerProductoQuery.cs" />
+    <Compile Include="Mantenimiento\ObtenerClienteQuery.cs" />
+    <Compile Include="Mantenimiento\ObtenerDireccionQuery.cs" />
+    <Compile Include="Mantenimiento\ObtenerPartnerQuery.cs" />
+    <Compile Include="Mantenimiento\ObtenerSucursalQuery.cs" />
+    <Compile Include="Mantenimiento\ObtenerValorTablaQuery.cs" />
+    <Compile Include="Mantenimiento\ObtenerZonaQuery.cs" />
+    <Compile Include="Mantenimiento\ValidarDireccionQuery.cs" />
+    <Compile Include="Mantenimiento\ValidarZonaQuery.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Inventario\ListarAlmacenQuery.cs" />
+    <Compile Include="Recepcion\InsertarDocumentoRecepcionDetalleQuery.cs" />
+    <Compile Include="Recepcion\ListarDocumentoRecepcionQuery.cs" />
+    <Compile Include="Recepcion\ListarOrdenServicioQuery.cs" />
+    <Compile Include="Reparacion\ListarAntecedentesDetalleQuery.cs" />
+    <Compile Include="Reparacion\ListarAntecedentesQuery.cs" />
+    <Compile Include="Reparacion\ListarVentaCotizacionDetalleQuery.cs" />
+    <Compile Include="Reparacion\ListarOrdenTrabajoDetalleQuery.cs" />
+    <Compile Include="Reparacion\ListarOrdenServicioQuery.cs" />
+    <Compile Include="Reparacion\ObtenerOrdenTrabajoQuery.cs" />
+    <Compile Include="Reparacion\ObtenerUltimaOrdenTrabajoQuery.cs" />
+    <Compile Include="Reparacion\ObtenerOrdenServicioQuery.cs" />
+    <Compile Include="Seguridad\BuscarPaginasQuery.cs" />
+    <Compile Include="Seguridad\BuscarSistemasQuery.cs" />
+    <Compile Include="Seguridad\CambiarContrasenaQuery.cs" />
+    <Compile Include="Seguridad\DesbloquearUsuarioQuery.cs" />
+    <Compile Include="Seguridad\EliminarPaginaQuery.cs" />
+    <Compile Include="Seguridad\GenerarPasswordQuery.cs" />
+    <Compile Include="Seguridad\ListarClientesQuery.cs" />
+    <Compile Include="Seguridad\ObtenerPaginaPadreQuery.cs" />
+    <Compile Include="Seguridad\ValidarDNIUsuarioQuery.cs" />
+    <Compile Include="Seguridad\ValidarUsoRolQuery.cs" />
+    <Compile Include="Seguridad\EliminarRolQuery.cs" />
+    <Compile Include="Seguridad\EliminarUsuarioQuery.cs" />
+    <Compile Include="Seguridad\EncriptarPasswordQuery.cs" />
+    <Compile Include="Seguridad\ListarControlQuery.cs" />
+    <Compile Include="Seguridad\ListarMenusxRolesQuery.cs" />
+    <Compile Include="Seguridad\ListarPaginasPadreQuery.cs" />
+    <Compile Include="Seguridad\ListarPaginasQuery.cs" />
+    <Compile Include="Seguridad\ListarRolesAsignablesQuery.cs" />
+    <Compile Include="Seguridad\ListarRolesQuery.cs" />
+    <Compile Include="Seguridad\ListarSistemasQuery.cs" />
+    <Compile Include="Seguridad\ListarUsuariosQuery.cs" />
+    <Compile Include="Seguridad\ObtenerDatosBasicosUsuarioQuery.cs" />
+    <Compile Include="Seguridad\ObtenerPaginaQuery.cs" />
+    <Compile Include="Seguridad\ObtenerPasswordQuery.cs" />
+    <Compile Include="Seguridad\ObtenerSistemaQuery.cs" />
+    <Compile Include="Seguridad\ObtenerUsuarioQuery1.cs" />
+    <Compile Include="Seguridad\ValidarExisteUsuarioQuery.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\common\Data.Common\Data.Common.csproj">
+      <Project>{E40586B8-DA89-41E5-888F-38AA6D7D9E58}</Project>
+      <Name>Data.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\common\QueryContracts.Common\QueryContracts.Common.csproj">
+      <Project>{BFB51524-32B0-4478-A18B-47614662BF40}</Project>
+      <Name>QueryContracts.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\common\QueryHandlers.Common\QueryHandlers.Common.csproj">
+      <Project>{BFB18C30-8936-46E5-88EF-E5A1C81340C3}</Project>
+      <Name>QueryHandlers.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QueryContracts.Smartway\QueryContracts.Smartway.csproj">
+      <Project>{ff23eecf-e4da-465a-a44b-442077195b08}</Project>
+      <Name>QueryContracts.Smartway</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

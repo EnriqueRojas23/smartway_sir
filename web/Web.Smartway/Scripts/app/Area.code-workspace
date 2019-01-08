@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "Agendamiento"
+		},
+		{
+			"path": "Despacho"
+		},
+		{
+			"path": "Mantenimiento"
+		},
+		{
+			"path": "Recepcion"
+		},
+		{
+			"path": "Reparacion"
+		},
+		{
+			"path": "Inventario"
+		}
+	]
+}

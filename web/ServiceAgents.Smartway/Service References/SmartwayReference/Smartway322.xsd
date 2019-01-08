@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CommandContracts.Smartway.Facturacion" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CommandContracts.Smartway.Facturacion" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:50020/Smartway3?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CommandContracts.Common" />
+  <xs:complexType name="InsertarActualizarDetalleComprobanteClienteCommand">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q1:Command">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="cantidad" type="xs:int" />
+          <xs:element minOccurs="0" name="descuento" type="xs:decimal" />
+          <xs:element minOccurs="0" name="iddetallecomprobantecliente" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="iddocumentocompra" type="xs:int" />
+          <xs:element minOccurs="0" name="idproducto" type="xs:int" />
+          <xs:element minOccurs="0" name="igv" type="xs:decimal" />
+          <xs:element minOccurs="0" name="imei" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="mac" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="serie" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="subtotal" type="xs:decimal" />
+          <xs:element minOccurs="0" name="total" type="xs:decimal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarActualizarDetalleComprobanteClienteCommand" nillable="true" type="tns:InsertarActualizarDetalleComprobanteClienteCommand" />
+  <xs:complexType name="InsertarActualizarComprobanteClienteCommand">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q2:Command">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="descripcion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="fechaemision" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="fechahoraregistro" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="idcliente" type="xs:int" />
+          <xs:element minOccurs="0" name="idconceptofacturacion" type="xs:int" />
+          <xs:element minOccurs="0" name="iddocumentocompra" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="idestado" type="xs:int" />
+          <xs:element minOccurs="0" name="idpartner" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="idsucursalventa" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="idtipodocumentocompra" type="xs:int" />
+          <xs:element minOccurs="0" name="idusuarioregistro" type="xs:int" />
+          <xs:element minOccurs="0" name="igv" type="xs:decimal" />
+          <xs:element minOccurs="0" name="numerocomprobante" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="subtotal" type="xs:decimal" />
+          <xs:element minOccurs="0" name="total" type="xs:decimal" />
+          <xs:element minOccurs="0" name="ventaenlinea" type="xs:boolean" />
+          <xs:element minOccurs="0" name="ventapartner" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarActualizarComprobanteClienteCommand" nillable="true" type="tns:InsertarActualizarComprobanteClienteCommand" />
+</xs:schema>

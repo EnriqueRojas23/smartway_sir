@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="286a3a07-4204-4cb1-9be3-2d95065368e5" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:50020/Smartway3" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Smartway338.xsd" MetadataType="Schema" ID="f7e10cd5-9f5e-4051-a584-8f1957b8c29e" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd46" />
+    <MetadataFile FileName="Smartway332.xsd" MetadataType="Schema" ID="31d6f1cd-db96-435f-9616-05bb202877b8" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd36" />
+    <MetadataFile FileName="Smartway3.xsd" MetadataType="Schema" ID="7b1bd86e-2d3b-47f4-8dbd-9abd2e5ee1ba" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd26" />
+    <MetadataFile FileName="Smartway31.xsd" MetadataType="Schema" ID="0e82e5a7-e485-4beb-a082-a0e05830c60c" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd16" />
+    <MetadataFile FileName="Smartway32.xsd" MetadataType="Schema" ID="2d78e139-246a-46de-9a40-a8356624096e" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd7" />
+    <MetadataFile FileName="Smartway33.xsd" MetadataType="Schema" ID="95629a7b-ac1b-41b2-b529-406f52ae77a3" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd6" />
+    <MetadataFile FileName="Smartway34.xsd" MetadataType="Schema" ID="3c9da0c5-8502-49c7-ab25-eb0b8f7a19b9" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd5" />
+    <MetadataFile FileName="Smartway35.xsd" MetadataType="Schema" ID="ba1a2e2c-47fd-4865-8437-a69344e2e8eb" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd4" />
+    <MetadataFile FileName="Smartway36.xsd" MetadataType="Schema" ID="5440e881-5464-4b95-9b77-87dc2bd11bcc" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd3" />
+    <MetadataFile FileName="Smartway37.xsd" MetadataType="Schema" ID="5710cc43-003b-45f3-99a8-7e88adb1d795" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd2" />
+    <MetadataFile FileName="Smartway38.xsd" MetadataType="Schema" ID="9ac828af-2c67-4e8d-aa10-4d0f29d9b23c" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd1" />
+    <MetadataFile FileName="Smartway39.xsd" MetadataType="Schema" ID="315c7088-41cf-4916-b73b-3e6b3416a8e8" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd0" />
+    <MetadataFile FileName="Smartway337.xsd" MetadataType="Schema" ID="c002092d-1466-44bb-ac25-cbbec3a41914" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd43" />
+    <MetadataFile FileName="Smartway330.xsd" MetadataType="Schema" ID="fad9ddad-66ca-4d98-b8fc-8bbb94b9ed9d" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd33" />
+    <MetadataFile FileName="Smartway310.xsd" MetadataType="Schema" ID="c5678209-85a7-413a-b533-9bd57709e0f4" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd9" />
+    <MetadataFile FileName="Smartway311.xsd" MetadataType="Schema" ID="8042a4e3-dea2-4997-87cb-84c3c3f66573" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd13" />
+    <MetadataFile FileName="Smartway3371.xsd" MetadataType="Schema" ID="65ebf4b3-db44-44a3-8630-37057a0959d1" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd44" />
+    <MetadataFile FileName="Smartway331.xsd" MetadataType="Schema" ID="11686cf6-089b-411b-a1ef-d2c46ad0c45c" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd34" />
+    <MetadataFile FileName="Smartway312.xsd" MetadataType="Schema" ID="bf57cb62-a6b2-4a1d-a463-60ec98b32fb8" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd24" />
+    <MetadataFile FileName="Smartway313.xsd" MetadataType="Schema" ID="8de08723-aadb-441d-9c2d-0f5f23a19407" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd14" />
+    <MetadataFile FileName="SmartwayBackendService.wsdl" MetadataType="Wsdl" ID="aec1a04e-c56e-4b75-bfd8-02f7ba3492d1" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?wsdl" />
+    <MetadataFile FileName="Smartway334.xsd" MetadataType="Schema" ID="bd16ab9c-01d7-405b-889c-7edc36457c02" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd39" />
+    <MetadataFile FileName="Smartway328.xsd" MetadataType="Schema" ID="2947d386-c08a-4c61-8dd9-b40f7656c387" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd29" />
+    <MetadataFile FileName="Smartway314.xsd" MetadataType="Schema" ID="6765447b-b3fd-4200-9314-4e6e9c1d87a1" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd19" />
+    <MetadataFile FileName="Smartway315.xsd" MetadataType="Schema" ID="67e0ffab-aefd-468e-9ef4-3650ec6d2709" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd23" />
+    <MetadataFile FileName="Smartway336.xsd" MetadataType="Schema" ID="a3347ee1-8b11-411c-8d5d-07c80faee9fd" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd41" />
+    <MetadataFile FileName="Smartway329.xsd" MetadataType="Schema" ID="a2531957-1330-439b-81b4-6f7945196ef4" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd31" />
+    <MetadataFile FileName="Smartway316.xsd" MetadataType="Schema" ID="503bacc5-fbd2-49f9-9bb5-e028cff19af0" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd21" />
+    <MetadataFile FileName="Smartway317.xsd" MetadataType="Schema" ID="5aae2649-b769-4cb7-b3cf-60b0bcfde2e1" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd11" />
+    <MetadataFile FileName="Smartway3372.xsd" MetadataType="Schema" ID="75558c8f-1ae5-4f19-abd4-8a525a836ee9" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd42" />
+    <MetadataFile FileName="Smartway3301.xsd" MetadataType="Schema" ID="c8c8f1ea-8dfd-444f-a9e7-e069d6e2c243" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd32" />
+    <MetadataFile FileName="Smartway318.xsd" MetadataType="Schema" ID="3f3f32c5-5301-4cad-98bd-33b722f27274" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd22" />
+    <MetadataFile FileName="Smartway319.xsd" MetadataType="Schema" ID="db1b2c4c-93ae-4c76-b567-ab7f525d65d4" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd12" />
+    <MetadataFile FileName="Smartway3.disco" MetadataType="Disco" ID="eceaf102-53ae-46f2-b8bf-97a5dc8cf152" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?disco" />
+    <MetadataFile FileName="Smartway339.xsd" MetadataType="Schema" ID="7067e4e2-7fe0-44c1-9903-4255d4786170" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd47" />
+    <MetadataFile FileName="Smartway333.xsd" MetadataType="Schema" ID="8bd19805-38ba-4b84-8959-cac348d491e7" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd37" />
+    <MetadataFile FileName="Smartway320.xsd" MetadataType="Schema" ID="0853c125-869d-4967-afce-8fbac98f0edc" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd27" />
+    <MetadataFile FileName="Smartway321.xsd" MetadataType="Schema" ID="d725cbb0-d8b6-4941-8f18-332a564c2cec" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd17" />
+    <MetadataFile FileName="Smartway322.xsd" MetadataType="Schema" ID="33ec98cf-5f87-4170-b850-81ba2aab4059" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd8" />
+    <MetadataFile FileName="Smartway340.xsd" MetadataType="Schema" ID="5387d010-fca6-46de-8dfb-d597e131010c" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd48" />
+    <MetadataFile FileName="Smartway3331.xsd" MetadataType="Schema" ID="112d671b-4660-4c4e-93a2-79400a51476a" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd38" />
+    <MetadataFile FileName="Smartway3281.xsd" MetadataType="Schema" ID="dbc2a724-5553-441e-b6c5-8aa34b166194" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd28" />
+    <MetadataFile FileName="Smartway323.xsd" MetadataType="Schema" ID="aeb1dd1d-e171-4875-940c-5b27b875f059" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd18" />
+    <MetadataFile FileName="Smartway335.xsd" MetadataType="Schema" ID="f7519e51-7eed-4bea-b0da-202dd1efbc23" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd40" />
+    <MetadataFile FileName="Smartway3291.xsd" MetadataType="Schema" ID="ae1e9675-98eb-4073-b15a-b2adb0b42665" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd30" />
+    <MetadataFile FileName="Smartway324.xsd" MetadataType="Schema" ID="72ef971d-f0f2-4864-9764-eb638378a50f" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd20" />
+    <MetadataFile FileName="Smartway325.xsd" MetadataType="Schema" ID="6f2f1046-24a9-408b-b954-91d5e2a6686f" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd10" />
+    <MetadataFile FileName="Smartway3381.xsd" MetadataType="Schema" ID="cda01383-18af-4268-9d72-a51c621358be" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd45" />
+    <MetadataFile FileName="Smartway3311.xsd" MetadataType="Schema" ID="3ddb607b-6d3d-47ac-844e-5b7f699a707c" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd35" />
+    <MetadataFile FileName="Smartway326.xsd" MetadataType="Schema" ID="2a2f7709-0d73-402e-af67-95f15c6a4196" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd25" />
+    <MetadataFile FileName="Smartway327.xsd" MetadataType="Schema" ID="afd7c83f-e658-4c42-9e53-8888092c514d" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd15" />
+    <MetadataFile FileName="Smartway341.xsd" MetadataType="Schema" ID="152bc5ab-1816-4723-871c-e52213577c4b" SourceId="1" SourceUrl="http://localhost:50020/Smartway3?xsd=xsd49" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,59 @@
+﻿@model Web.Smartway.Areas.Agendamiento.Models.ComprobanteModel
+
+@using (Ajax.BeginForm("AgregarDocumentoModal", "Agendamiento", null, new AjaxOptions { HttpMethod = "POST", InsertionMode = InsertionMode.Replace, UpdateTargetId = "modalcontent", OnComplete = "OnCompleteTransaction_Comprobante(xhr, status)" }, new { @class = "form-horizontal" }))
+{
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        @*<i class="fa fa-users fa-4x"></i>*@
+        <h4 class="modal-title">Agregar Documento Partner</h4>
+        <small class="font-bold">Ingresar los datos necesarios para el registro del nuevo documento.</small>
+    </div>
+    <div class="modal-body">
+        <div class="row ">
+            <div class="col-lg-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5><i class="fa fa-info-circle"></i>  Datos de la compra</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+
+                        <div class="form-group">
+                            <div class="col-md-4">
+                                <label class="control-label">Tipo de Documento:</label>
+                                @Html.DropDownListFor(model => model.idtipodocumentocompra, (SelectList)ViewData["ListaTipoComprobante"], "--Tipo--", new { @class = "form-control " })
+                            </div>
+                            <div class="col-md-4">
+                                <label class="control-label">N° Documento:</label>
+                                <div class=" input-group">
+                                    <span class="input-group-addon"><i class="fa fa-print"></i></span>
+                                    @Html.TextBoxFor(model => model.numerocomprobante, "", new { @class = "form-control ", @required = "true", @onblur = "rellenar(this,this.value)" })
+                                </div>
+
+                            </div>
+                            <div class="col-md-4" id="data_2">
+                                <label class="control-label">Fecha:</label>
+                                <div class="input-group date" id='dtpFechHecho'>
+                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                    @Html.TextBoxFor(model => model.fechaemision, "{0:dd/MM/yyyy}", new {  @class = "form-control" })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <div class="col-md-offset-6 col-md-6">
+            <button type="submit" class="btn btn-primary"><i class="fa fa-check-circle-o"></i> Guardar</button>
+            <button type="button" onclick="" class="btn  btn-inverse" data-dismiss="modal"><i class="fa fa-times-circle-o"></i>  Cancelar</button>
+        </div>
+    </div>
+
+}

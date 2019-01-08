@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/QueryContracts.Smartway.Seguridad.Result" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/QueryContracts.Smartway.Seguridad.Result" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:50020/Smartway3?xsd=xsd17" namespace="http://schemas.datacontract.org/2004/07/QueryContracts.Common" />
+  <xs:complexType name="BuscarPaginasResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EliminarPaginaResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Hits" nillable="true" type="tns:ArrayOfBuscarPaginasDto" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BuscarPaginasResult" nillable="true" type="tns:BuscarPaginasResult" />
+  <xs:complexType name="EliminarPaginaResult">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q1:QueryResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Mensaje" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EliminarPaginaResult" nillable="true" type="tns:EliminarPaginaResult" />
+  <xs:complexType name="BuscarSistemasResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EliminarPaginaResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Hits" nillable="true" type="tns:ArrayOfBuscarSistemasDto" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BuscarSistemasResult" nillable="true" type="tns:BuscarSistemasResult" />
+  <xs:complexType name="ArrayOfBuscarSistemasDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BuscarSistemasDto" nillable="true" type="tns:BuscarSistemasDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBuscarSistemasDto" nillable="true" type="tns:ArrayOfBuscarSistemasDto" />
+  <xs:complexType name="BuscarSistemasDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="pag_int_id" type="xs:int" />
+      <xs:element minOccurs="0" name="pag_int_secuencia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pag_str_codmenu" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pag_str_descrip" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pag_str_nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pag_str_url" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BuscarSistemasDto" nillable="true" type="tns:BuscarSistemasDto" />
+  <xs:complexType name="CambiarContrasenaResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EliminarPaginaResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="usr_int_id" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CambiarContrasenaResult" nillable="true" type="tns:CambiarContrasenaResult" />
+  <xs:complexType name="DesbloquearUsuarioResult">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q2:QueryResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="result" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DesbloquearUsuarioResult" nillable="true" type="tns:DesbloquearUsuarioResult" />
+  <xs:complexType name="ObtenerPaginaPadreResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EliminarPaginaResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="pag_int_id" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ObtenerPaginaPadreResult" nillable="true" type="tns:ObtenerPaginaPadreResult" />
+  <xs:complexType name="ValidarDNIEmpleadoResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EliminarPaginaResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="mensaje" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ValidarDNIEmpleadoResult" nillable="true" type="tns:ValidarDNIEmpleadoResult" />
+  <xs:complexType name="ValidarDNIUsuarioResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EliminarPaginaResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="mensaje" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ValidarDNIUsuarioResult" nillable="true" type="tns:ValidarDNIUsuarioResult" />
+  <xs:complexType name="ValidarUsoRolResult">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q3:QueryResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="uso" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ValidarUsoRolResult" nillable="true" type="tns:ValidarUsoRolResult" />
+  <xs:complexType name="EliminarRolResult">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q4:QueryResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="count" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EliminarRolResult" nillable="true" type="tns:EliminarRolResult" />
+  <xs:complexType name="EliminarUsuarioResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EliminarPaginaResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Mensaje" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EliminarUsuarioResult" nillable="true" type="tns:EliminarUsuarioResult" />
+  <xs:complexType name="EncriptarPasswordResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EliminarPaginaResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="filas_afectadas" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EncriptarPasswordResult" nillable="true" type="tns:EncriptarPasswordResult" />
+  <xs:complexType name="GenerarPasswordResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EliminarPaginaResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="mail" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GenerarPasswordResult" nillable="true" type="tns:GenerarPasswordResult" />
+  <xs:complexType name="ListarPaginasPadreResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EliminarPaginaResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Hits" nillable="true" type="tns:ArrayOfListarPaginasPadreDto" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListarPaginasPadreResult" nillable="true" type="tns:ListarPaginasPadreResult" />
+  <xs:complexType name="ArrayOfListarPaginasPadreDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ListarPaginasPadreDto" nillable="true" type="tns:ListarPaginasPadreDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfListarPaginasPadreDto" nillable="true" type="tns:ArrayOfListarPaginasPadreDto" />
+  <xs:complexType name="ListarPaginasPadreDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="pag_int_id" type="xs:int" />
+      <xs:element minOccurs="0" name="pag_str_codmenu" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pag_str_nombre" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListarPaginasPadreDto" nillable="true" type="tns:ListarPaginasPadreDto" />
+  <xs:complexType name="ListarPaginasResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EliminarPaginaResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Hits" nillable="true" type="tns:ArrayOfListarPaginasDto" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListarPaginasResult" nillable="true" type="tns:ListarPaginasResult" />
+  <xs:complexType name="ArrayOfListarPaginasDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ListarPaginasDto" nillable="true" type="tns:ListarPaginasDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfListarPaginasDto" nillable="true" type="tns:ArrayOfListarPaginasDto" />
+  <xs:complexType name="ListarPaginasDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="pag_bit_activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="pag_bit_externo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="pag_int_id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pag_int_nivel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pag_int_secuencia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pag_str_action" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pag_str_attributes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pag_str_codmenu" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pag_str_codmenu_padre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pag_str_controller" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pag_str_descrip" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pag_str_nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pag_str_tipomenu" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pag_str_url" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListarPaginasDto" nillable="true" type="tns:ListarPaginasDto" />
+  <xs:complexType name="ListarRolesAsignablesResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EliminarPaginaResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Hits" nillable="true" type="tns:ArrayOfListarRolesAsignablesDto" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListarRolesAsignablesResult" nillable="true" type="tns:ListarRolesAsignablesResult" />
+  <xs:complexType name="ArrayOfListarRolesAsignablesDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ListarRolesAsignablesDto" nillable="true" type="tns:ListarRolesAsignablesDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfListarRolesAsignablesDto" nillable="true" type="tns:ArrayOfListarRolesAsignablesDto" />
+  <xs:complexType name="ListarRolesAsignablesDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="rol_int_id" type="xs:int" />
+      <xs:element minOccurs="0" name="rol_str_alias" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="rol_str_descrip" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListarRolesAsignablesDto" nillable="true" type="tns:ListarRolesAsignablesDto" />
+  <xs:complexType name="ListarRolesResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EliminarPaginaResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Hits" nillable="true" type="tns:ArrayOfListarRolesDto" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListarRolesResult" nillable="true" type="tns:ListarRolesResult" />
+  <xs:complexType name="ArrayOfListarRolesDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ListarRolesDto" nillable="true" type="tns:ListarRolesDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfListarRolesDto" nillable="true" type="tns:ArrayOfListarRolesDto" />
+  <xs:complexType name="ListarRolesDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="rol_bit_activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="rol_bit_publico" type="xs:boolean" />
+      <xs:element minOccurs="0" name="rol_int_id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="rol_str_alias" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="rol_str_descrip" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="rol_str_usuario" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListarRolesDto" nillable="true" type="tns:ListarRolesDto" />
+  <xs:complexType name="ListarSistemasResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EliminarPaginaResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Hits" nillable="true" type="tns:ArrayOfListarSistemasDto" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListarSistemasResult" nillable="true" type="tns:ListarSistemasResult" />
+  <xs:complexType name="ArrayOfListarSistemasDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ListarSistemasDto" nillable="true" type="tns:ListarSistemasDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfListarSistemasDto" nillable="true" type="tns:ArrayOfListarSistemasDto" />
+  <xs:complexType name="ListarSistemasDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="pag_int_id" type="xs:int" />
+      <xs:element minOccurs="0" name="pag_int_secuencia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pag_str_codmenu" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pag_str_descrip" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pag_str_nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pag_str_url" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListarSistemasDto" nillable="true" type="tns:ListarSistemasDto" />
+  <xs:complexType name="ListarUsuariosResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EliminarPaginaResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Hits" nillable="true" type="tns:ArrayOfListarUsuariosDto" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListarUsuariosResult" nillable="true" type="tns:ListarUsuariosResult" />
+  <xs:complexType name="ArrayOfListarUsuariosDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ListarUsuariosDto" nillable="true" type="tns:ListarUsuariosDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfListarUsuariosDto" nillable="true" type="tns:ArrayOfListarUsuariosDto" />
+  <xs:complexType name="ListarUsuariosDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Activo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nro_roles" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="rol_str_alias" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sucursal" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="usr_dat_fecregistro" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="usr_dat_fecvctopwd" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="usr_dat_ultfecbloqueo" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="usr_dat_ultfeclogin" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="usr_int_aprobado" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="usr_int_bloqueado" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="usr_int_id" type="xs:int" />
+      <xs:element minOccurs="0" name="usr_int_numintentos" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="usr_str_apellidos" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="usr_str_email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="usr_str_nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="usr_str_red" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="usr_str_tipoacceso" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListarUsuariosDto" nillable="true" type="tns:ListarUsuariosDto" />
+  <xs:complexType name="ObtenerDatosBasicosUsuarioResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EliminarPaginaResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="usr_int_id" type="xs:int" />
+          <xs:element minOccurs="0" name="usr_str_apellidos" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="usr_str_email" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="usr_str_nombre" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="usr_str_red" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ObtenerDatosBasicosUsuarioResult" nillable="true" type="tns:ObtenerDatosBasicosUsuarioResult" />
+  <xs:complexType name="ObtenerPaginaResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EliminarPaginaResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="cantidad" type="xs:int" />
+          <xs:element minOccurs="0" name="pag_bit_activo" type="xs:boolean" />
+          <xs:element minOccurs="0" name="pag_bit_externo" type="xs:boolean" />
+          <xs:element minOccurs="0" name="pag_int_id" type="xs:int" />
+          <xs:element minOccurs="0" name="pag_int_secuencia" type="xs:int" />
+          <xs:element minOccurs="0" name="pag_str_action" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="pag_str_attributes" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="pag_str_codmenu" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="pag_str_codmenu_padre" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="pag_str_controller" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="pag_str_descrip" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="pag_str_nombre" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="pag_str_url" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ObtenerPaginaResult" nillable="true" type="tns:ObtenerPaginaResult" />
+  <xs:complexType name="ObtenerPasswordResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EliminarPaginaResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="usr_str_nombre" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="usr_str_password" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="usr_str_red" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ObtenerPasswordResult" nillable="true" type="tns:ObtenerPasswordResult" />
+  <xs:complexType name="ObtenerSistemaResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EliminarPaginaResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="pag_bit_activo" type="xs:boolean" />
+          <xs:element minOccurs="0" name="pag_int_id" type="xs:int" />
+          <xs:element minOccurs="0" name="pag_str_codmenu" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="pag_str_descrip" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="pag_str_nombre" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="pag_str_url" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ObtenerSistemaResult" nillable="true" type="tns:ObtenerSistemaResult" />
+  <xs:complexType name="ValidarExisteUsuarioResult">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EliminarPaginaResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Existe" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ValidarExisteUsuarioResult" nillable="true" type="tns:ValidarExisteUsuarioResult" />
+  <xs:complexType name="ArrayOfBuscarPaginasDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BuscarPaginasDto" nillable="true" type="tns:BuscarPaginasDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBuscarPaginasDto" nillable="true" type="tns:ArrayOfBuscarPaginasDto" />
+  <xs:complexType name="BuscarPaginasDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="pag_int_id" type="xs:int" />
+      <xs:element minOccurs="0" name="pag_int_nivel" type="xs:int" />
+      <xs:element minOccurs="0" name="pag_int_secuencia" type="xs:int" />
+      <xs:element minOccurs="0" name="pag_str_action" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pag_str_attributes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pag_str_codmenu" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pag_str_controller" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pag_str_nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pag_str_tipomenu" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BuscarPaginasDto" nillable="true" type="tns:BuscarPaginasDto" />
+</xs:schema>
