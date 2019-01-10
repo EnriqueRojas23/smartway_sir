@@ -13,87 +13,130 @@
 
         <section class="widget widget-card bg-gray">
             <div class="widget-body clearfix">
-                <div class="live-tile" data-mode="carousel" data-speed="1750" data-delay="4000" data-height="100">
-                    <div class="bg-gray text-white">
-                        <div class="row">
-                            <div class="col-xs-3">
-                                <span class="widget-icon">
-                                    <i class="glyphicon glyphicon-briefcase"></i>
-                                </span>
+                <div class="carousel slide" data-ride="carousel" data-speed="1750" data-delay="4000" data-height="100">
+                      <div class="carousel-inner">
+                        <div class="carousel-item bg-gray text-white">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <span class="widget-icon">
+                                        <i class="glyphicon glyphicon-briefcase"></i>
+                                    </span>
+                                </div>
+                                <div class="col-xs-9">
+                                    <h6 class="no-margin">N° OST</h6>
+                                    <p class="h2 no-margin fw-normal">@Model.numeroordenservicio </p>
+                                </div>
                             </div>
-                            <div class="col-xs-9">
-                                <h6 class="no-margin">N° OST</h6>
-                                <p class="h2 no-margin fw-normal">@Model.numeroordenservicio </p>
+
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <h6 class="no-margin">Cod.</h6>
+                                    <p class="value6">@Model.codigoproducto</p>
+                                </div>
+                                <div class="col-xs-8">
+                                    <h6 class="no-margin">Producto</h6>
+                                    <p class="value6">@Model.producto</p>
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+                        <div class="carousel-item text-white">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <span class="widget-icon">
+                                        <i class="glyphicon glyphicon-certificate"></i>
+                                    </span>
+                                </div>
+                                <div class="col-xs-9">
+                                    <h6 class="no-margin">Asignado a: </h6>
+                                    <p class="h2 no-margin fw-normal">@Model.tecnico</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <h6 class="no-margin">Inicio</h6>
+                                    <p class="value5">@Model.fechahorainicio</p>
+                                </div>
+                                <div class="col-xs-6">
+                                    <h6 class="no-margin">Tiempo Total</h6>
+
+                                    <p class="value5"> @Decimal.Round(Convert.ToDecimal(@Model.tiempotranscurrido.TotalHours), 0) :  @Model.tiempotranscurrido.Minutes ' </p>
+                                </div>
                             </div>
                         </div>
+                        <div class="carousel-item text-white">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <span class="widget-icon">
+                                        <i class="glyphicon glyphicon-certificate"></i>
+                                    </span>
+                                </div>
+                                <div class="col-xs-9">
+                                    <h6 class="no-margin">Asignado a: </h6>
+                                    <p class="h2 no-margin fw-normal">@Model.tecnico</p>
+                                </div>
+                            </div>
 
-                        <div class="row">
-                            <div class="col-xs-4">
-                                <h6 class="no-margin">Cod.</h6>
-                                <p class="value6">@Model.codigoproducto</p>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <h6 class="no-margin">Serie</h6>
+                                    <p class="value6">@Model.serie</p>
+                                </div>
+                                <div class="col-xs-8">
+                                    <h6 class="no-margin">IMEI</h6>
+                                    <p class="value6">@Model.imei</p>
+                                </div>
                             </div>
-                            <div class="col-xs-8">
-                                <h6 class="no-margin">Producto</h6>
-                                <p class="value6">@Model.producto</p>
-                            </div>
+
                         </div>
-
-
-
-
-
-                    </div>
-                    <div class="text-white">
-                        <div class="row">
-                            <div class="col-xs-3">
-                                <span class="widget-icon">
-                                    <i class="glyphicon glyphicon-certificate"></i>
-                                </span>
-                            </div>
-                            <div class="col-xs-9">
-                                <h6 class="no-margin">Asignado a: </h6>
-                                <p class="h2 no-margin fw-normal">@Model.tecnico</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-6">
-                                <h6 class="no-margin">Inicio</h6>
-                                <p class="value5">@Model.fechahorainicio</p>
-                            </div>
-                            <div class="col-xs-6">
-                                <h6 class="no-margin">Tiempo Total</h6>
-
-                                <p class="value5"> @Decimal.Round(Convert.ToDecimal(@Model.tiempotranscurrido.TotalHours), 0) :  @Model.tiempotranscurrido.Minutes ' </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-white">
-                        <div class="row">
-                            <div class="col-xs-3">
-                                <span class="widget-icon">
-                                    <i class="glyphicon glyphicon-certificate"></i>
-                                </span>
-                            </div>
-                            <div class="col-xs-9">
-                                <h6 class="no-margin">Asignado a: </h6>
-                                <p class="h2 no-margin fw-normal">@Model.tecnico</p>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-xs-4">
-                                <h6 class="no-margin">Serie</h6>
-                                <p class="value6">@Model.serie</p>
-                            </div>
-                            <div class="col-xs-8">
-                                <h6 class="no-margin">IMEI</h6>
-                                <p class="value6">@Model.imei</p>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </div>
+
+            <section class=" widget widget-card bg-gray   ">
+                <div class="widget-body clearfix">
+            
+                    <div class="bg-gray text-white">
+                        <div class="col-xs-3">
+                            <span class="widget-icon">
+                                <i class="fa fa-clock-o"></i>
+                            </span>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-1">
+                                <p id="dia" class="h3 no-margin color fw-normal"></p>
+                                <h6 class="no-margin">Días</h6>
+                            </div>
+
+                            <div class="col-md-1">
+                                <p id="hora" class="no-margin h2 color fw-normal"></p>
+                                <h6 class="no-margin">Horas</h6>
+                            </div>
+                            <div class="col-md-1">
+                                <p class="no-margin h3 color fw-normal">:</p>
+                            </div>
+                            <div class="col-md-1">
+                                <p id="minuto" class="h2 no-margin color fw-normal"></p>
+                                <h6 class="no-margin">Minutos</h6>
+                            </div>
+                            <div class="col-md-1">
+                                <p class="no-margin h3 color fw-normal">:</p>
+                            </div>
+                            <div class="col-md-1">
+                                <p id="segundo" class="h2  no-margin color fw-normal"></p>
+                                <h6 class="no-margin">Segundos</h6>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
             <div class="panel panel-default">
                 <div class="panel-body">
                     <div class="col-md-12 text-center">
@@ -105,6 +148,7 @@
                     </div>
                 </div>
             </div>
+
         </section>
 
     </div>
