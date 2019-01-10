@@ -7,6 +7,7 @@
         <xs:sequence>
           <xs:element minOccurs="0" name="fecfin" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="fecini" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="idestado" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="idtipoordenservicio" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="numeroordenservicio" nillable="true" type="xs:string" />
         </xs:sequence>

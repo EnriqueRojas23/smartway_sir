@@ -127,6 +127,7 @@
           <xs:element minOccurs="0" name="idordentrabajo" type="xs:long" />
           <xs:element minOccurs="0" name="idordentrabajotiempo" nillable="true" type="xs:long" />
           <xs:element minOccurs="0" name="idusuario" type="xs:int" />
+          <xs:element minOccurs="0" name="iteracion" type="xs:int" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>

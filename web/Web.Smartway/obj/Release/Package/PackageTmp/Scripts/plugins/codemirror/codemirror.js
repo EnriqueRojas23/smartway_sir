@@ -5447,8 +5447,8 @@
       }
     }
     // Make sure we didn't create any zero-length spans
-    if (first) first = clearEmptySpans(first);
-    if (last && last != first) last = clearEmptySpans(last);
+    if (first) first = clearEmpSmartwaypans(first);
+    if (last && last != first) last = clearEmpSmartwaypans(last);
 
     var newMarkers = [first];
     if (!sameLine) {
@@ -5467,7 +5467,7 @@
 
   // Remove spans that are empty and don't have a clearWhenEmpty
   // option of false.
-  function clearEmptySpans(spans) {
+  function clearEmpSmartwaypans(spans) {
     for (var i = 0; i < spans.length; ++i) {
       var span = spans[i];
       if (span.from != null && span.from == span.to && span.marker.clearWhenEmpty !== false)

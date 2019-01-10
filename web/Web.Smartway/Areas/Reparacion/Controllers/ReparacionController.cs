@@ -56,6 +56,10 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
 
 
             var modOrdenServicio = new OrdenServicioData().obtenerOrdenServicio(modOrdentrabajo.idordenserviciotecnico.Value);
+            var modListadoTiempo = new ReparacionesData().GetListarOrdenTrabajoTiempo(id);
+
+
+
             if (modOrdenServicio.idtipoordenservicio !=  (Int32)Constantes.tipoordenservicio.osp &&
                 modOrdenServicio.idtipoordenservicio != (Int32)Constantes.tipoordenservicio.osr)
             {
@@ -83,7 +87,10 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
                  
            
             modOrdentrabajo.numeroordentrabajo = modOrdenServicio.numeroost;
+
             modOrdentrabajo.tiempotranscurrido = DateTime.Now - modOrdenServicio.fechahorainicio.Value;
+            modOrdentrabajo.tiempotrabajo = modListadoTiempo.FirstOrDefault().fechahorainicio.Value;
+
             modOrdentrabajo.tecnico = modOrdenServicio.tecnicoAsignado;
             modOrdentrabajo.idtipoordenservicio = modOrdenServicio.idtipoordenservicio;
             

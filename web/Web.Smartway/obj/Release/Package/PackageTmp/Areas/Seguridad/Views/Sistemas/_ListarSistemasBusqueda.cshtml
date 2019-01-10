@@ -1,4 +1,4 @@
-﻿@model Web.Coolbox.Areas.Seguridad.Models.Sistemas.ListarSistemasModel
+﻿@model Web.Smartway.Areas.Seguridad.Models.Sistemas.ListarSistemasModel
 
 
 <form id="frmSearchListado" data-typeform="search" method="post" action="#" class="pull-right custom-search">
@@ -18,7 +18,7 @@
                         <div class="media-body">
                             <div class="form-group">
                                 @Html.LabelFor(model => model.NombreCompleto)
-                                @Html.TextBoxFor(model => model.NombreCompleto, new { @Value = Model.NombreCompleto, @class = "form-control", @data_ctrlsearch = Web.Coolbox.DataAccess.Constantes.Seguridad.Usuario.listadopedido_filtro_nombrecompleto })
+                                @Html.TextBoxFor(model => model.NombreCompleto, new { @Value = Model.NombreCompleto, @class = "form-control", @data_ctrlsearch = Web.Smartway.DataAccess.Constantes.Seguridad.Usuario.listadopedido_filtro_nombrecompleto })
                             </div>
                             <div>
                                 <button id="btnlistarbusquedasecundario" onclick="btnlistarbusquedasecundario_onclick('#SearchDefault');" class="btn btn-sm btn-primary pull-right m-t-n-xs" type="button"><span class="glyphicon glyphicon-search"></span></button>

@@ -1,4 +1,4 @@
-﻿@model Web.Coolbox.Areas.Seguridad.Models.Paginas.ListarPaginasModel
+﻿@model Web.Smartway.Areas.Seguridad.Models.Paginas.ListarPaginasModel
 
 @section scripts {
 <script src="@Url.Content("~/Scripts/app/seguridad/seguridad.usuarios.listarpaginas.js")" type="text/javascript"></script>
@@ -17,7 +17,7 @@
                         <div class="media-body">
                             <div class="form-group">
                                 @Html.LabelFor(model => model.nombre)
-                                @Html.TextBoxFor(model => model.nombre, new { @Value = Model.nombre, @class = "form-control", @data_ctrlsearch = Web.Coolbox.DataAccess.Constantes.Seguridad.Usuario.listadopedido_filtro_nombrecompleto })
+                                @Html.TextBoxFor(model => model.nombre, new { @Value = Model.nombre, @class = "form-control", @data_ctrlsearch = Web.Smartway.DataAccess.Constantes.Seguridad.Usuario.listadopedido_filtro_nombrecompleto })
                             </div>
                             <div>
                                 <button id="btnlistarbusquedasecundario" onclick="btnlistarbusquedasecundario_onclick('#SearchDefault');" class="btn btn-sm btn-primary pull-right m-t-n-xs" type="button"><span class="glyphicon glyphicon-search"></span></button>

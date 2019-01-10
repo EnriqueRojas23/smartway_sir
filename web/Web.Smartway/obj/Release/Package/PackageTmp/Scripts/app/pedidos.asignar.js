@@ -521,4 +521,8 @@ function OnCompleteTransaction_AsignarPedidoTienda(xhr, status)
     }
     else { CheckValidationErrorResponse(jsonres); }
 }
-
+//Quitar partner // tipo reparacion o re work
+//Datos generales de la carga de excel,,, CAntidad de series
+// Dos botones para relacionar producto a repuestos y viceversa
+// reporte por fechas ... 
+// comprara contra las cargas previas (si el diagnostico ele mismo pasarlo por garantia de reparacion). al grabar la nueva reparacion , registrar como garantia si es que existe.

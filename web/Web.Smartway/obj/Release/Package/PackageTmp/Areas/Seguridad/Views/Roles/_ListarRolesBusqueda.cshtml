@@ -1,4 +1,4 @@
-﻿@model Web.Coolbox.Areas.Seguridad.Models.Roles.ListarRolesModel
+﻿@model Web.Smartway.Areas.Seguridad.Models.Roles.ListarRolesModel
 
 
 <form id="frmSearchListado" data-typeform="search" method="post" action="#" class="pull-right custom-search">
@@ -21,7 +21,7 @@
 
                             <div class="form-group">
                                 @Html.LabelFor(model => model.NombreRol)
-                                @Html.TextBoxFor(model => model.NombreRol, new { @Value = Model.NombreRol, @class = "form-control", @data_ctrlsearch = Web.Coolbox.DataAccess.Constantes.Seguridad.Rol.listadorol_filtro_nombrerol })
+                                @Html.TextBoxFor(model => model.NombreRol, new { @Value = Model.NombreRol, @class = "form-control", @data_ctrlsearch = Web.Smartway.DataAccess.Constantes.Seguridad.Rol.listadorol_filtro_nombrerol })
                             </div>
                             <div class="clearfix space-10"></div>
                             <div>

@@ -21,9 +21,19 @@
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="ListarAntecedentesParameter" nillable="true" type="tns:ListarAntecedentesParameter" />
-  <xs:complexType name="ListarVentaCotizacionDetalleParameters">
+  <xs:complexType name="ListarOrdenTrabajoTiempoParameters">
     <xs:complexContent mixed="false">
       <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q3:QueryParameter">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="idordentrabajo" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListarOrdenTrabajoTiempoParameters" nillable="true" type="tns:ListarOrdenTrabajoTiempoParameters" />
+  <xs:complexType name="ListarVentaCotizacionDetalleParameters">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q4:QueryParameter">
         <xs:sequence>
           <xs:element minOccurs="0" name="idordenservicio" type="xs:long" />
         </xs:sequence>
@@ -33,7 +43,7 @@
   <xs:element name="ListarVentaCotizacionDetalleParameters" nillable="true" type="tns:ListarVentaCotizacionDetalleParameters" />
   <xs:complexType name="ListarOrdenTrabajoDetalleParameters">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q4:QueryParameter">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q5:QueryParameter">
         <xs:sequence>
           <xs:element minOccurs="0" name="idordentrabajo" nillable="true" type="xs:long" />
         </xs:sequence>
@@ -43,7 +53,7 @@
   <xs:element name="ListarOrdenTrabajoDetalleParameters" nillable="true" type="tns:ListarOrdenTrabajoDetalleParameters" />
   <xs:complexType name="ListarOrdenServicioParameters">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q5:QueryParameter">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q6:QueryParameter">
         <xs:sequence>
           <xs:element minOccurs="0" name="fechafin" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="fechainicio" nillable="true" type="xs:string" />
@@ -59,7 +69,7 @@
   <xs:element name="ListarOrdenServicioParameters" nillable="true" type="tns:ListarOrdenServicioParameters" />
   <xs:complexType name="ObtenerUltimaOrdenTrabajoParameter">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q6:QueryParameter">
+      <xs:extension xmlns:q7="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q7:QueryParameter">
         <xs:sequence />
       </xs:extension>
     </xs:complexContent>

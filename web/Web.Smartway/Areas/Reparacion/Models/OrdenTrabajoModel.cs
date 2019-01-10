@@ -24,6 +24,7 @@ namespace Web.Smartway.Areas.Reparacion.Models
         public DateTime? fechahorainicio { get; set; }
         public DateTime? fechahorafin { get; set; }
         public TimeSpan tiempotranscurrido { get; set; }
+        public DateTime tiempotrabajo { get; set; }
         public string tecnico { get; set; }
         public bool cotizado { get; set; }
         public int idtipoordenservicio { get; set; }

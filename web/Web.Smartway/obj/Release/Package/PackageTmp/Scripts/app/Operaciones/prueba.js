@@ -56,7 +56,7 @@ function CargarGrafico(DataEjeX, datos1,datos2,datos3,datos4 )
             text: 'VENTA OCTUBRE 2016  VS. PPTO VS. OCTUBRE 2015 (TOTAL EN MILES DE SOLES)'
         },
         subtitle: {
-            text: 'Coolbox'
+            text: 'Smartway'
         },
         xAxis: {
             categories: EjeX
@@ -141,7 +141,7 @@ function CargarGrafico2(DataEjeX, datos1, datos2, datos3)
             text: 'EVOLUCIÓN DE TICKET MEDIO , ITEM X TICKET Y PRECIO PROMEDIO 16-15-14'
         },
         subtitle: {
-            text: 'Coolbox'
+            text: 'Smartway'
         },
         xAxis: {
             categories: EjeX
@@ -240,7 +240,7 @@ function CargarGrafico3(DataEjeX, datos1, datos2, datos3, datos4, datos5, datos6
             text: 'T.M 2016 VS T.M 2015 / IxT 2016 VS IxT 2015 / PRECIO PROM. 2016 VS PRECIO PROM. 2015 (JULIO)'
         },
         subtitle: {
-            text: 'Coolbox'
+            text: 'Smartway'
         },
         xAxis: {
             categories: EjeX

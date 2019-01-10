@@ -19,11 +19,14 @@
     <link href="@Url.Content("~/Scripts/plugins/jquery-ui/jquery-ui.css")" rel="stylesheet" type="text/css" />
 
     <!-- Primary Inspinia style -->
+
     <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/bootstrap.min.css")" />
     <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/bootstrap.extension.css")" />
     <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/animate.css")" />
     <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/Site.css")" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/application.css")" />
     <link rel="stylesheet" type="text/css" href="@Url.Content("~/fonts/font-awesome/css/font-awesome.min.css")" />
+
     <script src="~/Scripts/plugins/Notificaciones/WebNotifications.js"></script>
     <script type="text/javascript">
 
@@ -48,17 +51,16 @@
             }
         };
     }());
-
     </script>
 </head>
-<body >
+<body>
 
     @*Ventanas Modales*@
 
     <div class=" modal inmodal fade in" id="modalcontainerIncidencias" tabindex="" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div id="modalcontentIncidencias" class="modal-content animated fadeIn"></div>
-    </div>
+        <div class="modal-dialog modal-lg" role="document">
+            <div id="modalcontentIncidencias" class="modal-content animated fadeIn"></div>
+        </div>
     </div>
 
     <div class="modal inmodal fade in" id="modalcontainerIncidenciasP" role="dialog" aria-hidden="true">
@@ -67,9 +69,10 @@
         </div>
     </div>
 
-    <div class="modal inmodal fade in" id="modalcontainerIncidenciasL" data-backdrop="static" data-keyboard="false" tabindex="" role="dialog" aria-hidden="true">
-        <div class="modal-dialog  modal-xlg" role="document">
-            <div id="modalcontentIncidenciasL" class="modal-content animated fadeIn"></div>
+    <div class="modal inmodal fade" id="modalcontainerL" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div id="modalcontentL" class="modal-content">
+            </div>
         </div>
     </div>
 
@@ -89,8 +92,7 @@
             @RenderBody()
 
             <!-- Footer -->
-            @Html.Partial("_Footer")
-
+            @*@Html.Partial("_Footer")*@
         </div>
         <!-- End page wrapper-->
         <!-- Right Sidebar -->
@@ -98,22 +100,26 @@
     <!-- End wrapper-->
     <!-- Section for main scripts render -->
     @*<script src="@Url.Content("~/Scripts/modernizr-2.6.2.js")" type="text/javascript"></script>*@
-    <script src="@Url.Content("~/Scripts/jquery-2.1.1.js")" type="text/javascript"></script>
 
+    @Scripts.Render("~/bundles/jquery")
+    @*<script src="@Url.Content("~/Scripts/jquery-2.1.1.js")" type="text/javascript"></script>*@
+    @*<script src="@Url.Content("~/Scripts/jquery.unobtrusive-ajax.min.js")" type="text/javascript"></script>*@
+    <script src="@Url.Content("~/Scripts/plugins/blockUI/jquery.blockUI.js")" type="text/javascript"></script>
     <script src="@Url.Content("~/Scripts/plugins/jquery-ui/jquery-ui.min.js")" type="text/javascript"></script>
     <script src="@Url.Content("~/Scripts/bootstrap.js")" type="text/javascript"></script>
     <script src="@Url.Content("~/Scripts/plugins/slimscroll/jquery.slimscroll.min.js")" type="text/javascript"></script>
-
-
-    <script src="@Url.Content("~/Scripts/plugins/blockUI/jquery.blockUI.js")" type="text/javascript"></script>
     <script src="@Url.Content("~/Scripts/base.js")" type="text/javascript"></script>
-
     <script src="@Url.Content("~/Scripts/plugins/metisMenu/metisMenu.min.js")" type="text/javascript"></script>
-    <script src="@Url.Content("~/Scripts/plugins/pace/pace.min.js")" type="text/javascript"></script>
-    <script src="@Url.Content("~/Scripts/plugins/toastr/toastr.min.js")" type="text/javascript"></script>
+    @*<script src="@Url.Content("~/Scripts/plugins/pace/pace.min.js")" type="text/javascript"></script>
+        <script src="@Url.Content("~/Scripts/plugins/toastr/toastr.min.js")" type="text/javascript"></script>*@
     <script src="@Url.Content("~/Scripts/plugins/idle-timer/idle-timer.min.js")" type="text/javascript"></script>
-    <script src="@Url.Content("~/Scripts/app/coolbox.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/app/Smartway.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/base.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/plugins/sweetalert/sweetalert.min.js")" type="text/javascript"></script>
 
+    @*@Scripts.Render("~/bundles/jqueryval")*@
+    @Scripts.Render("~/bundles/jqueryui")
+    @*@Scripts.Render("~/bundles/modernizr")*@
 
     <!-- Handler for local scripts -->
     @RenderSection("scripts", required: false)
@@ -124,6 +130,5 @@
             </div>
         </div>
     </div>
-
 </body>
 </html>

@@ -20,10 +20,6 @@ function btnNuevo_onclick(obj, event)
         $("#modalcontent").html(data);
         $("#modalcontainer").modal("show");
         configurarPopUpNuevo();
-        $('.i-checks').iCheck({
-            checkboxClass: 'icheckbox_square-green',
-            radioClass: 'iradio_square-green',
-        });
         $('#btnRegistrar').click(function (event) { btnRegistrar_onclick(this, event); });
     });
 }
@@ -40,10 +36,10 @@ function btnRegistrar_onclick(obj, event)
     validation($('#rol_str_descrip'));
     validation($('#rol_str_alias'));
     validation($('#rol_str_usuario'));
-       
 
 
-    if (descrip == "" || alias == "" || usuario == "")
+
+    if (descrip == "" || alias == "" )
     {
         swal({ title: "Error", text: "Debe completar los datos correctamente", type: "error", confirmButtonText: "Aceptar" });
     }
@@ -76,14 +72,14 @@ function btnRegistrar_onclick(obj, event)
                                      $("#modalcontainer").modal("hide");
                                     reload();
                                 }
-                              
+
                                 else {
                                     swal({ title: "Error!", text: "El rol ya existe", type: "error", confirmButtonText: "Aceptar" });
 
                                 }
                             },
                             error: function (request, status, error) {
-                           
+
                                 swal({ title: "Error!", text: "Ocurrió un error al registrar", type: "error", confirmButtonText: "Aceptar" });
                             }
 
@@ -280,13 +276,7 @@ function irModificarRol(obj,id)
         $("#modalcontent").html(data);
         $("#modalcontainer").modal("show");
         configurarPopUpNuevo();
-
-        $('.i-checks').iCheck({
-            checkboxClass: 'icheckbox_square-green',
-            radioClass: 'iradio_square-green',
-        });
-
-        $('#btnActualizar').click(function (event) { btnActualizar_onclick(this, event); });   
+        $('#btnActualizar').click(function (event) { btnActualizar_onclick(this, event); });
 
     });
 }
@@ -302,8 +292,8 @@ function btnActualizar_onclick(obj,event )
     validation($('#rol_str_descrip'));
     validation($('#rol_str_alias'));
     validation($('#rol_str_usuario'));
-       
-    if (descrip == "" || alias == ""  || usuario =="") {
+
+    if (descrip == "" || alias == "" ) {
         swal({ title: "Error", text: "Debe completar los datos correctamente", type: "error", confirmButtonText: "Aceptar" });
     }
     else {
@@ -333,14 +323,14 @@ function btnActualizar_onclick(obj,event )
                                      $("#modalcontainer").modal("hide");
                                     reload();
                                 }
-                              
+
                                 else {
                                     swal({ title: "Error!", text: "El rol ya existe", type: "error", confirmButtonText: "Aceptar" });
 
                                 }
                             },
                             error: function (request, status, error) {
-                           
+
                                 swal({ title: "Error!", text: "Ocurrió un error al registrar", type: "error", confirmButtonText: "Aceptar" });
                             }
 
@@ -352,23 +342,25 @@ function btnActualizar_onclick(obj,event )
 
 function irAsignarMenuOpcion(id)
 {
-    var vUrl = $(gridlistarol).data("urlasig") + "?id=" + id;  
-    //$(document).attr("location", vUrl);
-    $.get(vUrl, function (data) {
-        $("#modalcontent").html(data);
-        $("#modalcontainer").modal("show");
-        configurarPopUpAsignar();
-    });
+    // var vUrl = $(gridlistarol).data("urlasig") + "?id=" + id;
+    // //$(document).attr("location", vUrl);
+    // $.get(vUrl, function (data) {
+    //     $("#modalcontent").html(data);
+    //     $("#modalcontainer").modal("show");
+    //     configurarPopUpAsignar();
+    // });
+    var vUrl = $(gridlistarol).data("urlasig") + "?id=" + id;
+    $(document).attr("location", vUrl);
 
 }
 function buscarrol()
 {
-    var grilla = $('#gridlistarol'); 
-    var nombre = $('#NombreRol').val();    
+    var grilla = $('#gridlistarol');
+    var nombre = $('#NombreRol').val();
     var vdataurl = $(grilla).data("dataurl") + '?nom=' + nombre;
 
     $(grilla).jqGrid('setGridParam', {  url: vdataurl }).trigger('reloadGrid');
-    
+
 }
 
 function validation(obj) {
@@ -376,130 +368,4 @@ function validation(obj) {
         obj.css('border-color', '#F3866F');
     else
         obj.css('border-color', '');
-}
-
-function configurarPopUpAsignar()
-{
-    $('#jstreemenu').jstree({
-        "checkbox": {
-            "keep_selected_style": true
-        },
-        "core": {
-            "check_callback": true,
-            'themes': {
-                'responsive': false
-            }
-        },
-        "plugins": ['checkbox', 'types', 'dnd'],
-        'types': {
-            'default': {
-                'icon': 'fa fa-folder'
-            },
-            'html': {
-                'icon': 'fa fa-file-code-o'
-            },
-            'svg': {
-                'icon': 'fa fa-file-picture-o'
-            },
-            'css': {
-                'icon': 'fa fa-file-code-o'
-            },
-            'img': {
-                'icon': 'fa fa-file-image-o'
-            },
-            'js': {
-                'icon': 'fa fa-file-text-o'
-            }
-        },
-    });
-
-
-    $("#jstreemenu li[role=treeitem]").each(function () {
-        if ($(this).data("selectoption") == "True") {
-            $(this).addClass("jstree-select-custom");
-            $(this).addClass("jstree-select-custom");
-            $('#jstreemenu').jstree("check_node", this);
-        }
-        else {
-            $(this).removeClass("jstree-select-custom");
-        }
-    });
-    $("#jstreemenu a[role=presentation]").each(function () {
-
-        if ($(this).data("selected") == "True") {
-            $(this).addClass("jstree-clicked");
-        }
-        else {
-            $(this).removeClass("jstree-clicked");
-        }
-    });
-
-    $('.i-checks').iCheck({
-        checkboxClass: 'icheckbox_square-green',
-    }).on('ifChanged', function (e) {
-        var sC, sA = "", sM = "", sE = "";
-        sC = e.currentTarget.checked;
-
-        if ($.trim($("#idmenutree").val()) == "") return;
-        var jstreenode = $("#jstreemenu").find("[data-idmenu=" + $("#idmenutree").val() + "]");
-
-        $(jstreenode).data("selectoption", sC);
-        setJsTreeHidden($("#idmenutree").val(), 'data-selectoption', sC);
-        if ($("#chkA").is(":checked")) sA = "A";
-        if ($("#chkM").is(":checked")) sM = "M";
-        if ($("#chkE").is(":checked")) sE = "E";
-
-
-        setJsTreeHidden($("#idmenutree").val(), 'data-permiso', sA + sM + sE);
-
-    });
-
-}
-
-var elementsIds = '';
-
-function GuardarAsignacion(obj) {
-    elementsIds = '';
-    var rol = $('#rol_int_id').val();
-
-    //$("#jstreemenu").jstree().get_selected(true)[0].data.idmenu
-    var ids = $("#jstreemenu").jstree().get_selected(true);
-
-    ids.forEach(logArrayElements);
-    var vUrl = $(obj).data("url") + "?ids=" + elementsIds.substring(1, elementsIds.length) + "&rol=" + rol;
-    swal({
-        title: "Actualizar Permisos",
-        text: "¿Está seguro que desea actualizar los permisos?",
-        type: "warning",
-        showCancelButton: true,
-        cancelButtonText: "Cancelar",
-        confirmButtonColor: '#DD6B55',
-        confirmButtonText: 'Actualizar',
-        closeOnConfirm: false,
-        closeOnCancel: true
-    },
-
-        function (isConfirm) {
-            if (isConfirm) {
-                $.ajax(
-                        {
-                            type: "POST",
-                            async: true,
-                            url: vUrl,
-                            //data: dataModelo,
-                            success: function (data) {
-                                if (data.res == "1") {
-                                    swal({ title: "Correcto", text: "Se actualizaron los permisos", type: "success", confirmButtonText: "Aceptar" });
-                                }
-                            },
-                            error: function (request, status, error) {
-                                swal({ title: "¡Error!", text: "Ocurrió un error al actualizar", type: "error", confirmButtonText: "Aceptar" });
-                            }
-                        });
-            }
-        });
-}
-function logArrayElements(elements)
-{
-    elementsIds = elementsIds + ',' + elements.data.idmenu;
 }

@@ -7,6 +7,53 @@ const $pagergrilla = $("#griddetallepager")
 const $btnPausar = $("#btnPausar")
 const $btnFinalizar = $("#btnFinalizar")
 
+const countDownDate = new Date($("#tiempotrabajo").val());
+
+function convertDate(inputFormat) {
+  function pad(s) { return (s < 10) ? '0' + s : s; }
+  var d = new Date(inputFormat);
+  return [pad(d.getDate()), pad(d.getMonth()+1), d.getFullYear()].join('/')+' ' +
+                [d.getHours(),
+                 d.getMinutes(),
+                 d.getSeconds()].join(':');
+}
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+var inicio  = convertDate($("#tiempotrabajo").val());
+
+
+
+
+
+
+  var now = new Date();
+  var inicio2 = new Date(inicio);
+
+
+
+  // Find the distance between now and the count down date
+  var distance = now - inicio2  ;
+
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("dia").innerHTML = days  ;
+  document.getElementById("hora").innerHTML = hours  ;
+  document.getElementById("minuto").innerHTML = minutes ;
+  document.getElementById("segundo").innerHTML = seconds ;
+
+  // If the count down is finished, write some text
+  // if (distance < 0) {
+  //   clearInterval(x);
+  //   document.getElementById("demo").innerHTML = "EXPIRED";
+  // }
+}, 1000);
 
 
 $(document).ready(function () {
@@ -18,7 +65,7 @@ function inicio()
     configurarGrilla();
     configurarControles();
     initTiles();
-    
+
 
 }
 function initTiles(){
@@ -58,13 +105,13 @@ function configurarControles()
     configurarChosenSelect();
     configurarCombos();
     configurarBotones();
-    
-  
+
+
 }
 function configurarBotones()
 {
 
-    $btnAgregar.click(function (e) { 
+    $btnAgregar.click(function (e) {
         e.preventDefault();
 
         let iddiagnostico = $("#iddiagnostico").val()
@@ -91,8 +138,8 @@ function configurarBotones()
             url: vurl,
             data: {
               "iddiagnostico" : iddiagnostico
-            , "idreparacion" : idreparacion 
-            , "idrepuesto" : idrepuesto 
+            , "idreparacion" : idreparacion
+            , "idrepuesto" : idrepuesto
             , "idordenservicio" : $("#idordenserviciotecnico").val()
           },
             dataType: "JSON",
@@ -193,8 +240,8 @@ function configurarBotones()
                     swal({ title: "Recepción Guías", text: "Ocurrió un error al finalizar la recepción", type: "error", confirmButtonText: "Aceptar" });
                 }
             });
-    
-    
+
+
         });
 
     });
@@ -207,7 +254,7 @@ function configurarCombos()
         $.ajax({
             type: "POST",
             url: vdataurl_1,
-            data: { "iddiagnostico" : this.value 
+            data: { "iddiagnostico" : this.value
             , "idtipoproducto" : $("#idtipoproducto").val()
             , "idfabricante" : 0  },
             dataType: "JSON",
@@ -262,18 +309,18 @@ function configurarGrilla()
         url: vdataurl,
         datatype: 'json',
         mtype: 'POST',
-        colNames: ['','','','Descripción','Diagnostico' , 'Reparación' ,'Repuestos','Costosss', 'Acciones'],
+        colNames: ['','','','Descripción','Diagnostico' , 'Reparación' ,'Repuestos','Costosss', ''],
         colModel:
         [
-            { key: true, hidden: true, name: 'idordentrabajodetalle', align: 'center' },       
+            { key: true, hidden: true, name: 'idordentrabajodetalle', align: 'center' },
             { key: false, hidden: true, name: 'idrepuesto', align: 'center' },
             { key: false, hidden: true, name: 'idinventario', align: 'center' },
             { key: false, name: 'descripcion', width:'240',  align: 'center', sortable: false, formatter: formatedit },
             { key: false, name: 'diagnostico', width:'240',  align: 'center', sortable: false, formatter: formatedit },
-            { key: false, name: 'reparacion',  align: 'center', width:'220', sortable: false,  formatter: formatedit  },
-            { key: false, name: 'repuesto',  align: 'center', width:'220', sortable: false,  formatter: formatedit  },
+            { key: false, name: 'reparacion',  align: 'center', width:'240', sortable: false,  formatter: formatedit  },
+            { key: false, name: 'repuesto',  align: 'center', width:'240', sortable: false,  formatter: formatedit  },
             { key: false, hidden: true,  name: 'costo', align: 'center',width:'190',sortable: false, formatter: 'currency' ,formatoptions: CONFIG_JQGRID.get('formatoptions_currency_pen') },
-            { key: false, hidden: false, editable: false ,name: 'idordentrabajodetalle', width:'140' , index: 'index' ,  formatter:  displayButtons,classes:"grid-col"}
+            { key: false, hidden: false, editable: false ,name: 'idordentrabajodetalle', width:'40' , index: 'index' ,  formatter:  displayButtons,classes:"grid-col"}
         ],
         pager: $pagergrilla,
         rowNum: 10,
@@ -334,7 +381,7 @@ function Antecedentes(id){
 function cargarTablasAntecedente()
 {
     var idordenserviciotecnico = $("#idordenserviciotecnico").val();
-        
+
     $('.dataTables-AntProductos').DataTable({
         responsive: true,
         "searching": false,
@@ -372,7 +419,7 @@ function cargarTablasAntecedente()
                 },
         ]
     });
-detalle = 
+detalle =
     $('.dataTables-AntCliente').DataTable({
         responsive: true,
         "searching": false,

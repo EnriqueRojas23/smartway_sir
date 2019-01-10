@@ -1,4 +1,4 @@
-﻿@model Web.Coolbox.Models.Account.RegistroCuentaModel
+﻿@model Web.Smartway.Models.Account.RegistroCuentaModel
 @{
     Layout = null;
 }
@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coolbox | Registro</title>
+    <title>Smartway | Registro</title>
     <link href="~/Content/bootstrap.min.css" rel="stylesheet">
     <link href="~/Fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
 
@@ -36,7 +36,7 @@
             <div>
                 <h4 class="logo-name">CB+</h4>
             </div>
-            <h3>Registrarse en Coolbox</h3>
+            <h3>Registrarse en Smartway</h3>
             <p class="text-danger">Registro válido solo para usuarios de tienda.</p>
             <form id="frmRegistrarCuenta" role="form" method="post" action="@Url.Action("Register", "Account")" class="m-t">
                 
@@ -78,7 +78,7 @@
                 <button type="submit" class="btn btn-primary block full-width m-b" data-style="expand-right">Registrar</button>
                 <a class="btn btn-sm btn-white btn-block" href="@Url.Action("SignOut", "Account", new { area = ""})">Login</a>
             </form>
-            <p class="m-t"> <small>Coolbox &copy; 2016</small> </p>
+            <p class="m-t"> <small>Smartway &copy; 2016</small> </p>
         </div>
     </div>
 </body>

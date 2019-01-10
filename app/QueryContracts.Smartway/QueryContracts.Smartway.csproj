@@ -198,6 +198,7 @@
     <Compile Include="Recepcion\Results\ListarOrdenServicioResult.cs" />
     <Compile Include="Reparacion\Parameters\ListarAntecedentesDetalleParameter.cs" />
     <Compile Include="Reparacion\Parameters\ListarAntecedentesParameter.cs" />
+    <Compile Include="Reparacion\Parameters\ListarOrdenTrabajoTiempoParameters.cs" />
     <Compile Include="Reparacion\Parameters\ListarVentaCotizacionDetalleParameters.cs" />
     <Compile Include="Reparacion\Parameters\ListarOrdenTrabajoDetalleParameters.cs" />
     <Compile Include="Reparacion\Parameters\ListarOrdenServicioParameters.cs" />
@@ -206,6 +207,7 @@
     <Compile Include="Reparacion\Parameters\ObtenerOrdenServicioParameter.cs" />
     <Compile Include="Reparacion\Results\ListarAntecedentesDetalleResult.cs" />
     <Compile Include="Reparacion\Results\ListarAntecedentesResult.cs" />
+    <Compile Include="Reparacion\Results\ListarOrdenTrabajoTiempoResult.cs" />
     <Compile Include="Reparacion\Results\ListarVentaCotizacionDetalleResult.cs" />
     <Compile Include="Reparacion\Results\ListarOrdenTrabajoDetalleResult.cs" />
     <Compile Include="Reparacion\Results\ListarOrdenServicioResult.cs" />

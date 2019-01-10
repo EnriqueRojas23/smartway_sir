@@ -1,4 +1,4 @@
-﻿@model Web.Coolbox.Areas.Seguridad.Models.Roles.ListarRolesModel
+﻿@model Web.Smartway.Areas.Seguridad.Models.Roles.ListarRolesModel
 
 @{
     ViewBag.Title = "Mantenimiento de Roles";
@@ -8,8 +8,7 @@
     <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/sweetalert/sweetalert.css")" />
     <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/jqGrid/ui.jqgrid.css")" />
     <link rel="stylesheet" type="text/css" media="screen" href="@Url.Content("~/Content/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css")" />
-    <link href="~/Content/plugins/iCheck/custom.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/plugins/jsTree/style.css")" />
+    
 }
 
 @section scripts {
@@ -17,8 +16,7 @@
     <script src="@Url.Content("~/Scripts/plugins/jqGrid/i18n/grid.locale-es.js")" type="text/javascript"></script>
     <script src="@Url.Content("~/Scripts/app/seguridad/seguridad.roles.listarroles.js")" type="text/javascript"></script>
     <script src="@Url.Content("~/Scripts/plugins/sweetalert/sweetalert.min.js")" type="text/javascript"></script>
-    <script src="~/Scripts/plugins/iCheck/icheck.min.js"></script>
-    <script src="@Url.Content("~/Scripts/plugins/jsTree/jstree.min.js")"></script>
+    
 }
 
 <button id="templatemod" style="display:none" title="Modificar" data-url="@Url.Action("Modificar", "Roles", new { area = "seguridad" })" class="btn btn-warning btn-xs btn-outline"><i class="fa fa-edit"></i> </button>

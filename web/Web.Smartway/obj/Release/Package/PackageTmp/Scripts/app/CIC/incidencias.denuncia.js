@@ -16,7 +16,7 @@ $(document).ready(function () {
     oListaTable =
         $('.dataTables-tblRecepcionDenuncias').DataTable({
         responsive: true,
-        "processing": true, 
+        "processing": true,
         "serverSide": true,
         "searching":false,
         "ajax": {
@@ -58,7 +58,7 @@ $(document).ready(function () {
         });
 
     });
-   
+
     mostrarMensajeResultado();
 
 });

@@ -1,4 +1,4 @@
-﻿@model Web.Coolbox.Areas.Seguridad.Models.Usuarios.ListarUsuariosModel
+﻿@model Web.Smartway.Areas.Seguridad.Models.Usuarios.ListarUsuariosModel
 
 
 <form id="frmSearchListado" data-typeform="search" method="post" action="#" class="pull-right custom-search">
@@ -21,17 +21,17 @@
 
                             @*<div class="form-group">
                                 @Html.LabelFor(model => model.AliasUsuario)
-                                @Html.TextBoxFor(model => model.AliasUsuario, new { @Value = Model.AliasUsuario, @class = "form-control", @data_ctrlsearch = Web.Coolbox.DataAccess.Constantes.Seguridad.Usuario.listadopedido_filtro_aliasusuario })
+                                @Html.TextBoxFor(model => model.AliasUsuario, new { @Value = Model.AliasUsuario, @class = "form-control", @data_ctrlsearch = Web.Smartway.DataAccess.Constantes.Seguridad.Usuario.listadopedido_filtro_aliasusuario })
                             </div>
                             <div class="clearfix space-10"></div>*@
                             <div class="form-group">
                                 @Html.LabelFor(model => model.NombreCompleto)
-                                @Html.TextBoxFor(model => model.NombreCompleto, new { @Value = Model.NombreCompleto, @class = "form-control", @data_ctrlsearch = Web.Coolbox.DataAccess.Constantes.Seguridad.Usuario.listadopedido_filtro_nombrecompleto })
+                                @Html.TextBoxFor(model => model.NombreCompleto, new { @Value = Model.NombreCompleto, @class = "form-control", @data_ctrlsearch = Web.Smartway.DataAccess.Constantes.Seguridad.Usuario.listadopedido_filtro_nombrecompleto })
                             </div>
                             <div class="clearfix space-10"></div>
                             <div class="form-group">
                                 @Html.LabelFor(model => model.IdRol)
-                                @Html.DropDownListFor(model => model.IdRol, Model.ListaRoles, "[Todos los Roles]", new { @class = "form-control", @data_ctrlsearch = Web.Coolbox.DataAccess.Constantes.Seguridad.Usuario.listadopedido_filtro_rol })
+                                @Html.DropDownListFor(model => model.IdRol, Model.ListaRoles, "[Todos los Roles]", new { @class = "form-control", @data_ctrlsearch = Web.Smartway.DataAccess.Constantes.Seguridad.Usuario.listadopedido_filtro_rol })
                             </div>
                             <div class="clearfix space-10"></div>
                             <div>

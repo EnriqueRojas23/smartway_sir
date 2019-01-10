@@ -6106,7 +6106,7 @@ $p.newModel({
     _isDVR: false,
     _isMuted: false,
     _isStarted: false,
-    _qualitySwitching: false,
+    _qualiSmartwaywitching: false,
     _isDynamicStream: false,
     _volume: 0,
 
@@ -6406,7 +6406,7 @@ $p.newModel({
         if (this.mediaElement === null) return;
         if (this.media.maxpos <= 0) return;
         if (this.getState() == 'STARTING') return;
-        if (this._qualitySwitching===true) return;
+        if (this._qualiSmartwaywitching===true) return;
         this._setState('completed');
     },    
     
@@ -6453,9 +6453,9 @@ $p.newModel({
             return;
         }
         
-        this._qualitySwitching = true;
+        this._qualiSmartwaywitching = true;
         this.applySrc();
-        this._qualitySwitching = false;
+        this._qualiSmartwaywitching = false;
         this.qualityChangeListener();
     },    
 

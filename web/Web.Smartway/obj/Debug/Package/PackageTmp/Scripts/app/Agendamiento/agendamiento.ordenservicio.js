@@ -95,6 +95,7 @@ function configurarGrilla()
     let fechahorainicio = $("#fechahorainicio").val();
     let fechahorafin = $("#fechahorafin").val();
     let numeroordenservicio = $("#numeroordenservicio").val();
+    let idestado = $("#idestado").val();
 
 
 
@@ -102,6 +103,7 @@ function configurarGrilla()
     $.jgrid.defaults.responsive = true;
     var vdataurl = $grilla.data("dataurl") + 
      "?idtipoordenservicio="  + idtipoordenservicio 
+     + "&idestado="  + idestado 
      + "&fechainicio=" + fechahorainicio 
      + "&fechafin=" + fechahorafin 
      + "&numeroordenservicio=" + numeroordenservicio 

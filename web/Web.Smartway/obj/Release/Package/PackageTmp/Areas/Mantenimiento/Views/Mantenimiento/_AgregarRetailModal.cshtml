@@ -1,4 +1,4 @@
-﻿@model Web.Coolbox.Areas.Mantenimiento.Models.ClienteModel
+﻿@model Web.Smartway.Areas.Mantenimiento.Models.PartnerModel
 
 @using (Ajax.BeginForm("AgregarClienteModal", "Mantenimiento", null, new AjaxOptions { HttpMethod = "POST", InsertionMode = InsertionMode.Replace, UpdateTargetId = "modalcontent", OnComplete = "OnCompleteTransaction(xhr, status)" }, new { @class = "form-horizontal" }))
 {
@@ -34,7 +34,7 @@
                 <div class="form-group">
                     <div class="col-md-12">
                         <label class="control-label">Ubigeo :</label>
-                        @Html.DropDownListFor(model => model.iddistrito, (SelectList)ViewData["listaubigeos"], "[Ubigeo]", new { @id = "ddlUbigeo", @class = "chosen-select form-control", @data_url = @Url.Action("JsonGetDatosDireccion", "Seguimiento") })
+                        @Html.DropDownListFor(model => model.iddistrito, (SelectList)ViewData["listaubigeos"], "[Ubigeo]", new { @id = "ddlUbigeo", @class = "chosen-select form-control", @data_url = @Url.Action("JsonGetDatosDireccion", "Mantenimiento") })
                     </div>
 
                 </div>

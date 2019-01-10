@@ -121,6 +121,7 @@
     <Compile Include="Recepcion\ListarOrdenServicioQuery.cs" />
     <Compile Include="Reparacion\ListarAntecedentesDetalleQuery.cs" />
     <Compile Include="Reparacion\ListarAntecedentesQuery.cs" />
+    <Compile Include="Reparacion\ListarOrdenTrabajoTiempoQuery.cs" />
     <Compile Include="Reparacion\ListarVentaCotizacionDetalleQuery.cs" />
     <Compile Include="Reparacion\ListarOrdenTrabajoDetalleQuery.cs" />
     <Compile Include="Reparacion\ListarOrdenServicioQuery.cs" />

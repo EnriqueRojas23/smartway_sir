@@ -120,9 +120,37 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ListarAntecedentesOrdenServicioDto" nillable="true" type="tns:ListarAntecedentesOrdenServicioDto" />
-  <xs:complexType name="ListarVentaCotizacionDetalleResult">
+  <xs:complexType name="ListarOrdenTrabajoTiempoResult">
     <xs:complexContent mixed="false">
       <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q5:QueryResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Hits" nillable="true" type="tns:ArrayOfListarOrdenTrabajoTiempoDto" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListarOrdenTrabajoTiempoResult" nillable="true" type="tns:ListarOrdenTrabajoTiempoResult" />
+  <xs:complexType name="ArrayOfListarOrdenTrabajoTiempoDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ListarOrdenTrabajoTiempoDto" nillable="true" type="tns:ListarOrdenTrabajoTiempoDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfListarOrdenTrabajoTiempoDto" nillable="true" type="tns:ArrayOfListarOrdenTrabajoTiempoDto" />
+  <xs:complexType name="ListarOrdenTrabajoTiempoDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="fechahorafin" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fechahorainicio" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="idordentrabajo" type="xs:long" />
+      <xs:element minOccurs="0" name="idordentrabajotiempo" type="xs:long" />
+      <xs:element minOccurs="0" name="idusuario" type="xs:int" />
+      <xs:element minOccurs="0" name="iteracion" type="xs:int" />
+      <xs:element minOccurs="0" name="serie" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListarOrdenTrabajoTiempoDto" nillable="true" type="tns:ListarOrdenTrabajoTiempoDto" />
+  <xs:complexType name="ListarVentaCotizacionDetalleResult">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q6:QueryResult">
         <xs:sequence>
           <xs:element minOccurs="0" name="Hits" nillable="true" type="tns:ArrayOfListarVentaCotizacionDetalleDto" />
         </xs:sequence>
@@ -156,7 +184,7 @@
   <xs:element name="ListarVentaCotizacionDetalleDto" nillable="true" type="tns:ListarVentaCotizacionDetalleDto" />
   <xs:complexType name="ListarOrdenTrabajoDetalleResult">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q6:QueryResult">
+      <xs:extension xmlns:q7="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q7:QueryResult">
         <xs:sequence>
           <xs:element minOccurs="0" name="Hits" nillable="true" type="tns:ArrayOfListarOrdenTrabajoDetalleDto" />
         </xs:sequence>
@@ -187,7 +215,7 @@
   <xs:element name="ListarOrdenTrabajoDetalleDto" nillable="true" type="tns:ListarOrdenTrabajoDetalleDto" />
   <xs:complexType name="ListarOrdenServicioResult">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q7="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q7:QueryResult">
+      <xs:extension xmlns:q8="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q8:QueryResult">
         <xs:sequence>
           <xs:element minOccurs="0" name="Hits" nillable="true" type="tns:ArrayOfListarOrdenServicioDto" />
         </xs:sequence>
@@ -228,8 +256,9 @@
   <xs:element name="ListarOrdenServicioDto" nillable="true" type="tns:ListarOrdenServicioDto" />
   <xs:complexType name="ObtenerOrdenTrabajoResult">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q8="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q8:QueryResult">
+      <xs:extension xmlns:q9="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q9:QueryResult">
         <xs:sequence>
+          <xs:element minOccurs="0" name="bounce" type="xs:int" />
           <xs:element minOccurs="0" name="descripcion" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="fechahoraasignacion" type="xs:dateTime" />
           <xs:element minOccurs="0" name="idordenserviciotecnico" type="xs:long" />
@@ -246,7 +275,7 @@
   <xs:element name="ObtenerOrdenTrabajoResult" nillable="true" type="tns:ObtenerOrdenTrabajoResult" />
   <xs:complexType name="ObtenerUltimaOrdenTrabajoResult">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q9="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q9:QueryResult">
+      <xs:extension xmlns:q10="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q10:QueryResult">
         <xs:sequence>
           <xs:element minOccurs="0" name="numeroordentrabajo" nillable="true" type="xs:string" />
         </xs:sequence>
@@ -256,7 +285,7 @@
   <xs:element name="ObtenerUltimaOrdenTrabajoResult" nillable="true" type="tns:ObtenerUltimaOrdenTrabajoResult" />
   <xs:complexType name="ObtenerOrdenServicioResult">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q10="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q10:QueryResult">
+      <xs:extension xmlns:q11="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q11:QueryResult">
         <xs:sequence>
           <xs:element minOccurs="0" name="accesorios" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="cotizado" nillable="true" type="xs:boolean" />

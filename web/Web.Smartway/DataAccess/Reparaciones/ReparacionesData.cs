@@ -56,7 +56,16 @@ namespace Web.Smartway.DataAccess.Reparaciones
         {
             MailHelper.EnviarMail("enrique.rojas@riabc.net", "Prueba", "prueba", false);
         }
-
+        public IEnumerable<OrdenTrabajoTiempoModel> GetListarOrdenTrabajoTiempo(long idordentrabajo)
+        {
+            var parametros = new ListarOrdenTrabajoTiempoParameters
+            {
+                idordentrabajo = idordentrabajo
+            };
+            var resultado = (ListarOrdenTrabajoTiempoResult)parametros.Execute();
+            Mapper.CreateMap<ListarOrdenTrabajoTiempoDto, OrdenTrabajoTiempoModel>();
+            return Mapper.Map<IEnumerable<ListarOrdenTrabajoTiempoDto>, IEnumerable<OrdenTrabajoTiempoModel>>(resultado.Hits);
+        }
 
         public static IEnumerable<OrdenTrabajoDetalleModel> GetListarOrdenTrabajoDetalle(long? idordentrabajo)
         {

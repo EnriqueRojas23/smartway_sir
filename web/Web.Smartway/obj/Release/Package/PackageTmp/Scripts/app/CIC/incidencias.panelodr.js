@@ -83,7 +83,7 @@ function CargaListaOrdenesReparacion()
 
                             if (full.odr_generada == true)
                             {
-                                return "<div><button type='button' data-toggle='tooltip' data-placement='top' class='btn-success btn btn-xs btn-outline ' onclick='DetalleCompleto(" + data + ");'> <i class='fa fa-search'></i> Detalle </button><button type='button' data-toggle='tooltip' title='Seguimiento 'data-placement='top' class='btn-primary btn btn-xs btn-outline ' onclick='MostrarSeguimiento(" + iddocumento + ");'> <i class='fa fa-history'></i> </button><button type='button' data-toggle='tooltip' title='Imprimir ODR 'data-placement='top' class='btn-primary btn btn-xs btn-outline ' onclick='ImprimirODR(" + full.inc_int_id + ");'> <i class='fa fa-print'></i> </button></div>";
+                                return "<div><button type='button' data-toggle='tooltip' data-placement='top' class='btn-success btn btn-xs btn-outline ' onclick='DetalleCompleto(" + data + ");'> <i class='fa fa-search'></i> Detalle </button><button type='button' data-toggle='tooltip' title='Mantenimiento 'data-placement='top' class='btn-primary btn btn-xs btn-outline ' onclick='MostrarSeguimiento(" + iddocumento + ");'> <i class='fa fa-history'></i> </button><button type='button' data-toggle='tooltip' title='Imprimir ODR 'data-placement='top' class='btn-primary btn btn-xs btn-outline ' onclick='ImprimirODR(" + full.inc_int_id + ");'> <i class='fa fa-print'></i> </button></div>";
                             }
                             else
                             {

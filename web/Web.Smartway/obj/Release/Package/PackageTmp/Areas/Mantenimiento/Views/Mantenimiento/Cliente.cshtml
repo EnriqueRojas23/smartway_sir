@@ -1,4 +1,4 @@
-﻿@model Web.Coolbox.Areas.Mantenimiento.Models.ClienteModel
+﻿@model Web.Smartway.Areas.Mantenimiento.Models.ClienteModel
 @{
     ViewBag.Title = "Cliente";
 }
@@ -36,7 +36,7 @@
 }
 <script type="text/javascript">
     var fcnUrlControlGrid_Direccion = function (str, id) {
-        var urlprincipal = '@Url.Action("GetControlDetailsGrid_Direccion", "Seguimiento", new { area = "Seguimiento" })';
+        var urlprincipal = '@Url.Action("GetControlDetailsGrid_Direccion", "Mantenimiento", new { area = "Mantenimiento" })';
         return urlprincipal + "?control=" + str + "&id=" + id;
     };
 </script>
@@ -44,7 +44,7 @@
 <script type="text/javascript">
         var fcnUrlControlGrid = function (str, id)
         {
-            var urlprincipal = '@Url.Action("GetControlDetailsGrid", "Seguimiento", new  { area = "Seguimiento" })';
+            var urlprincipal = '@Url.Action("GetControlDetailsGrid", "Mantenimiento", new  { area = "Mantenimiento" })';
             return urlprincipal + "?control=" + str + "&id=" + id;
         };
 </script>
@@ -77,8 +77,8 @@
                             <div class="form-group">
                                 <label class="col-md-2 control-label"> Razón Social / RUC  :</label>
                                <div class="col-md-4">@Html.TextBoxFor(model => model.criterio, "", new { @class = "form-control", @placeholder = "Razón Social, RUC, Nombre Corto", @required = "False" })</div>
-                                <label class="col-md-2 control-label"> Inactivo :</label>
-                                <div class="col-md-2">@Html.CheckBoxFor(model => model.activo, new { @required = "False" })</div>
+                                @*<label class="col-md-2 control-label"> Inactivo :</label>
+                                <div class="col-md-2">@Html.CheckBoxFor(model => model.activo, new { @required = "False" })</div>*@
                                 <div class="col-md-2"><button type="button" id='btnBuscar' class="btn  btn-line btn-block btn-sm btn-primary"><i class="fa fa-search"></i> Buscar </button></div>
                             </div>
                         </div>
@@ -107,7 +107,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        @*<div class="row">
             <div class="col-lg-12">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
@@ -140,7 +140,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>*@
 
     }
     @Html.Hidden("txtidcliente")

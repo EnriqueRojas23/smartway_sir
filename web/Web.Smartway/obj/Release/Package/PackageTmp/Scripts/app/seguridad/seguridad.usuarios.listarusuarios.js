@@ -10,13 +10,33 @@ $(document).ready(function () {
     $('#btnNuevo').click(function (event) { btnNuevo_onclick(this, event); });
     configurarGrilla();
     mostrarMensajeResultado();
-});
 
+});
+function inicializandoEventosModalDocumentos()
+{
+      //$("#ddltipopago").attr('disabled', 'true');
+      //$("#ddltipopago").trigger('chosen:updated');
+
+     var config = {
+            '.chosen-select': {max_selected_options: 5 ,
+                 allow_single_deselect: false ,
+                 no_results_text: 'Oops, no se encontró el ubigeo!',
+                  placeholder_text_multiple: "Seleccione una opción"
+                }
+
+        }
+
+        for (var selector in config) {
+            $(selector).chosen(config[selector]);
+        }
+
+
+}
 function btnActualizar_onclick(obj, event) {
 
     var url = $(obj).data("url");
     var dataModelo = $('form').serialize();
-    var tipoacceso = $('#Usr_str_tipoacceso').val();
+    var idtipousuario = $('#idtipousuario').val();
     var usrred = $('#Usr_str_red').val();
     var nombre = $('#Usr_str_nombre').val();
     var apellido = $('#Usr_str_apellidos').val();
@@ -26,17 +46,12 @@ function btnActualizar_onclick(obj, event) {
     validation($('#Usr_str_red'));
     validation($('#Usr_str_nombre'));
     validation($('#Usr_str_apellidos'));
+    validation($('#idtipousuario'));
 
-    if (tipoacceso == "" || usrred == "" || nombre == "" || apellido == "" ) {
-               
+    if (idtipousuario == "" || usrred == "" || nombre == "" || apellido == "" || email == "" || validationEmail($('#Usr_str_email'))==true ) {
+
         swal({ title: "Error", text: "Debe completar todos los datos correctamente", type: "error", confirmButtonText: "Aceptar" });
-        if(tipoacceso == 'EX')
-        {
-            if(email == ""|| validationEmail($('#Usr_str_email'))==false)
-            {
-               swal({ title: "Error", text: "Debe completar todos los datos correctamente", type: "error", confirmButtonText: "Aceptar" });
-            }
-        }
+
     }
     else {
         swal({
@@ -82,138 +97,6 @@ function btnActualizar_onclick(obj, event) {
 
 
 
-function btnRegistrar_onclick(obj, event) {
-
-    var url = $(obj).data("url");
-    var dataModelo = $('form').serialize();
-    var tipoacceso = $('#Usr_str_tipoacceso').val();
-    var usrred = $('#Usr_str_red').val();
-    var nombre = $('#Usr_str_nombre').val();
-    var apellido = $('#Usr_str_apellidos').val();
-    var email = $('#Usr_str_email').val();
-    var dni = $('#usr_str_dni').val();
-    var pas = $('#usr_str_password').val();
-
-    validation($('#Usr_str_email'));
-    validation($('#Usr_str_red'));
-    validation($('#Usr_str_nombre'));
-    validation($('#Usr_str_apellidos'));
-    validation($('#usr_str_dni'));
-    validation($('#usr_str_password'));
-
-  if(tipoacceso == 'AD')
-  {     
-      if (tipoacceso == "" || usrred == "" || nombre == "" || apellido == "" || dni == "" || pas == "")
-      {
-               
-        swal({ title: "Error", text: "Debe completar todos los datos correctamente", type: "error", confirmButtonText: "Aceptar" });
-    }
-    else {
-        swal({
-            title: "Registro de Usuario",
-            text: "¿Está seguro que desea registrar este usuario?",
-            type: "warning",
-            showCancelButton: true,
-            cancelButtonText: "Cancelar",
-            confirmButtonColor: '#DD6B55',
-            confirmButtonText: 'Registrar',
-            closeOnConfirm: false,
-            closeOnCancel: true
-        },
-
-        function (isConfirm) {
-            if (isConfirm) {
-                $.ajax(
-                        {
-                            type: "POST",
-                            async: true,
-                            url: url,
-                            data: dataModelo,
-                            success: function (data) {
-                                if (data.res == "3") {
-                                    swal({ title: "Error!", text: "El usuario ya existe", type: "error", confirmButtonText: "Aceptar" });
-                                }
-                                else if(data.res =="2") {
-                                    swal({ title: "Correcto", text: "Se registró correctamente, pero no se envió el correo de manera satisfactoria", type: "success", confirmButtonText: "Aceptar" });
-                                    $("#modalcontainer").modal("hide");
-                                    reload();
-
-                                }
-                                else if (data.res == "1") {
-                                    swal({ title: "Correcto", text: "Se registró correctamente", type: "success", confirmButtonText: "Aceptar" });
-                                    $("#modalcontainer").modal("hide");
-                                    reload();
-
-                                }
-                            },
-                            error: function (request, status, error) {
-                           
-                                swal({ title: "Error!", text: "Ocurrió un error al registrar", type: "error", confirmButtonText: "Aceptar" });
-                            }
-                        });
-            }
-        });
-    }
-}
-    else 
-    {
-
-         if (tipoacceso == "" || usrred == "" || nombre == "" || apellido == "" || email == "" || validationEmail($('#Usr_str_email'))==false ) {
-                       
-                swal({ title: "Error", text: "Debe completar todos los datos correctamente", type: "error", confirmButtonText: "Aceptar" });
-            }
-            else {
-
-
-                swal({
-                    title: "Registro de Usuario",
-                    text: "¿Está seguro que desea registrar este usuario?",
-                    type: "warning",
-                    showCancelButton: true,
-                    cancelButtonText: "Cancelar",
-                    confirmButtonColor: '#DD6B55',
-                    confirmButtonText: 'Registrar',
-                    closeOnConfirm: false,
-                    closeOnCancel: true
-                },
-
-                function (isConfirm) {
-                    if (isConfirm) {
-                        $.ajax(
-                                {
-                                    type: "POST",
-                                    async: true,
-                                    url: url,
-                                    data: dataModelo,
-                                    success: function (data) {
-                                        if (data.res == "3") {
-                                            swal({ title: "Error!", text: "El usuario ya existe", type: "error", confirmButtonText: "Aceptar" });
-                                        }
-                                        else if(data.res =="2") {
-                                            swal({ title: "Correcto", text: "Se registró correctamente, pero no se envió el correo de manera satisfactoria", type: "success", confirmButtonText: "Aceptar" });
-                                            $("#modalcontainer").modal("hide");
-                                            reload();
-
-                                        }
-                                        else if (data.res == "1") {
-                                            swal({ title: "Correcto", text: "Se registró correctamente", type: "success", confirmButtonText: "Aceptar" });
-                                            $("#modalcontainer").modal("hide");
-                                            reload();
-
-                                        }
-                                    },
-                                    error: function (request, status, error) {
-                                   
-                                        swal({ title: "Error!", text: "Ocurrió un error al registrar", type: "error", confirmButtonText: "Aceptar" });
-                                    }
-                                });
-                    }
-                });
-    }
-}
-
-
-}
 function reload()
 {
     var vdataurl = $(gridlistausuario).data("dataurl");
@@ -228,13 +111,12 @@ function btnNuevo_onclick(obj, event) {
         $("#modalcontent").html(data);
         $("#modalcontainer").modal("show");
         configurarPopUpNuevo();
-
+        inicializandoEventosModalDocumentos()
         $('.i-checks').iCheck({
             checkboxClass: 'icheckbox_square-green',
             radioClass: 'iradio_square-green',
         });
 
-        $('#btnRegistrar').click(function (event) { btnRegistrar_onclick(this, event); });
     });
 }
 function modificarUsuario(obj, id)
@@ -246,6 +128,10 @@ function modificarUsuario(obj, id)
         $("#modalcontent").html(data);
         $("#modalcontainer").modal("show");
         configurarPopUpEditar();
+          inicializandoEventosModalDocumentos()
+
+       $("#ddltipopago").val($("#tiposproducto").val().split(','));
+       $("#ddltipopago").trigger('chosen:updated');
 
         $('.i-checks').iCheck({
             checkboxClass: 'icheckbox_square-green',
@@ -393,7 +279,7 @@ function configurarGrilla() {
         url: vdataurl,
         datatype: 'json',
         mtype: 'POST',
-        colNames: ['','Usuario', 'Nombres', 'Apellidos', 'Correo Electronico',  'Último Ingreso','Tienda', 'Bloqueado','Acciones'],
+        colNames: ['','Usuario', 'Nombres', 'Apellidos', 'Correo Electronico',  'Último Ingreso','Sucursal', 'Bloqueado','Acciones'],
         colModel:
         [
             { key: true, hidden: true, name: 'usr_int_id', index: 'usr_int_id' },
@@ -402,15 +288,15 @@ function configurarGrilla() {
             { key: false, hidden: false, name: 'usr_str_apellidos', index: 'usr_str_apellidos', width: '140', align: 'left' },
             { key: false, hidden: false, name: 'usr_str_email', index: 'usr_str_email', width: '200', align: 'left' },
             { key: false, hidden: false, name: 'usr_dat_ultfeclogin', index: 'usr_dat_ultfeclogin', width: '120', align: 'center', formatter: 'date', formatoptions: { srcformat: 'd/m/Y', newformat: 'd/m/Y' } },
-            { key: false, hidden: false, name: 'usr_str_tienda', index: 'usr_str_tienda', width: '80', align: 'center'},
+            { key: false, hidden: false, name: 'sucursal', index: 'sucursal', width: '80', align: 'center'},
             { key: false, hidden: false, name: 'usr_int_bloqueado', index: 'usr_int_bloqueado', width: '80', align: 'center', formatter: formateditb },
             { key: false, hidden: false, name: 'usr_int_id', index: 'usr_int_id', width: '180', align: 'center', formatter: bottonaAcciones_formatter }
 
         ],
         jsonReader: CONFIG_JQGRID.get('jsonReader'),
         pager: $(gridlistausuariopager),
-        rowNum: 10,
-        rowList: [10, 20, 30, 40],
+        rowNum: 20,
+        rowList: [ 20, 30, 40],
         emptyrecords: CONFIG_JQGRID.get('emptyrecords'),
         autoheight: true,
         autowidth: true,
@@ -435,7 +321,7 @@ function configurarGrilla() {
             })
             $self.jqGrid('setGridParam', { postData: postData });
         },
-      
+
     });
 
 }
@@ -450,7 +336,7 @@ function formateditb (cellvalue, options, rowObject)
        return "<i class='fa fa-check-square-o'></i>";
     }
 
-  
+
 }
 function formatedit (cellvalue, options, rowObject)
 {
@@ -463,7 +349,7 @@ function formatedit (cellvalue, options, rowObject)
        return "<span class='label label-danger'>" + " " + cellvalue + " " + "</span>";
     }
 
-  
+
 }
 function getDataForm() {
     var form = $('form');
@@ -541,7 +427,7 @@ function configurarGrilla_RolesDisponibles()
         [
             { key: true, hidden: true, name: 'rol_int_id', index: 'rol_int_id' },
             { key: false, hidden: false, name: 'rol_str_alias', index: 'rol_str_alias', width: '120', align: 'left' },
-        
+
         ],
         jsonReader: CONFIG_JQGRID.get('jsonReader'),
         rowNum: CONFIG_JQGRID.get('rownum'),
@@ -747,4 +633,22 @@ function validation(obj) {
         obj.css('border-color', '#F3866F');
     else
         obj.css('border-color', '');
+}
+function OnCompleteTransaction(xhr, status)
+{
+
+  var jsonres = xhr.responseJSON;
+    if (jsonres.res == true)
+    {
+         swal("Registro Exitoso.","Se ha registrado la información correctamente.", "success");
+         $("#modalcontainer").modal("hide");
+         buscarusuarios();
+
+
+    }
+    else
+    {
+           messagebox("No puede continuar", jsonres.msj, "warning");
+
+    }
 }

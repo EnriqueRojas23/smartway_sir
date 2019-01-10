@@ -8,6 +8,7 @@
           <xs:element minOccurs="0" name="__idoperacion" type="xs:int" />
           <xs:element minOccurs="0" name="caja" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="cantidad" type="xs:int" />
+          <xs:element minOccurs="0" name="cantidadnueva" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="fechahoraregistro" type="xs:dateTime" />
           <xs:element minOccurs="0" name="idalmacen" type="xs:int" />
           <xs:element minOccurs="0" name="idalmacennuevo" nillable="true" type="xs:int" />

@@ -2853,7 +2853,7 @@
                     this.colorGradient(value, key, element);
                 }
             },
-            visibilitySetter: function(value, key, element) {
+            visibiliSmartwayetter: function(value, key, element) {
                 // IE9-11 doesn't handle visibilty:inherit well, so we remove the attribute instead (#2881, #3909)
                 if (value === 'inherit') {
                     element.removeAttribute(key);
@@ -2928,7 +2928,7 @@
                 this.doTransform = true;
             };
         // These setters both set the key on the instance itself plus as an attribute
-        SVGElement.prototype.opacitySetter = SVGElement.prototype.displaySetter = function(value, key, element) {
+        SVGElement.prototype.opaciSmartwayetter = SVGElement.prototype.displaySetter = function(value, key, element) {
             this[key] = value;
             element.setAttribute(key, value);
         };
@@ -11569,7 +11569,7 @@
                     legend = chart.legend,
                     redrawLegend = chart.isDirtyLegend,
                     hasStackedSeries,
-                    hasDirtyStacks,
+                    hasDirSmartwaytacks,
                     hasCartesianSeries = chart.hasCartesianSeries,
                     isDirtyBox = chart.isDirtyBox,
                     seriesLength = series.length,
@@ -11596,12 +11596,12 @@
                         hasStackedSeries = true;
 
                         if (serie.isDirty) {
-                            hasDirtyStacks = true;
+                            hasDirSmartwaytacks = true;
                             break;
                         }
                     }
                 }
-                if (hasDirtyStacks) { // mark others as dirty
+                if (hasDirSmartwaytacks) { // mark others as dirty
                     i = seriesLength;
                     while (i--) {
                         serie = series[i];

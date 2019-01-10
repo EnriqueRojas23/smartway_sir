@@ -1,4 +1,4 @@
-﻿@model Web.Coolbox.Models.Account.SignInModel
+﻿@model Web.Smartway.Models.Account.SignInModel
 @{
     ViewBag.Title = "Login";
     Layout = null;
@@ -30,7 +30,7 @@
 
 </head>
 
-<body class="gray-bg">
+<body class="white-bg">
     <header>
         <div style="position: absolute;" class="navbar navbar-inverse navbar-fixed-top" >
             @*<div class="navbar-header">
@@ -42,7 +42,7 @@
         <div>
             <div class="panel-heading logo-name">
                 <div class="row-fluid user-row">
-                    <img src="@Url.Content("~/Images/logo.jpg")" class="img-responsive" alt="Conxole Admin" />
+                    <img src="@Url.Content("~/Images/logo.jpg")" class="img-responsive" width="280" alt="Conxole Admin" />
                 </div>
             </div>
             @using (Html.BeginForm("SignIn", "Account", FormMethod.Post, new { ReturnUrl = Model.ReturnUrl, id = "form-signin", @class = "form-signin", @role = "form" }))

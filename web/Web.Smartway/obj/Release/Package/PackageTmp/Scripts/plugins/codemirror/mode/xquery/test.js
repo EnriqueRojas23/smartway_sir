@@ -33,7 +33,7 @@
      "          [keyword //][variable fn:doc]",
      "      }");
 
-  MT("testEmptySequenceKeyword",
+  MT("testEmpSmartwayequenceKeyword",
      "[string \"foo\"] [keyword instance] [keyword of] [keyword empty-sequence]()");
 
   MT("testMultiAttr",

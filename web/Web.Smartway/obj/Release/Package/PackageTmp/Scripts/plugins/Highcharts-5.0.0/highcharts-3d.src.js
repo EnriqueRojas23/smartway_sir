@@ -299,7 +299,7 @@
             };
 
             // apply opacaity everywhere
-            result.opacitySetter = function(opacity) {
+            result.opaciSmartwayetter = function(opacity) {
                 this.front.attr({
                     opacity: opacity
                 });
