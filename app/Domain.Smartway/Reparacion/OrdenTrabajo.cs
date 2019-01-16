@@ -21,5 +21,7 @@ namespace Domain.Smartway.Reparacion
         public int idusuarioregistro { get; set; }
         public string descripcion { get; set; }
 
+        public string informetecnico { get; set; }
+
     }
 }

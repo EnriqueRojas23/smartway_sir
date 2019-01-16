@@ -15,7 +15,9 @@ namespace QueryHandlers.Smartway.Recepcion
             using (var connection = ConnectionFactory.CreateFromUserSession())
             {
                 var parametros = new DynamicParameters();
-                //parametros.Add("idguiaremision", dbType: DbType.Int32, direction: ParameterDirection.Input, value: parameters.idguiaremision);
+                parametros.Add("fecini", dbType: DbType.String, direction: ParameterDirection.Input, value: parameters.fechahorainicio);
+                parametros.Add("fecfin", dbType: DbType.String, direction: ParameterDirection.Input, value: parameters.fechahorafin);
+                parametros.Add("numeroordenservicio", dbType: DbType.String, direction: ParameterDirection.Input, value: parameters.numeroordenservicio);
 
                 var resultado = new ListarDocumentoRecepcionResult
                 {

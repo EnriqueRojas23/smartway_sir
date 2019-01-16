@@ -14,6 +14,7 @@ namespace CommandContracts.Smartway.Despacho
         public bool activo { get; set; }
         public DateTime fechahoraregistro { get; set; }
         public DateTime fechasalida { get; set; }
+        public string lote { get; set; }
         public int idusuarioregistro { get; set; }
 
     }

@@ -18,6 +18,7 @@ namespace CommandContracts.Smartway.Reparacion
         public DateTime fechahoraregistro { get; set; }
         public int idusuarioregistro { get; set; }
         public string descripcion { get; set; }
+        public string informetecnico { get; set; }
         public int __tipooperacion { get; set; }
 
     }

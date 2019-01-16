@@ -18,6 +18,14 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
 
             return View();
         }
+        public ActionResult BaseIngenico()
+        {
+            var estado = MantenimientoData.GetListarEstado((Int32)Constantes.MaestroTablas.OrdenServicio);
+            var listadoestado = new SelectList(estado, "idestado", "estado");
+            ViewData["listadoestado"] = listadoestado;
+
+            return View();
+        }
 
 
     }

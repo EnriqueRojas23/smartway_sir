@@ -25,7 +25,22 @@ namespace Web.Smartway.Areas.Agendamiento.Controllers
 {
     public class DespachoController : BaseController
     {
-       public ActionResult ProgramarDespacho()
+
+        public ActionResult SeguimientoDespacho() { return View(); }
+        public JsonResult JsonGetListarDocumentosDespacho(String fechahorainicio
+           , String fechahorafin, string numerorecepcion)
+        {
+
+            
+
+            var listadoTotal = new DespachoData().GetListarOrdenSalida(2).ToList();
+            var resjson1 = (new JqGridExtension<OrdenSalidaModel>()).DataBind(listadoTotal, listadoTotal.Count);
+            return resjson1;
+
+        }
+
+
+        public ActionResult ProgramarDespacho()
         {
             var sucursal = new SucursalData().ListarSucursal("", "", null);
             var listasucursal = new SelectList(
@@ -259,6 +274,7 @@ namespace Web.Smartway.Areas.Agendamiento.Controllers
                                          cantidad = 1,
                                      }
                                      select item).ToList();
+                    resultado.RemoveAll(x => x.item == 0);
 
                     Session["DespachoMasivo"] = resultado;
 

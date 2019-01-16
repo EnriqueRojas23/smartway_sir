@@ -52,6 +52,7 @@ namespace CommandHandlers.Smartway.Reparacion
                     dominio.idestado = command.idestado;
                     dominio.bounce = command.bounce;
                     dominio.descripcion = command.descripcion;
+                    dominio.informetecnico = command.informetecnico;
                     break;
                 default:
                     break;

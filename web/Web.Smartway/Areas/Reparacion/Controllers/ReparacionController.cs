@@ -56,8 +56,71 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
 
 
             var modOrdenServicio = new OrdenServicioData().obtenerOrdenServicio(modOrdentrabajo.idordenserviciotecnico.Value);
-            var modListadoTiempo = new ReparacionesData().GetListarOrdenTrabajoTiempo(id);
+            var modListadoTiempo = new ReparacionesData().GetListarOrdenTrabajoTiempo(id).ToList();
 
+            modOrdentrabajo.inicios = new List<DateTime?>();
+            modOrdentrabajo.fines = new List<DateTime?>();
+
+
+            for (int i = 0; i < modListadoTiempo.Count(); i++)
+            {
+                modOrdentrabajo.inicios.Add(modListadoTiempo[i].fechahorainicio);
+                modOrdentrabajo.fines.Add(modListadoTiempo[i].fechahorafin);
+
+
+                if (i == 0)
+                {
+                    modOrdentrabajo.lapse1_fin = modListadoTiempo[0].fechahorafin;
+                    modOrdentrabajo.lapse1_inicio = modListadoTiempo[0].fechahorainicio;
+                }
+                else if (i == 1)
+                {
+                    modOrdentrabajo.lapse2_fin = modListadoTiempo[1].fechahorafin;
+                    modOrdentrabajo.lapse2_inicio = modListadoTiempo[1].fechahorainicio;
+                }
+                else if (i == 2)
+                {
+                    modOrdentrabajo.lapse3_fin = modListadoTiempo[2].fechahorafin;
+                    modOrdentrabajo.lapse3_inicio = modListadoTiempo[2].fechahorainicio;
+                }
+                else if (i == 3)
+                {
+                    modOrdentrabajo.lapse4_fin = modListadoTiempo[3].fechahorafin;
+                    modOrdentrabajo.lapse4_inicio = modListadoTiempo[3].fechahorainicio;
+                }
+                else if (i == 4)
+                {
+                    modOrdentrabajo.lapse5_fin = modListadoTiempo[4].fechahorafin;
+                    modOrdentrabajo.lapse5_inicio = modListadoTiempo[4].fechahorainicio;
+                }
+                else if (i == 5)
+                {
+                    modOrdentrabajo.lapse6_fin = modListadoTiempo[5].fechahorafin;
+                    modOrdentrabajo.lapse6_inicio = modListadoTiempo[5].fechahorainicio;
+                }
+                else if (i == 6)
+                {
+                    modOrdentrabajo.lapse7_fin = modListadoTiempo[6].fechahorafin;
+                    modOrdentrabajo.lapse7_inicio = modListadoTiempo[6].fechahorainicio;
+                }
+                else if (i == 7)
+                {
+                    modOrdentrabajo.lapse8_fin = modListadoTiempo[7].fechahorafin;
+                    modOrdentrabajo.lapse8_inicio = modListadoTiempo[7].fechahorainicio;
+                }
+                else if (i == 8)
+                {
+                    modOrdentrabajo.lapse9_fin = modListadoTiempo[8].fechahorafin;
+                    modOrdentrabajo.lapse9_inicio = modListadoTiempo[8].fechahorainicio;
+                }
+                else if (i == 9)
+                {
+                    modOrdentrabajo.lapse10_fin = modListadoTiempo[9].fechahorafin;
+                    modOrdentrabajo.lapse10_inicio = modListadoTiempo[9].fechahorainicio;
+                }
+
+
+            } 
 
 
             if (modOrdenServicio.idtipoordenservicio !=  (Int32)Constantes.tipoordenservicio.osp &&
@@ -253,7 +316,7 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
         public JsonResult AgregarReparacion(int? iddiagnostico
               , int? idreparacion
               , int? idrepuesto
-              , long? idordenservicio)
+              , long? idordenservicio, long idottiempo, long idordentrabajo)
         {
 
 
@@ -359,8 +422,9 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
             sb.Append("ont-size:12px;background-color:rgb(255,255,255);width:190px'>");
             sb.Append("													" + modRepuesto.descripcionlarga);
             sb.Append("												</td>");
-            sb.Append("												<td align='left' valign='top' style='padding:10px;font-family:Arial,Helvetica,sans-serif;color:rgb(38,38,38);");
-            sb.Append("ont-size:12px;background-color:rgb(255,255,255);width:190px'>	");
+            //sb.Append("                                            < td align = 'left' valign = 'top' style = 'padding:10px;font-family:Arial,Helvetica,sans-serif;color:rgb(38,38,38);");
+            //sb.Append("ont-size:12px;background-color:rgb(255,255,255);width:190px'>");
+            //sb.Append("													" + existerepuesto == null ? "" : existerepuesto.serie);
             sb.Append("												</td>");
             sb.Append("											</tr>");
             sb.Append("									");
@@ -388,7 +452,19 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
 
             if (existerepuesto == null)
             {
-                return Json(new { res = false, msj = "No existe este repuesto disponible. Se ha enviado una solicitud a almacén." });
+                var model = new OrdenTrabajoTiempoModel();
+                model.fechahorafin = DateTime.Now;
+                model.idordentrabajotiempo = idottiempo;
+                model.__tipoperacion = 2;
+                new ReparacionesData().insertarIniciarReparacion(model);
+
+
+                var modOrdenTrabajo = new ReparacionesData().obtenerOrdenTrabajo(idordentrabajo);
+                modOrdenTrabajo.idestado = (Int32)Constantes.EstadoOrdenTrabajo.Detenida;
+                modOrdenTrabajo.__tipooperacion = 2;
+                new ReparacionesData().InsertarActualizarOrdenTrabajo(modOrdenTrabajo);
+
+                return Json(new { res = false, msj = "No existe este repuesto disponible. Se ha enviado una solicitud a almacén. Y se ha pausado la Orden de Trabajo." });
             }
             else if(existerepuesto.cantidad == 0)
             {
@@ -483,9 +559,10 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
         }
         public JsonResult JsonEliminarReparacionDetalle(int item, long idinventario, int idrepuesto)
         {
-            
-            
 
+
+
+            var usuario = UsuariosData.ObtenerUsuario(16);
 
             OrdenTrabajoDetalleModel TrabajoDetalleModel = new OrdenTrabajoDetalleModel();
             TrabajoDetalleModel.idordentrabajodetalle = item;
@@ -514,7 +591,104 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
             existerepuesto.__idoperacion = 2;
             new InventarioData().InsertarActualizarInventario(existerepuesto);
 
-
+            #region enviomail
+            StringBuilder sb = new StringBuilder();
+            sb.Append("<table width='100%' cellpadding='0' cellspacing='0' border='0' dir='ltr' style='font-size:16px;background-color:rgb(227,225,225)'>");
+            sb.Append("<tbody>");
+            sb.Append("<tr>");
+            sb.Append("        <td align='center' valign='top' style='margin:0;padding:40'>");
+            sb.Append("            <table align='center' border='0' cellspacing='0' cellpadding='0' width='700' bgcolor='#1ab394' style='width:700px;border:1px solid ");
+            sb.Append("         transparent; ");
+            sb.Append("order-radius:13px;margin:auto;background-color:#18a689'>");
+            sb.Append("                <tbody>");
+            sb.Append("					<tr>");
+            sb.Append("					<td>");
+            sb.Append("						<table cellpadding='0' cellspacing='0' border='0' width='100%'>");
+            sb.Append("						<tbody>");
+            sb.Append("							<tr>");
+            sb.Append("							<td valign='top' align='left' style='padding:0px;margin:0px'>");
+            sb.Append("								<table cellpadding='0' cellspacing='0' border='0' width='100%'>");
+            sb.Append("								<tbody>");
+            sb.Append("									<tr>");
+            sb.Append("									<td align='left' valign='top'>");
+            sb.Append("									<table width='100%' border='0' cellpadding='0' cellspacing='0' align='center'>");
+            sb.Append("										<tbody>");
+            sb.Append("											<tr>");
+            sb.Append("											<td align='left' valign='top' style='font-family:Arial,Helvetica,sans-serif;font-size:20px;border-radius:6px");
+            sb.Append("	                                        color:rgb(' sb.Append('55,255,255)'>");
+            sb.Append("												<div style='text-align:center'><span style='color:rgb(255,255,255);font-weight:bold'><br></span></div>");
+            sb.Append("												<div style='text-align:center'><span style='color:rgb(255,255,255);font-weight:bold'>Smartway - SIR Notificaciones");
+            sb.Append("                                             </span></div>");
+            sb.Append("												<div style='text-align:center'><span style='color:rgb(255,255,255);font-weight:bold'><br></span></div>");
+            sb.Append("												<span style='color:rgb(38,38,38)'></span>");
+            sb.Append("											</td>");
+            sb.Append("											</tr>");
+            sb.Append("										</tbody>");
+            sb.Append("									</table>");
+            sb.Append("									</td>");
+            sb.Append("									</tr>");
+            sb.Append("									<tr>");
+            sb.Append("									<td>");
+            sb.Append("										<table width='100%' border='0' cellpadding='10' cellspacing='10' align='center'  bgcolor='white'>");
+            sb.Append("										<tbody>");
+            sb.Append("										       <tr>");
+            sb.Append("												<td align='left' valign='top' style='padding:10px;font-family:Arial,Helvetica,sans-serif;color:rgb(38,38,38)");
+            sb.Append("                                             font-size:12px;background-color:rgb(255,255,255);width:190px '  colspan='4'> ");
+            sb.Append("													Sr(a). " + usuario.usr_str_nombre + ' ' + usuario.usr_str_apellidos + "");
+            sb.Append("												</td>");
+            sb.Append("											</tr>");
+            sb.Append("											<tr>");
+            sb.Append("												<td colspan='10' align='left' valign='top' style='padding:10px;font-family:Arial,Helvetica,sans-serif;color:rgb(38,38,38);");
+            sb.Append("                                         font-size:12px;background-color:rgb(255,255,255);width:190px '  colspan='4'>");
+            sb.Append("												   Se le informa que el usuario " + Usuario.NombreUsuario + " ha realizado el retorno del respuesto solicitado");
+            sb.Append("												</td>");
+            sb.Append("											</tr>");
+            sb.Append("												<tr>");
+            sb.Append("												<td colspan='10' align='left' valign='top' style='padding:10px;font-family:Arial,Helvetica,sans-serif;color:rgb(38,38,38);");
+            sb.Append("                                             font-size:14px;font-weight:bold;background-color:rgb(255,255,255)'  colspan='4'>");
+            sb.Append("													<span style='font-family:Arial,Helvetica,sans-serif;color:rgb(38,38,38)'>Se ha solicitado el siguiente respuesto.</span> ");
+            sb.Append("");
+            sb.Append("												</td>");
+            sb.Append("											</tr>");
+            sb.Append("											<tr>");
+            sb.Append("												<td align='left' valign='top' style='padding:10px;font-family:Arial,Helvetica,sans-serif;color:rgb(38,38,38);");
+            sb.Append("ont-size:12px;background-color:rgb(255,255,255);width:190px'>");
+            sb.Append("													" + modRepuesto.codigoproducto);
+            sb.Append("												</td>");
+            sb.Append("												<td align='left' valign='top' style='padding:10px;font-family:Arial,Helvetica,sans-serif;color:rgb(38,38,38);");
+            sb.Append("ont-size:12px;background-color:rgb(255,255,255);width:190px'>");
+            sb.Append("												</td>");
+            sb.Append("												<td align='left' valign='top' style='padding:10px;font-family:Arial,Helvetica,sans-serif;color:rgb(38,38,38);");
+            sb.Append("ont-size:12px;background-color:rgb(255,255,255);width:190px'>");
+            sb.Append("													" + modRepuesto.descripcionlarga);
+            sb.Append("												</td>");
+            //sb.Append("                                            < td align = 'left' valign = 'top' style = 'padding:10px;font-family:Arial,Helvetica,sans-serif;color:rgb(38,38,38);");
+            //sb.Append("ont-size:12px;background-color:rgb(255,255,255);width:190px'>");
+            //sb.Append("													" + existerepuesto == null ? "" : existerepuesto.serie);
+            sb.Append("												</td>");
+            sb.Append("											</tr>");
+            sb.Append("									");
+            sb.Append("											");
+            sb.Append("										</tbody>");
+            sb.Append("										");
+            sb.Append("										</table>");
+            sb.Append("									</td>");
+            sb.Append("									</tr>");
+            sb.Append("									<tr>");
+            sb.Append("									<td>");
+            sb.Append("										");
+            sb.Append("						</tbody>");
+            sb.Append("						</table>");
+            sb.Append("					</td>");
+            sb.Append("					</tr>");
+            sb.Append("				</tbody>");
+            sb.Append("			</table>");
+            sb.Append("        </td>");
+            sb.Append("    </tr>");
+            sb.Append("</tbody>");
+            sb.Append("</table>");
+            #endregion
+            bool correo = MailHelper.EnviarMail(usuario.usr_str_email, "[Se retorna un repuesto a almacén]", sb.ToString(), true);
             #endregion
             return Json(new { res = true });
         }
@@ -529,7 +703,7 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
             return resjson1;
         }
         [HttpPost]
-        public JsonResult FinalizarReparacion(long id, long idottiempo, string descripcion)
+        public JsonResult FinalizarReparacion(long id, long idottiempo, string descripcion, string informetecnico)
         {
             var model = new OrdenTrabajoTiempoModel();
             var modOrdenTrabajo = new ReparacionesData().obtenerOrdenTrabajo(id);
@@ -554,6 +728,7 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
             modOrdenTrabajo.idestado = (Int32)Constantes.EstadoOrdenTrabajo.Completada;
             modOrdenTrabajo.__tipooperacion = 2;
             modOrdenTrabajo.descripcion = descripcion;
+            modOrdenTrabajo.informetecnico = informetecnico;
 
             var idordentrabajo = new ReparacionesData().InsertarActualizarOrdenTrabajo(modOrdenTrabajo);
 
@@ -562,7 +737,7 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
         }
 
         [HttpPost]
-        public JsonResult JsonPausarReparacion(long id, long idottiempo, string descripcion)
+        public JsonResult JsonPausarReparacion(long id, long idottiempo, string descripcion, string informetecnico)
         {
             var model = new OrdenTrabajoTiempoModel();
             model.fechahorafin = DateTime.Now;
@@ -575,6 +750,7 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
             modOrdenTrabajo.idestado = (Int32)Constantes.EstadoOrdenTrabajo.Detenida;
             modOrdenTrabajo.__tipooperacion = 2;
             modOrdenTrabajo.descripcion = descripcion;
+            modOrdenTrabajo.informetecnico = informetecnico;
             new ReparacionesData().InsertarActualizarOrdenTrabajo(modOrdenTrabajo);
 
             return Json(new { res = true });
@@ -615,13 +791,36 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
             modOrdenTrabajo.__tipooperacion = 2;
             new ReparacionesData().InsertarActualizarOrdenTrabajo(modOrdenTrabajo);
 
-            var model = new OrdenTrabajoTiempoModel();
-            model.idordentrabajo = id;
-            model.idusuario = Usuario.Idusuario;
-            model.fechahorainicio = DateTime.Now;
-            model.iteracion = modOrdenTrabajo.bounce;
-            model.__tipoperacion = 1;
-            long idottiempo =new ReparacionesData().insertarIniciarReparacion(model);
+            if (!modOrdenServicio.engarantia)
+            {
+                if (modOrdenServicio.cotizado.HasValue)
+                {
+                    if (modOrdenServicio.cotizado.Value)
+                    {
+                        var model = new OrdenTrabajoTiempoModel();
+                        model.idordentrabajo = id;
+                        model.idusuario = Usuario.Idusuario;
+                        model.fechahorainicio = DateTime.Now;
+                        model.iteracion = modOrdenTrabajo.bounce;
+                        model.__tipoperacion = 1;
+                        long idottiempo = new ReparacionesData().insertarIniciarReparacion(model);
+                    }
+                   
+                }
+            }
+            else
+            {
+                var model = new OrdenTrabajoTiempoModel();
+                model.idordentrabajo = id;
+                model.idusuario = Usuario.Idusuario;
+                model.fechahorainicio = DateTime.Now;
+                model.iteracion = modOrdenTrabajo.bounce;
+                model.__tipoperacion = 1;
+                long idottiempo = new ReparacionesData().insertarIniciarReparacion(model);
+            }
+
+
+         
 
             return Json(new { res = true, modOrdenServicio.cotizado, modOrdenServicio.engarantia });
         }
@@ -646,10 +845,13 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
         {
             var modOrdenServicio = new OrdenServicioData().obtenerOrdenServicio(idordenservicio);
             var modOrdenTrabajo = new ReparacionesData().obtenerOrdenTrabajo(modOrdenServicio.idordentrabajo.Value);
+            var modInventario = new InventarioData().obtenerInventario(modOrdenServicio.idinventario , null);
 
             if (aprobado)
             {
                 modOrdenServicio.idestado = (Int32)Constantes.EstadoOrdenServicio.PendienteDespachoCliente;
+                modInventario.idestado = (int)Constantes.Producto.Reparado;
+                new InventarioData().InsertarActualizarInventario(modInventario);
             }
             else
             {
@@ -660,8 +862,15 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
 
             modOrdenServicio.__tipooperacion = 2;
             modOrdenTrabajo.__tipooperacion = 2;
-           
+      
 
+
+       
+
+
+
+
+          
             new ReparacionesData().InsertarActualizarOrdenTrabajo(modOrdenTrabajo);
             new OrdenServicioData().InsertarActualizarOrdenServicio(modOrdenServicio);
 
@@ -691,6 +900,7 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
         {
             var modOrdenServicio = new OrdenServicioData().obtenerOrdenServicio(model.idordenserviciotecnico.Value);
             var modOrdenTrabajo = new ReparacionesData().obtenerOrdenTrabajo(modOrdenServicio.idordentrabajo.Value);
+            var modInventario = new InventarioData().obtenerInventario(modOrdenServicio.idinventario, null);
 
             string condicion11 = string.Empty, condicion12 = string.Empty, condicion13 = string.Empty, condicion14 = string.Empty; 
 
@@ -729,6 +939,10 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
                         modOrdenServicio.idestado = (Int32)Constantes.EstadoOrdenServicio.PendienteDespachoCliente;
                     else
                         modOrdenServicio.idestado = (Int32)Constantes.EstadoOrdenServicio.PendienteEntregaCliente;
+
+                    modInventario.idestado = (int)Constantes.Producto.Reparado;
+                    modInventario.__idoperacion = 4;
+                    new InventarioData().InsertarActualizarInventario(modInventario);
                 }
                 else
                 {
@@ -756,6 +970,9 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
                         modOrdenServicio.idestado = (Int32)Constantes.EstadoOrdenServicio.PendienteDespachoCliente;
                     else
                         modOrdenServicio.idestado = (Int32)Constantes.EstadoOrdenServicio.PendienteEntregaCliente;
+                    modInventario.idestado = (int)Constantes.Producto.Reparado;
+                    modInventario.__idoperacion = 4;
+                    new InventarioData().InsertarActualizarInventario(modInventario);
                 }
                 else
                 {
@@ -895,6 +1112,39 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
                 return PartialView("_AntecedentesModalODP");
             else
                 return PartialView("_AntecedentesModalODR");
+        }
+        public PartialViewResult DetalleOTSModal(long id)
+        {
+            var modOrdenServicio = new OrdenServicioData().obtenerOrdenServicio(id);
+
+
+            var modOrdentrabajo = new ReparacionesData().obtenerOrdenTrabajo(modOrdenServicio.idordentrabajo.Value);
+            modOrdentrabajo.numeroordentrabajo = modOrdenServicio.numeroost;
+            modOrdentrabajo.tiempotranscurrido = DateTime.Now - modOrdenServicio.fechahorainicio.Value;
+            modOrdentrabajo.tecnico = modOrdenServicio.tecnicoAsignado;
+            modOrdentrabajo.idtipoordenservicio = modOrdenServicio.idtipoordenservicio;
+            modOrdentrabajo.idordenserviciotecnico = modOrdenServicio.idordenserviciotecnico.Value;
+            modOrdentrabajo.idordentrabajo = modOrdenServicio.idordentrabajo;
+            modOrdentrabajo.fechahorainicio = modOrdenServicio.fechahorainicio;
+            modOrdentrabajo.numeroordenservicio = modOrdenServicio.numeroordenservicio;
+
+            var producto = new ProductoData().obtenerProducto(modOrdenServicio.idproducto);
+            modOrdentrabajo.producto = producto.descripcionlarga;
+            modOrdentrabajo.codigoproducto = producto.codigoproducto;
+            modOrdentrabajo.idtipoproducto = producto.idtipoproducto.Value;
+            modOrdentrabajo.imei = modOrdentrabajo.imei;
+            modOrdentrabajo.serie = modOrdentrabajo.serie;
+            modOrdentrabajo.idproducto = producto.idproducto.Value;
+
+
+            if (modOrdenServicio.idincidencia.HasValue && modOrdenServicio.idincidencia != 0)
+            {
+                var modIncidencia = new IncidenciaData().ObtenerIncidencia(modOrdenServicio.idincidencia.Value);
+                modOrdentrabajo.falla = modIncidencia.falla;
+            }
+
+
+            return PartialView("_ModalDetalleOTS", modOrdentrabajo);
         }
         #endregion  
     }

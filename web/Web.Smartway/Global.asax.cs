@@ -3,6 +3,8 @@
 namespace Web.Smartway
 {
     using System;
+    using System.Globalization;
+    using System.Threading;
     using System.Web;
     using Web.Common.HttpApplications;
     using Web.Smartway.Security;
@@ -18,6 +20,11 @@ namespace Web.Smartway
             var identity = new CustomIdentity(HttpContext.Current.User.Identity);
             var principal = new CustomPrincipal(identity);
             HttpContext.Current.User = principal;
+
+            CultureInfo newCulture = (CultureInfo)System.Threading.Thread.CurrentThread.CurrentCulture.Clone();
+            newCulture.DateTimeFormat.ShortDatePattern = "dd-MMM-yyyy";
+            newCulture.DateTimeFormat.DateSeparator = "-";
+            Thread.CurrentThread.CurrentCulture = newCulture;
         }
      
     }

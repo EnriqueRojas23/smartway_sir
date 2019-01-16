@@ -25,6 +25,8 @@ namespace Web.Smartway.Areas.Agendamiento.Models
 
         public int idcliente { get; set; }
         public string descripcion { get; set; }
+
+        public string informetecnico { get; set; }
         public int idrequerimientocliente { get; set; }
         public int? idfalla { get; set; }
         public int? idtipodocumentocompra { get; set; }

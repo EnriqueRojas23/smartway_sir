@@ -22,6 +22,9 @@
     $("#btnBuscarBaseIngreso").click(function (event) {
         BuscarBaseIngreso();
     });
+    $("#btnBuscarBaseIngenico").click(function (event) {
+        BuscarBaseIngenico();
+    });
    
 });
 function BuscarBaseIngreso() {
@@ -30,6 +33,16 @@ function BuscarBaseIngreso() {
     var idestado = $("#idestado").val();
 
     var url = "http://104.36.166.65/RepSW/rep_baseingreso.aspx?" + "fecinicio=" + fecinicio
+        + "&fecfin=" + fecfin + "&idestado=" + idestado;
+
+    window.open(url);
+}
+function BuscarBaseIngenico() {
+    var fecinicio = $("#fecinicio").val();
+    var fecfin = $("#fecfin").val();
+    var idestado = $("#idestado").val();
+
+    var url = "http://104.36.166.65/RepSW/rep_baseingenico.aspx?" + "fecinicio=" + fecinicio
         + "&fecfin=" + fecfin + "&idestado=" + idestado;
 
     window.open(url);

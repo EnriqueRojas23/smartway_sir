@@ -82,7 +82,7 @@
                                                 <div class="col-md-10">@Html.DropDownListFor(model => model.idrepuesto, Enumerable.Empty<SelectListItem>(), "--", new { @class = "chosen-select  form-control " })</div>
                                             </div>
                                             @*@if (!Model.cotizado)
-                {*@
+                                                {*@
 
                                             @*}*@
                                         </div>
@@ -128,10 +128,17 @@
                         <div class="form-horizontal">
                             <div class="form-group">
                                 <div class="col-md-6">
-                                    <label class="control-label">Descripción de la reparación:</label>
+                                    <label class="control-label">Descripción de la reparación:(Cliente)</label>
                                     @Html.TextAreaFor(x => x.descripcion, new { @class = "form-control" })
+
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="control-label">Informe Técnico:(Interno)</label>
+                                    @Html.TextAreaFor(x => x.informetecnico, new { @class = "form-control" })
+
                                 </div>
                             </div>
+
                             <div class="form-group">
                                 <div class="col-md-3">
                                     <button type="button" id='btnPausar' class="btn  btn-line btn-block btn-sm btn-primary"><i class="fa fa-pencil"></i> Pausar </button>
@@ -142,6 +149,10 @@
                                 </div>
                                 <div class="col-md-3">
                                     <button type="button" id='btnNoReparable' class="btn  btn-line btn-block btn-sm btn-danger"><i class="fa fa-arrow-circle-down"></i> No Reparable</button>
+
+                                </div>
+                                <div class="col-md-3">
+                                    <button type="button" id='btnPierdeGarantia' class="btn  btn-line btn-block btn-sm btn-danger"><i class="fa fa-arrow-circle-down"></i> Enviar a Cotizar (Pierde garantía)</button>
 
                                 </div>
                             </div>
@@ -160,72 +171,42 @@
                     </div>
                 </div>
             </div>
-            @*<div class="col-md-4">
-                <div class="ibox float-e-margins">
 
-                    <div class="ibox-title">
-                        <h5><i class="fa fa-info-circle"></i>  Tiempo transcurrido </h5>
-                        <div class="ibox-tools">
-                            <a class="collapse-link">
-                                <i class="fa fa-chevron-up"></i>
-
-                            </a>
-                        </div>
-                    </div>
-                    <div class="ibox-content">
-
-                                <section class=" widget widget-card bg-gray   ">
-                                    <div class="widget-body clearfix">
-                                      
-                                            <div class="bg-gray text-white">
-                                                <div class="row">
-                                                    <div class="col-md-2">
-                                                        <p id="dia" class="h3 no-margin color fw-normal"></p>
-                                                        <h6 class="no-margin">Días</h6>
-                                                    </div>
-
-                                                    <div class="col-md-2">
-                                                        <p id="hora" class="no-margin h2 color fw-normal"></p>
-                                                        <h6 class="no-margin">Horas</h6>
-                                                    </div>
-                                                    <div class="col-md-1">
-                                                        <p class="no-margin h3 color fw-normal">:</p>
-                                                    </div>
-                                                    <div class="col-md-2">
-                                                        <p id="minuto" class="h2 no-margin color fw-normal"></p>
-                                                        <h6 class="no-margin">Minutos</h6>
-                                                    </div>
-                                                    <div class="col-md-1">
-                                                        <p class="no-margin h3 color fw-normal">:</p>
-                                                    </div>
-                                                    <div class="col-md-2">
-                                                        <p id="segundo" class="h2  no-margin color fw-normal"></p>
-                                                        <h6 class="no-margin">Segundos</h6>
-                                                    </div>
-
-
-                                                </div>
-                                            </div>
-                                        
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-
-    
-
-                </div>*@
-            </div>
         </div>
     </div>
-        @Html.HiddenFor(x => x.idincidencia)
-        @Html.HiddenFor(x => x.idordenserviciotecnico)
-        @Html.HiddenFor(x => x.idordentrabajo)
-        @Html.HiddenFor(x => x.idtipoproducto)
-        @Html.HiddenFor(x => x.idfabricante)
-        @Html.HiddenFor(x => x.idordentrabajotiempo)
-        @Html.HiddenFor(x => x.idproducto)
-        @Html.HiddenFor(x => x.idordenservicio_aux)
+
+    @Html.HiddenFor(x => x.idincidencia)
+    @Html.HiddenFor(x => x.idordenserviciotecnico)
+    @Html.HiddenFor(x => x.idordentrabajo)
+    @Html.HiddenFor(x => x.idtipoproducto)
+    @Html.HiddenFor(x => x.idfabricante)
+    @Html.HiddenFor(x => x.idordentrabajotiempo)
+    @Html.HiddenFor(x => x.idproducto)
+    @Html.HiddenFor(x => x.idordenservicio_aux)
 
 
-    </div>
+    @Html.HiddenFor(x => x.lapse1_inicio)
+    @Html.HiddenFor(x => x.lapse1_fin)
+
+
+
+    @Html.HiddenFor(x => x.lapse2_inicio)
+    @Html.HiddenFor(x => x.lapse2_fin)
+
+
+
+
+    @Html.HiddenFor(x => x.lapse3_inicio)
+    @Html.HiddenFor(x => x.lapse3_fin)
+
+
+
+    @Html.HiddenFor(x => x.lapse4_inicio)
+    @Html.HiddenFor(x => x.lapse4_fin)
+
+
+    @Html.HiddenFor(x => x.inicios)
+    @Html.HiddenFor(x => x.fines)
+
+</div>
+  

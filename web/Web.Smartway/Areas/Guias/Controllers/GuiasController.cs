@@ -21,12 +21,6 @@ namespace Web.Smartway.Areas.Guias.Controllers
                "nombre");
             ViewData["listasucursal"] = listasucursal;
 
-
-            //var estado = MantenimientoData.GetListarEstado((Int32)Constantes.MaestroTablas.g);
-            //var listadoestado = new SelectList(estado, "idestado", "estado");
-            //ViewData["listadoestado"] = listadoestado;
-
-
             return View();
         }
         public PartialViewResult NuevaGuia()
@@ -57,6 +51,19 @@ namespace Web.Smartway.Areas.Guias.Controllers
         [HttpPost]
         public JsonResult GenerarGuiaRemision(ProgramacionModel model)
         {
+            GuiaRemisionModel modGuia = new GuiaRemisionModel();
+            modGuia.direcciondestino = model.direcciondestino;
+            modGuia.direccionorigen = model.direccionorigen;
+            modGuia.fechaguiaremision = model.fechaemision;
+            modGuia.numeroguia = model.numeroguia;
+            modGuia.idcliente = model.idcliente;
+
+            modGuia.direcciondestino = model.direcciondestino;
+            modGuia.direccionorigen = model.direccionorigen;
+
+            modGuia.idestado = (int)Constantes.EstadoGuiaRemision.Despachado;
+            modGuia.__tipooperacion = 1;
+            var idguia = new DespachoData().InsertarActualizarGuiaRemision(modGuia);
 
             return Json(new { res = true });
 
@@ -66,16 +73,9 @@ namespace Web.Smartway.Areas.Guias.Controllers
              , int page
              , int rows)
         {
-            var listadoTotal = new DespachoData().GetListarGuia(31, null, null).ToList();
+            var listadoTotal = new DespachoData().GetListarGuia(null, null, null).ToList();
             var resjson1 = (new JqGridExtension<GuiaRemisionModel>()).DataBind(listadoTotal, listadoTotal.Count);
             return resjson1;
         }
-
-
-
-
-
-
-
     }
 }

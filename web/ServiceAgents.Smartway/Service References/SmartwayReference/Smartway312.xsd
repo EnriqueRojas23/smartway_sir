@@ -52,7 +52,11 @@
   <xs:complexType name="ListarDocumentoRecepcionParameters">
     <xs:complexContent mixed="false">
       <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q3:QueryParameter">
-        <xs:sequence />
+        <xs:sequence>
+          <xs:element minOccurs="0" name="fechahorafin" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="fechahorainicio" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="numeroordenservicio" nillable="true" type="xs:string" />
+        </xs:sequence>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>

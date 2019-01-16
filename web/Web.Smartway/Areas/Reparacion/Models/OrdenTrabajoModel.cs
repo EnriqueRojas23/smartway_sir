@@ -30,7 +30,34 @@ namespace Web.Smartway.Areas.Reparacion.Models
         public int idtipoordenservicio { get; set; }
 
         public string pallet { get; set; }
-        
+
+
+
+        public DateTime? lapse1_inicio  { get; set; }
+        public DateTime? lapse2_inicio { get; set; }
+        public DateTime? lapse3_inicio { get; set; }
+        public DateTime? lapse4_inicio { get; set; }
+        public DateTime? lapse5_inicio { get; set; }
+        public DateTime? lapse6_inicio { get; set; }
+        public DateTime? lapse7_inicio { get; set; }
+        public DateTime? lapse8_inicio { get; set; }
+        public DateTime? lapse9_inicio { get; set; }
+        public DateTime? lapse10_inicio { get; set; }
+
+        public DateTime? lapse1_fin { get; set; }
+        public DateTime? lapse2_fin { get; set; }
+        public DateTime? lapse3_fin { get; set; }
+        public DateTime? lapse4_fin { get; set; }
+        public DateTime? lapse5_fin { get; set; }
+        public DateTime? lapse6_fin { get; set; }
+        public DateTime? lapse7_fin { get; set; }
+        public DateTime? lapse8_fin { get; set; }
+        public DateTime? lapse9_fin { get; set; }
+        public DateTime? lapse10_fin { get; set; }
+
+
+        public List<DateTime?> inicios { get; set; }
+        public List<DateTime?> fines { get; set; }
 
     }
     public class OrdenTrabajoDetalleModel

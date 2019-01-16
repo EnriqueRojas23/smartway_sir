@@ -14,7 +14,7 @@ let $grilla = $("#gridcargadetalle")
 
 $(document).ready(function() {
    
-   alert('xD')
+   
 
    inicio()
    $("#formOrdenIngreso").validate({

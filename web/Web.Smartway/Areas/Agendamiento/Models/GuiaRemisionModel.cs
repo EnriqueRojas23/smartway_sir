@@ -7,6 +7,8 @@ namespace Web.Smartway.Areas.Agendamiento.Models
 {
     public class GuiaRemisionModel
     {
+
+
         public long? idguiaremision { get; set; }
         public string numeroguia { get; set; }
         public string codigoorigen { get; set; }
@@ -14,7 +16,9 @@ namespace Web.Smartway.Areas.Agendamiento.Models
         public string codigodestino { get; set; }
         public string direcciondestino { get; set; }
         public string descripcion { get; set; }
-        public string fechaguiaremision { get; set; }
+        public DateTime fechaguiaremision { get; set; }
+
+        public int idcliente { get; set; }
 
         public int idsucursalorigen { get; set; }
         public int idsucursaldestino { get; set; }

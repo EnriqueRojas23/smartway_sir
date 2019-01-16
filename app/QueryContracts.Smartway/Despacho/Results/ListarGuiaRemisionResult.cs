@@ -18,7 +18,7 @@
         public string codigodestino { get; set; }
         public string direcciondestino { get; set; }
         public string descripcion { get; set; }
-        public string fechaguiaremision { get; set; }
+        public DateTime fechaguiaremision { get; set; }
     }
 
 }

@@ -15,8 +15,8 @@ namespace QueryContracts.Smartway.Reparacion.Results
         public long idordentrabajotiempo { get; set; }
         public long idordentrabajo { get; set; }
         public int idusuario { get; set; }
-        public DateTime fechahorainicio{ get; set; }
-        public DateTime fechahorafin { get; set; }
+        public DateTime? fechahorainicio{ get; set; }
+        public DateTime? fechahorafin { get; set; }
         public string serie { get; set; }
         public int iteracion { get; set; }
     }

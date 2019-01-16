@@ -47,7 +47,7 @@ namespace Web.Smartway.DataAccess.Mantenimiento
             return Mapper.Map<IEnumerable<ListarTransporteDto>, IEnumerable<TransportistaModel>>(resultado.Hits);
         }
 
-        public IEnumerable<GuiaRemisionModel> GetListarGuia(int idestado
+        public IEnumerable<GuiaRemisionModel> GetListarGuia(int? idestado
             , int? idsucursaldestino, int? idsucursalorigen)
         {
             var parametros = new ListarGuiaRemisionParameter
@@ -121,6 +121,16 @@ namespace Web.Smartway.DataAccess.Mantenimiento
 
             var result = (InsertarOrdenSalidaDetalleOutput)command.Execute();
             return result.idordensalidadetalle;
+        }
+        public IEnumerable<OrdenSalidaModel> GetListarOrdenSalida(long idordensalida)
+        {
+            var parametros = new ListarOrdenSalidaParameter
+            {
+                 idordensalida = idordensalida,
+            };
+            var resultado = (ListarOrdenSalidaResult)parametros.Execute();
+            Mapper.CreateMap<ListarOrdenSalidaDto, OrdenSalidaModel>();
+            return Mapper.Map<IEnumerable<ListarOrdenSalidaDto>, IEnumerable<OrdenSalidaModel>>(resultado.Hits);
         }
 
     }

@@ -50,9 +50,13 @@ namespace Web.Smartway.Areas.Agendamiento.Controllers
         {
             return View();
         }
-        public JsonResult JsonGetListarDocumentosRecepcion(DateTime? fechahorainicio
-            , DateTime? fechahorafin, string numerorecepcion)
+        public JsonResult JsonGetListarDocumentosRecepcion(String fechahorainicio
+            , String fechahorafin, string numerorecepcion)
         {
+
+            if (fechahorainicio == "") fechahorainicio = null;
+            if (fechahorafin == "") fechahorafin = null;
+
             var listadoTotal = new RecepcionData().GetListarDocumentoRecepcion(fechahorainicio, fechahorafin, numerorecepcion).ToList();
             var resjson1 = (new JqGridExtension<DocumentoRecepcionModel>()).DataBind(listadoTotal, listadoTotal.Count);
             return resjson1;
@@ -564,7 +568,7 @@ namespace Web.Smartway.Areas.Agendamiento.Controllers
         }
         public JsonResult listarAlmacenes(int idsucursal)
         {
-            var almacenes = InventarioData.GetListarAlmacen(idsucursal, null);
+            var almacenes = InventarioData.GetListarAlmacen(idsucursal, null).Where(x=>x.idalmacen== 10).ToList();
             var listaalmacen = new SelectList(almacenes, "idalmacen", "nombrealmacen");
 
             return Json(listaalmacen);
@@ -687,6 +691,29 @@ namespace Web.Smartway.Areas.Agendamiento.Controllers
 
             foreach (var item in detalle)
             {
+                inventarioModel = new InventarioModel();
+
+                inventarioModel.cantidad = item.cantidad;
+                inventarioModel.codigoproducto = item.codigo;
+                inventarioModel.fechahoraregistro = DateTime.Now;
+                inventarioModel.idalmacen = model.idalmacen;
+                inventarioModel.idestado = (Int16)Constantes.Producto.PendienteReparar;
+                inventarioModel.serie = item.serie;
+                inventarioModel.imei = item.imei;
+                inventarioModel.mac = item.mac;
+                inventarioModel.pallet = item.pallet;
+                inventarioModel.idusuarioregistro = Usuario.Idusuario;
+                inventarioModel.__idoperacion = 1;
+                inventarioModel.idproducto = model.idproducto;
+                inventarioModel.iddocumentorecepcion = model.iddocumentorecepcion.Value;
+
+
+                inventarioModel.idinventario = new InventarioData().InsertarActualizarInventario(inventarioModel);
+
+
+
+
+
 
                 ordenModel = new OrdenServicioModel();
 
@@ -708,7 +735,8 @@ namespace Web.Smartway.Areas.Agendamiento.Controllers
                 ordenModel.serie = item.serie;
                 ordenModel.imei = item.imei;
                 ordenModel.mac = item.mac;
-
+                ordenModel.iddocumentorecepcion = model.iddocumentorecepcion.Value;
+                ordenModel.idinventario = inventarioModel.idinventario.Value;
 
 
 
@@ -722,7 +750,7 @@ namespace Web.Smartway.Areas.Agendamiento.Controllers
 
 
 
-                inventarioModel = new InventarioModel();
+          
                 modelDetalle = new DocumentoRecepcionDetalleModel();
 
                 inventarioModel.idproducto = model.idproducto;
@@ -741,24 +769,12 @@ namespace Web.Smartway.Areas.Agendamiento.Controllers
                 modelDetalle.numeropallet = item.pallet;
                 modelDetalle.repuesto = false;
                 modelDetalle.serie = item.serie;
-
+                modelDetalle.mac = item.mac;
                 new RecepcionData().insertarActualizarDocumentoRecepcionDetalle(modelDetalle);
 
 
 
-                inventarioModel.cantidad = item.cantidad;
-                inventarioModel.codigoproducto = item.codigo;
-                inventarioModel.fechahoraregistro = DateTime.Now;
-                inventarioModel.idalmacen = model.idalmacen;
-                inventarioModel.idestado = (Int16)Constantes.Producto.Disponible;
-                inventarioModel.serie = item.serie;
-                inventarioModel.imei = item.imei;
-                inventarioModel.pallet = item.pallet;
-                inventarioModel.idusuarioregistro = Usuario.Idusuario;
-                inventarioModel.__idoperacion = 1;
-
-
-                new InventarioData().InsertarActualizarInventario(inventarioModel);
+     
 
             }
             return Json(new { res = true });

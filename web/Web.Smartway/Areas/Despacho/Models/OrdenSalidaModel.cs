@@ -17,6 +17,7 @@ namespace Web.Smartway.Areas.Despacho.Models
         public DateTime fechasalida { get; set; }
         public int idusuarioregistro { get; set; }
         public string archivo { get; set; }
+        public string lote { get; set; }
         public IEnumerable<OrdenSalidaDetalleModel> detalles { get; set; }
         
 

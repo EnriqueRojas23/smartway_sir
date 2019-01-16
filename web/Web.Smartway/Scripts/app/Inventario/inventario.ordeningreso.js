@@ -206,7 +206,7 @@ function configurarGrilla()
 
 
 
-    $.jgrid.defaults.height = 300;
+    $.jgrid.defaults.height = 800;
     $.jgrid.defaults.responsive = true;
 
     $pagergrilla = $("#gridcargadetallepager")
@@ -232,8 +232,8 @@ function configurarGrilla()
             
         ],
         pager: $pagergrilla,
-        rowNum: 10,
-        rowList: [10, 20],
+        rowNum: 100,
+        rowList: [100, 200, 300 , 400, 500],
         emptyrecords: 'No se encontraron registros',
         autoheight: true,
         autowidth: true,

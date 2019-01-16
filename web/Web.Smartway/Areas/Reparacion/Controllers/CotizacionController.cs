@@ -386,17 +386,17 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
 
                 #region registrar_reparacion
 
-                var modelReparacionDetalle = new OrdenTrabajoDetalleModel();
-                modelReparacionDetalle.costo = item.costototal;
-                modelReparacionDetalle.descripcion = item.descripcion;
-                modelReparacionDetalle.iddiagnostico = item.iddiagnostico;
-                modelReparacionDetalle.idreparacion = item.idreparacion;
-                modelReparacionDetalle.idrepuesto = item.idrepuesto;
-                modelReparacionDetalle.idordentrabajo = idordentrabajo.Value;
+                //var modelReparacionDetalle = new OrdenTrabajoDetalleModel();
+                //modelReparacionDetalle.costo = item.costototal;
+                //modelReparacionDetalle.descripcion = item.descripcion;
+                //modelReparacionDetalle.iddiagnostico = item.iddiagnostico;
+                //modelReparacionDetalle.idreparacion = item.idreparacion;
+                //modelReparacionDetalle.idrepuesto = item.idrepuesto;
+                //modelReparacionDetalle.idordentrabajo = idordentrabajo.Value;
 
 
-                modelReparacionDetalle.__idoperacion = 1;
-                new ReparacionesData().InsertarActualizarOrdenTrabajoDetalle(modelReparacionDetalle);
+                //modelReparacionDetalle.__idoperacion = 1;
+                //new ReparacionesData().InsertarActualizarOrdenTrabajoDetalle(modelReparacionDetalle);
 
 
                 #endregion

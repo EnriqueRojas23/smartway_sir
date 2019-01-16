@@ -46,7 +46,9 @@ namespace Web.Smartway.Areas.Agendamiento.Controllers
 
         public JsonResult listarAlmacenes(int idsucursal)
         {
-            var almacenes = InventarioData.GetListarAlmacen(idsucursal, null);
+            var almacenes = InventarioData.GetListarAlmacen(idsucursal, null).Where(x => x.idalmacen == 11 ||
+            x.idalmacen == 13).ToList();
+
             var listaalmacen = new SelectList(almacenes, "idalmacen", "nombrealmacen");
 
             return Json(listaalmacen);

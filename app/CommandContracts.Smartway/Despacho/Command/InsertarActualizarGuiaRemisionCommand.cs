@@ -20,6 +20,10 @@ namespace CommandContracts.Smartway.Despacho
         public int idusuariorecojo { get; set; }
         public DateTime fechahorarecojo { get; set; }
         public int __tipooperacion { get; set; }
+        public DateTime fechaguiaremision { get; set; }
+        public int idcliente { get; set; }
+        public string direccionorigen { get; set; }
+        public string direcciondestino { get; set; }
 
     }
 }

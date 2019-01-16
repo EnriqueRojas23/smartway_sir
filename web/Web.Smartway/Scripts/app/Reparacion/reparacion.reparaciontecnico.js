@@ -1,40 +1,118 @@
-const urlFinalizar = UrlHelper.Action("FinalizarReparacion","Reparacion","Reparacion")
-const urlPausar = UrlHelper.Action("JsonPausarReparacion","Reparacion","Reparacion")
+const urlFinalizar = UrlHelper.Action("FinalizarReparacion", "Reparacion", "Reparacion");
+const urlPausar = UrlHelper.Action("JsonPausarReparacion", "Reparacion", "Reparacion");
 
 const $btnAgregar = $("#btnAgregar");
-const $grilla = $("#griddetalle")
-const $pagergrilla = $("#griddetallepager")
-const $btnPausar = $("#btnPausar")
-const $btnFinalizar = $("#btnFinalizar")
+const $grilla = $("#griddetalle");
+const $pagergrilla = $("#griddetallepager");
+const $btnPausar = $("#btnPausar");
+const $btnFinalizar = $("#btnFinalizar");
+
+
+var lapse1_fin = convertDate($("#lapse1_fin").val());
+var lapse1_inicio = convertDate($("#lapse1_inicio").val());
+
+var lapse2_inicio = convertDate($("#lapse2_inicio").val());
+var lapse2_fin =  convertDate($("#lapse2_fin").val());
+
+var lapse3_fin = convertDate($("#lapse3_fin").val());
+var lapse3_inicio = convertDate($("#lapse3_inicio").val());
+
+var lapse4_inicio = convertDate($("#lapse4_inicio").val());
+var lapse4_fin =  convertDate($("#lapse4_fin").val());
+
+var lapse5_fin = convertDate($("#lapse5_fin").val());
+var lapse5_inicio = convertDate($("#lapse5_inicio").val());
+
+var lapse6_inicio = convertDate($("#lapse6_inicio").val());
+var lapse6_fin =  convertDate($("#lapse6_fin").val());
+
+var lapse7_fin = convertDate($("#lapse7_fin").val());
+var lapse7_inicio = convertDate($("#lapse7_inicio").val());
+
+var lapse8_inicio = convertDate($("#lapse8_inicio").val());
+var lapse8_fin =  convertDate($("#lapse8_fin").val());
+
+var lapse9_inicio = convertDate($("#lapse9_inicio").val());
+var lapse9_fin =  convertDate($("#lapse9_fin").val());
+
+var lapse10_inicio = convertDate($("#lapse10_inicio").val());
+var lapse10_fin =  convertDate($("#lapse10_fin").val());
+
 
 const countDownDate = new Date($("#tiempotrabajo").val());
 
+
+
 function convertDate(inputFormat) {
-  function pad(s) { return (s < 10) ? '0' + s : s; }
-  var d = new Date(inputFormat);
-  return [pad(d.getDate()), pad(d.getMonth()+1), d.getFullYear()].join('/')+' ' +
-                [d.getHours(),
-                 d.getMinutes(),
-                 d.getSeconds()].join(':');
+    function pad(s) { return (s < 10) ? '0' + s : s; }
+    let dia = String(inputFormat).substring(0, 2);
+    let mes = String(inputFormat).substring(3, 5);
+    let anio = String(inputFormat).substring(6, 10);
+
+    let hora = String(inputFormat).substring(11, 13);
+    let minuto = String(inputFormat).substring(14, 16);
+    let segundo = String(inputFormat).substring(17, 19);
+
+    inputFormat = String(inputFormat).substring(0, 19);
+
+    var d = new Date(anio, mes - 1, dia, hora, minuto, segundo);
+    return d;
 }
-// Update the count down every 1 second
-var x = setInterval(function() {
 
-var inicio  = convertDate($("#tiempotrabajo").val());
+    var x = setInterval(function() {
 
+        var now = new Date();
+        var ultimoinicio = '';
+        var distancia1 = 0;
+        var distancia2 = 0;
+        var distancia3 = 0;
+        var distancia4 = 0;
 
+        var algo = $("#inicios").val();
 
+        
+        //if ($("#lapse10_inicio").val() === undefined)
+        //    if ($("#lapse9_inicio").val() === undefined)
+        //        if ($("#lapse8_inicio").val() === undefined)
+        //            if ($("#lapse7_inicio").val() === undefined)
+        //                if ($("#lapse6_inicio").val() === undefined)
+        //                    if ($("#lapse5_inicio").val() === undefined)
 
+        if ($("#lapse4_inicio").val() === undefined) {
 
+            if ($("#lapse3_inicio").val() === undefined) {
 
-  var now = new Date();
-  var inicio2 = new Date(inicio);
+                if ($("#lapse2_inicio").val() === undefined) {
 
+                    ultimoinicio = new Date(lapse1_inicio);
+                }
+                else {
+                    ultimoinicio = new Date(lapse2_inicio);
+                    distancia1 = lapse1_fin - lapse1_inicio;
+                }
+            }
+            else {
+                ultimoinicio = new Date(lapse3_inicio);
+                distancia1 = lapse1_fin - lapse1_inicio;
+                distancia2 = lapse2_fin - lapse2_inicio;
+                
+            }
+        }
+        else   {
+            ultimoinicio = new Date(lapse4_inicio);
+            distancia1 = lapse1_fin - lapse1_inicio;
+            distancia2 = lapse2_fin - lapse2_inicio;
+            distancia3 = lapse3_fin - lapse3_inicio;
+        }
+            
 
+        
+       // Calcula el cronometro 
+        var ultima_distancia = now - ultimoinicio;
 
-  // Find the distance between now and the count down date
-  var distance = now - inicio2  ;
-
+    
+        distance = ultima_distancia + distancia1 + distancia2 + distancia3 + distancia4;
+    
 
   // Time calculations for days, hours, minutes and seconds
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -87,12 +165,14 @@ function initTiles(){
 function configurarChosenSelect(id)
 {
 
-     var config = {
-            '.chosen-select': {max_selected_options: 5 ,
-                 allow_single_deselect: false ,
-                 no_results_text: 'Oops, no se encontró el ubigeo!' }
-
+    var config = {
+        '.chosen-select': {
+            max_selected_options: 5,
+            allow_single_deselect: false,
+            no_results_text: 'Oops, no se encontró el ubigeo!'
         }
+
+    };
 
         for (var selector in config) {
             $(selector).chosen(config[selector]);
@@ -114,20 +194,20 @@ function configurarBotones()
     $btnAgregar.click(function (e) {
         e.preventDefault();
 
-        let iddiagnostico = $("#iddiagnostico").val()
-        if(iddiagnostico=='')
+        let iddiagnostico = $("#iddiagnostico").val();
+        if(iddiagnostico==='')
         {
             swal("Reparación","Debe seleccionar un diagnóstico","warning")
             return;
         }
-        let idreparacion = $("#idreparacion").val()
-        if(idreparacion=='')
+        let idreparacion = $("#idreparacion").val();
+        if(idreparacion==='')
         {
             swal("Reparación","Debe seleccionar una reparación","warning")
             return;
         }
         let idrepuesto = $("#idrepuesto").val()
-        if(idrepuesto=='')
+        if(idrepuesto==='')
         {
             swal("Reparación","Debe seleccionar un repuesto","warning")
             return;
@@ -141,6 +221,8 @@ function configurarBotones()
             , "idreparacion" : idreparacion
             , "idrepuesto" : idrepuesto
             , "idordenservicio" : $("#idordenserviciotecnico").val()
+            , "idottiempo" : $("#idordentrabajotiempo").val()
+            , "idordentrabajo" : $("#idordentrabajo").val()
           },
             dataType: "JSON",
             success: function (data) {
@@ -150,7 +232,19 @@ function configurarBotones()
                 }
                 else
                 {
-                    swal("No puede continuar", data.msj , "warning")
+                    swal({
+                            title: "No puede continuar",
+                            type: "warning",
+                            confirmButtonClass: "btn-danger",
+                            text:"Motivo: " + data.msj , 
+                            confirmButtonText: "Aceptar",
+                            showCancelButton: false,
+                            },
+                            function(){
+
+                                    let vurl = UrlHelper.Action("PanelTrabajoTecnico","Reparacion","Reparacion")
+                                    window.location.href = vurl;
+                       });        
                 }
             }
         });
@@ -180,6 +274,7 @@ function configurarBotones()
                     "id": $("#idordentrabajo").val()
                     , "idottiempo": $("#idordentrabajotiempo").val()
                     , "descripcion": $("#descripcion").val()
+                    , "informetecnico" : $("#informetecnico").val()
                 },
                 async : true,
                 dataType: "JSON",
@@ -190,9 +285,7 @@ function configurarBotones()
                         let vurl = UrlHelper.Action("PanelTrabajoTecnico","Reparacion","Reparacion")
                         window.location.href = vurl;
                     }
-                    else{
-                        alert('no')
-                    }
+                   
                 },
                 error: function (request, status, error) {
                     swal({ title: "Recepción Guías", text: "Ocurrió un error al finalizar la recepción", type: "error", confirmButtonText: "Aceptar" });
@@ -202,6 +295,16 @@ function configurarBotones()
     })
     $btnFinalizar.click(function (e){
         e.preventDefault();
+
+
+        var count = $grilla.jqGrid('getGridParam', 'records');
+        if (count === 0) {
+            swal("No puede finalizar la orden", "Debe tener al menos una reparación", "error");
+            return;
+        }
+        
+
+
         swal({
             title: "¿Esta seguro de finalizar la reparación?",
             text: "Tener en cuenta que una vez finalizada se generará la guia de salida.",
@@ -222,6 +325,7 @@ function configurarBotones()
                     "id": $("#idordentrabajo").val()
                     , "idottiempo": $("#idordentrabajotiempo").val()
                     , "descripcion" : $("#descripcion").val()
+                    , "informetecnico" : $("#informetecnico").val()
                 },
                 async : true,
                 dataType: "JSON",
@@ -309,7 +413,7 @@ function configurarGrilla()
         url: vdataurl,
         datatype: 'json',
         mtype: 'POST',
-        colNames: ['','','','Descripción','Diagnostico' , 'Reparación' ,'Repuestos','Costosss', ''],
+        colNames: ['','','','Descripción','Diagnostico' , 'Reparación' ,'Repuestos', 'Serie', 'IMEI' ,'Costos', ''],
         colModel:
         [
             { key: true, hidden: true, name: 'idordentrabajodetalle', align: 'center' },
@@ -319,6 +423,8 @@ function configurarGrilla()
             { key: false, name: 'diagnostico', width:'240',  align: 'center', sortable: false, formatter: formatedit },
             { key: false, name: 'reparacion',  align: 'center', width:'240', sortable: false,  formatter: formatedit  },
             { key: false, name: 'repuesto',  align: 'center', width:'240', sortable: false,  formatter: formatedit  },
+            { key: false, name: 'serie',  align: 'center', width:'240', sortable: false,  formatter: formatedit  },
+            { key: false, name: 'imei',  align: 'center', width:'240', sortable: false,  formatter: formatedit  },
             { key: false, hidden: true,  name: 'costo', align: 'center',width:'190',sortable: false, formatter: 'currency' ,formatoptions: CONFIG_JQGRID.get('formatoptions_currency_pen') },
             { key: false, hidden: false, editable: false ,name: 'idordentrabajodetalle', width:'40' , index: 'index' ,  formatter:  displayButtons,classes:"grid-col"}
         ],
@@ -369,6 +475,15 @@ function evaluarEstadoFisico(id)
     let vurl = UrlHelper.Action("EstadoFisico","Agendamiento","Agendamiento") + "?idincidencia=" + id;
     window.location.href = vurl;
 }
+function VerDetalle(id) {
+
+    let URL_VerAntecedentes = UrlHelper.Action("DetalleOTSModal", "Reparacion", "Reparacion") + "?id=" + id;
+    $.get(URL_VerAntecedentes, function (data) {
+        $("#modalcontentL").html(data);
+        $("#modalcontainerL").modal("show");
+        cargarTablasAntecedente();
+    });
+}
 function Antecedentes(id){
 
   let URL_VerAntecedentes = UrlHelper.Action("AntecedentesModal", "Reparacion" , "Reparacion") + "?id="+ id;
@@ -402,7 +517,7 @@ function cargarTablasAntecedente()
 
                       "mRender" :
                       function(data,type,full){
-                        if(data=="True")
+                        if(data==="True")
                             return "Si"
                         else "No";
                       }

@@ -46,12 +46,14 @@ namespace CommandHandlers.Smartway
                     dominio.documentoreferencia = command.documentoreferencia;
                     dominio.fechahoraregistro = DateTime.Now;
                     dominio.idestado = command.idestado;
-                    dominio.idsucursalorigen = command.idsucursalorigen;
-                    dominio.idtipoguiaremision = command.idtipoguiaremision;
+            
                     dominio.idusuariorecojo = command.idusuariorecojo;
                     dominio.idusuarioregistro = command.idusuarioregistro;
                     dominio.numeroguia = command.numeroguia;
-                    
+                    dominio.idcliente = command.idcliente;
+                    dominio.fechaguiaremision = command.fechaguiaremision;
+                    dominio.direcciondestino = command.direcciondestino;
+                    dominio.direccionorigen = command.direccionorigen;
                     break;
 
 

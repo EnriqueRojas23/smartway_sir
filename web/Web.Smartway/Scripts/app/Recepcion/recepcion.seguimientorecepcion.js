@@ -97,10 +97,11 @@ function reload(){
     let fechahorafin = $("#fechahorafin").val();
     let numeroordenservicio = $("#numeroordenservicio").val();
 
+    debugger;    
+
     var vdataurl = $grilla.data("dataurl") + 
-     "?idtipoordenservicio="  + idtipoordenservicio 
-     + "&fechainicio=" + fechahorainicio 
-     + "&fechafin=" + fechahorafin 
+      "?fechahorainicio=" + fechahorainicio 
+     + "&fechahorafin=" + fechahorafin 
      + "&numeroordenservicio=" + numeroordenservicio 
 
 
@@ -114,15 +115,19 @@ function configurarGrilla()
     let fechahorafin = $("#fechahorafin").val();
     let numeroordenservicio = $("#numeroordenservicio").val();
 
-
+  
 
     $.jgrid.defaults.height = 320;
     $.jgrid.defaults.responsive = true;
+
+
     var vdataurl = $grilla.data("dataurl") + 
-     "?idtipoordenservicio="  + idtipoordenservicio 
-     + "&fechainicio=" + fechahorainicio 
-     + "&fechafin=" + fechahorafin 
+       "?fechahorainicio=" + fechahorainicio 
+     + "&fechahorafin=" + fechahorafin 
      + "&numeroordenservicio=" + numeroordenservicio 
+
+
+     
 
 
     $grilla.jqGrid({

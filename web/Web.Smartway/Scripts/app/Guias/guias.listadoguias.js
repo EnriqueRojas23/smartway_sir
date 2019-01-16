@@ -24,7 +24,16 @@ function cargarControles() {
         $.get(URL_NuevaGuia, function (data) {
             $("#modalcontent").html(data);
             $("#modalcontainer").modal("show")
+            
 
+               $('#data_3 .input-group.date').datepicker({
+                    todayBtn: "linked",
+                    keyboardNavigation: false,
+                    forceParse: false,
+                    calendarWeeks: true,
+                    autoclose: true,
+                    format: 'dd/mm/yyyy'
+                });
 
             $('#numeroguia').mask('000-0000000');
 
@@ -48,6 +57,15 @@ function cargarControles() {
         autoclose: true,
         format: 'dd/mm/yyyy'
     });
+        $('#data_1 .input-group.date').datepicker({
+        todayBtn: "linked",
+        keyboardNavigation: false,
+        forceParse: false,
+        calendarWeeks: true,
+        autoclose: true,
+        format: 'dd/mm/yyyy'
+    });
+
 }
 function configurarGrilla() {
     var idsucursalorigen = $("#searchmodal_idsucursalorigen").val();
@@ -99,6 +117,49 @@ function configurarGrilla() {
 
 }
 function displayButtons(cellvalue, options, rowObject) {
-    var editar = '<div class="btn-group"><button type="button" title="Editar" class="btn btn-primary btn-xs " onclick="recepcionar(' + cellvalue + ')"><i class="fa fa-edit"></i> Recepcionar </button>';
-       return editar;
+    var editar = '<div class="btn-group"><button type="button" title="Agregar" class="btn btn-dangers btn-xs " onclick="agregarDetalle(' + cellvalue + ')"><i class="fa fa-plus"></i> </button>';
+    var ver = '<button type="button" title="Ver" class="btn btn-primary btn-xs " onclick="verDetalle(' + cellvalue + ')"><i class="fa fa-search"></i> </button>';
+    var imprimir = '<button type="button" title="Imprimir" class="btn btn-primary btn-xs " onclick="verDetalle(' + cellvalue + ')"><i class="fa fa-print"></i> </button></div>';
+       return editar  +  ver + imprimir ;
+}
+function OnCompleteTransaction(xhr, status)
+{
+    var jsonres = xhr.responseJSON;
+    CleanValidationError();
+
+    if (jsonres.res == true)
+    {
+       swal({
+           title: "Registro exitoso.",
+           text: "Se ha creado la cabecera de la Guía.",
+            type: "success"
+        },
+       function ()
+       {
+           $("#modalcontainer").modal("hide");
+            reload();
+       });
+
+       
+    }
+    else
+    {
+        sweetAlert("Verificar Errores", null, "error");
+        CheckValidationErrorResponse(jsonres);
+    }
+
+}
+function reload()
+{
+    let codigoalmacen = $("#codigoalmacen").val();
+    let idsucursal = $("#idsucursal").val();
+
+    var vdataurl = $grilla.data("dataurl") +
+        "?idsucursalorigen=" + codigoalmacen
+        + "&idsucursaldestino=" + idsucursal;
+
+    $grilla.jqGrid('setGridParam', { url: vdataurl }).trigger('reloadGrid');
+}
+function agregarDetalle(id){
+    alert(id)
 }

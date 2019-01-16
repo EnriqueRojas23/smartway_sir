@@ -78,12 +78,15 @@ namespace Web.Smartway.DataAccess.Recepcion
             return 1;
         }
 
-        public IEnumerable<DocumentoRecepcionModel> GetListarDocumentoRecepcion(DateTime? fechainicio, DateTime? fechafin
+        public IEnumerable<DocumentoRecepcionModel> GetListarDocumentoRecepcion(String fechainicio, String fechafin
             , string numerorecepcion)
         {
             var parametros = new ListarDocumentoRecepcionParameters
             {
-                
+                fechahorainicio = fechainicio,
+                fechahorafin = fechafin,
+                numeroordenservicio = numerorecepcion
+
 
             };
             var resultado = (ListarDocumentoRecepcionResult)parametros.Execute();

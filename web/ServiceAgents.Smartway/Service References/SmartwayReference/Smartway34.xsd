@@ -148,6 +148,7 @@
           <xs:element minOccurs="0" name="idtecnico" type="xs:int" />
           <xs:element minOccurs="0" name="idusuarioregistro" type="xs:int" />
           <xs:element minOccurs="0" name="incidencia" type="xs:boolean" />
+          <xs:element minOccurs="0" name="informetecnico" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="numeroordentrabajo" nillable="true" type="xs:string" />
         </xs:sequence>
       </xs:extension>

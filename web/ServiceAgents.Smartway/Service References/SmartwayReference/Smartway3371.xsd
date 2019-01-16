@@ -11,9 +11,38 @@
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="EntregarDespachoDeliveryResult" nillable="true" type="tns:EntregarDespachoDeliveryResult" />
-  <xs:complexType name="ObtenerGuiaRemisionResult">
+  <xs:complexType name="ListarOrdenSalidaResult">
     <xs:complexContent mixed="false">
       <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q2:QueryResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Hits" nillable="true" type="tns:ArrayOfListarOrdenSalidaDto" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListarOrdenSalidaResult" nillable="true" type="tns:ListarOrdenSalidaResult" />
+  <xs:complexType name="ArrayOfListarOrdenSalidaDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ListarOrdenSalidaDto" nillable="true" type="tns:ListarOrdenSalidaDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfListarOrdenSalidaDto" nillable="true" type="tns:ArrayOfListarOrdenSalidaDto" />
+  <xs:complexType name="ListarOrdenSalidaDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="activo" type="xs:boolean" />
+      <xs:element minOccurs="0" name="fechahoraregistro" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="idcliente" type="xs:int" />
+      <xs:element minOccurs="0" name="iddocumentosalida" type="xs:long" />
+      <xs:element minOccurs="0" name="idtiposalida" type="xs:int" />
+      <xs:element minOccurs="0" name="idusuarioregistro" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numerodocumento" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListarOrdenSalidaDto" nillable="true" type="tns:ListarOrdenSalidaDto" />
+  <xs:complexType name="ObtenerGuiaRemisionResult">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q3:QueryResult">
         <xs:sequence>
           <xs:element minOccurs="0" name="idguiaremision" type="xs:long" />
           <xs:element minOccurs="0" name="idsucursaldestino" type="xs:int" />
@@ -27,7 +56,7 @@
   <xs:element name="ObtenerGuiaRemisionResult" nillable="true" type="tns:ObtenerGuiaRemisionResult" />
   <xs:complexType name="ListarGuiaRemisionResult">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q3:QueryResult">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q4:QueryResult">
         <xs:sequence>
           <xs:element minOccurs="0" name="Hits" nillable="true" type="tns:ArrayOfListarGuiaRemisionDto" />
         </xs:sequence>
@@ -56,7 +85,7 @@
   <xs:element name="ListarGuiaRemisionDto" nillable="true" type="tns:ListarGuiaRemisionDto" />
   <xs:complexType name="ListarTransporteResult">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q4:QueryResult">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q5:QueryResult">
         <xs:sequence>
           <xs:element minOccurs="0" name="Hits" nillable="true" type="tns:ArrayOfListarTransporteDto" />
         </xs:sequence>
@@ -79,7 +108,7 @@
   <xs:element name="ListarTransporteDto" nillable="true" type="tns:ListarTransporteDto" />
   <xs:complexType name="ListarProgramacionResult">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q5:QueryResult">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q6:QueryResult">
         <xs:sequence>
           <xs:element minOccurs="0" name="Hits" nillable="true" type="tns:ArrayOfListarProgramacionDto" />
         </xs:sequence>

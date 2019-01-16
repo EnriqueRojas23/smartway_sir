@@ -23426,8 +23426,8 @@ a {
 /***********************/
 .widget {
   position: relative;
-  margin-bottom: 1.875rem;
-  padding: 15px 20px;
+  margin-bottom: 0.875rem;
+  padding: 5px 20px;
   background: #fff;
   border-radius: 0.2rem; }
   .widget > header {
@@ -23493,7 +23493,7 @@ a {
     vertical-align: baseline; }
 
 .widget-card {
-  min-height: 135px; }
+  min-height: 5px; }
 
 .widget-icon {
   opacity: .5;

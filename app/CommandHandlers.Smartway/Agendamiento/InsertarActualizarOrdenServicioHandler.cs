@@ -75,8 +75,11 @@ namespace CommandHandlers.Smartway
 
                 if (!command.idordenserviciotecnico.HasValue)
                 {
-                    dominio.numeroordenservicio = dominio.idordenserviciotecnico.ToString().PadLeft(10, '0');
-                    _OrdenServicioRepository.Commit();
+                    if (command.__tipooperacion != 2)
+                    {
+                        dominio.numeroordenservicio = dominio.idordenserviciotecnico.ToString().PadLeft(10, '0');
+                        _OrdenServicioRepository.Commit();
+                    }
                 }
 
 

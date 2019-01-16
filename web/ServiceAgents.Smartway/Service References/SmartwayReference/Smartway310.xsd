@@ -31,6 +31,7 @@
           <xs:element minOccurs="0" name="iddocumentosalida" nillable="true" type="xs:long" />
           <xs:element minOccurs="0" name="idtiposalida" type="xs:int" />
           <xs:element minOccurs="0" name="idusuarioregistro" type="xs:int" />
+          <xs:element minOccurs="0" name="lote" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="numerodocumento" nillable="true" type="xs:string" />
         </xs:sequence>
       </xs:extension>

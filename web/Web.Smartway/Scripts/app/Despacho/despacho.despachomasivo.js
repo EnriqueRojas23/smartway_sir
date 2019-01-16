@@ -16,12 +16,19 @@ $(document).ready(function() {
    
    inicio()
    $("#formOrdenIngreso").validate({
-     errorPlacement: function(error, element) {
-            if(element.parent('.input-group').length) {
+        ignore: '*:not([name])',
+        errorClass: "error-class",
+        validClass: "valid-class",
+        errorElement: 'div',
+
+      errorPlacement: function(error, element) {
+          /*  if(element.parent('.input-group').length) {
                 error.insertAfter(element.parent());
-            } else {
-                error.insertAfter(element);
-            }
+                   
+            } else {*/
+                error.insertAfter(element.parent());
+                   
+            /**/
         },
         onError : function(){
             $('.input-group.error-class').find('.help-block.form-error').each(function() {
@@ -31,6 +38,9 @@ $(document).ready(function() {
         highlight: function(element, errorClass) {
             $(element).removeClass(errorClass);
         },
+         submitHandler: function(form) {
+          $(form).submit();
+        }
 
    })
    	  
