@@ -49,9 +49,19 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="InsertarDocumentoRecepcionDetalleDto" nillable="true" type="tns:InsertarDocumentoRecepcionDetalleDto" />
-  <xs:complexType name="ListarDocumentoRecepcionParameters">
+  <xs:complexType name="ListarDocumentoRecepcionDetalleParameters">
     <xs:complexContent mixed="false">
       <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q3:QueryParameter">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="iddocumentorecepcion" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListarDocumentoRecepcionDetalleParameters" nillable="true" type="tns:ListarDocumentoRecepcionDetalleParameters" />
+  <xs:complexType name="ListarDocumentoRecepcionParameters">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q4:QueryParameter">
         <xs:sequence>
           <xs:element minOccurs="0" name="fechahorafin" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="fechahorainicio" nillable="true" type="xs:string" />
@@ -63,7 +73,7 @@
   <xs:element name="ListarDocumentoRecepcionParameters" nillable="true" type="tns:ListarDocumentoRecepcionParameters" />
   <xs:complexType name="ListarOrdenServicioRecepcionParameters">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q4:QueryParameter">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q5:QueryParameter">
         <xs:sequence>
           <xs:element minOccurs="0" name="idguiaremision" nillable="true" type="xs:long" />
         </xs:sequence>

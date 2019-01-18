@@ -62,6 +62,14 @@ namespace Web.Smartway.Areas.Agendamiento.Controllers
             return resjson1;
 
         }
+        public JsonResult JsonGetListarDocumentosRecepcionDetalle(long iddocumentorecepcion)
+        {
+       
+            var listadoTotal = new RecepcionData().GetListarDocumentoRecepcionDetalle(iddocumentorecepcion).ToList();
+            var resjson1 = (new JqGridExtension<DocumentoRecepcionDetalleModel>()).DataBind(listadoTotal, listadoTotal.Count);
+            return resjson1;
+
+        }
         #endregion
         public ActionResult RecepcionOrdenServicio(int id)
         {
@@ -583,7 +591,7 @@ namespace Web.Smartway.Areas.Agendamiento.Controllers
 
             ViewData["listaorigen"] = MantenimientoData.GetListarValoresxTabla((Int32)Constantes.MaestroTablas.Origen);
 
-            var sucursal = new SucursalData().ListarSucursal("", "", null);
+            var sucursal = new SucursalData().ListarSucursal("", "", null,Usuario.idpartner);
             var listasucursal = new SelectList(
                sucursal,
                "idsucursal",

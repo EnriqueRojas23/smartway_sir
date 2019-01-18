@@ -44,9 +44,13 @@
         <xs:sequence>
           <xs:element minOccurs="0" name="__tipooperacion" type="xs:int" />
           <xs:element minOccurs="0" name="descripcion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="direcciondestino" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="direccionorigen" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="documentoreferencia" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="fechaguiaremision" type="xs:dateTime" />
           <xs:element minOccurs="0" name="fechahorarecojo" type="xs:dateTime" />
           <xs:element minOccurs="0" name="fechahoraregistro" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="idcliente" type="xs:int" />
           <xs:element minOccurs="0" name="idestado" type="xs:int" />
           <xs:element minOccurs="0" name="idguiaremision" nillable="true" type="xs:long" />
           <xs:element minOccurs="0" name="idsucursaldestino" type="xs:int" />

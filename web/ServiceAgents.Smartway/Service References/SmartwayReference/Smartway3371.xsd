@@ -77,7 +77,7 @@
       <xs:element minOccurs="0" name="descripcion" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="direcciondestino" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="direccionorigen" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="fechaguiaremision" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaguiaremision" type="xs:dateTime" />
       <xs:element minOccurs="0" name="idguiaremision" type="xs:long" />
       <xs:element minOccurs="0" name="numeroguia" nillable="true" type="xs:string" />
     </xs:sequence>

@@ -193,9 +193,11 @@
     <Compile Include="Inventario\Parameters\ListarAlmacenParameters.cs" />
     <Compile Include="Inventario\Results\ListarAlmacenResult.cs" />
     <Compile Include="Recepcion\Parameters\InsertarDocumentoRecepcionDetalleParameter.cs" />
+    <Compile Include="Recepcion\Parameters\ListarDocumentoRecepcionDetalleParameters.cs" />
     <Compile Include="Recepcion\Parameters\ListarDocumentoRecepcionParameters.cs" />
     <Compile Include="Recepcion\Parameters\ListarOrdenServicioRecepcionParameters.cs" />
     <Compile Include="Recepcion\Results\InsertarDetalleEmbarqueResult.cs" />
+    <Compile Include="Recepcion\Results\ListarDocumentoRecepcionDetalleResult.cs" />
     <Compile Include="Recepcion\Results\ListarDocumentoRecepcionResult.cs" />
     <Compile Include="Recepcion\Results\ListarOrdenServicioResult.cs" />
     <Compile Include="Reparacion\Parameters\ListarAntecedentesDetalleParameter.cs" />

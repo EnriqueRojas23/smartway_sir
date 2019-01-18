@@ -93,6 +93,17 @@ namespace Web.Smartway.DataAccess.Recepcion
             Mapper.CreateMap<ListarDocumentoRecepcionDto, DocumentoRecepcionModel>();
             return Mapper.Map<IEnumerable<ListarDocumentoRecepcionDto>, IEnumerable<DocumentoRecepcionModel>>(resultado.Hits);
         }
+        public IEnumerable<DocumentoRecepcionDetalleModel> GetListarDocumentoRecepcionDetalle(long iddocumentorecepcion)
+        {
+            var parametros = new ListarDocumentoRecepcionDetalleParameters
+            {
+                 iddocumentorecepcion = iddocumentorecepcion
+
+            };
+            var resultado = (ListarDocumentoRecepcionDetalleResult)parametros.Execute();
+            Mapper.CreateMap<ListarDocumentoRecepcionDetalleDto, DocumentoRecepcionDetalleModel>();
+            return Mapper.Map<IEnumerable<ListarDocumentoRecepcionDetalleDto>, IEnumerable<DocumentoRecepcionDetalleModel>>(resultado.Hits);
+        }
 
     }
 }

@@ -1,5 +1,10 @@
 const $grilla = $("#gridordenes")
+const $grilladetalle = $("#gridordenesdetalle")
+
+
+
 const $pagergrilla = $("#gridordenespager")
+const $pagergrilladetalle = $("#gridordenesdetallepager")
 const $btnImprimir = $("#btnImprimir")
 const $btnEntregar = $("#btnEntregar")
 const $btnRegresar = $("#btnRegresar")
@@ -12,6 +17,7 @@ function inicio() {
 
     configurarControles()
     configurarGrilla()
+    configurarGrillaDetalle()
     configurarGrillaCotizacion()
 }
 
@@ -178,8 +184,62 @@ function displayButtons(cellvalue, options, rowObject)
     return   editar  ;
 }
 function verDetalle(id){
-    let vurl = UrlHelper.Action("DetalleOrdenServicio","OrdenServicio","Agendamiento") + "?idordenservicio=" + id;
-    window.location.href = vurl;
+    $("html, body").animate({ scrollTop: "900px" });
+
+
+    var vdataurl = $grilladetalle.data("dataurl") + "?iddocumentorecepcion=" + id ;
+    $grilladetalle.jqGrid('setGridParam', { url: vdataurl }).trigger('reloadGrid');
+}
+function configurarGrillaDetalle()
+{
+
+
+    $.jgrid.defaults.height = 320;
+    $.jgrid.defaults.responsive = true;
+
+    var vdataurl = $grilladetalle.data("dataurl") + "?iddocumentorecepcion=" + 0;    
+
+    console.log(vdataurl);
+
+    $grilladetalle.jqGrid({
+        url: vdataurl,
+        datatype: 'json',
+        mtype: 'POST',
+        colNames: ['','Código' ,'Producto',  'Modelo', 'Tipo'  ,'Serie' , 'IMEI' , 'Mac', 'Cantidad', 'N° Pallet' , 'Caja' , 'Fila'  ],
+        colModel:
+        [
+            { key: true, hidden: true, name: '', align: 'center' },
+            { key: false, name: 'codigoproducto',width:'100',  align: 'center', sortable: false, formatter: formatedit },
+            { key: false, name: 'descripcionlarga', width:'100', align: 'center',  sortable: false,  formatter: formatedit  },
+            { key: false, name: 'modelo',  align: 'center', width:'40',  sortable: false,  formatter: formatedit  },
+            { key: false, name: 'Tipo',  align: 'center', width:'40',  sortable: false,  formatter: formatedit  },
+            { key: false, name: 'serie',  width:'100', align: 'center', sortable: false, formatter: formatedit },
+            { key: false, name: 'imei',  align: 'center', width:'90',  sortable: false,  formatter: formatedit  },
+            { key: false, name: 'mac',  width:'90' ,align: 'center', sortable: true, formatter: formatedit },
+            { key: false, name: 'cantidad',  align: 'center', width:'60',  sortable: false,  formatter: formatedit  },
+            { key: false, name: 'numeropallet',  align: 'center', width:'80',  sortable: false,  formatter: formatedit  },
+            { key: false, name: 'caja',  align: 'center', width:'80',  sortable: false,  formatter: formatedit  },
+            { key: false, name: 'fila',   width:'40' ,align: 'center', sortable: true, formatter: formatedit },
+        ],
+        pager: $pagergrilladetalle,
+        rowNum: 10,
+        rowList: [10, 20],
+        emptyrecords: 'No se encontraron registros',
+        autoheight: true,
+        autowidth: true,
+        shrinkToFit: true,
+        multiselect: false,
+        jsonReader:
+        {
+            root: "rows",
+            page: "page",
+            total: "total",
+            records: "records",
+            repeatitems: false,
+            id: 0
+        },
+    });
+
 }
 
 function configurarGrillaCotizacion()

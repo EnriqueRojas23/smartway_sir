@@ -1,11 +1,16 @@
 const urlFinalizar = UrlHelper.Action("FinalizarReparacion", "Reparacion", "Reparacion");
 const urlPausar = UrlHelper.Action("JsonPausarReparacion", "Reparacion", "Reparacion");
+const urlNoreparable = UrlHelper.Action("NoReparable", "Reparacion", "Reparacion");
+
 
 const $btnAgregar = $("#btnAgregar");
+
 const $grilla = $("#griddetalle");
 const $pagergrilla = $("#griddetallepager");
 const $btnPausar = $("#btnPausar");
 const $btnFinalizar = $("#btnFinalizar");
+const $btnNoReparable = $("#btnNoReparable");
+
 
 
 var lapse1_fin = convertDate($("#lapse1_fin").val());
@@ -190,6 +195,55 @@ function configurarControles()
 }
 function configurarBotones()
 {
+    $($btnNoReparable).click(function (e) { 
+        e.preventDefault();
+        swal({
+            title: "¿Este producto no es reparable?",
+            text: "Se enviará el producto de regreso al cliente.",
+            type: "warning",
+            showCancelButton: true,
+            cancelButtonText: "Cancelar",
+            confirmButtonColor: '#DD6B55',
+            confirmButtonText: 'Aceptar',
+            closeOnConfirm: true,
+            closeOnCancel: true
+        },
+        function ()
+        {
+            $.ajax({
+                type: "POST",
+                url: urlNoreparable,
+                data: {
+                    "id": $("#idordentrabajo").val()
+                    , "idottiempo": $("#idordentrabajotiempo").val()
+                    , "descripcion" : $("#descripcion").val()
+                    , "informetecnico" : $("#informetecnico").val()
+                },
+                async : true,
+                dataType: "JSON",
+                success: function (response) {
+                    if(response.res)
+                    {
+                        swal("Reparación", "La orden se ha cerrado satisfactoriamente", "success");
+                        let vurl = UrlHelper.Action("PanelTrabajoTecnico","Reparacion","Reparacion")
+                        window.location.href = vurl;
+                    }
+                    else{
+                        alert('no')
+                    }
+                },
+                error: function (request, status, error) {
+                    swal({ title: "Recepción Guías", text: "Ocurrió un error al finalizar la recepción", type: "error", confirmButtonText: "Aceptar" });
+                }
+            });
+
+
+        });
+        
+        
+    });
+
+    
 
     $btnAgregar.click(function (e) {
         e.preventDefault();
@@ -562,4 +616,8 @@ detalle =
 function verDetalle(id){
      $("#idordenservicio_aux").val(id)
     detalle.draw()
+}
+function noReparable()
+{
+    
 }

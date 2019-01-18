@@ -46,7 +46,7 @@
 </div>
 
 
-@using (Ajax.BeginForm("RegistrarDespacho", "Despacho", new { area = "Despacho" }, new AjaxOptions { HttpMethod = "POST", OnComplete = "OnCompleteTransaction(xhr, status)" }, new { @role = "form", @id = "formOrdenIngreso", @class = "form-horizontal" }))
+@using (Ajax.BeginForm("RegistrarDespacho", "Despacho", new { area = "Despacho" }, new AjaxOptions { HttpMethod = "POST", OnComplete = "OnCompleteTransaction(xhr, status)" }, new { @role = "form", @class = "form-horizontal" }))
 {
     <div class="wrapper wrapper-content animated fadeInRight">
         <div class="row">

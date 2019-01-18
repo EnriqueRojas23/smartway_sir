@@ -138,8 +138,8 @@
   <xs:element name="ArrayOfListarOrdenTrabajoTiempoDto" nillable="true" type="tns:ArrayOfListarOrdenTrabajoTiempoDto" />
   <xs:complexType name="ListarOrdenTrabajoTiempoDto">
     <xs:sequence>
-      <xs:element minOccurs="0" name="fechahorafin" type="xs:dateTime" />
-      <xs:element minOccurs="0" name="fechahorainicio" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fechahorafin" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fechahorainicio" nillable="true" type="xs:dateTime" />
       <xs:element minOccurs="0" name="idordentrabajo" type="xs:long" />
       <xs:element minOccurs="0" name="idordentrabajotiempo" type="xs:long" />
       <xs:element minOccurs="0" name="idusuario" type="xs:int" />

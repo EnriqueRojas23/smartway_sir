@@ -299,6 +299,7 @@ namespace Web.Smartway.Areas.Agendamiento.Controllers
                 return Json(new { res = false });
             return (new JqGridExtension<OrdenSalidaDetalleModel>()).DataBind(result, result.Count);
         }
+        [HttpPost]
         public JsonResult RegistrarDespacho(OrdenSalidaModel model)
         {
 
@@ -364,19 +365,14 @@ namespace Web.Smartway.Areas.Agendamiento.Controllers
                 }
                 if (inventario.idestado != (Int32)Constantes.EstadoProducto.Reparado)
                 {
+                if (inventario.idestado != (Int32)Constantes.EstadoProducto.Inoperativo)    
                     return Json(new { res = false, msj = "El item con serie: " + item.serie + " no está disponible para despacho." });
                 }
 
             }
 
-
-
             #endregion
 
-            //List<InventarioModel> inventarios = new List<InventarioModel>();
-            //InventarioModel inventarioModel = null; // new InventarioModel();
-            OrdenSalidaDetalleModel modelDetalle = null;
-            //OrdenServicioModel ordenModel = new OrdenServicioModel();
 
             if (detalle == null)
             {
@@ -411,7 +407,7 @@ namespace Web.Smartway.Areas.Agendamiento.Controllers
 
 
                 var ordenServicioModel = new OrdenServicioModel();
-                ordenServicioModel.idordentrabajo = item.idordenservicio;
+                ordenServicioModel.idordenserviciotecnico = item.idordenservicio;
                 ordenServicioModel.idestado = (Int16) Constantes.EstadoOrdenServicio.Cerrada;
                 ordenServicioModel.__tipooperacion = 2;
 

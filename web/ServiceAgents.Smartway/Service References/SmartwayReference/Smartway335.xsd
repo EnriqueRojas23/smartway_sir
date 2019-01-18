@@ -1,9 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/QueryContracts.Smartway.Recepcion.Results" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/QueryContracts.Smartway.Recepcion.Results" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation="http://localhost:50020/Smartway3?xsd=xsd17" namespace="http://schemas.datacontract.org/2004/07/QueryContracts.Common" />
-  <xs:complexType name="ListarDocumentoRecepcionResult">
+  <xs:complexType name="ListarDocumentoRecepcionDetalleResult">
     <xs:complexContent mixed="false">
       <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q1:QueryResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Hits" nillable="true" type="tns:ArrayOfListarDocumentoRecepcionDetalleDto" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListarDocumentoRecepcionDetalleResult" nillable="true" type="tns:ListarDocumentoRecepcionDetalleResult" />
+  <xs:complexType name="ArrayOfListarDocumentoRecepcionDetalleDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ListarDocumentoRecepcionDetalleDto" nillable="true" type="tns:ListarDocumentoRecepcionDetalleDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfListarDocumentoRecepcionDetalleDto" nillable="true" type="tns:ArrayOfListarDocumentoRecepcionDetalleDto" />
+  <xs:complexType name="ListarDocumentoRecepcionDetalleDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Tipo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="caja" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cantidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="codigoproducto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcionlarga" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fila" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="imei" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="mac" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="modelo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numeropallet" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="serie" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListarDocumentoRecepcionDetalleDto" nillable="true" type="tns:ListarDocumentoRecepcionDetalleDto" />
+  <xs:complexType name="ListarDocumentoRecepcionResult">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q2:QueryResult">
         <xs:sequence>
           <xs:element minOccurs="0" name="Hits" nillable="true" type="tns:ArrayOfListarDocumentoRecepcionDto" />
         </xs:sequence>

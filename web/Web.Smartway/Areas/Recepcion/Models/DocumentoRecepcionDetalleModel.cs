@@ -13,6 +13,11 @@ namespace Web.Smartway.Areas.Recepcion.Models
 
         public long? iddocumentorecepciondetalle { get; set; }
         public long iddocumentorecepcion { get; set; }
+
+        public string codigoproducto { get; set; }
+        public string descripcionlarga { get; set; }
+        public string Tipo { get; set; }
+
         public string numeropallet { get; set; }
         public string caja { get; set; }
         public string ubicacion { get; set; }
@@ -32,12 +37,13 @@ namespace Web.Smartway.Areas.Recepcion.Models
         public int idmodelo { get; set; }
         public int cantidad { get; set; }
         public DateTime fechahorapersonalizacion { get; set; }
-
         public int idusuariopersonalizacion { get; set; }
-
-
         public string pallet { get; set; }
         public string fabricante { get; set; }
         public int idalmacen { get; set; }
+
+
+
+
     }
 }

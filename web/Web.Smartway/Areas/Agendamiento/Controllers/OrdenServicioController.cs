@@ -411,7 +411,7 @@ namespace Web.Smartway.Areas.Agendamiento.Controllers
                 TrabajoDetalleModel.reparacion = modReparacion.descripcion;
                 TrabajoDetalleModel.repuesto = modRepuesto.descripcionlarga;
                 TrabajoDetalleModel.iddiagnostico = item.iddiagnostico;
-                TrabajoDetalleModel.idrepuesto = item.idrepuesto;
+                TrabajoDetalleModel.idrepuesto = item.idproducto;
                 TrabajoDetalleModel.idreparacion = item.idreparacion;
                 TrabajoDetalleModel.costo = modRepuesto.costounitario;
                 TrabajoDetalleModel.descripcion = "Repuesto";

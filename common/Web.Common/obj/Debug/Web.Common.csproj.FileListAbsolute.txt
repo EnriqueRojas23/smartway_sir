@@ -634,7 +634,6 @@ D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Web.Common\bin\Debug\Flu
 D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Web.Common\bin\Debug\NPOI.dll
 D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Web.Common\bin\Debug\System.Net.Http.Formatting.dll
 D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Web.Common\bin\Debug\ICSharpCode.SharpZipLib.dll
-D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Web.Common\bin\Debug\Microsoft.SqlServer.Types.dll
 D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Web.Common\bin\Debug\Bootstrapper.Web.Common.pdb
 D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Web.Common\bin\Debug\CommandContracts.Common.pdb
 D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Web.Common\bin\Debug\Componentes.Common.pdb
@@ -671,7 +670,6 @@ D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Web.Common\bin\Debug\es\
 D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Web.Common\bin\Debug\es\System.Web.WebPages.Razor.resources.dll
 D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Web.Common\bin\Debug\es\FluentValidation.resources.dll
 D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Web.Common\bin\Debug\es\System.Net.Http.Formatting.resources.dll
-D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Web.Common\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
 D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Web.Common\obj\Debug\Web.Common.csprojAssemblyReference.cache
 D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Web.Common\obj\Debug\Web.Common.csproj.CoreCompileInputs.cache
 D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Web.Common\obj\Debug\Web.Common.csproj.CopyComplete

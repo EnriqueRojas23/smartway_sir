@@ -28,7 +28,5 @@ namespace QueryContracts.Smartway.Recepcion.Results
         public string numeroordenservicio { get; set; }
         public string Origen { get; set; }
 
-
-
     }
 }

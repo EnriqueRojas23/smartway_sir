@@ -401,9 +401,7 @@ D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Web.Common\bin\Release\S
 D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Web.Common\bin\Release\FluentValidation.dll
 D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Web.Common\bin\Release\NPOI.dll
 D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Web.Common\bin\Release\System.Net.Http.Formatting.dll
-D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Web.Common\bin\Release\Newtonsoft.Json.dll
 D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Web.Common\bin\Release\ICSharpCode.SharpZipLib.dll
-D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Web.Common\bin\Release\Microsoft.SqlServer.Types.dll
 D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Web.Common\bin\Release\Bootstrapper.Web.Common.pdb
 D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Web.Common\bin\Release\CommandContracts.Common.pdb
 D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Web.Common\bin\Release\Componentes.Common.pdb
@@ -440,7 +438,6 @@ D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Web.Common\bin\Release\e
 D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Web.Common\bin\Release\es\System.Web.WebPages.Razor.resources.dll
 D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Web.Common\bin\Release\es\FluentValidation.resources.dll
 D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Web.Common\bin\Release\es\System.Net.Http.Formatting.resources.dll
-D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Web.Common\bin\Release\es\Microsoft.SqlServer.Types.resources.dll
 D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Web.Common\obj\Release\Web.Common.csprojAssemblyReference.cache
 D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Web.Common\obj\Release\Web.Common.csproj.CoreCompileInputs.cache
 D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Web.Common\obj\Release\Web.Common.csproj.CopyComplete
