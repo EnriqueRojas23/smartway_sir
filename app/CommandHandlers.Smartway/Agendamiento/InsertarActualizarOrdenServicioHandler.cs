@@ -38,6 +38,13 @@ namespace CommandHandlers.Smartway
                 dominio.idestado = command.idestado;
                 dominio.cotizado = command.cotizado;
             }
+            else if (command.__tipooperacion == 3)
+            {
+                dominio.idestado = command.idestado;
+                dominio.engarantia = command.engarantia;
+                dominio.cotizado = command.cotizado;
+
+            }
             else
             {
                 dominio.fechahoraregistro = command.fechahoraregistro;

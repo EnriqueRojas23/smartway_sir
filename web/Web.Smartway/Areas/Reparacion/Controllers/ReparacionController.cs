@@ -768,7 +768,42 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
 
             return Json(new { res = true });
         }
+        [HttpPost]
+        public JsonResult PierdeGarantia(long id, long idottiempo, string descripcion, string informetecnico)
+        {
+            var model = new OrdenTrabajoTiempoModel();
+            var modOrdenTrabajo = new ReparacionesData().obtenerOrdenTrabajo(id);
+            var modOrdenServicio = new OrdenServicioData().obtenerOrdenServicio(modOrdenTrabajo.idordenserviciotecnico.Value);
 
+            model.fechahorafin = DateTime.Now;
+            model.idordentrabajotiempo = idottiempo;
+            model.__tipoperacion = 2;
+            new ReparacionesData().insertarIniciarReparacion(model);
+
+
+            modOrdenServicio.idestado = (Int32)Constantes.EstadoOrdenServicio.PendienteCotizacion;
+            modOrdenServicio.__tipooperacion = 3;
+            modOrdenServicio.cotizado = false;
+            modOrdenServicio.engarantia = false;
+
+            new OrdenServicioData().InsertarActualizarOrdenServicio(modOrdenServicio);
+
+            modOrdenTrabajo.idordentrabajo = id;
+            modOrdenTrabajo.idestado = (Int32)Constantes.EstadoOrdenTrabajo.Asignada;
+            modOrdenTrabajo.__tipooperacion = 2;
+            modOrdenTrabajo.descripcion = descripcion;
+            modOrdenTrabajo.informetecnico = informetecnico;
+
+            var idordentrabajo = new ReparacionesData().InsertarActualizarOrdenTrabajo(modOrdenTrabajo);
+
+            var modInventario = new InventarioData().obtenerInventario(modOrdenServicio.idinventario, null);
+            modInventario.__idoperacion = 4;
+            modInventario.idestado = (int)Constantes.Producto.PendienteReparar;
+
+            new InventarioData().InsertarActualizarInventario(modInventario);
+
+            return Json(new { res = true });
+        }
         [HttpPost]
         public JsonResult JsonPausarReparacion(long id, long idottiempo, string descripcion, string informetecnico)
         {

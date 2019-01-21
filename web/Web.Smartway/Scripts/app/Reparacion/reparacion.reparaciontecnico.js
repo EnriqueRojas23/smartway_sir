@@ -1,6 +1,9 @@
 const urlFinalizar = UrlHelper.Action("FinalizarReparacion", "Reparacion", "Reparacion");
 const urlPausar = UrlHelper.Action("JsonPausarReparacion", "Reparacion", "Reparacion");
 const urlNoreparable = UrlHelper.Action("NoReparable", "Reparacion", "Reparacion");
+const urlPierdeGarantia = UrlHelper.Action("PierdeGarantia", "Reparacion", "Reparacion");
+
+
 
 
 const $btnAgregar = $("#btnAgregar");
@@ -10,6 +13,7 @@ const $pagergrilla = $("#griddetallepager");
 const $btnPausar = $("#btnPausar");
 const $btnFinalizar = $("#btnFinalizar");
 const $btnNoReparable = $("#btnNoReparable");
+const $btnPierdeGarantia = $("#btnPierdeGarantia");
 
 
 
@@ -126,10 +130,10 @@ function convertDate(inputFormat) {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  document.getElementById("dia").innerHTML = days  ;
-  document.getElementById("hora").innerHTML = hours  ;
-  document.getElementById("minuto").innerHTML = minutes ;
-  document.getElementById("segundo").innerHTML = seconds ;
+  document.getElementById("dia").innerHTML = days;
+  document.getElementById("hora").innerHTML = hours;
+  document.getElementById("minuto").innerHTML = minutes;
+  document.getElementById("segundo").innerHTML = seconds;
 
   // If the count down is finished, write some text
   // if (distance < 0) {
@@ -195,7 +199,56 @@ function configurarControles()
 }
 function configurarBotones()
 {
-    $($btnNoReparable).click(function (e) { 
+
+
+    $btnPierdeGarantia.click(function (e) {
+        e.preventDefault();
+        swal({
+            title: "¿Este producto perdió la garantía?",
+            text: "Se enviará el producto a cotización.",
+            type: "warning",
+            showCancelButton: true,
+            cancelButtonText: "Cancelar",
+            confirmButtonColor: '#DD6B55',
+            confirmButtonText: 'Aceptar',
+            closeOnConfirm: true,
+            closeOnCancel: true
+        },
+            function () {
+                $.ajax({
+                    type: "POST",
+                    url: urlPierdeGarantia,
+                    data: {
+                        "id": $("#idordentrabajo").val()
+                        , "idottiempo": $("#idordentrabajotiempo").val()
+                        , "descripcion": $("#descripcion").val()
+                        , "informetecnico": $("#informetecnico").val()
+                    },
+                    async: true,
+                    dataType: "JSON",
+                    success: function (response) {
+                        if (response.res) {
+                            swal("Reparación", "La orden se ha cerrado satisfactoriamente", "success");
+                            let vurl = UrlHelper.Action("PanelTrabajoTecnico", "Reparacion", "Reparacion")
+                            window.location.href = vurl;
+                        }
+                        else {
+                            alert('no');
+                        }
+                    },
+                    error: function (request, status, error) {
+                        swal({ title: "Recepción Guías", text: "Ocurrió un error al finalizar la recepción", type: "error", confirmButtonText: "Aceptar" });
+                    }
+                });
+
+
+            });
+
+    });
+
+
+
+    $btnNoReparable.click(function (e) { 
         e.preventDefault();
         swal({
             title: "¿Este producto no es reparable?",
