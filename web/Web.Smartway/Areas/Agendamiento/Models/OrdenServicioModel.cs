@@ -67,6 +67,10 @@ namespace Web.Smartway.Areas.Agendamiento.Models
         public bool delivery { get; set; }
         public int? iddirecciondelivery { get; set; }
 
+        public string accesorios { get; set; }
+
+        public string modelo { get; set; }
+
 
         #region Prop para el seguimiento
 

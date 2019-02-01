@@ -60,11 +60,13 @@
     <Compile Include="Agendamiento\Command\Output\InsertarIncidenciaSolucionOutput.cs" />
     <Compile Include="Agendamiento\Command\Output\InsertarActualizarLibroReclamacionesOutput.cs" />
     <Compile Include="Agendamiento\Command\Output\InsertarActualizarIncidenciaOutput.cs" />
+    <Compile Include="Despacho\Command\InsertarActualizarGuiaRemisionDetalleCommand.cs" />
     <Compile Include="Despacho\Command\InsertarOrdenSalidaDetalleCommand.cs" />
     <Compile Include="Despacho\Command\InsertarOrdenSalidaCommand.cs" />
     <Compile Include="Despacho\Command\InsertarActualizarGuiaRemisionCommand.cs" />
     <Compile Include="Despacho\Command\InsertarActualizarProgramacionDetalleCommand.cs" />
     <Compile Include="Despacho\Command\InsertarActualizarProgramacionCommand.cs" />
+    <Compile Include="Despacho\Command\Output\InsertarActualizarGuiaRemisionDetalleOutput.cs" />
     <Compile Include="Despacho\Command\Output\InsertarOrdenSalidaDetalleOutput.cs" />
     <Compile Include="Despacho\Command\Output\InsertarOrdenSalidaOutput.cs" />
     <Compile Include="Despacho\Command\Output\InsertarActualizarGuiaRemisionOutput.cs" />

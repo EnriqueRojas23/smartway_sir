@@ -23,6 +23,7 @@ namespace Web.Smartway.Areas.Guias.Controllers
 
             return View();
         }
+       
         public PartialViewResult NuevaGuia()
         {
             var sucursal = new SucursalData().ListarSucursal("", "", null, Usuario.idpartner);
@@ -47,6 +48,22 @@ namespace Web.Smartway.Areas.Guias.Controllers
             return PartialView("_NuevaGuiaRemision");
 
         }
+        public PartialViewResult NuevoDetalleGuia(long id)
+        {
+
+            var model = new GuiaRemisionDetalleModel();
+            model.idguiaremision = id;
+
+            return PartialView("_NuevoDetalleGuia", model);
+
+        }
+        [HttpPost]
+        public JsonResult InsertarActualizarGuiaRemision(GuiaRemisionDetalleModel guiadetalle)
+        {
+            new DespachoData().InsertarActualizarGuiaRemisionDetalle(guiadetalle);
+            return Json(new { res = true });
+        }
+
 
         [HttpPost]
         public JsonResult GenerarGuiaRemision(ProgramacionModel model)
@@ -56,7 +73,10 @@ namespace Web.Smartway.Areas.Guias.Controllers
             modGuia.direccionorigen = model.direccionorigen;
             modGuia.fechaguiaremision = model.fechaemision;
             modGuia.numeroguia = model.numeroguia;
-            modGuia.idcliente = model.idcliente;
+            modGuia.iddestinatario = model.iddestinatario;
+            modGuia.idusuarioregistro = Usuario.Idusuario;
+            modGuia.idtransportista = model.idtransportista;
+            
 
             modGuia.direcciondestino = model.direcciondestino;
             modGuia.direccionorigen = model.direccionorigen;
@@ -68,13 +88,18 @@ namespace Web.Smartway.Areas.Guias.Controllers
             return Json(new { res = true });
 
         }
-        public JsonResult JsonGetListarGuias(int? idsucursaldestino, int? idsucursalorigen
-                , string sord
-             , int page
-             , int rows)
+        [HttpPost]
+        public JsonResult JsonGetListarGuias(int? idsucursaldestino, int? idsucursalorigen)
         {
             var listadoTotal = new DespachoData().GetListarGuia(null, null, null).ToList();
             var resjson1 = (new JqGridExtension<GuiaRemisionModel>()).DataBind(listadoTotal, listadoTotal.Count);
+            return resjson1;
+        }
+        [HttpPost]
+        public JsonResult JsonGetListarGuiaDetalles(long idguiaremision)
+        {
+            var listadoTotal = new DespachoData().GetListarGuiaDetalle(idguiaremision).ToList();
+            var resjson1 = (new JqGridExtension<GuiaRemisionDetalleModel>()).DataBind(listadoTotal, listadoTotal.Count);
             return resjson1;
         }
     }

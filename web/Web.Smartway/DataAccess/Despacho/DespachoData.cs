@@ -60,6 +60,16 @@ namespace Web.Smartway.DataAccess.Mantenimiento
             Mapper.CreateMap<ListarGuiaRemisionDto, GuiaRemisionModel>();
             return Mapper.Map<IEnumerable<ListarGuiaRemisionDto>, IEnumerable<GuiaRemisionModel>>(resultado.Hits);
         }
+        public IEnumerable<GuiaRemisionDetalleModel> GetListarGuiaDetalle(long IdGuiaRemision)
+        {
+            var parametros = new ListarGuiaRemisionDetalleParameter
+            {
+                idguiaremision = IdGuiaRemision
+            };
+            var resultado = (ListarGuiaRemisionDetalleResult)parametros.Execute();
+            Mapper.CreateMap<ListarGuiaRemisionDetalleDto, GuiaRemisionDetalleModel>();
+            return Mapper.Map<IEnumerable<ListarGuiaRemisionDetalleDto>, IEnumerable<GuiaRemisionDetalleModel>>(resultado.Hits);
+        }
         public int InsertarActualizarProgramacion(ProgramacionModel modProgramacion)
         {
             Mapper.CreateMap<ProgramacionModel, InsertarActualizarProgramacionCommand>();
@@ -93,6 +103,14 @@ namespace Web.Smartway.DataAccess.Mantenimiento
 
             var result = (InsertarActualizarGuiaRemisionOutput)command.Execute();
             return result.idguiaremision;
+        }
+        public long InsertarActualizarGuiaRemisionDetalle(GuiaRemisionDetalleModel modGuiaRemision)
+        {
+            Mapper.CreateMap<GuiaRemisionDetalleModel, InsertarActualizarGuiaRemisionDetalleCommand>();
+            var command = Mapper.Map<GuiaRemisionDetalleModel, InsertarActualizarGuiaRemisionDetalleCommand>(modGuiaRemision);
+
+            var result = (InsertarActualizarGuiaRemisionDetalleOutput)command.Execute();
+            return result.idguiadetalle;
         }
 
         public long InsertarOrdenSalida (OrdenSalidaModel model)

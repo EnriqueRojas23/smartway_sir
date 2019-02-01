@@ -1805,7 +1805,14 @@ div.dt-button-info {
   border-bottom: 1px solid #ddd; }
 
 .ui-jqgrid tr.jqgrow td {
-  padding: 4px; }
+    word-wrap: break-word; /* IE 5.5+ and CSS3 */
+    white-space: pre-wrap; /* CSS3 */
+    overflow: hidden;
+    height: auto;
+    vertical-align: middle;
+    padding-top: 3px;
+    padding-bottom: 3px
+}
 
 .ui-jqdialog .ui-jqdialog-titlebar {
   padding: 10px 10px; }

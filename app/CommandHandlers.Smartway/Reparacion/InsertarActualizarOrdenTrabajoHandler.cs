@@ -53,6 +53,15 @@ namespace CommandHandlers.Smartway.Reparacion
                     dominio.bounce = command.bounce;
                     dominio.descripcion = command.descripcion;
                     dominio.informetecnico = command.informetecnico;
+                    
+                    break;
+                case 3: // QC
+                    dominio.idestado = command.idestado;
+                    dominio.bounce = command.bounce;
+                    dominio.idtecnicoqc = command.idtecnicoqc;
+                    break;
+                case 5: // QC
+                    dominio.idtecnicoqc = command.idtecnicoqc;
                     break;
                 default:
                     break;

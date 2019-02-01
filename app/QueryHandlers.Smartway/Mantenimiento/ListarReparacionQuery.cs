@@ -11,7 +11,6 @@ namespace QueryHandlers.Smartway.Mantenimiento
 {
     public class ListarReparacionQuery : IQueryHandler<ListarReparacionParameters>
     {
-
         public QueryResult Handle(ListarReparacionParameters parameters)
         {
             using (var connection = ConnectionFactory.CreateFromUserSession())

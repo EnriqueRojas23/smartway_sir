@@ -102,9 +102,7 @@ function reload(){
     let fechahorainicio = $("#fechahorainicio").val();
     let fechahorafin = $("#fechahorafin").val();
     let numeroordenservicio = $("#numeroordenservicio").val();
-
-    debugger;    
-
+    
     var vdataurl = $grilla.data("dataurl") + 
       "?fechahorainicio=" + fechahorainicio 
      + "&fechahorafin=" + fechahorafin 

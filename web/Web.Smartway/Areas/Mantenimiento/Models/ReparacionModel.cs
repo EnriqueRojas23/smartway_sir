@@ -19,6 +19,8 @@ namespace Web.Smartway.Areas.Mantenimiento.Models
         public string categoriareparacion { get; set; }
         public string tiporeparacion { get; set; }
         public string nivelreparacion { get; set; }
+        public string nivelreparacionPOS { get; set; }
+        public string nivelreparacionTELECOM { get; set; }
         public string fabricante { get; set; }
         public string tipoproducto { get; set; }
     }

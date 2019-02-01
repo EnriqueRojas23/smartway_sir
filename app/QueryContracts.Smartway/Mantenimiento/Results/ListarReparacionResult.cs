@@ -15,6 +15,8 @@ namespace QueryContracts.Smartway.Mantenimiento.Results
         public string categoriareparacion { get; set; }
         public string tiporeparacion { get; set; }
         public int idnivelreparacion { get; set; }
+        public string nivelreparacionPOS { get; set; }
+        public string nivelreparacionTELECOM { get; set; }
         public bool activo { get; set; }
         public string nivelreparacion { get; set; }
         public string fabricante { get; set; }

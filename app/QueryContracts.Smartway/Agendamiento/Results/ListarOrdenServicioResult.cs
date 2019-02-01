@@ -27,7 +27,11 @@ namespace QueryContracts.Smartway.Agendamiento.Results
 
         public string estado { get; set; }
 
+        public string serie { get; set; }
+        public string imei { get; set; }
 
+        public string accesorios { get; set; }
+        public string modelo { get; set; }
 
     }
 }

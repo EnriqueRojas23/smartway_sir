@@ -44,94 +44,120 @@
         </ol>
     </div>
 </div>
-
-<div class="row ">
-    <div class="col-lg-12">
-        <div class="ibox float-e-margins">
-            <div class="ibox-title">
-                <h5><i class="fa fa-info-circle"></i>  Filtro de búsqueda</h5>
-                <div class="ibox-tools">
-                    <a class="collapse-link">
-                        <i class="fa fa-chevron-up"></i>
-                    </a>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row ">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5><i class="fa fa-info-circle"></i>  Filtro de búsqueda</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                    </div>
                 </div>
+                <div class="ibox-content">
+                    <div class="form-horizontal">
+                        <div class="form-group">
+                            <label class="control-label col-md-1">Origen:</label>
+                            <div class="col-md-3">
+                                @Html.DropDownListFor(m => m.search_idsucursalorigen, (SelectList)ViewData["listasucursal"], "--Todos--", new { @class = "form-control input-sm", @required = "true" })
+                            </div>
+                            <label class="control-label col-md-1">Destino:</label>
+                            <div class="col-md-3">
+                                @Html.DropDownListFor(m => m.search_idsucursaldestino, (SelectList)ViewData["listasucursal"], "--Todos--", new { @class = "form-control input-sm", @required = "true" })
+                            </div>
+                            @*<label class="col-md-1 control-label"> Estado  :</label>
+                                <div class="col-md-2">
+                                    @Html.DropDownListFor(x => x.idestado, (SelectList)ViewData["listadoestado"], "--Todos--", new { @class = "form-control" })
+                                </div>*@
+                        </div>
+                        <div class="form-group">
+
+                            <label class="col-md-1 control-label">Fecha Inicio:</label>
+                            <div class="col-md-2" id="data_1">
+                                <div class="input-group date" id='dtpFechInicio'>
+                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                    @Html.TextBoxFor(model => model.fechainicio, "{0:dd/MM/yyyy}", new { @class = "form-control" })
+                                </div>
+                            </div>
+                            <label class="col-md-2  control-label">Fecha Fin:</label>
+                            <div class="col-md-2" id="data_2">
+                                <div class="input-group date" id='dtpFechFin'>
+                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                    @Html.TextBoxFor(model => model.fechafin, "{0:dd/MM/yyyy}", new { @class = "form-control" })
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-2 col-md-offset-9">
+                                <button type="button" id='btnBuscar' class="btn  btn-line btn-block btn-sm btn-primary"><i class="fa fa-search"></i> Buscar </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div class="ibox-content">
-                <div class="form-horizontal">
-                    <div class="form-group">
-                        <label class="control-label col-md-1">Origen:</label>
-                        <div class="col-md-3">
-                            @Html.DropDownListFor(m => m.search_idsucursalorigen, (SelectList)ViewData["listasucursal"], "--Todos--", new { @class = "form-control input-sm", @required = "true" })
-                        </div>
-                        <label class="control-label col-md-1">Destino:</label>
-                        <div class="col-md-3">
-                            @Html.DropDownListFor(m => m.search_idsucursaldestino, (SelectList)ViewData["listasucursal"], "--Todos--", new { @class = "form-control input-sm", @required = "true" })
-                        </div>
-                        @*<label class="col-md-1 control-label"> Estado  :</label>
+        </div>
+    </div>
+
+
+    <div class="row ">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5><i class="fa fa-info-circle"></i>  Listado de Despachos Programados</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div class="form-horizontal">
+                        <div class="form-group">
                             <div class="col-md-2">
-                                @Html.DropDownListFor(x => x.idestado, (SelectList)ViewData["listadoestado"], "--Todos--", new { @class = "form-control" })
-                            </div>*@
-                    </div>
-                    <div class="form-group">
-
-                        <label class="col-md-1 control-label">Fecha Inicio:</label>
-                        <div class="col-md-2" id="data_1">
-                            <div class="input-group date" id='dtpFechInicio'>
-                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                                @Html.TextBoxFor(model => model.fechainicio, "{0:dd/MM/yyyy}", new { @class = "form-control" })
+                                <button type="button" id='btnNuevo' class="btn  btn-line btn-block btn-sm btn-primary"><i class="fa fa-plus"></i> Nueva Guía </button>
                             </div>
                         </div>
-                        <label class="col-md-2  control-label">Fecha Fin:</label>
-                        <div class="col-md-2" id="data_2">
-                            <div class="input-group date" id='dtpFechFin'>
-                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                                @Html.TextBoxFor(model => model.fechafin, "{0:dd/MM/yyyy}", new { @class = "form-control" })
+                        <div class="form-group">
+                            <div class="jqGrid_wrapper col-md-12">
+                                <table id="gridguias"
+                                       data-dataurl="@Url.Action("JsonGetListarGuias", "Guias")"></table>
+                                <div id="gridguiaspager"></div>
                             </div>
-                        </div>
-
-                    </div>
-                    <div class="form-group">
-                        <div class="col-md-2 col-md-offset-9">
-                            <button type="button" id='btnBuscar' class="btn  btn-line btn-block btn-sm btn-primary"><i class="fa fa-search"></i> Buscar </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-
-<div class="row ">
-    <div class="col-lg-12">
-        <div class="ibox float-e-margins">
-            <div class="ibox-title">
-                <h5><i class="fa fa-info-circle"></i>  Listado de Despachos Programados</h5>
-                <div class="ibox-tools">
-                    <a class="collapse-link">
-                        <i class="fa fa-chevron-up"></i>
-
-                    </a>
-                </div>
-            </div>
-            <div class="ibox-content">
-                <div class="form-horizontal">
-                    <div class="form-group">
-                        <div class="col-md-2">
-                            <button type="button" id='btnNuevo' class="btn  btn-line btn-block btn-sm btn-primary"><i class="fa fa-plus"></i> Nueva Guía </button>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="jqGrid_wrapper col-md-12">
-                            <table id="gridguias"
-                                   data-dataurl="@Url.Action("JsonGetListarGuias", "Guias")"></table>
-                            <div id="gridguiaspager"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5><i class="fa fa-info-circle"></i>  Recepciones Detalle</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div class="form-horizontal">
+                        <div class="form-group">
+                            <div class="jqGrid_wrapper col-md-12">
+                                <table id="griddetalle"
+                                       data-dataurl="@Url.Action("JsonGetListarGuiaDetalles", "Guias")"></table>
+                                <div id="gridetallepager"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

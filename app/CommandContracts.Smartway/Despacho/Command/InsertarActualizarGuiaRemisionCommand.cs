@@ -24,6 +24,8 @@ namespace CommandContracts.Smartway.Despacho
         public int idcliente { get; set; }
         public string direccionorigen { get; set; }
         public string direcciondestino { get; set; }
+        public int iddestinatario { get; set; }
+        public int idtransportista { get; set; }
 
     }
 }

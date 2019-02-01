@@ -199,6 +199,17 @@ namespace Web.Smartway.Areas.Agendamiento.Controllers
 
             return Json(new { res = true });
         }
+        [HttpPost]
+        public JsonResult obtenerOrdenServicio(string numeroordenservicio)
+        {
+            string fechainicio = null;
+            string fechafin = null;
+
+            var jsonObject = new OrdenServicioData().listarOrdenServicio(null, null, fechainicio, fechafin, numeroordenservicio).FirstOrDefault();
+            jsonObject.producto = jsonObject.producto + " " + jsonObject.modelo + " - Serie [" + jsonObject.serie + "]  IMEI [" + jsonObject.imei + "] Accesorios:  [" + jsonObject.accesorios+ "]";
+            return Json(new { jsonObject , res = true });
+        }
+
 
         [HttpPost]
         public JsonResult AprobarDesaprobarCotizacion(long idcotizacion , string estado, long idordenservicio)

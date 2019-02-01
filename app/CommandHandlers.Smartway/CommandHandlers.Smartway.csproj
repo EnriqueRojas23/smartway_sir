@@ -48,6 +48,7 @@
     <Compile Include="Agendamiento\InsertarIncidenciaEvaluacionHandler.cs" />
     <Compile Include="Agendamiento\InsertarActualizarLibroReclamacionesHandler.cs" />
     <Compile Include="Agendamiento\InsertarActualizarIncidenciaHandler.cs" />
+    <Compile Include="Despacho\InsertarActualizarGuiaRemisionDetalleHandler.cs" />
     <Compile Include="Despacho\InsertarOrdenSalidaDetalleHandler.cs" />
     <Compile Include="Despacho\InsertarOrdenSalidaHandler.cs" />
     <Compile Include="Despacho\InsertarActualizarGuiaRemisionHandler.cs" />

@@ -530,16 +530,30 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
             TrabajoDetalleModel.__idoperacion = 1;
             TrabajoDetalleModel.servicio = false;
             TrabajoDetalleModel.idinventario = existerepuesto.idinventario;
+            var nivelreparacion = "";
+            if (modOrdenServicio.idtipoproducto != (int)Constantes.TipoProducto.CELULAR)
+            {
+                nivelreparacion = modReparacion.nivelreparacionPOS;
+                TrabajoDetalleModel.idnivelreparacion = nivelreparacion;
+            }
+            else
+            {
+                nivelreparacion = modReparacion.nivelreparacionTELECOM;
+                TrabajoDetalleModel.idnivelreparacion = nivelreparacion;
+            }
+
+
             var asociado = new ReparacionesData().InsertarActualizarOrdenTrabajoDetalle(TrabajoDetalleModel);
 
 
 
-            if (modTarifa != null)
+            if (modReparacion != null)
             {
-
                 TrabajoDetalleModel = new OrdenTrabajoDetalleModel();
+                if (modTarifa != null)
+                    TrabajoDetalleModel.costo = modTarifa.costo.Value;
+               
                 TrabajoDetalleModel.activo = true;
-                TrabajoDetalleModel.costo = modTarifa.costo.Value;
                 TrabajoDetalleModel.diagnostico = diagnostico.descripcion;
                 TrabajoDetalleModel.reparacion = modReparacion.nivelreparacion;
                 TrabajoDetalleModel.repuesto = "";
@@ -551,6 +565,7 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
                 TrabajoDetalleModel.servicio = true;
                 TrabajoDetalleModel.idservicioasociado = asociado;
                 TrabajoDetalleModel.__idoperacion = 1;
+                TrabajoDetalleModel.idnivelreparacion = nivelreparacion;
                 new ReparacionesData().InsertarActualizarOrdenTrabajoDetalle(TrabajoDetalleModel);
 
             }
@@ -1009,15 +1024,21 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
                         modOrdenServicio.idestado = (Int32)Constantes.EstadoOrdenServicio.PendienteEntregaCliente;
 
                     modInventario.idestado = (int)Constantes.Producto.Reparado;
-                    modInventario.__idoperacion = 4;
+                    modInventario.__idoperacion = 5;
                     new InventarioData().InsertarActualizarInventario(modInventario);
+
+            
+                    modOrdenTrabajo.idtecnicoqc = Usuario.Idusuario;
+                    modOrdenTrabajo.__tipooperacion = 3;
+                    new ReparacionesData().InsertarActualizarOrdenTrabajo(modOrdenTrabajo);
                 }
                 else
                 {
                     modOrdenServicio.idestado = (Int32)Constantes.EstadoOrdenServicio.PendienteInicioReparacion;
                     modOrdenTrabajo.idestado = (Int32)Constantes.EstadoOrdenTrabajo.Reasignada;
                     modOrdenTrabajo.bounce = modOrdenTrabajo.bounce + 1;
-                    modOrdenTrabajo.__tipooperacion = 2;
+                    modOrdenTrabajo.idtecnicoqc = Usuario.Idusuario;
+                    modOrdenTrabajo.__tipooperacion = 3;
                     new ReparacionesData().InsertarActualizarOrdenTrabajo(modOrdenTrabajo);
                 }
             }
@@ -1041,13 +1062,18 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
                     modInventario.idestado = (int)Constantes.Producto.Reparado;
                     modInventario.__idoperacion = 4;
                     new InventarioData().InsertarActualizarInventario(modInventario);
+
+                    modOrdenTrabajo.idtecnicoqc = Usuario.Idusuario;
+                    modOrdenTrabajo.__tipooperacion = 5;
+                    new ReparacionesData().InsertarActualizarOrdenTrabajo(modOrdenTrabajo);
                 }
                 else
                 {
                     modOrdenServicio.idestado = (Int32)Constantes.EstadoOrdenServicio.PendienteInicioReparacion;
                     modOrdenTrabajo.idestado = (Int32)Constantes.EstadoOrdenTrabajo.Reasignada;
                     modOrdenTrabajo.bounce = modOrdenTrabajo.bounce + 1;
-                    modOrdenTrabajo.__tipooperacion = 2;
+                    modOrdenTrabajo.idtecnicoqc = Usuario.Idusuario;
+                    modOrdenTrabajo.__tipooperacion = 3;
                     new ReparacionesData().InsertarActualizarOrdenTrabajo(modOrdenTrabajo);
                 }
             }

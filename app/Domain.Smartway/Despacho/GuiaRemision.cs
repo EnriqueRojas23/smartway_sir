@@ -21,5 +21,7 @@ namespace Domain.Smartway.Despacho
         public DateTime fechaguiaremision { get; set; }
         public string direccionorigen { get; set; }
         public string direcciondestino { get; set; }
+        public int iddestinatario { get; set; }
+        public int idtransportista { get; set; }
     }
 }

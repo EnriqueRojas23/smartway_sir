@@ -12,7 +12,7 @@ namespace Web.Smartway.Areas.Reparacion.Models
         public long? idordentrabajo { get; set; }
         public string numeroordentrabajo { get; set; }
         public int idtecnico { get; set; }
-        //public long idordenserviciotecnico { get; set; }
+        public int idtecnicoqc { get; set; }
         public long idordentrabajotiempo { get; set; }
         public long incidencia { get; set; }
         public int bounce { get; set; }
@@ -78,6 +78,7 @@ namespace Web.Smartway.Areas.Reparacion.Models
         public bool servicio { get; set; }
         public long? idservicioasociado { get; set; }
         public long? idinventario { get; set; }
+        public String idnivelreparacion { get; set; }
         public int __idoperacion { get; set; }
 
     }

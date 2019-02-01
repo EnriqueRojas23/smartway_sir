@@ -55,6 +55,7 @@ namespace CommandHandlers.Smartway.Reparacion
                     dominio.servicio = command.servicio;
                     dominio.idservicioasociado = command.idservicioasociado;
                     dominio.idinventario = command.idinventario;
+                    dominio.idnivelreparacion = command.idnivelreparacion;
                     break;
                 case 2:
                     dominio.activo = command.activo;

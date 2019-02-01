@@ -23,7 +23,7 @@ namespace Web.Smartway.Areas.Despacho.Models
         public string direccionorigen { get; set; }
         public string direcciondestino { get; set; }
         public string numeroguia { get; set; }
-        public int idcliente { get; set; }
+        public int iddestinatario { get; set; }
 
         public int? idprogramacion { get; set; }
         public string numero { get; set; }

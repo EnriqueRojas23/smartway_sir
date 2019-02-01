@@ -31,14 +31,6 @@ namespace CommandHandlers.Smartway
             else
                dominio = new GuiaRemision();
 
-
-
-
-
-
-
-
-
             switch (command.__tipooperacion)
             {
                 case 1:
@@ -54,9 +46,9 @@ namespace CommandHandlers.Smartway
                     dominio.fechaguiaremision = command.fechaguiaremision;
                     dominio.direcciondestino = command.direcciondestino;
                     dominio.direccionorigen = command.direccionorigen;
+                    dominio.iddestinatario = command.iddestinatario;
+                    dominio.idtransportista = command.idtransportista;
                     break;
-
-
                 case 2:
                     dominio.idestado = command.idestado;
                     break;

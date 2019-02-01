@@ -12,6 +12,7 @@ namespace Domain.Smartway.Reparacion
         public long idordentrabajo { get; set; }
         public string numeroordentrabajo { get; set; }
         public int idtecnico { get; set; }
+        public int idtecnicoqc { get; set; }
         public long idordenserviciotecnico { get; set; }
         public bool incidencia { get; set; }
         public int bounce { get; set; }

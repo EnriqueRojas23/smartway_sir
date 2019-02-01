@@ -8,8 +8,8 @@
 {
     <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title">Programar Recojo de Guías</h4>
-        <small class="font-bold">Digitar el número de documento para buscarlo en la base de datos de Ventas.</small>
+        <h4 class="modal-title">Agregar cabecera de Guía</h4>
+        <small class="font-bold">Ingresar todos los datos requeridos</small>
     </div>
     <div class="modal-body">
         <div class="row">
@@ -34,7 +34,7 @@
                 <div class="form-group">
                     <div class="col-md-5">
                         <label class="control-label">Destinatario:</label>
-                        @Html.DropDownListFor(model => model.idcliente, (SelectList)ViewData["ListadoClientes"], "-- Seleccionar --", new { @class = "chosen-select form-control", @required = "true" })
+                        @Html.DropDownListFor(model => model.iddestinatario, (SelectList)ViewData["ListadoClientes"], "-- Seleccionar --", new { @class = "chosen-select form-control", @required = "true" })
 
                     </div>
                     <div class="col-md-5">

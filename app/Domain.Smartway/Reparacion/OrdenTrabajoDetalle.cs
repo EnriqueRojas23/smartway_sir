@@ -19,6 +19,7 @@ namespace Domain.Smartway.Reparacion
         public bool servicio { get; set; }
         public long? idservicioasociado { get; set; }
         public bool activo { get; set; }
+        public string idnivelreparacion { get; set; }
         public long? idinventario { get; set; }
 
     }

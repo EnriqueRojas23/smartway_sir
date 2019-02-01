@@ -19,6 +19,7 @@
         public string direcciondestino { get; set; }
         public string descripcion { get; set; }
         public DateTime fechaguiaremision { get; set; }
+        public string destinatario { get; set; }
     }
 
 }

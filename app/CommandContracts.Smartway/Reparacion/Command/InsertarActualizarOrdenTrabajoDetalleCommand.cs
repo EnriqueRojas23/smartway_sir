@@ -18,6 +18,7 @@ namespace CommandContracts.Smartway.Reparacion
         public bool servicio { get; set; }
         public long? idservicioasociado { get; set; }
         public long? idinventario { get; set; }
+        public string idnivelreparacion { get; set; }
         public int __idoperacion { get; set; }
 
     }
