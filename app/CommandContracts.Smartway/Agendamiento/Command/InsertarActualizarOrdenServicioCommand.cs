@@ -20,9 +20,15 @@ namespace CommandContracts.Smartway.Agendamiento
         public int? iddocumentosalida { get; set; }
         public long? iddocumentorecepcion { get; set; }
         public DateTime? fechahorapruebacambio { get; set; }
+
+        public DateTime? fecharecepcion { get; set; }
+        public DateTime? fechadocumento { get; set; }
+
+
         public int? idusuarioapruebacambio { get; set; }
         public bool activo { get; set; }
         public bool engarantia { get; set; }
+        public int idtipogarantia { get; set; }
         public bool cotizado { get; set; }
         public int idproducto { get; set; }
         public int __tipooperacion { get; set; }

@@ -23,6 +23,8 @@ namespace Web.Smartway.Areas.Agendamiento.Models
         public int iddocumentosalida { get; set; }
         public long iddocumentorecepcion { get; set; }
         public DateTime? fechahorapruebacambio { get; set; }
+        public DateTime? fechadocumento { get; set; }
+        public DateTime? fecharecepcion { get; set; }
         public int? idusuarioapruebacambio { get; set; }
         public long? idordentrabajo { get; set; }
         public string numeroot { get; set; }
@@ -48,7 +50,7 @@ namespace Web.Smartway.Areas.Agendamiento.Models
         public string imei_escaneado { get; set; }
         public bool imei_coincide { get; set; }
         public bool documento_coincide { get; set; }
-        public string fecharecepcion { get; set; }
+        
         public bool recepciondestino { get; set; }
         public bool requiereimei { get; set; }
         public bool recepcionalmacen { get; set; }
@@ -59,6 +61,7 @@ namespace Web.Smartway.Areas.Agendamiento.Models
         public DateTime? fechahorainicio { get; set; }
         public DateTime? fechahorafin { get; set; }
         public bool engarantia { get; set; }
+        public int idtipogarantia { get; set; }
         public bool? cotizado { get; set; }
 
 

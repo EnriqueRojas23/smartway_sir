@@ -21,6 +21,7 @@ namespace Domain.Smartway.Reparacion
         public bool activo { get; set; }
         public string idnivelreparacion { get; set; }
         public long? idinventario { get; set; }
+        public DateTime fecharegistro { get; set; }
 
     }
 }

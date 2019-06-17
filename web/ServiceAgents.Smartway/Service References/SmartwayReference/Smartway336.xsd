@@ -278,6 +278,8 @@
       <xs:element minOccurs="0" name="idnivelreparacion" type="xs:int" />
       <xs:element minOccurs="0" name="idreparacion" type="xs:int" />
       <xs:element minOccurs="0" name="nivelreparacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nivelreparacionPOS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nivelreparacionTELECOM" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="tipoproducto" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="tiporeparacion" nillable="true" type="xs:string" />
     </xs:sequence>

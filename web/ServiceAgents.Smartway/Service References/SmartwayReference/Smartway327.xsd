@@ -1,9 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CommandContracts.Smartway.Despacho.Output" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CommandContracts.Smartway.Despacho.Output" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation="http://localhost:50020/Smartway3?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CommandContracts.Common" />
-  <xs:complexType name="InsertarOrdenSalidaDetalleOutput">
+  <xs:complexType name="EliminarDetalleGuiaOutput">
     <xs:complexContent mixed="false">
       <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q1:CommandResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="idguiadetalle" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EliminarDetalleGuiaOutput" nillable="true" type="tns:EliminarDetalleGuiaOutput" />
+  <xs:complexType name="InsertarActualizarGuiaRemisionDetalleOutput">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q2:CommandResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="idguiadetalle" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertarActualizarGuiaRemisionDetalleOutput" nillable="true" type="tns:InsertarActualizarGuiaRemisionDetalleOutput" />
+  <xs:complexType name="InsertarOrdenSalidaDetalleOutput">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q3:CommandResult">
         <xs:sequence>
           <xs:element minOccurs="0" name="idordensalidadetalle" type="xs:long" />
         </xs:sequence>
@@ -13,7 +33,7 @@
   <xs:element name="InsertarOrdenSalidaDetalleOutput" nillable="true" type="tns:InsertarOrdenSalidaDetalleOutput" />
   <xs:complexType name="InsertarOrdenSalidaOutput">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q2:CommandResult">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q4:CommandResult">
         <xs:sequence>
           <xs:element minOccurs="0" name="iddocumentosalida" type="xs:long" />
         </xs:sequence>
@@ -23,7 +43,7 @@
   <xs:element name="InsertarOrdenSalidaOutput" nillable="true" type="tns:InsertarOrdenSalidaOutput" />
   <xs:complexType name="InsertarActualizarGuiaRemisionOutput">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q3:CommandResult">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q5:CommandResult">
         <xs:sequence>
           <xs:element minOccurs="0" name="idguiaremision" type="xs:long" />
         </xs:sequence>
@@ -33,7 +53,7 @@
   <xs:element name="InsertarActualizarGuiaRemisionOutput" nillable="true" type="tns:InsertarActualizarGuiaRemisionOutput" />
   <xs:complexType name="InsertarActualizarProgramacionDetalleOutput">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q4:CommandResult">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q6:CommandResult">
         <xs:sequence>
           <xs:element minOccurs="0" name="idprogramaciondetalle" type="xs:int" />
         </xs:sequence>
@@ -43,7 +63,7 @@
   <xs:element name="InsertarActualizarProgramacionDetalleOutput" nillable="true" type="tns:InsertarActualizarProgramacionDetalleOutput" />
   <xs:complexType name="InsertarActualizarProgramacionOutput">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q5:CommandResult">
+      <xs:extension xmlns:q7="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q7:CommandResult">
         <xs:sequence>
           <xs:element minOccurs="0" name="idprogramacion" type="xs:int" />
         </xs:sequence>

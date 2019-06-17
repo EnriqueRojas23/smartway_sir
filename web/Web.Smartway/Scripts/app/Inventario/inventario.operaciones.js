@@ -54,7 +54,10 @@ function inicio(){
     });
 }
 function configurarBotones(){
-   
+    $('#btnExportar').click(function () {
+        imprimir();
+
+    })
    $btnBuscar.click(function(event) {
        event.preventDefault();
 
@@ -376,10 +379,39 @@ function OnCompleteTransaction(xhr,status){
 
    }
    else {
-    swal("Error","Error al realizar la llamada","warning")
+       swal("Error", "Error al realizar la llamada", "warning");
 
    }
 
 
+
+}
+function imprimir() {
+
+
+
+    let idproducto = $("#idproducto").val();
+    let idalmacen = $("#idalmacen").val();
+    let serie = $("#serie").val();
+    let imei = $("#imei").val();
+
+    if (idalmacen === '') {
+        swal("Inventario", "No tiene elementos", "warning");
+        return;
+    }
+
+
+    var vdataurl = UrlHelper.Action("ExportarInventario", "Inventario", "Inventario") +
+        "?idproducto=" + idproducto
+        + "&idalmacen=" + idalmacen
+        + "&serie=" + serie
+        + "&imei=" + imei;
+
+  
+
+    //$grilla.jqGrid('setGridParam', { url: vdataurl }).trigger('reloadGrid');
+
+
+    $(window).attr("location", vdataurl);
 
 }

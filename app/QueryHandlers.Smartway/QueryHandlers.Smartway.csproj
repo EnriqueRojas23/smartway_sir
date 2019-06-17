@@ -59,6 +59,8 @@
     <Compile Include="Agendamiento\ObtenerIncidenciaQuery.cs" />
     <Compile Include="Agendamiento\ObtenerNumeroIncidenciaQuery.cs" />
     <Compile Include="Despacho\EntregarDespachoDeliveryQuery.cs" />
+    <Compile Include="Despacho\ListarGuiaRemisionDetalleQuery.cs" />
+    <Compile Include="Despacho\ListarOrdenSalidaDetalleQuery.cs" />
     <Compile Include="Despacho\ListarOrdenSalidaQuery.cs" />
     <Compile Include="Despacho\ObtenerGuiaRemisionQuery.cs" />
     <Compile Include="Despacho\ListarGuiaRemisionQuery.cs" />

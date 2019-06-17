@@ -122,8 +122,8 @@ D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Infraestructure.Common\b
 D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Infraestructure.Common\bin\Debug\StructureMap.pdb
 D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Infraestructure.Common\bin\Debug\StructureMap.xml
 D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Infraestructure.Common\bin\Debug\es\FluentValidation.resources.dll
+D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Infraestructure.Common\obj\Debug\Infraestructure.Common.csprojAssemblyReference.cache
 D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Infraestructure.Common\obj\Debug\Infraestructure.Common.csproj.CoreCompileInputs.cache
 D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Infraestructure.Common\obj\Debug\Infraestructure.Common.csproj.CopyComplete
 D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Infraestructure.Common\obj\Debug\Infraestructure.Common.dll
 D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Infraestructure.Common\obj\Debug\Infraestructure.Common.pdb
-D:\RIA\RIA\2019\Proyectos\Smartway\Smartway3\src\common\Infraestructure.Common\obj\Debug\Infraestructure.Common.csprojAssemblyReference.cache

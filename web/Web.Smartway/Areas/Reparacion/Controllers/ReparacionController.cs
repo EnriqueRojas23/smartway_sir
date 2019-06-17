@@ -47,16 +47,28 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
 
             return View();
         }
-        public ActionResult RepararOrden(long id)
+        public ActionResult RepararOrden(long id, string Sup="0")
         {
             Session["ReparacionDetalle"] = null;
             IncidenciaModel modIncidencia = null;
+            OrdenTrabajoModel modOrdentrabajo = new OrdenTrabajoModel();
+            OrdenServicioModel modOrdenServicio = new OrdenServicioModel();
 
-            var modOrdentrabajo = new ReparacionesData().obtenerOrdenTrabajo(id);
+            ViewBag.Sup = Sup;
+
+            if (Sup == "1")
+            {
+                modOrdenServicio = new OrdenServicioData().obtenerOrdenServicio(id);
+                modOrdentrabajo = new ReparacionesData().obtenerOrdenTrabajo(modOrdenServicio.idordentrabajo.Value);
+            }
+            else
+            {
+                modOrdentrabajo = new ReparacionesData().obtenerOrdenTrabajo(id);
+                modOrdenServicio = new OrdenServicioData().obtenerOrdenServicio(modOrdentrabajo.idordenserviciotecnico.Value);
+            }
 
 
-            var modOrdenServicio = new OrdenServicioData().obtenerOrdenServicio(modOrdentrabajo.idordenserviciotecnico.Value);
-            var modListadoTiempo = new ReparacionesData().GetListarOrdenTrabajoTiempo(id).ToList();
+            var modListadoTiempo = new ReparacionesData().GetListarOrdenTrabajoTiempo(modOrdentrabajo.idordentrabajo.Value).ToList();
 
             modOrdentrabajo.inicios = new List<DateTime?>();
             modOrdentrabajo.fines = new List<DateTime?>();
@@ -151,7 +163,9 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
            
             modOrdentrabajo.numeroordentrabajo = modOrdenServicio.numeroost;
 
+            if(modOrdenServicio.fechahorainicio != null)
             modOrdentrabajo.tiempotranscurrido = DateTime.Now - modOrdenServicio.fechahorainicio.Value;
+            if(modListadoTiempo.Count > 0 )
             modOrdentrabajo.tiempotrabajo = modListadoTiempo.FirstOrDefault().fechahorainicio.Value;
 
             modOrdentrabajo.tecnico = modOrdenServicio.tecnicoAsignado;
@@ -262,6 +276,7 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
             var resjson1 = (new JqGridExtension<OrdenServicioModel>()).DataBind(listadofinal, listadofinal.Count);
             return resjson1;
         }
+       
         public PartialViewResult AsignarTecnicoModal(int id)
         {
             var modOrdenServicio = new OrdenServicioModel();
@@ -286,10 +301,23 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
         {
             var modOrdenServicio = new OrdenServicioData().obtenerOrdenServicio(id);
 
-            if(modOrdenServicio.engarantia)
+
+            if (modOrdenServicio.idtipoproducto == (int)Constantes.TipoProducto.POS)
+            {
                 modOrdenServicio.idestado = (Int32)Constantes.EstadoOrdenServicio.PendienteInicioReparacion;
+            }
             else
-                modOrdenServicio.idestado = (Int32)Constantes.EstadoOrdenServicio.PendienteCotizacion;
+            {
+                if (modOrdenServicio.engarantia)
+                    modOrdenServicio.idestado = (Int32)Constantes.EstadoOrdenServicio.PendienteInicioReparacion;
+                else
+                    modOrdenServicio.idestado = (Int32)Constantes.EstadoOrdenServicio.PendienteCotizacion;
+            }
+
+
+
+
+
             //modOrdenServicio.idtecnico = idtecnico;
             modOrdenServicio.__tipooperacion = 2; //asignar Tecnico
             new OrdenServicioData().InsertarActualizarOrdenServicio(modOrdenServicio);
@@ -310,6 +338,7 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
 
             return Json(new { res = true });
         }
+    
 
 
         [HttpPost]
@@ -845,26 +874,37 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
             var modOrdenTrabajo = new ReparacionesData().obtenerOrdenTrabajo(id);
             var modOrdenServicio = new OrdenServicioData().obtenerOrdenServicio(modOrdenTrabajo.idordenserviciotecnico.Value);
 
-            if(!modOrdenServicio.engarantia)
+            if (modOrdenServicio.idtipoproducto == (int)Constantes.TipoProducto.POS)
             {
-                if (modOrdenServicio.cotizado.HasValue)
-                {
-                    if (modOrdenServicio.cotizado.Value)
-                    {
-                        modOrdenTrabajo.idestado = (Int32)Constantes.EstadoOrdenTrabajo.EnAtencion;
-                        modOrdenServicio.idestado = (Int32)Constantes.EstadoOrdenServicio.PendienteInicioReparacion;
-                    }
-                    else
-                    {
-                        modOrdenTrabajo.idestado = (Int32)Constantes.EstadoOrdenTrabajo.EnCotizacion;
-                        modOrdenServicio.idestado = (Int32)Constantes.EstadoOrdenServicio.PendienteCotizacion; // Continúa en el mismo estado
-                    }
-                }
+
+
+                modOrdenTrabajo.idestado = (Int32)Constantes.EstadoOrdenTrabajo.EnAtencion;
+                modOrdenServicio.idestado = (Int32)Constantes.EstadoOrdenServicio.EnProcesoReparacion;
             }
             else
             {
-                modOrdenTrabajo.idestado = (Int32)Constantes.EstadoOrdenTrabajo.EnAtencion;
-                modOrdenServicio.idestado = (Int32)Constantes.EstadoOrdenServicio.EnProcesoReparacion;
+
+                if (!modOrdenServicio.engarantia)
+                {
+                    if (modOrdenServicio.cotizado.HasValue)
+                    {
+                        if (modOrdenServicio.cotizado.Value)
+                        {
+                            modOrdenTrabajo.idestado = (Int32)Constantes.EstadoOrdenTrabajo.EnAtencion;
+                            modOrdenServicio.idestado = (Int32)Constantes.EstadoOrdenServicio.PendienteInicioReparacion;
+                        }
+                        else
+                        {
+                            modOrdenTrabajo.idestado = (Int32)Constantes.EstadoOrdenTrabajo.EnCotizacion;
+                            modOrdenServicio.idestado = (Int32)Constantes.EstadoOrdenServicio.PendienteCotizacion; // Continúa en el mismo estado
+                        }
+                    }
+                }
+                else
+                {
+                    modOrdenTrabajo.idestado = (Int32)Constantes.EstadoOrdenTrabajo.EnAtencion;
+                    modOrdenServicio.idestado = (Int32)Constantes.EstadoOrdenServicio.EnProcesoReparacion;
+                }
             }
 
 
@@ -874,21 +914,34 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
             modOrdenTrabajo.__tipooperacion = 2;
             new ReparacionesData().InsertarActualizarOrdenTrabajo(modOrdenTrabajo);
 
-            if (!modOrdenServicio.engarantia)
+            if (modOrdenServicio.idtipoproducto != (int)Constantes.TipoProducto.POS)
             {
-                if (modOrdenServicio.cotizado.HasValue)
+                if (!modOrdenServicio.engarantia)
                 {
-                    if (modOrdenServicio.cotizado.Value)
+                    if (modOrdenServicio.cotizado.HasValue)
                     {
-                        var model = new OrdenTrabajoTiempoModel();
-                        model.idordentrabajo = id;
-                        model.idusuario = Usuario.Idusuario;
-                        model.fechahorainicio = DateTime.Now;
-                        model.iteracion = modOrdenTrabajo.bounce;
-                        model.__tipoperacion = 1;
-                        long idottiempo = new ReparacionesData().insertarIniciarReparacion(model);
+                        if (modOrdenServicio.cotizado.Value)
+                        {
+                            var model = new OrdenTrabajoTiempoModel();
+                            model.idordentrabajo = id;
+                            model.idusuario = Usuario.Idusuario;
+                            model.fechahorainicio = DateTime.Now;
+                            model.iteracion = modOrdenTrabajo.bounce;
+                            model.__tipoperacion = 1;
+                            long idottiempo = new ReparacionesData().insertarIniciarReparacion(model);
+                        }
+
                     }
-                   
+                }
+                else
+                {
+                    var model = new OrdenTrabajoTiempoModel();
+                    model.idordentrabajo = id;
+                    model.idusuario = Usuario.Idusuario;
+                    model.fechahorainicio = DateTime.Now;
+                    model.iteracion = modOrdenTrabajo.bounce;
+                    model.__tipoperacion = 1;
+                    long idottiempo = new ReparacionesData().insertarIniciarReparacion(model);
                 }
             }
             else
@@ -902,12 +955,11 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
                 long idottiempo = new ReparacionesData().insertarIniciarReparacion(model);
             }
 
-
          
 
-            return Json(new { res = true, modOrdenServicio.cotizado, modOrdenServicio.engarantia });
+            return Json(new { res = true, modOrdenServicio.cotizado, modOrdenServicio.engarantia , modOrdenServicio.idtipoproducto });
         }
-
+      
 
         #region QC
         public PartialViewResult AprobarQCModal(long idordenservicio)

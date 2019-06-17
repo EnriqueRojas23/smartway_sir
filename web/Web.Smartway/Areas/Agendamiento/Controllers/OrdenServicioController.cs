@@ -68,7 +68,7 @@ namespace Web.Smartway.Areas.Agendamiento.Controllers
             var ordenServicio = new OrdenServicioData().obtenerOrdenServicio(idordenservicio);
 
 
-            //var ordentrabajo = new ReparacionesData().obtenerOrdenTrabajo(ordenServicio.idordentrabajo.Value);
+            var ordentrabajo = new ReparacionesData().obtenerOrdenTrabajo(ordenServicio.idordentrabajo.Value);
             var listadoactual = VentaData.listarCotizacionDetalle(idordenservicio).ToList();
 
 

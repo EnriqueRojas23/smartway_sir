@@ -33,7 +33,7 @@ namespace Web.Smartway.Areas.Agendamiento.Controllers
 
             
 
-            var listadoTotal = new DespachoData().GetListarOrdenSalida(2).ToList();
+            var listadoTotal = new DespachoData().GetListarOrdenSalida(null).ToList();
             var resjson1 = (new JqGridExtension<OrdenSalidaModel>()).DataBind(listadoTotal, listadoTotal.Count);
             return resjson1;
 
@@ -390,6 +390,7 @@ namespace Web.Smartway.Areas.Agendamiento.Controllers
                 item.idordensalida = model.iddocumentosalida.Value;
                 item.cantidad = 1;
                 item.idusuarioatencion = Usuario.Idusuario;
+                item.idproducto = model.idproducto;
 
                 new DespachoData().InsertarOrdenSalidaDetalle(item);
                 

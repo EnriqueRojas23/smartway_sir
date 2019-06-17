@@ -17,6 +17,7 @@ namespace QueryHandlers.Smartway.Facturacion
             {
                 var parametros = new DynamicParameters();
                 parametros.Add("iddocumentocompra", dbType: DbType.Int64, direction: ParameterDirection.Input, value: parameters.iddocumentocompra);
+                parametros.Add("serie", dbType: DbType.String, direction: ParameterDirection.Input, value: parameters.serie);
 
                 var resultado = new ListarDetalleComprobantesResult
                 {

@@ -12,6 +12,8 @@ namespace Domain.Smartway.Agendamiento
         public string numeroordenservicio { get; set; }
         public int idtipoordenservicio { get; set; }
         public DateTime fechahoraregistro { get; set; }
+        public DateTime? fechadocumento { get; set; }
+        public DateTime? fecharecepcion { get; set; }
         public int idusuario { get; set; }
         public int idcliente { get; set; }
         public long? idincidencia { get; set; }
@@ -22,6 +24,7 @@ namespace Domain.Smartway.Agendamiento
         public DateTime? fechahorapruebacambio { get; set; }
         public int? idusuarioapruebacambio { get; set; }
         public bool engarantia { get; set; }
+        public int? idtipogarantia { get; set; }
         public bool cotizado { get; set; }
         public bool activo { get; set; }
         public int idproducto { get; set; }

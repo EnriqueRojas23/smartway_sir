@@ -55,6 +55,7 @@
     <Compile Include="Mappings\Agendamiento\IncidenciaCotizacionConfiguration.cs" />
     <Compile Include="Mappings\Agendamiento\LibroReclamacionConfiguration.cs" />
     <Compile Include="Mappings\Agendamiento\IncidenciaConfiguration.cs" />
+    <Compile Include="Mappings\Despacho\GuiaRemisionDetalleConfiguration.cs" />
     <Compile Include="Mappings\Despacho\OrdenSalidaDetalleConfiguration.cs" />
     <Compile Include="Mappings\Despacho\OrdenSalidaConfiguration.cs" />
     <Compile Include="Mappings\Despacho\GuiaRemisionConfiguration.cs" />

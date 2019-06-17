@@ -237,7 +237,7 @@ namespace Web.Smartway.Areas.Agendamiento.Controllers
                             detalle.documento_coincide = true;
                             detalle.imei_coincide = true;
                             detalle.imei_escaneado = imei;
-                            detalle.fecharecepcion = DateTime.Now.ToShortDateString();
+                            detalle.fecharecepcion = DateTime.Now;
                             //detalle.mnr_int_id = 0;
                             break;
                         }
@@ -679,7 +679,7 @@ namespace Web.Smartway.Areas.Agendamiento.Controllers
 
 
             #endregion
-
+            var dataIncidencia = new IncidenciaData();
             List<InventarioModel> inventarios = new List<InventarioModel>();
             InventarioModel inventarioModel = null; // new InventarioModel();
             DocumentoRecepcionDetalleModel modelDetalle = null;
@@ -699,6 +699,32 @@ namespace Web.Smartway.Areas.Agendamiento.Controllers
 
             foreach (var item in detalle)
             {
+
+                //traer documento de compra 
+
+                var detfact =  FacturacionData.GetListarDetalleComprobante(null, item.serie).ToList();
+                bool cliente = false;
+                bool reparacion = false;
+
+                var garantias = dataIncidencia.ListarEvaluarGarantia(modProducto.idtipoproducto.Value
+             , modProducto.idfabricante.Value
+             , model.idpartner
+             ).ToList();
+
+                if (detfact.Count > 0)
+                {
+                     cliente = AgendamientoData.EvaluarGarantia(DateTime.Now.Date
+                         , detfact[0].fechaemision
+                         , garantias.Where(x => x.idtipogarantia.Equals((Int16)Constantes.TipoGarantia.Cliente)).SingleOrDefault());
+
+
+                     reparacion = AgendamientoData.EvaluarGarantia(DateTime.Now.Date
+                           , detfact[0].fechaemision
+                           , garantias.Where(x => x.idtipogarantia.Equals((Int16)Constantes.TipoGarantia.Reparacion)).SingleOrDefault());
+
+                }
+
+
                 inventarioModel = new InventarioModel();
 
                 inventarioModel.cantidad = item.cantidad;
@@ -733,8 +759,12 @@ namespace Web.Smartway.Areas.Agendamiento.Controllers
                 ordenModel.idusuario = Usuario.Idusuario;
                 ordenModel.cotizado = false;
                 ordenModel.documento_coincide = false;
-                ordenModel.engarantia = true;
+                ordenModel.engarantia = cliente;
+                ordenModel.idtipogarantia = (Int16)Constantes.TipoGarantia.Cliente ;
                 ordenModel.fechahoraregistro = DateTime.Now;
+                if(detfact.Count != 0)
+                ordenModel.fechadocumento = detfact[0].fechaemision;
+                ordenModel.fecharecepcion = model.fechahorarecepcion;
                 ordenModel.idestado = (Int16)Constantes.EstadoOrdenServicio.PendienteAsignacionTecnico;
                 ordenModel.idtipoordenservicio = (Int16)Constantes.tipoordenservicio.osr;
                 ordenModel.__tipooperacion = 1;

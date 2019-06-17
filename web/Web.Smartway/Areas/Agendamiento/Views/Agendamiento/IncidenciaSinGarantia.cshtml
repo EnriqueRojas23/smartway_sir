@@ -219,14 +219,15 @@
                                 <label class="control-label">Serie:</label>
                                 <div class="input-group m-b">
                                     <span class="input-group-addon"> <input id="requiereserie" type="checkbox" disabled></span>
-                                    @Html.TextBox("txtSerie", "", new { @class = "form-control", @type = "text", @data_url = @Url.Action("ValidarIMEI", "Incidencia") })
+                                    @*@Html.TextBox("txtSerie", "", new { @class = "form-control", @type = "text", @data_url = @Url.Action("ValidarIMEI", "Incidencia") })*@
+                                    @Html.TextBoxFor(x=>x.serie,  new { @class = "form-control", @type = "text", @data_url = @Url.Action("ValidarIMEI", "Incidencia") })
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <label class="control-label">IMEI:</label>
                                 <div class="input-group m-b">
                                     <span class="input-group-addon"> <input id="txtSolicitarImei" type="checkbox" disabled></span>
-                                    @Html.TextBox("txtImei", "", new { @class = "form-control", @type = "text", @data_url = @Url.Action("ValidarIMEI", "Incidencia") })
+                                    @Html.TextBoxFor(x=>x.imei, new { @class = "form-control", @type = "text", @data_url = @Url.Action("ValidarIMEI", "Incidencia") })
                                 </div>
                             </div>
 

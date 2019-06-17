@@ -38,5 +38,7 @@ namespace Web.Smartway.Areas.Despacho.Models
         public int idusuarioatencion { get; set; }
         public bool repuesto { get; set; }
         public long idinventario { get; set; }
+        public string codigoproducto { get; set; }
+        public string descripcionlarga { get; set; }
     }
 }

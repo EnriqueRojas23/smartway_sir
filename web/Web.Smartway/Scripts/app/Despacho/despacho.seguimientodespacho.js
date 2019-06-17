@@ -7,7 +7,6 @@ const $btnBuscar = $("#btnBuscar")
 
 
 $(document).ready(function () {
-    alert('xD');
     inicio();
 });
 
@@ -140,7 +139,7 @@ function configurarGrilla()
         , 'N° Factura','F. Factura', 'GR', 'Partner', 'Fabricante','F. Recepción','Acciones' ],
         colModel:
         [
-            { key: true, hidden: true, name: 'iddocumentorecepcion', align: 'center' },
+            { key: true, hidden: true, name: 'iddocumentosalida', align: 'center' },
             { key: false, name: 'numerodocumento',width:'50',  align: 'center', sortable: false, formatter: formatedit },
             { key: false, name: 'idtiposalida', width:'90', align: 'center',  sortable: false,  formatter: formatedit  },
             { key: false, name: 'idproducto',  width:'50', align: 'center', sortable: false, formatter: formatedit },
@@ -150,7 +149,7 @@ function configurarGrilla()
             { key: false, name: 'partner',  align: 'center', width:'80',  sortable: false,  formatter: formatedit  },
             { key: false, name: 'fabricante',  align: 'center', width:'80',  sortable: false,  formatter: formatedit  },
             { key: false, name: 'fechahorarecepcion',   width:'90' ,align: 'center', sortable: true, formatter: 'date', formatoptions: { srcformat: 'd/m/Y', newformat: 'd/m/Y' } },
-            { key: false, name: 'iddocumentorecepcion',  align: 'center', width:'40',  sortable: false,  formatter: displayButtons  },
+                { key: false, name: 'iddocumentosalida',  align: 'center', width:'40',  sortable: false,  formatter: displayButtons  },
             //{ key: false, hidden: false, editable: false ,name: 'idordenserviciotecnico', width:'140' , index: 'idordenserviciotecnico' ,  formatter:  displayButtons,classes:"grid-col"}
             
         ],
@@ -179,9 +178,11 @@ function displayButtons(cellvalue, options, rowObject)
     var editar = '<div class="btn-group"><button type="button" title="Editar" class="btn btn-primary btn-xs " onclick="verDetalle(' + cellvalue + ')"><i class="fa fa-search"></i>  </button>';
     return   editar  ;
 }
-function verDetalle(id){
-    let vurl = UrlHelper.Action("DetalleOrdenServicio","OrdenServicio","Agendamiento") + "?idordenservicio=" + id;
-    window.location.href = vurl;
+function verDetalle(id) {
+
+    alert(id);
+    //let vurl = UrlHelper.Action("DetalleOrdenServicio","OrdenServicio","Agendamiento") + "?idordenservicio=" + id;
+    //window.location.href = vurl;
 }
 
 function configurarGrillaCotizacion()

@@ -7,6 +7,7 @@ namespace QueryContracts.Smartway.Facturacion.Parameters
     {
        
         public long? iddocumentocompra { get; set; }
+        public string serie { get; set; }
 
     }
 }

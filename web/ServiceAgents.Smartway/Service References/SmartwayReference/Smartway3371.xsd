@@ -11,9 +11,66 @@
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="EntregarDespachoDeliveryResult" nillable="true" type="tns:EntregarDespachoDeliveryResult" />
-  <xs:complexType name="ListarOrdenSalidaResult">
+  <xs:complexType name="ListarGuiaRemisionDetalleResult">
     <xs:complexContent mixed="false">
       <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q2:QueryResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Hits" nillable="true" type="tns:ArrayOfListarGuiaRemisionDetalleDto" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListarGuiaRemisionDetalleResult" nillable="true" type="tns:ListarGuiaRemisionDetalleResult" />
+  <xs:complexType name="ArrayOfListarGuiaRemisionDetalleDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ListarGuiaRemisionDetalleDto" nillable="true" type="tns:ListarGuiaRemisionDetalleDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfListarGuiaRemisionDetalleDto" nillable="true" type="tns:ArrayOfListarGuiaRemisionDetalleDto" />
+  <xs:complexType name="ListarGuiaRemisionDetalleDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cantidad" type="xs:int" />
+      <xs:element minOccurs="0" name="codigo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idguiadetalle" type="xs:long" />
+      <xs:element minOccurs="0" name="idguiaremision" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListarGuiaRemisionDetalleDto" nillable="true" type="tns:ListarGuiaRemisionDetalleDto" />
+  <xs:complexType name="ListarOrdenSalidaDetalleResult">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q3:QueryResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Hits" nillable="true" type="tns:ArrayOfListarOrdenSalidaDetalleDto" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListarOrdenSalidaDetalleResult" nillable="true" type="tns:ListarOrdenSalidaDetalleResult" />
+  <xs:complexType name="ArrayOfListarOrdenSalidaDetalleDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ListarOrdenSalidaDetalleDto" nillable="true" type="tns:ListarOrdenSalidaDetalleDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfListarOrdenSalidaDetalleDto" nillable="true" type="tns:ArrayOfListarOrdenSalidaDetalleDto" />
+  <xs:complexType name="ListarOrdenSalidaDetalleDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cantidad" type="xs:int" />
+      <xs:element minOccurs="0" name="codigoproducto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcionlarga" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fechahoraatencion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="idordensalidadetalle" type="xs:long" />
+      <xs:element minOccurs="0" name="idproducto" type="xs:int" />
+      <xs:element minOccurs="0" name="idusuarioatencion" type="xs:int" />
+      <xs:element minOccurs="0" name="imei" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="repuesto" type="xs:boolean" />
+      <xs:element minOccurs="0" name="serie" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListarOrdenSalidaDetalleDto" nillable="true" type="tns:ListarOrdenSalidaDetalleDto" />
+  <xs:complexType name="ListarOrdenSalidaResult">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q4:QueryResult">
         <xs:sequence>
           <xs:element minOccurs="0" name="Hits" nillable="true" type="tns:ArrayOfListarOrdenSalidaDto" />
         </xs:sequence>
@@ -42,7 +99,7 @@
   <xs:element name="ListarOrdenSalidaDto" nillable="true" type="tns:ListarOrdenSalidaDto" />
   <xs:complexType name="ObtenerGuiaRemisionResult">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q3:QueryResult">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q5:QueryResult">
         <xs:sequence>
           <xs:element minOccurs="0" name="idguiaremision" type="xs:long" />
           <xs:element minOccurs="0" name="idsucursaldestino" type="xs:int" />
@@ -56,7 +113,7 @@
   <xs:element name="ObtenerGuiaRemisionResult" nillable="true" type="tns:ObtenerGuiaRemisionResult" />
   <xs:complexType name="ListarGuiaRemisionResult">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q4:QueryResult">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q6:QueryResult">
         <xs:sequence>
           <xs:element minOccurs="0" name="Hits" nillable="true" type="tns:ArrayOfListarGuiaRemisionDto" />
         </xs:sequence>
@@ -75,6 +132,7 @@
       <xs:element minOccurs="0" name="codigodestino" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="codigoorigen" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="destinatario" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="direcciondestino" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="direccionorigen" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="fechaguiaremision" type="xs:dateTime" />
@@ -85,7 +143,7 @@
   <xs:element name="ListarGuiaRemisionDto" nillable="true" type="tns:ListarGuiaRemisionDto" />
   <xs:complexType name="ListarTransporteResult">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q5:QueryResult">
+      <xs:extension xmlns:q7="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q7:QueryResult">
         <xs:sequence>
           <xs:element minOccurs="0" name="Hits" nillable="true" type="tns:ArrayOfListarTransporteDto" />
         </xs:sequence>
@@ -108,7 +166,7 @@
   <xs:element name="ListarTransporteDto" nillable="true" type="tns:ListarTransporteDto" />
   <xs:complexType name="ListarProgramacionResult">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q6:QueryResult">
+      <xs:extension xmlns:q8="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q8:QueryResult">
         <xs:sequence>
           <xs:element minOccurs="0" name="Hits" nillable="true" type="tns:ArrayOfListarProgramacionDto" />
         </xs:sequence>

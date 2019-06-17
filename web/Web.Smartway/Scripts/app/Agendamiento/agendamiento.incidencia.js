@@ -44,14 +44,14 @@ function configurarControles()
 
 }
 function reload(){
-    var numeroincidencia =  $('#numeroincidencia').val()
-    var numerodocumento =  $('#numerodocumento').val()
-    var fechainicio =  $('#fechainicio').val()
-    var fechafin =  $('#fechafin').val()
+    var numeroincidencia = $('#numeroincidencia').val();
+    var numerodocumento = $('#numerodocumento').val();
+    var fechainicio = $('#fechainicio').val();
+    var fechafin = $('#fechafin').val();
 
 
-    var vdataurl = $grilla.data("dataurl")  + "?numeroincidencia=" + numeroincidencia + "&numerodocumento=" + numerodocumento
-    + "&fechainicio=" + fechainicio + "&fechafin=" + fechafin
+    var vdataurl = $grilla.data("dataurl") + "?numeroincidencia=" + numeroincidencia + "&numerodocumento=" + numerodocumento
+        + "&fechainicio=" + fechainicio + "&fechafin=" + fechafin;
 
     $grilla.jqGrid('setGridParam', { url: vdataurl }).trigger('reloadGrid');
 }
@@ -67,8 +67,8 @@ function configurarGrilla()
         
             $.jgrid.defaults.height = 520;
             $.jgrid.defaults.responsive = true;
-            var vdataurl = $grilla.data("dataurl") + "?numeroincidencia=" + numeroincidencia + "&numerodocumento=" + numerodocumento
-            + "&fechainicio=" + fechainicio + "&fechafin=" + fechafin
+    var vdataurl = $grilla.data("dataurl") + "?numeroincidencia=" + numeroincidencia + "&numerodocumento=" + numerodocumento
+        + "&fechainicio=" + fechainicio + "&fechafin=" + fechafin;
             //'✓' 
             $grilla.jqGrid({
                 url: vdataurl,

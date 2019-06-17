@@ -72,6 +72,9 @@ namespace CommandHandlers.Smartway
                 dominio.idsucursaldestino = command.idsucursaldestino;
                 dominio.idsucursalorigen = command.idsucursalorigen;
                 dominio.delivery = command.delivery;
+                dominio.fechadocumento = command.fechadocumento;
+                dominio.fecharecepcion = command.fecharecepcion;
+                dominio.idtipogarantia = command.idtipogarantia;
 
             }
             try

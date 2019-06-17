@@ -38,21 +38,21 @@ function configurarGrilla()
         url: vdataurl,
         datatype: 'json',
         mtype: 'POST',
-        colNames: ['','Orden Servicio','Tipo','Producto',  'Serie','Imei','MAC', 'Fec.Asignación', 'Sucursal Origen','Estado' ,'Reparación', 'Acciones' ],
+        colNames: ['','Orden Servicio','Tipo','Producto',  'Serie','Imei','MAC', 'Fec.Asignación','Estado' ,'Reparación' ],
         colModel:
         [
             { key: true, hidden: true, name: 'idordenserviciotecnico', align: 'center' },
             { key: false, name: 'numeroost', width:'90', align: 'center',  sortable: false,  formatter: formatedit  },
             { key: false, name: 'tipoordenservicio',  width:'50', align: 'center', sortable: false, formatter: formatedit },
             { key: false, name: 'producto',  align: 'left', width:'210',  sortable: false,  formatter: formatedit  },
-               { key: false, name: 'serie',  align: 'left', width:'120',  sortable: false,  formatter: formatedit  },
+            { key: false, name: 'serie',  align: 'left', width:'120',  sortable: false,  formatter: formatedit  },
             { key: false, name: 'imei',  align: 'left', width:'120',  sortable: false,  formatter: formatedit  },
             { key: false, name: 'mac',  align: 'left', width:'120',  sortable: false,  formatter: formatedit  },
             { key: false, name: 'fechaAsignacion',  align: 'center',width:'80', sortable: false, formatter: 'date', formatoptions: { srcformat: 'd/m/Y', newformat: 'd/m/Y' } },
-            { key: false, name: 'sucursalorigen',  align: 'center', width:'110',  sortable: false,  formatter: formatedit  },
+            //{ key: false, name: 'sucursalorigen',  align: 'center', width:'110',  sortable: false,  formatter: formatedit  },
             { key: false, name: 'otestado',  width:'120', align: 'left', sortable: false, formatter: formateditcolor },
             { key: false, name: 'idordentrabajo',  align: 'center', width:'110',  sortable: false,  formatter: displayButtonsIniciar  },
-            { key: false, name: 'idordenserviciotecnico',  align: 'left', width:'110',  sortable: false,  formatter: displayButtons  }
+            //{ key: false, name: 'idordenserviciotecnico',  align: 'left', width:'110',  sortable: false,  formatter: displayButtons  }
             //{ key: false, hidden: false, editable: false ,name: 'idordenserviciotecnico', width:'140' , index: 'idordenserviciotecnico' ,  formatter:  displayButtons,classes:"grid-col"}
             
         ],
@@ -142,8 +142,8 @@ function seleccionar_formmatterIncidencia(cellvalue, options, rowObject) {
 }
 function displayButtons(cellvalue, options, rowObject)
 {
-    var editar = '<div class="btn-group"><button type="button" title="Editar" class="btn btn-primary btn-xs " onclick="recepcionar(' + cellvalue + ')"><i class="fa fa-edit"></i> Recepcionar </button>';
-   return   editar  ;
+    var editar = '<div class="btn-group"><button type="button" title="Editar" class="btn btn-primary btn-xs " onclick="verDetalle(' + cellvalue + ')"><i class="fa fa-search"></i></button>';
+   return   
 }
 function displayButtonsIniciar(cellvalue, options, rowObject)
 {
@@ -277,38 +277,40 @@ function asignar(id)
     });
 }
 function iniciar(id){
-    let vurl = UrlHelper.Action("JsonIniciarReparacion","Reparacion","Reparacion")
+    let vurl = UrlHelper.Action("JsonIniciarReparacion", "Reparacion", "Reparacion");
     $.ajax({
         type: "POST",
         url: vurl,
         data: {"id" : id },
         dataType: "JSON",
         success: function (response) {
-            if(response.res){
+            if (response.res) {
+                if (!response.idtipoproducto === 1) {
 
-              if(!response.engarantia)
-              {
-                if(response.cotizado)
-                {
-                    let vurl = UrlHelper.Action("RepararOrden","Reparacion","Reparacion") + "?id=" + id;
+                    if (!response.engarantia) {
+                        if (response.cotizado) {
+                            let vurl = UrlHelper.Action("RepararOrden", "Reparacion", "Reparacion") + "?id=" + id;
+                            window.location.href = vurl;
+                        }
+                        else {
+                            let vurl = UrlHelper.Action("Cotizar", "Cotizacion", "Reparacion") + "?idordentrabajo=" + id;
+                            window.location.href = vurl;
+                        }
+                    }
+                    else {
+                        let vurl = UrlHelper.Action("RepararOrden", "Reparacion", "Reparacion") + "?id=" + id;
+                        window.location.href = vurl;
+                    }
+                }
+                else {
+                    let vurl = UrlHelper.Action("RepararOrden", "Reparacion", "Reparacion") + "?id=" + id;
                     window.location.href = vurl;
                 }
-                else
-                {
-                    let vurl = UrlHelper.Action("Cotizar","Cotizacion","Reparacion") + "?idordentrabajo=" + id;
-                    window.location.href = vurl;
-                }
-              }
-              else
-              {
-                 let vurl = UrlHelper.Action("RepararOrden","Reparacion","Reparacion") + "?id=" + id;
-                    window.location.href = vurl;
-              }
             }
-            else{
-                swal("No se pudo continuar", "Hubo un error al momento de iniciar la reparación", "warning")
+            else {
+                          swal("No se pudo continuar", "Hubo un error al momento de iniciar la reparación", "warning")
+               }
             }
-        }
     });
 }
 function continuar(id){
@@ -317,11 +319,11 @@ function continuar(id){
 }
 
 
-function displayButtons(cellvalue, options, rowObject)
-{
-    var editar = '<div class="btn-group"><button type="button" title="Editar" class="btn btn-primary btn-xs " onclick="verDetalle(' + cellvalue + ')"><i class="fa fa-search"></i></button>';
-    return   editar  ;
-}
+//function displayButtons(cellvalue, options, rowObject)
+//{
+//    var editar = '<div class="btn-group"><button type="button" title="Editar" class="btn btn-primary btn-xs " onclick="verDetalle(' + cellvalue + ')"><i class="fa fa-search"></i></button>';
+//    return   editar  ;
+//}
 function verDetalle(id){
     let vurl = UrlHelper.Action("DetalleOrdenServicio","OrdenServicio","Agendamiento") + "?idordenservicio=" + id;
     window.location.href = vurl;

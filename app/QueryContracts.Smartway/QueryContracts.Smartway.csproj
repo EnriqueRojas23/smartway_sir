@@ -75,12 +75,16 @@
     <Compile Include="Agendamiento\Results\ObtenerIncidenciaResult.cs" />
     <Compile Include="Agendamiento\Results\ObtenerNumeroIncidenciaResult.cs" />
     <Compile Include="Despacho\Parameters\EntregarDespachoDeliveryParameter.cs" />
+    <Compile Include="Despacho\Parameters\ListarGuiaRemisionDetalleParameter.cs" />
+    <Compile Include="Despacho\Parameters\ListarOrdenSalidaDetalleParameter.cs" />
     <Compile Include="Despacho\Parameters\ListarOrdenSalidaParameter.cs" />
     <Compile Include="Despacho\Parameters\ObtenerGuiaRemisionParameter.cs" />
     <Compile Include="Despacho\Parameters\ListarGuiaRemisionParameter.cs" />
     <Compile Include="Despacho\Parameters\ListarProgramacionParameter.cs" />
     <Compile Include="Despacho\Parameters\ListarTransporteParameter.cs" />
     <Compile Include="Despacho\Results\EntregarDespachoDeliveryResult.cs" />
+    <Compile Include="Despacho\Results\ListarGuiaRemisionDetalleResult.cs" />
+    <Compile Include="Despacho\Results\ListarOrdenSalidaDetalleResult.cs" />
     <Compile Include="Despacho\Results\ListarOrdenSalidaResult.cs" />
     <Compile Include="Despacho\Results\ObtenerGuiaRemisionResult.cs" />
     <Compile Include="Despacho\Results\ListarGuiaRemisionResult.cs" />

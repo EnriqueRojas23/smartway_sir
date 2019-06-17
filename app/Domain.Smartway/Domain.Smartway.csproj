@@ -56,6 +56,7 @@
     <Compile Include="Delivery\Pedido.cs" />
     <Compile Include="Delivery\SeguimientoPedido.cs" />
     <Compile Include="Delivery\Transferencia.cs" />
+    <Compile Include="Despacho\GuiaRemisionDetalle.cs" />
     <Compile Include="Despacho\OrdenSalida.cs" />
     <Compile Include="Despacho\GuiaRemision.cs" />
     <Compile Include="Despacho\OrdenSalidaDetalle.cs" />

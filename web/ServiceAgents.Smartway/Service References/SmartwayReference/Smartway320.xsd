@@ -6,6 +6,7 @@
       <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q1:QueryParameter">
         <xs:sequence>
           <xs:element minOccurs="0" name="iddocumentocompra" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="serie" nillable="true" type="xs:string" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>

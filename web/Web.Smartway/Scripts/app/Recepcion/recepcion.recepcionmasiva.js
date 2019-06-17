@@ -78,8 +78,8 @@ function configurarBotones(){
      
      $.get(URL_subirarchivo, function(data) {
  		$("#modalcontent").html(data);
- 		$("#modalcontainer").modal("show")
- 		$("#error").hide();
+         $("#modalcontainer").modal("show");
+ 		  $("#error").hide();
 
  		    $(function () {
                $('#frmDocumentacion').submit(function (event)

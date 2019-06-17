@@ -27,6 +27,13 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
             return View();
         }
 
+        public ActionResult OrdenxRepuesto()
+        {
+            
+
+            return View();
+        }
+
 
     }
 }

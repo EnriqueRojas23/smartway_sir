@@ -7,6 +7,7 @@ const urlPierdeGarantia = UrlHelper.Action("PierdeGarantia", "Reparacion", "Repa
 
 
 const $btnAgregar = $("#btnAgregar");
+const $btnRegresar = $("#btnRegresar");
 
 const $grilla = $("#griddetalle");
 const $pagergrilla = $("#griddetallepager");
@@ -356,6 +357,12 @@ function configurarBotones()
             }
         });
 
+    });
+
+    $btnRegresar.click(function (e) {
+        e.preventDefault();
+        let vurl = UrlHelper.Action("SeguimientoReparaciones", "Reparacion", "Reparacion");
+        window.location.href = vurl;
     });
 
     $btnPausar.click(function (e) {

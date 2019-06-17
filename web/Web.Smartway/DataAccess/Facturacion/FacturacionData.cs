@@ -50,11 +50,12 @@ namespace Web.Smartway.DataAccess.Mantenimiento
             Mapper.CreateMap<ListarComprobantesDto, ComprobanteModel>();
             return Mapper.Map<IEnumerable<ListarComprobantesDto>, IEnumerable<ComprobanteModel>>(resultado.Hits);
         }
-        public static IEnumerable<DetalleComprobanteModel> GetListarDetalleComprobante(long? iddocumentocompra)
+        public static IEnumerable<DetalleComprobanteModel> GetListarDetalleComprobante(long? iddocumentocompra,string serie = null)
         {
             var parametros = new ListarDetalleComprobantesParameters
             {
                 iddocumentocompra = iddocumentocompra
+                , serie =serie
             };
             var resultado = (ListarDetalleComprobantesResult)parametros.Execute();
             Mapper.CreateMap<ListarDetalleComprobantesDto, DetalleComprobanteModel>();

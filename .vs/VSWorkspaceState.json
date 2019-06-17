@@ -1,9 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\app",
-    "\\app\\CommandContracts.Smartway"
+    "\\web",
+    "\\web\\Web.Smartway",
+    "\\web\\Web.Smartway\\Scripts",
+    "\\web\\Web.Smartway\\Scripts\\app",
+    "\\web\\Web.Smartway\\Scripts\\app\\Reparacion"
   ],
-  "SelectedNode": "\\app\\CommandContracts.Smartway",
+  "SelectedNode": "\\web\\Web.Smartway\\Scripts\\app\\Reparacion\\reparacion.paneltecnico.js",
   "PreviewInSolutionExplorer": false
 }

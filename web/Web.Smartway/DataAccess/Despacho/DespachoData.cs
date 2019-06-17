@@ -8,6 +8,7 @@ using Web.Smartway.Areas.Despacho.Models;
 using QueryContracts.Smartway.Despacho.Parameters;
 using CommandContracts.Smartway.Despacho;
 using CommandContracts.Smartway.Despacho.Output;
+using CommandContracts.Smartway.Agendamiento;
 
 namespace Web.Smartway.DataAccess.Mantenimiento
 {
@@ -78,6 +79,12 @@ namespace Web.Smartway.DataAccess.Mantenimiento
             var result = (InsertarActualizarProgramacionOutput)  command.Execute();
             return result.idprogramacion;
         }
+        public long EliminarDetalleGuia(long id)
+        {
+            var command = new EliminarDetalleGuiaCommand(){   idguiadetalle = id    };
+            var result = (EliminarDetalleGuiaOutput)command.Execute();
+            return result.idguiadetalle;
+        }
         public int InsertarActualizarProgramacionDetalle(ProgramacionDetalleModel modProgramacion)
         {
             Mapper.CreateMap<ProgramacionDetalleModel, InsertarActualizarProgramacionDetalleCommand>();
@@ -140,15 +147,25 @@ namespace Web.Smartway.DataAccess.Mantenimiento
             var result = (InsertarOrdenSalidaDetalleOutput)command.Execute();
             return result.idordensalidadetalle;
         }
-        public IEnumerable<OrdenSalidaModel> GetListarOrdenSalida(long idordensalida)
+        public IEnumerable<OrdenSalidaModel> GetListarOrdenSalida(string numeroorden)
         {
             var parametros = new ListarOrdenSalidaParameter
             {
-                 idordensalida = idordensalida,
+                 numeroorden = numeroorden
             };
             var resultado = (ListarOrdenSalidaResult)parametros.Execute();
             Mapper.CreateMap<ListarOrdenSalidaDto, OrdenSalidaModel>();
             return Mapper.Map<IEnumerable<ListarOrdenSalidaDto>, IEnumerable<OrdenSalidaModel>>(resultado.Hits);
+        }
+        public IEnumerable<OrdenSalidaDetalleModel> GetListarOrdenSalidaDetalle(long idordensalida)
+        {
+            var parametros = new ListarOrdenSalidaDetalleParameter
+            {
+                idordensalida = idordensalida
+            };
+            var resultado = (ListarOrdenSalidaDetalleResult)parametros.Execute();
+            Mapper.CreateMap<ListarOrdenSalidaDetalleDto, OrdenSalidaDetalleModel>();
+            return Mapper.Map<IEnumerable<ListarOrdenSalidaDetalleDto>, IEnumerable<OrdenSalidaDetalleModel>>(resultado.Hits);
         }
 
     }

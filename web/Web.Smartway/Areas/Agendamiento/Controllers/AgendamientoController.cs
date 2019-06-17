@@ -380,7 +380,9 @@ namespace Web.Smartway.Areas.Agendamiento.Controllers
             modelo.atendidaxcallcenter = false;
             modelo.idestado = (Int32)Constantes.EstadoIncidencia.EnProceso;
             modelo.idsucursal = Usuario.idsucursal;
-
+            modelo.serie = modelo.serie;
+            modelo.imei = modelo.imei;
+            modelo.activo = true;
             modelo.__tipooperacion = 1; //insertar
 
             var producto = new ProductoData().obtenerProducto(modelo.idproducto);

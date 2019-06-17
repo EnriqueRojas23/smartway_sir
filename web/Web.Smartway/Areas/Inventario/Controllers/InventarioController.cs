@@ -16,6 +16,7 @@ using LinqToExcel;
 using System.Collections.Generic;
 using Web.Smartway.DataAccess.Recepcion;
 using Web.Smartway.Areas.Mantenimiento.Models;
+using Componentes.Common.Utilidades;
 
 namespace Web.Smartway.Areas.Agendamiento.Controllers
 {
@@ -487,8 +488,21 @@ namespace Web.Smartway.Areas.Agendamiento.Controllers
         }
 
         #endregion
+        public ActionResult ExportarInventario(int? idproducto, int idalmacen, string serie, string imei)
+        {
 
 
-       
+            var result = InventarioData.GetListarInventarioxAlmacen(idalmacen, serie, imei, idproducto).ToList();
+          //  return (new JqGridExtension<InventarioModel>()).DataBind(result, result.Count);
+
+
+
+
+            
+            var output = Utilidades.Exportar<InventarioModel>(result);
+            return File(output.ToArray(), "application/vnd.ms-excel", "Inventario_" + DateTime.Now.ToString("yyyyMMddhhmmss") + ".xls");
+        }
+
+
     }
 }

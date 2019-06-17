@@ -34,23 +34,22 @@ function configurarGrilla()
         url: vdataurl,
         datatype: 'json',
         mtype: 'POST',
-        colNames: ['','Orden Servicio','Tipo','Producto', 'Serie','Imei', 'Fec.Asignación', 'Sucursal Origen', 'EnGarantia','Estado' ,'Técnico Asignado' ],
+        colNames: ['','Orden Servicio','Tipo','Producto', 'Serie','Imei', 'Fec. Asig', 'EnGarantia','Estado','Técnico Asignado' ,'Asignar', '' ],
         colModel:
         [
             { key: true, hidden: true, name: 'idordenserviciotecnico', align: 'center' },
             { key: false, name: 'numeroost', width:'90', align: 'center',  sortable: false,  formatter: formatedit  },
-            { key: false, name: 'tipoordenservicio',  width:'50', align: 'center', sortable: false, formatter: formatedit },
+            { key: false, name: 'tipoordenservicio',  width:'40', align: 'center', sortable: false, formatter: formatedit },
             { key: false, name: 'producto',  align: 'left', width:'170',  sortable: false,  formatter: formatedit  },
-            { key: false, name: 'serie',  align: 'left', width:'120',  sortable: false,  formatter: formatedit  },
-            { key: false, name: 'imei',  align: 'left', width:'120',  sortable: false,  formatter: formatedit  },
-            // { key: false, name: 'mac',  align: 'left', width:'120',  sortable: false,  formatter: formatedit  },
+            { key: false, name: 'serie',  align: 'left', width:'140',  sortable: false,  formatter: formatedit  },
+            { key: false, name: 'imei',  align: 'left', width:'140',  sortable: false,  formatter: formatedit  },
             { key: false, name: 'fechaAsignacion',  align: 'center',width:'80', sortable: false, formatter: 'date', formatoptions: { srcformat: 'd/m/Y', newformat: 'd/m/Y' } },
-            { key: false, name: 'sucursalorigen',  align: 'center', width:'110',  sortable: false,  formatter: formatedit  },
+            //{ key: false, name: 'sucursalorigen',  align: 'center', width:'110',  sortable: false,  formatter: formatedit  },
             { key: false,hidden: true,  name: 'engarantia',  width:'200', align: 'left', sortable: false, formatter: formateditcolor },
-            { key: false, name: 'ostestado',  width:'200', align: 'center', sortable: false, formatter: formateditcolor },
-            { key: false, name: 'tecnicoAsignado',  align: 'center', width:'110',  sortable: false,  formatter: displayButtonsAsignacion  },
-            //{ key: false, name: 'idordenserviciotecnico',  align: 'left', width:'40',  sortable: false,  formatter: displayButtons  }
-            //{ key: false, hidden: false, editable: false ,name: 'idordenserviciotecnico', width:'140' , index: 'idordenserviciotecnico' ,  formatter:  displayButtons,classes:"grid-col"}
+            { key: false, name: 'ostestado', width: '180', align: 'center', sortable: false, formatter: formateditcolor },
+            { key: false, name: 'tecnicoAsignado', align: 'center', width: '100', sortable: false, formatter: displayAsignacion },
+            { key: false, name: 'tecnicoAsignado',  align: 'center', width:'90',  sortable: false,  formatter: displayButtonsAsignacion  },
+            { key: false, hidden: false, editable: false ,name: 'idordenserviciotecnico', width:'60' , index: 'idordenserviciotecnico' ,  formatter:  displayButtons,classes:"grid-col"}
             
         ],
         pager: $pagergrilla,
@@ -136,23 +135,45 @@ function seleccionar_formmatterIncidencia(cellvalue, options, rowObject) {
 }
 function displayButtons(cellvalue, options, rowObject)
 {
-    var editar = '<div class="btn-group"><button type="button" title="Editar" class="btn btn-primary btn-xs " onclick="recepcionar(' + cellvalue + ')"><i class="fa fa-edit"></i> Recepcionar </button>';
-   return   editar  ;
+    var Ver = '<div class="btn-group"><button type="button" title="Ver" class="btn btn-primary-outline btn-xs " onclick="ver(' + cellvalue + ')"><i class="fa fa-search"></i>  </button>';
+    var Eliminar = '<button type="button" title="Eliminar" class="btn btn-primary-outline btn-xs " onclick="Eliminar(' + cellvalue + ')"><i class="fa fa-trash"></i>  </button></div>';
+    //if (rowObject.idestado !== 8)
+    //    return Eliminar;
+    //else
+        return  Ver  + Eliminar;
 }
 function displayButtonsAsignacion(cellvalue, options, rowObject)
-{
-    var editar = ''
-    if(rowObject.idestado == 1)
+{    
+   
+    var editar = '';
+    if(rowObject.idestado === 1)
         return '';
-    if(cellvalue=='')
+    if(cellvalue === '')
     {
         editar = '<div class="btn-group"><button type="button" title="Editar" class="btn btn-danger btn-xs " onclick="asignar(' + rowObject.idordenserviciotecnico  + ')"><i class="fa fa-plus"></i> Asignar </button>';
     }
     else
     {
-            editar = cellvalue;
+        if (rowObject.idestado !== 8)
+            editar = '<div class="btn-group"><button type="button" title="Editar" class="btn btn-danger btn-xs " onclick="asignar(' + rowObject.idordenserviciotecnico + ')"><i class="fa fa-plus"></i> ReAsignar </button>';
+        else
+            editar = '';
     }
-   return   editar  ;
+    return editar;
+}
+function displayAsignacion(cellvalue, options, rowObject) {
+
+    var editar = '';
+    if (rowObject.idestado === 1)
+        return '';
+    
+    if (rowObject.idestado != 8)
+        editar = '';
+    else
+        editar = '';
+    editar = editar + cellvalue;
+    
+    return editar;
 }
 function reload()
 {
@@ -275,13 +296,12 @@ function asignar(id)
     });
 }
 
-function displayButtons(cellvalue, options, rowObject)
-{
-    var editar = '<div class="btn-group"><button type="button" title="Editar" class="btn btn-primary btn-xs " onclick="verDetalle(' + cellvalue + ')"><i class="fa fa-search"></i></button>';
-    return   editar  ;
-}
 function verDetalle(id){
     let vurl = UrlHelper.Action("DetalleOrdenServicio","OrdenServicio","Agendamiento") + "?idordenservicio=" + id;
     window.location.href = vurl;
 }
 
+function ver(id) {
+    let vurl = UrlHelper.Action("RepararOrden", "Reparacion", "Reparacion") + "?id=" + id +"&Sup=1";
+    window.location.href = vurl;
+}

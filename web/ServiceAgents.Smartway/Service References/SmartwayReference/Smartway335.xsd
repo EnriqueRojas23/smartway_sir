@@ -21,10 +21,10 @@
     <xs:sequence>
       <xs:element minOccurs="0" name="Tipo" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="caja" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="cantidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cantidad" type="xs:int" />
       <xs:element minOccurs="0" name="codigoproducto" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="descripcionlarga" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="fila" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fila" type="xs:int" />
       <xs:element minOccurs="0" name="imei" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="mac" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="modelo" nillable="true" type="xs:string" />

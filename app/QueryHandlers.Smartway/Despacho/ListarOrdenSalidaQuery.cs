@@ -16,7 +16,7 @@
             using (var connection = ConnectionFactory.CreateFromUserSession())
             {
                 var parametros = new DynamicParameters();
-                //parametros.Add("idsucursalorigen", dbType: DbType.Int32, direction: ParameterDirection.Input, value: parameters.idordensalida);
+                parametros.Add("numeroorden", dbType: DbType.String, direction: ParameterDirection.Input, value: parameters.numeroorden);
                 var resultado = new ListarOrdenSalidaResult
                 {
                     Hits = connection.Query<ListarOrdenSalidaDto>

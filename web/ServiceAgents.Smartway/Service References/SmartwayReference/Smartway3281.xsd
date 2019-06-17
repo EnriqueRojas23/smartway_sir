@@ -11,11 +11,31 @@
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="EntregarDespachoDeliveryParameter" nillable="true" type="tns:EntregarDespachoDeliveryParameter" />
-  <xs:complexType name="ListarOrdenSalidaParameter">
+  <xs:complexType name="ListarGuiaRemisionDetalleParameter">
     <xs:complexContent mixed="false">
       <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q2:QueryParameter">
         <xs:sequence>
-          <xs:element minOccurs="0" name="idordensalida" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="idguiaremision" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListarGuiaRemisionDetalleParameter" nillable="true" type="tns:ListarGuiaRemisionDetalleParameter" />
+  <xs:complexType name="ListarOrdenSalidaDetalleParameter">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q3:QueryParameter">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="idordensalida" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListarOrdenSalidaDetalleParameter" nillable="true" type="tns:ListarOrdenSalidaDetalleParameter" />
+  <xs:complexType name="ListarOrdenSalidaParameter">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q4:QueryParameter">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="numeroorden" nillable="true" type="xs:string" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -23,7 +43,7 @@
   <xs:element name="ListarOrdenSalidaParameter" nillable="true" type="tns:ListarOrdenSalidaParameter" />
   <xs:complexType name="ObtenerGuiaRemisionParameter">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q3:QueryParameter">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q5:QueryParameter">
         <xs:sequence>
           <xs:element minOccurs="0" name="idguiaremision" type="xs:long" />
         </xs:sequence>
@@ -33,7 +53,7 @@
   <xs:element name="ObtenerGuiaRemisionParameter" nillable="true" type="tns:ObtenerGuiaRemisionParameter" />
   <xs:complexType name="ListarGuiaRemisionParameter">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q4:QueryParameter">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q6:QueryParameter">
         <xs:sequence>
           <xs:element minOccurs="0" name="idestado" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="idsucursaldestino" nillable="true" type="xs:int" />
@@ -45,7 +65,7 @@
   <xs:element name="ListarGuiaRemisionParameter" nillable="true" type="tns:ListarGuiaRemisionParameter" />
   <xs:complexType name="ListarProgramacionParameter">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q5:QueryParameter">
+      <xs:extension xmlns:q7="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q7:QueryParameter">
         <xs:sequence>
           <xs:element minOccurs="0" name="fechafin" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="fechaini" nillable="true" type="xs:string" />
@@ -59,7 +79,7 @@
   <xs:element name="ListarProgramacionParameter" nillable="true" type="tns:ListarProgramacionParameter" />
   <xs:complexType name="ListarTransporteParameter">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q6:QueryParameter">
+      <xs:extension xmlns:q8="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q8:QueryParameter">
         <xs:sequence />
       </xs:extension>
     </xs:complexContent>
@@ -67,7 +87,7 @@
   <xs:element name="ListarTransporteParameter" nillable="true" type="tns:ListarTransporteParameter" />
   <xs:complexType name="ObtenerOrdenTrabajoParameter">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q7="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q7:QueryParameter">
+      <xs:extension xmlns:q9="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q9:QueryParameter">
         <xs:sequence>
           <xs:element minOccurs="0" name="idordentrabajo" type="xs:long" />
         </xs:sequence>
@@ -77,7 +97,7 @@
   <xs:element name="ObtenerOrdenTrabajoParameter" nillable="true" type="tns:ObtenerOrdenTrabajoParameter" />
   <xs:complexType name="ObtenerOrdenServicioParameter">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q8="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q8:QueryParameter">
+      <xs:extension xmlns:q10="http://schemas.datacontract.org/2004/07/QueryContracts.Common" base="q10:QueryParameter">
         <xs:sequence>
           <xs:element minOccurs="0" name="idordenservicio" type="xs:long" />
         </xs:sequence>

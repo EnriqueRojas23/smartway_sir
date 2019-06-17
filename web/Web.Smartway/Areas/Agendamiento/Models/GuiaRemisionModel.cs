@@ -38,5 +38,7 @@ namespace Web.Smartway.Areas.Agendamiento.Models
         public string codigo { get; set; }
         public string descripcion { get; set; }
         public int cantidad { get; set; }
+        public string numeroordensalida { get; set; }
+        
     }
 }

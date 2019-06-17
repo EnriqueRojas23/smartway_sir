@@ -756,7 +756,7 @@
     <Content Include="Areas\Guias\Views\Web.config" />
     <Content Include="Areas\Guias\Views\Guias\ListarGuias.cshtml" />
     <Content Include="Areas\Guias\Views\Guias\_NuevaGuiaRemision.cshtml" />
-    <Content Include="Areas\Guias\Views\Guias\_NuevaGuia.cshtml" />
+    <Content Include="Areas\Guias\Views\Guias\_NuevoDetalleGuia.cshtml" />
     <Content Include="Areas\Despacho\Views\Despacho\SeguimientoDespacho.cshtml" />
     <None Include="Areas\Reparacion\Views\Reparacion\_AprobarQCPos.cshtml" />
     <Content Include="Areas\Reporte\Views\Web.config" />
@@ -764,6 +764,7 @@
     <Content Include="Areas\Reporte\Views\Reporte\BaseIngreso.cshtml" />
     <Content Include="Areas\Reparacion\Views\Reparacion\_ModalDetalleOTS.cshtml" />
     <Content Include="Areas\Reporte\Views\Reporte\BaseIngenico.cshtml" />
+    <Content Include="Areas\Reporte\Views\Reporte\OrdenxRepuesto.cshtml" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.1.js" />

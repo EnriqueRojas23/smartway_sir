@@ -19,14 +19,18 @@
   <xs:element name="ArrayOfListarOrdenServicioDto" nillable="true" type="tns:ArrayOfListarOrdenServicioDto" />
   <xs:complexType name="ListarOrdenServicioDto">
     <xs:sequence>
+      <xs:element minOccurs="0" name="accesorios" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="codigoproducto" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="estado" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="idordenserviciotecnico" type="xs:long" />
+      <xs:element minOccurs="0" name="imei" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="modelo" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="nombrecliente" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="numerodocumento" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="numeroincidencia" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="numeroost" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="producto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="serie" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="sucursaldestino" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="sucursalorigen" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="tipoordenservicio" nillable="true" type="xs:string" />

@@ -45,6 +45,8 @@ namespace Web.Smartway.Areas.Despacho.Models
         public int idsucursalorigen { get; set; }
         public int idsucursaldestino { get; set; }
         public int idusuarioregistro { get; set; }
+        public long? idordensalida { get; set; }
+        public string numeroordensalida { get; set; }
 
         public int __tipooperacion { get; set; }
     }

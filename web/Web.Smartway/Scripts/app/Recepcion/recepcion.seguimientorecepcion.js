@@ -192,7 +192,7 @@ function configurarGrillaDetalle()
 {
 
 
-    $.jgrid.defaults.height = 320;
+    $.jgrid.defaults.height = 620;
     $.jgrid.defaults.responsive = true;
 
     var vdataurl = $grilladetalle.data("dataurl") + "?iddocumentorecepcion=" + 0;    
@@ -220,8 +220,8 @@ function configurarGrillaDetalle()
             { key: false, name: 'fila',   width:'40' ,align: 'center', sortable: true, formatter: formatedit },
         ],
         pager: $pagergrilladetalle,
-        rowNum: 10,
-        rowList: [10, 20],
+        rowNum: 200,
+        rowList: [ 200, 400,600 ],
         emptyrecords: 'No se encontraron registros',
         autoheight: true,
         autowidth: true,

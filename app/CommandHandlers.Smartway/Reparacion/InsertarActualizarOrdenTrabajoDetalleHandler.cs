@@ -56,6 +56,7 @@ namespace CommandHandlers.Smartway.Reparacion
                     dominio.idservicioasociado = command.idservicioasociado;
                     dominio.idinventario = command.idinventario;
                     dominio.idnivelreparacion = command.idnivelreparacion;
+                    dominio.fecharegistro = DateTime.Now;
                     break;
                 case 2:
                     dominio.activo = command.activo;

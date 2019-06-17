@@ -21,8 +21,10 @@
           <xs:element minOccurs="0" name="cotizado" type="xs:boolean" />
           <xs:element minOccurs="0" name="delivery" type="xs:boolean" />
           <xs:element minOccurs="0" name="engarantia" type="xs:boolean" />
+          <xs:element minOccurs="0" name="fechadocumento" nillable="true" type="xs:dateTime" />
           <xs:element minOccurs="0" name="fechahorapruebacambio" nillable="true" type="xs:dateTime" />
           <xs:element minOccurs="0" name="fechahoraregistro" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="fecharecepcion" nillable="true" type="xs:dateTime" />
           <xs:element minOccurs="0" name="idcliente" type="xs:int" />
           <xs:element minOccurs="0" name="iddirecciondelivery" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="iddocumentorecepcion" nillable="true" type="xs:long" />
@@ -35,6 +37,7 @@
           <xs:element minOccurs="0" name="idproducto" type="xs:int" />
           <xs:element minOccurs="0" name="idsucursaldestino" type="xs:int" />
           <xs:element minOccurs="0" name="idsucursalorigen" type="xs:int" />
+          <xs:element minOccurs="0" name="idtipogarantia" type="xs:int" />
           <xs:element minOccurs="0" name="idtipoordenservicio" type="xs:int" />
           <xs:element minOccurs="0" name="idusuario" type="xs:int" />
           <xs:element minOccurs="0" name="idusuarioapruebacambio" nillable="true" type="xs:int" />
@@ -210,4 +213,14 @@
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="InsertarActualizarIncidenciaCommand" nillable="true" type="tns:InsertarActualizarIncidenciaCommand" />
+  <xs:complexType name="EliminarDetalleGuiaCommand">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q10="http://schemas.datacontract.org/2004/07/CommandContracts.Common" base="q10:Command">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="idguiadetalle" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EliminarDetalleGuiaCommand" nillable="true" type="tns:EliminarDetalleGuiaCommand" />
 </xs:schema>

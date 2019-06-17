@@ -60,6 +60,7 @@
           <xs:element minOccurs="0" name="descripcion" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="iddiagnostico" type="xs:int" />
           <xs:element minOccurs="0" name="idinventario" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="idnivelreparacion" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="idordentrabajo" type="xs:long" />
           <xs:element minOccurs="0" name="idordentrabajodetalle" nillable="true" type="xs:long" />
           <xs:element minOccurs="0" name="idreparacion" type="xs:int" />
@@ -146,6 +147,7 @@
           <xs:element minOccurs="0" name="idordenserviciotecnico" type="xs:int" />
           <xs:element minOccurs="0" name="idordentrabajo" nillable="true" type="xs:long" />
           <xs:element minOccurs="0" name="idtecnico" type="xs:int" />
+          <xs:element minOccurs="0" name="idtecnicoqc" type="xs:int" />
           <xs:element minOccurs="0" name="idusuarioregistro" type="xs:int" />
           <xs:element minOccurs="0" name="incidencia" type="xs:boolean" />
           <xs:element minOccurs="0" name="informetecnico" nillable="true" type="xs:string" />

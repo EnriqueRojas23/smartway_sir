@@ -1,4 +1,5 @@
-﻿@model  Web.Smartway.Areas.Reparacion.Models.OrdenTrabajoModel
+﻿
+@model  Web.Smartway.Areas.Reparacion.Models.OrdenTrabajoModel
 @{
     ViewBag.Title = "Reparación";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -82,14 +83,23 @@
                                                 <div class="col-md-10">@Html.DropDownListFor(model => model.idrepuesto, Enumerable.Empty<SelectListItem>(), "--", new { @class = "chosen-select  form-control " })</div>
                                             </div>
                                             @*@if (!Model.cotizado)
-                                                {*@
+                {*@
 
                                             @*}*@
                                         </div>
                                     </div>
-                                    <div class="form-group">
-                                        <div class="col-md-12"><button type="button" id='btnAgregar' class="btn btn-block btn-primary"><i class="fa fa-plus-circle"></i> Agregar </button></div>
-                                    </div>
+                                    @if (ViewBag.Sup == "0")
+                                    {
+                                        <div class="form-group">
+                                            <div class="col-md-12"><button type="button" id='btnAgregar' class="btn btn-block btn-primary"><i class="fa fa-plus-circle"></i> Agregar </button></div>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="form-group">
+                                            <div class="col-md-12"><button type="button" id='btnRegresar' class="btn btn-block btn-primary"><i class="fa fa-plus-circle"></i> Regresar </button></div>
+                                        </div>
+                                    }
 
 
                                 </div>
@@ -138,35 +148,36 @@
 
                                 </div>
                             </div>
+                            @if (ViewBag.Sup == "0")
+                            {
+                                <div class="form-group">
+                                    <div class="col-md-3">
+                                        <button type="button" id='btnPausar' class="btn  btn-line btn-block btn-sm btn-primary"><i class="fa fa-pencil"></i> Pausar </button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <button type="button" id='btnFinalizar' class="btn  btn-line btn-block btn-sm btn-primary"><i class="fa fa-american-sign-language-interpreting"></i> Finalizar </button>
 
-                            <div class="form-group">
-                                <div class="col-md-3">
-                                    <button type="button" id='btnPausar' class="btn  btn-line btn-block btn-sm btn-primary"><i class="fa fa-pencil"></i> Pausar </button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <button type="button" id='btnNoReparable' class="btn  btn-line btn-block btn-sm btn-danger"><i class="fa fa-arrow-circle-down"></i> No Reparable</button>
+
+                                    </div>
+                                    <div class="col-md-3">
+                                        <button type="button" id='btnPierdeGarantia' class="btn  btn-line btn-block btn-sm btn-danger"><i class="fa fa-arrow-circle-down"></i> Enviar a Cotizar (Pierde garantía)</button>
+
+                                    </div>
                                 </div>
-                                <div class="col-md-3">
-                                    <button type="button" id='btnFinalizar' class="btn  btn-line btn-block btn-sm btn-primary"><i class="fa fa-american-sign-language-interpreting"></i> Finalizar </button>
+                            }
 
-                                </div>
-                                <div class="col-md-3">
-                                    <button type="button" id='btnNoReparable' class="btn  btn-line btn-block btn-sm btn-danger"><i class="fa fa-arrow-circle-down"></i> No Reparable</button>
-
-                                </div>
-                                <div class="col-md-3">
-                                    <button type="button" id='btnPierdeGarantia' class="btn  btn-line btn-block btn-sm btn-danger"><i class="fa fa-arrow-circle-down"></i> Enviar a Cotizar (Pierde garantía)</button>
-
+                                @Html.HiddenFor(x => x.tiempotrabajo)
+                                <div class="form-group">
+                                    <div class="col-md-12 jqGrid_wrapper">
+                                        <table id="griddetalle"
+                                               data-dataurl="@Url.Action("JsonGetListarDetalleReparacion", "Reparacion")"></table>
+                                        <div id="griddetallepager"></div>
+                                    </div>
                                 </div>
                             </div>
-
-
-                            @Html.HiddenFor(x => x.tiempotrabajo)
-                            <div class="form-group">
-                                <div class="col-md-12 jqGrid_wrapper">
-                                    <table id="griddetalle"
-                                           data-dataurl="@Url.Action("JsonGetListarDetalleReparacion", "Reparacion")"></table>
-                                    <div id="griddetallepager"></div>
-                                </div>
-                            </div>
-                        </div>
 
                     </div>
                 </div>

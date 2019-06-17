@@ -25,6 +25,10 @@
     $("#btnBuscarBaseIngenico").click(function (event) {
         BuscarBaseIngenico();
     });
+    $("#btnBuscarOrdenxRepuesto").click(function (event) {
+        BuscarOrdenxRepuesto();
+    });
+    
    
 });
 function BuscarBaseIngreso() {
@@ -44,6 +48,16 @@ function BuscarBaseIngenico() {
 
     var url = "http://104.36.166.65/RepSW/rep_baseingenico.aspx?" + "fecinicio=" + fecinicio
         + "&fecfin=" + fecfin + "&idestado=" + idestado;
+
+    window.open(url);
+}
+function BuscarOrdenxRepuesto() {
+    var fecinicio = $("#fecinicio").val();
+    var fecfin = $("#fecfin").val();
+    
+
+    var url = "http://104.36.166.65/RepSW/Rep_RepuestoxOrden.aspx?" + "fecinicio=" + fecinicio
+        + "&fecfin=" + fecfin ;
 
     window.open(url);
 }

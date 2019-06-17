@@ -60,7 +60,33 @@ namespace Web.Smartway.Areas.Guias.Controllers
         [HttpPost]
         public JsonResult InsertarActualizarGuiaRemision(GuiaRemisionDetalleModel guiadetalle)
         {
-            new DespachoData().InsertarActualizarGuiaRemisionDetalle(guiadetalle);
+            OrdenSalidaModel orden = null;
+            if (guiadetalle.numeroordensalida != null)
+                orden = new DespachoData().GetListarOrdenSalida(guiadetalle.numeroordensalida.Trim()).SingleOrDefault();
+
+            if (orden != null)
+            {
+                var detalles = new DespachoData().GetListarOrdenSalidaDetalle(orden.iddocumentosalida.Value).ToList();
+                GuiaRemisionDetalleModel Newguiadetalle = null;
+
+                foreach (var item in detalles)
+                {
+                    Newguiadetalle = new GuiaRemisionDetalleModel();
+                    Newguiadetalle.cantidad = detalles.Count;
+                    Newguiadetalle.codigo = item.codigoproducto; 
+                    Newguiadetalle.descripcion = item.descripcionlarga;            
+                    Newguiadetalle.idguiaremision = guiadetalle.idguiaremision;
+
+
+                    new DespachoData().InsertarActualizarGuiaRemisionDetalle(Newguiadetalle);
+                    break;
+                }
+            }
+            else
+            {
+                new DespachoData().InsertarActualizarGuiaRemisionDetalle(guiadetalle);
+            }
+
             return Json(new { res = true });
         }
 
@@ -68,6 +94,9 @@ namespace Web.Smartway.Areas.Guias.Controllers
         [HttpPost]
         public JsonResult GenerarGuiaRemision(ProgramacionModel model)
         {
+            
+            
+
             GuiaRemisionModel modGuia = new GuiaRemisionModel();
             modGuia.direcciondestino = model.direcciondestino;
             modGuia.direccionorigen = model.direccionorigen;
@@ -85,6 +114,7 @@ namespace Web.Smartway.Areas.Guias.Controllers
             modGuia.__tipooperacion = 1;
             var idguia = new DespachoData().InsertarActualizarGuiaRemision(modGuia);
 
+        
             return Json(new { res = true });
 
         }
@@ -101,6 +131,12 @@ namespace Web.Smartway.Areas.Guias.Controllers
             var listadoTotal = new DespachoData().GetListarGuiaDetalle(idguiaremision).ToList();
             var resjson1 = (new JqGridExtension<GuiaRemisionDetalleModel>()).DataBind(listadoTotal, listadoTotal.Count);
             return resjson1;
+        }
+        [HttpPost]
+        public JsonResult EliminarDetalleGuia(long iddetalle)
+        {
+            new DespachoData().EliminarDetalleGuia(iddetalle);
+            return Json(new { res = true });
         }
     }
 }

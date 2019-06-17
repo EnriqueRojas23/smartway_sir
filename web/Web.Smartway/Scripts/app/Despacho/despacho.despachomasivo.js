@@ -4,9 +4,9 @@ const $ddlalmacen = $('#idalmacen')
 const $btnValidar = $('#btnValidar')
 const $btnSelectFile = $('#btnSelectFile')
 
-const URL_cargaalmacen = UrlHelper.Action("listarAlmacenes","Recepcion","Recepcion")
-const URL_guardarIngreso = UrlHelper.Action("guardarIngreso", "Despacho","Despacho")
-const URL_subirarchivo = UrlHelper.Action("SubirArchivo", "Despacho", "Despacho")
+const URL_cargaalmacen = UrlHelper.Action("listarAlmacenes", "Recepcion", "Recepcion");
+const URL_guardarIngreso = UrlHelper.Action("guardarIngreso", "Despacho", "Despacho");
+const URL_subirarchivo = UrlHelper.Action("SubirArchivo", "Despacho", "Despacho");
 
 let $grilla = $("#gridcargadetalle")
 //const URL_subirarchivo = UrlHelper.Action("SubirArchivo","Inventario", "Inventario")
@@ -196,7 +196,7 @@ function OnCompleteTransaction(xhr, status)
         },
         function ()
         {
-              let vurl = UrlHelper.Action("SeguimientoRecepcion","Recepcion","Recepcion") 
+            let vurl = UrlHelper.Action("SeguimientoDespacho", "Despacho", "Despacho");
                 window.location.href = vurl;
         });
 

@@ -182,6 +182,8 @@ function agregarDetalle(id) {
 
         let url_obtenerost = UrlHelper.Action("obtenerOrdenServicio", "OrdenServicio", "Agendamiento");
         $('#codigo').on('blur', function () {
+
+            if($('#codigo').val() === '') return;
             
                $.ajax({
                    type: "POST",
@@ -205,6 +207,8 @@ function verDetalle(id)
 {
 
     $("html, body").animate({ scrollTop: "900px" });
+
+    $('#iddetallebusqueda').val(id);
 
     reloadGrid_Detalle(id);
 }
@@ -263,4 +267,20 @@ function imprimir(id)
 {
     var url = "http://104.36.166.65/repsw/guiatransportista.aspx?idguiaremision=" + String(id);
     window.open(url);
+}
+
+function EliminarDetalle(id) {
+    
+    let url_eliminarDetalle = UrlHelper.Action("EliminarDetalleGuia", "Guias", "Guias");
+    
+    $.ajax({
+        type: "POST",
+        url: url_eliminarDetalle,
+        data: { iddetalle : id },
+        dataType: "JSON",
+        success: function (response) {
+            var vdataurl = $grilladetalle.data("dataurl") + "?idguiaremision=" + $('#iddetallebusqueda').val();
+            $grilladetalle.jqGrid('setGridParam', { url: vdataurl }).trigger('reloadGrid');
+        }
+    });
 }
