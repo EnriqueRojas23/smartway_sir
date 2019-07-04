@@ -302,7 +302,7 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
             var modOrdenServicio = new OrdenServicioData().obtenerOrdenServicio(id);
 
 
-            if (modOrdenServicio.idtipoproducto == (int)Constantes.TipoProducto.POS)
+            if (modOrdenServicio.idtipoproducto == (int)Constantes.TipoProducto.POS || modOrdenServicio.idtipoproducto == (int)Constantes.TipoProducto.PLACAPRINCIPAL)
             {
                 modOrdenServicio.idestado = (Int32)Constantes.EstadoOrdenServicio.PendienteInicioReparacion;
             }
@@ -366,7 +366,7 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
             }
 
 
-            if (modOrdenServicio.idtipoproducto == (Int32)Constantes.TipoProducto.POS)
+            if (modOrdenServicio.idtipoproducto == (Int32)Constantes.TipoProducto.POS || modOrdenServicio.idtipoproducto == (Int32)Constantes.TipoProducto.PLACAPRINCIPAL)
                 modAlmacen = new InventarioData().obtenerAlmacen(Constantes.CodAlmacen.Pos_Repuestos);
             else if (modOrdenServicio.idtipoproducto == (Int32)Constantes.TipoProducto.CELULAR)
                 modAlmacen = new InventarioData().obtenerAlmacen(Constantes.CodAlmacen.Telecom_Repuestos);
@@ -874,7 +874,7 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
             var modOrdenTrabajo = new ReparacionesData().obtenerOrdenTrabajo(id);
             var modOrdenServicio = new OrdenServicioData().obtenerOrdenServicio(modOrdenTrabajo.idordenserviciotecnico.Value);
 
-            if (modOrdenServicio.idtipoproducto == (int)Constantes.TipoProducto.POS)
+            if (modOrdenServicio.idtipoproducto == (int)Constantes.TipoProducto.POS || modOrdenServicio.idtipoproducto == (Int32)Constantes.TipoProducto.PLACAPRINCIPAL)
             {
 
 
@@ -914,7 +914,7 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
             modOrdenTrabajo.__tipooperacion = 2;
             new ReparacionesData().InsertarActualizarOrdenTrabajo(modOrdenTrabajo);
 
-            if (modOrdenServicio.idtipoproducto != (int)Constantes.TipoProducto.POS)
+            if (modOrdenServicio.idtipoproducto != (int)Constantes.TipoProducto.POS || modOrdenServicio.idtipoproducto == (Int32)Constantes.TipoProducto.PLACAPRINCIPAL)
             {
                 if (!modOrdenServicio.engarantia)
                 {
@@ -930,8 +930,18 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
                             model.__tipoperacion = 1;
                             long idottiempo = new ReparacionesData().insertarIniciarReparacion(model);
                         }
-
+                        else
+                        {
+                            var model = new OrdenTrabajoTiempoModel();
+                            model.idordentrabajo = id;
+                            model.idusuario = Usuario.Idusuario;
+                            model.fechahorainicio = DateTime.Now;
+                            model.iteracion = modOrdenTrabajo.bounce;
+                            model.__tipoperacion = 1;
+                            long idottiempo = new ReparacionesData().insertarIniciarReparacion(model);
+                        }
                     }
+                    
                 }
                 else
                 {
@@ -965,7 +975,7 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
         public PartialViewResult AprobarQCModal(long idordenservicio)
         {
             var modOrdenServicio = new OrdenServicioData().obtenerOrdenServicio(idordenservicio);
-            if (modOrdenServicio.idtipoproducto == (Int32)Constantes.TipoProducto.CELULAR)
+            if (modOrdenServicio.idtipoproducto == (Int32)Constantes.TipoProducto.CELULAR || modOrdenServicio.idtipoproducto == (Int32)Constantes.TipoProducto.PLACAPRINCIPAL)
             {
                 return PartialView("_AprobarQCTelecom", modOrdenServicio);
             }
@@ -1050,7 +1060,7 @@ namespace Web.Smartway.Areas.Reparacion.Controllers
             var condicion9 = collection["chkCondicion9"].ToString();
             var condicion10 = collection["chkCondicion10"].ToString();
 
-            if (modOrdenServicio.idtipoproducto == (Int32)Constantes.TipoProducto.CELULAR)
+            if (modOrdenServicio.idtipoproducto == (Int32)Constantes.TipoProducto.CELULAR || modOrdenServicio.idtipoproducto == (Int32)Constantes.TipoProducto.PLACAPRINCIPAL)
             {
                  condicion11 = collection["chkCondicion11"].ToString();
                  condicion12 = collection["chkCondicion12"].ToString();

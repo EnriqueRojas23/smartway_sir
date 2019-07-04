@@ -314,7 +314,7 @@ function configurarBotones()
             swal("Reparación","Debe seleccionar una reparación","warning")
             return;
         }
-        let idrepuesto = $("#idrepuesto").val()
+        let idrepuesto = $("#idrepuesto").val();
         if(idrepuesto==='')
         {
             swal("Reparación","Debe seleccionar un repuesto","warning")
@@ -568,7 +568,7 @@ function displayButtons(cellvalue, options, rowObject)
 }
 function irEliminar(id, idinventario, idrepuesto)
 {
-    let  vurl = UrlHelper.Action("JsonEliminarReparacionDetalle","Reparacion","Reparacion")
+    let vurl = UrlHelper.Action("JsonEliminarReparacionDetalle", "Reparacion", "Reparacion");
     $.ajax({
         type: "POST",
         url: vurl,

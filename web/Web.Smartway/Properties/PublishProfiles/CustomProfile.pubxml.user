@@ -484,67 +484,67 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
       <publishTime>01/10/2019 08:59:57</publishTime>
     </File>
     <File Include="bin/App_global.asax.compiled">
-      <publishTime>06/10/2019 08:10:30</publishTime>
+      <publishTime>07/04/2019 10:04:03</publishTime>
     </File>
     <File Include="bin/App_global.asax.dll">
-      <publishTime>06/10/2019 08:10:30</publishTime>
+      <publishTime>07/04/2019 10:04:03</publishTime>
     </File>
     <File Include="bin/AutoMapper.dll">
       <publishTime>03/16/2015 14:47:58</publishTime>
     </File>
     <File Include="bin/Bootstrapper.Web.Common.dll">
-      <publishTime>06/10/2019 08:10:07</publishTime>
+      <publishTime>07/04/2019 10:03:41</publishTime>
     </File>
     <File Include="bin/Bootstrapper.Web.Common.pdb">
-      <publishTime>06/10/2019 08:10:07</publishTime>
+      <publishTime>07/04/2019 10:03:41</publishTime>
     </File>
     <File Include="bin/CommandContracts.Common.dll">
-      <publishTime>06/10/2019 08:10:05</publishTime>
+      <publishTime>07/04/2019 10:03:40</publishTime>
     </File>
     <File Include="bin/CommandContracts.Common.pdb">
-      <publishTime>06/10/2019 08:10:05</publishTime>
+      <publishTime>07/04/2019 10:03:40</publishTime>
     </File>
     <File Include="bin/CommandContracts.Smartway.dll">
-      <publishTime>06/10/2019 08:10:07</publishTime>
+      <publishTime>07/04/2019 10:03:42</publishTime>
     </File>
     <File Include="bin/CommandContracts.Smartway.pdb">
-      <publishTime>06/10/2019 08:10:07</publishTime>
+      <publishTime>07/04/2019 10:03:42</publishTime>
     </File>
     <File Include="bin/CommandHandlers.Common.dll">
-      <publishTime>06/10/2019 08:10:06</publishTime>
+      <publishTime>07/04/2019 10:03:41</publishTime>
     </File>
     <File Include="bin/CommandHandlers.Common.pdb">
-      <publishTime>06/10/2019 08:10:06</publishTime>
+      <publishTime>07/04/2019 10:03:41</publishTime>
     </File>
     <File Include="bin/CommandHandlers.Smartway.dll">
-      <publishTime>06/10/2019 08:10:08</publishTime>
+      <publishTime>07/04/2019 10:03:42</publishTime>
     </File>
     <File Include="bin/CommandHandlers.Smartway.pdb">
-      <publishTime>06/10/2019 08:10:08</publishTime>
+      <publishTime>07/04/2019 10:03:42</publishTime>
     </File>
     <File Include="bin/Componentes.Common.dll">
-      <publishTime>06/10/2019 08:10:04</publishTime>
+      <publishTime>07/04/2019 10:03:39</publishTime>
     </File>
     <File Include="bin/Componentes.Common.pdb">
-      <publishTime>06/10/2019 08:10:04</publishTime>
+      <publishTime>07/04/2019 10:03:39</publishTime>
     </File>
     <File Include="bin/Data.Common.dll">
-      <publishTime>06/10/2019 08:10:05</publishTime>
+      <publishTime>07/04/2019 10:03:40</publishTime>
     </File>
     <File Include="bin/Data.Common.pdb">
-      <publishTime>06/10/2019 08:10:05</publishTime>
+      <publishTime>07/04/2019 10:03:40</publishTime>
     </File>
     <File Include="bin/Domain.Common.dll">
-      <publishTime>06/10/2019 08:10:04</publishTime>
+      <publishTime>07/04/2019 10:03:39</publishTime>
     </File>
     <File Include="bin/Domain.Common.pdb">
-      <publishTime>06/10/2019 08:10:04</publishTime>
+      <publishTime>07/04/2019 10:03:39</publishTime>
     </File>
     <File Include="bin/Domain.Smartway.dll">
-      <publishTime>06/10/2019 08:10:05</publishTime>
+      <publishTime>07/04/2019 10:03:40</publishTime>
     </File>
     <File Include="bin/Domain.Smartway.pdb">
-      <publishTime>06/10/2019 08:10:05</publishTime>
+      <publishTime>07/04/2019 10:03:40</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>01/10/2019 08:59:56</publishTime>
@@ -604,10 +604,10 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
       <publishTime>03/16/2015 14:48:24</publishTime>
     </File>
     <File Include="bin/Infraestructure.Common.dll">
-      <publishTime>06/10/2019 08:10:04</publishTime>
+      <publishTime>07/04/2019 10:03:39</publishTime>
     </File>
     <File Include="bin/Infraestructure.Common.pdb">
-      <publishTime>06/10/2019 08:10:04</publishTime>
+      <publishTime>07/04/2019 10:03:39</publishTime>
     </File>
     <File Include="bin/LinqToExcel.dll">
       <publishTime>01/10/2019 08:59:56</publishTime>
@@ -643,28 +643,28 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
       <publishTime>03/16/2015 14:48:32</publishTime>
     </File>
     <File Include="bin/QueryContracts.Common.dll">
-      <publishTime>06/10/2019 08:10:05</publishTime>
+      <publishTime>07/04/2019 10:03:40</publishTime>
     </File>
     <File Include="bin/QueryContracts.Common.pdb">
-      <publishTime>06/10/2019 08:10:05</publishTime>
+      <publishTime>07/04/2019 10:03:40</publishTime>
     </File>
     <File Include="bin/QueryContracts.Smartway.dll">
-      <publishTime>06/10/2019 08:10:06</publishTime>
+      <publishTime>07/04/2019 10:03:41</publishTime>
     </File>
     <File Include="bin/QueryContracts.Smartway.pdb">
-      <publishTime>06/10/2019 08:10:06</publishTime>
+      <publishTime>07/04/2019 10:03:41</publishTime>
     </File>
     <File Include="bin/QueryHandlers.Common.dll">
-      <publishTime>06/10/2019 08:10:06</publishTime>
+      <publishTime>07/04/2019 10:03:41</publishTime>
     </File>
     <File Include="bin/QueryHandlers.Common.pdb">
-      <publishTime>06/10/2019 08:10:06</publishTime>
+      <publishTime>07/04/2019 10:03:41</publishTime>
     </File>
     <File Include="bin/QueryHandlers.Smartway.dll">
-      <publishTime>06/10/2019 08:10:07</publishTime>
+      <publishTime>07/04/2019 10:03:42</publishTime>
     </File>
     <File Include="bin/QueryHandlers.Smartway.pdb">
-      <publishTime>06/10/2019 08:10:07</publishTime>
+      <publishTime>07/04/2019 10:03:42</publishTime>
     </File>
     <File Include="bin/Remotion.Data.Linq.dll">
       <publishTime>01/10/2019 08:59:56</publishTime>
@@ -676,25 +676,25 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
       <publishTime>01/10/2019 08:59:56</publishTime>
     </File>
     <File Include="bin/Seguridad.Common.dll">
-      <publishTime>06/10/2019 08:10:07</publishTime>
+      <publishTime>07/04/2019 10:03:41</publishTime>
     </File>
     <File Include="bin/Seguridad.Common.pdb">
-      <publishTime>06/10/2019 08:10:07</publishTime>
+      <publishTime>07/04/2019 10:03:41</publishTime>
     </File>
     <File Include="bin/ServiceAgents.Common.dll">
-      <publishTime>06/10/2019 08:10:07</publishTime>
+      <publishTime>07/04/2019 10:03:41</publishTime>
     </File>
     <File Include="bin/ServiceAgents.Common.pdb">
-      <publishTime>06/10/2019 08:10:07</publishTime>
+      <publishTime>07/04/2019 10:03:41</publishTime>
     </File>
     <File Include="bin/ServiceAgents.Smartway.dll">
-      <publishTime>06/10/2019 08:10:09</publishTime>
+      <publishTime>07/04/2019 10:03:43</publishTime>
     </File>
     <File Include="bin/ServiceAgents.Smartway.dll.config">
       <publishTime>01/10/2019 08:59:57</publishTime>
     </File>
     <File Include="bin/ServiceAgents.Smartway.pdb">
-      <publishTime>06/10/2019 08:10:09</publishTime>
+      <publishTime>07/04/2019 10:03:43</publishTime>
     </File>
     <File Include="bin/StructureMap.dll">
       <publishTime>03/16/2015 14:48:32</publishTime>
@@ -742,19 +742,19 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
       <publishTime>01/10/2019 09:00:01</publishTime>
     </File>
     <File Include="bin/Web.Common.dll">
-      <publishTime>06/10/2019 08:10:09</publishTime>
+      <publishTime>07/04/2019 10:03:42</publishTime>
     </File>
     <File Include="bin/Web.Common.dll.config">
       <publishTime>01/10/2019 08:59:55</publishTime>
     </File>
     <File Include="bin/Web.Common.pdb">
-      <publishTime>06/10/2019 08:10:09</publishTime>
+      <publishTime>07/04/2019 10:03:42</publishTime>
     </File>
     <File Include="bin/Web.Smartway.dll">
-      <publishTime>06/10/2019 08:10:12</publishTime>
+      <publishTime>07/04/2019 10:03:44</publishTime>
     </File>
     <File Include="bin/Web.Smartway.pdb">
-      <publishTime>06/10/2019 08:10:12</publishTime>
+      <publishTime>07/04/2019 10:03:44</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
       <publishTime>01/10/2019 08:59:57</publishTime>
@@ -1411,7 +1411,7 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
       <publishTime>01/10/2019 09:00:07</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>06/10/2019 08:10:19</publishTime>
+      <publishTime>07/04/2019 10:03:51</publishTime>
     </File>
     <File Include="Scripts/app/Agendamiento/agendamiento.cotizacion.js">
       <publishTime>01/10/2019 08:59:58</publishTime>
@@ -1723,13 +1723,13 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
       <publishTime>06/06/2019 10:11:41</publishTime>
     </File>
     <File Include="Scripts/app/Reparacion/reparacion.paneltecnico.js">
-      <publishTime>06/06/2019 09:21:20</publishTime>
+      <publishTime>07/04/2019 10:02:23</publishTime>
     </File>
     <File Include="Scripts/app/Reparacion/reparacion.qc.js">
       <publishTime>01/10/2019 08:59:59</publishTime>
     </File>
     <File Include="Scripts/app/Reparacion/reparacion.reparaciontecnico.js">
-      <publishTime>06/06/2019 10:07:09</publishTime>
+      <publishTime>07/04/2019 09:22:04</publishTime>
     </File>
     <File Include="Scripts/app/Reportes/bsc.js">
       <publishTime>01/10/2019 08:59:59</publishTime>
@@ -3382,7 +3382,7 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
       <publishTime>01/10/2019 09:00:00</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>05/28/2019 09:51:56</publishTime>
+      <publishTime>07/02/2019 10:17:37</publishTime>
     </File>
   </ItemGroup>
 </Project>

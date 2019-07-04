@@ -162,13 +162,14 @@ function reload()
     var fechainicio = $("#fechainicio").val();
     var fechafin = $("#fechafin").val();
     var numeroordenservicio = $("#numeroordenservicio").val();
-    var serie = $("#serie").val()
+    var serie = $("#serie").val();
 
 
-  var vdataurl = $grilla.data("dataurl") +    "?fechainicio="  + fechainicio 
-     + "&fechafin=" + fechafin 
-     + "&serie=" + serie 
-     + "&numeroordenservicio=" + numeroordenservicio
+    var vdataurl = $grilla.data("dataurl") + "?fechainicio=" + fechainicio
+        + "&fechafin=" + fechafin
+        + "&fechainicio=" + fechainicio
+        + "&numeroot=" + numeroordenservicio;
+         + "&serie=" + serie;
  
 
     $grilla.jqGrid('setGridParam', { url: vdataurl }).trigger('reloadGrid');
@@ -285,7 +286,7 @@ function iniciar(id){
         dataType: "JSON",
         success: function (response) {
             if (response.res) {
-                if (!response.idtipoproducto === 1) {
+                if (!response.idtipoproducto === 1 || !response.idtipoproducto === 40 ) {
 
                     if (!response.engarantia) {
                         if (response.cotizado) {
